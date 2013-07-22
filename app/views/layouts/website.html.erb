@@ -1,7 +1,73 @@
-<html>                                                                      
-XD
-                               101學年度畢業生禮品領取通2
-<%= yield :layout %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>意傳文化科技　－　傳達你的心意</title>
+
 <%= stylesheet_link_tag "test" %>
 <%= stylesheet_link_tag "a測試" %>
+<script type="text/javascript" src="http://意傳.台灣/han3ji7tsoo2kian7.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="http://意傳.台灣/han3ji7tsoo2kian7.css">
+
+<link rel="stylesheet" type="text/css" href="./意傳.css">
+<script type="text/javascript" src="瀏覽器檢查.js"
+	charset="UTF-8"></script>
+
+<script type="text/javascript" src="taketori_js/taketori.js"
+	charset="UTF-8"></script>
+<script type="text/javascript">
+	function pian3tit8() {
+		//<![CDATA[
+		var taketori = (new Taketori()).set({
+			lang : 'zh-tw',
+			multiColumnEnabled : 'auto',
+			fontFamily : 'sans-serif',
+			height : '25em'
+		}).element('div.tit8').toVertical();
+		//]]>
+	}
+</script>
+</head>
+
+<body onload="javascript:">
+	<div id="內容">
+		<div id="頁首">
+			<div id="標題">
+				<b>意傳文化科技</b> － 閩客語資訊系統開發
+			</div>
+			<div id="公告">
+				網站持續建置中，預計八月底前完成 － 請務必使用<a
+					href="http://moztw.org/firefox/download/latest-win.html">火狐Firefox瀏覽器</a>以獲得直排網頁最佳效果
+			</div>
+		</div>
+		
+<%= yield :layout %>
+		
+		<footer></footer>
+		<address></address>
+	</div>
+	<div id="目錄">
+		<h2>
+			<font class="上">意</font><font class="下">傳</font>
+		</h2>
+		<ul>
+			<li><a href="index.html"><font class="上">關於</font><font class="下">意傳</font></a></li>
+			<li><a href="橫式範例.html"><font class="上">橫式</font><font class="下">範例</font></a></li>
+			<li><a href="標音方法.html"><font class="上">標音</font><font class="下">方法</font></a></li>
+			<li><a href="線上組字.html"><font class="上">線上</font><font
+					class="下">組字</font></a></li>
+			<li><a href="聯絡我們.html"><font class="上">聯絡</font><font class="下">我們</font></a></li>
+			<!-- <li><a href="相關連結.html"><font class="上">聯絡</font><font class="下">我們</font></a></li> -->
+		</ul>
+	</div>
+	<script type="text/javascript">
+		liu5lam2khi3=BrowserDetect.browser;
+		tsoo2han3ji7();
+		if(liu5lam2khi3=='Firefox')
+			pian3tit8();
+		/*else if(liu5lam2khi3=='Chrome')
+			pian3tit8();*/
+	</script>
+</body>
 </html>
