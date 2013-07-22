@@ -1,0 +1,175 @@
+#內容 {
+	position: absolute;
+	right: 200px;
+	left: 0px;
+	top: 0px;
+}
+
+#頁首,#目錄 {
+	background-color: rgb(40, 40, 40);
+	color: white;
+}
+
+#目錄 a:link,#目錄 a:visited,#目錄 a:active,#目錄 a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+#頁首 {
+	vertical-align: center;
+	text-align: left;
+	padding: 0.5em;
+	overflow: auto;
+}
+
+#標題 {
+	float: left;
+}
+
+#公告 {
+	float: right;
+	font-size: 0.8em;
+	vertical-align: bottom;
+}
+
+#公告,#公告 a:link,#公告 a:visited,#公告 a:active,#公告 a:hover {
+	color: yellow;
+	font-weight: bold;
+}
+
+#目錄 {
+	position: fixed;
+	width: 200px; /*em?*/
+	height: 100%;
+	float: right;
+	right: 0px;
+	top: 0px;
+	z-index: 0;
+	text-align: center;
+}
+
+.上 {
+	position: relative;
+	top: -0.3em;
+}
+
+.下 {
+	position: relative;
+	top: +0.3em;
+}
+
+#目錄 ul li {
+	list-style: cjk-ideographic;
+	/*list-style: none;*/
+}
+
+.正寫,#目錄 h2,#目錄 ul,#目錄 ul li {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	direction: rtl;
+	unicode-bidi: bidi-override;
+}
+
+.tit8 {
+	padding: 1em;
+}
+
+.taketori-ttb .su5 {
+	line-height: 200%;
+	width: inherit;
+}
+
+.taketori-ttb .nocjk {
+	display: -moz-inline-block;
+	display: inline-block;
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	font-size: 0.5em;
+	width: 2em;
+	text-align: center;
+}
+
+.taketori-ttb .ji7im1 {
+	display: -moz-inline-block;
+	display: inline-block;
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	text-align: center;
+	vertical-align: middle !important;
+	/*height: 5em;
+	width: 3em;*/
+	margin-left: -1em;
+	margin-right: -1em;
+	/*margin-bottom: 2em;
+	margin-left: 2em;
+	padding-bottom: 2em;
+	padding-left: 2em;*/
+	min-height: 1em;
+	min-width: 1em;
+}
+
+.taketori-ttb .ji7im1 img.tsoo2ji3 {
+	height: 1em;
+	margin: 0em; /*
+	margin-left: 0em;
+	margin-bottom: 0em;
+	margin-right: 2em;*/
+	padding: 0;
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(+90deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	vertical-align: -6%;
+}
+
+.ji7im1 .tsu2ji7 {
+	display: inline-block;
+	height: 1em;
+	/*
+	margin: 0em;*
+	margin-left: 0em;
+	margin-bottom: 0em;
+	margin-right: 2em;*/
+	padding: 0;
+	margin: 0;
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.huainn5 {
+	margin: 0.5em;
+}
+
+table.gi2im1hak8,table.gi2im1hak8 tr,table.gi2im1hak8 tr td {
+	border: 1px solid black;
+	vertical-align: middle;
+	text-align: center;
+}
+
+ruby {
+	margin: 0 0.1em;
+	min-width: 1.5em;
+}
+
+ruby>rt {
+	display: table-row;
+	font-size: 0.5em;
+	min-width: 1.5em;
+}
+
+ruby>rb {
+	display: table-header-group;
+	text-align: center;
+	font-size: 1em;
+	min-width: 1.5em;
+}
+
+ruby>rp {
+	display: none;
+}
