@@ -3,6 +3,7 @@ I3thuan5::Application.routes.draw do
 	get 'website', :to => 'website#關於意傳'
   #get ':controller/:action', :to => 'website#關於意傳'
   get ':controller/:action'
+  get ':action', :to => 'website#:action'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
