@@ -8,7 +8,11 @@ class WebsiteController < ApplicationController
 	end
 	def 線上組字
 	end
-	def 聯絡我們
-	end
+  def 聯絡我們
+  end
+  def 閩客歷史
+  end
+  def 相關網站
+  end
 end
 
