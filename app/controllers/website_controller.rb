@@ -1,3 +1,4 @@
+# encoding: UTF-8
 class WebsiteController < ApplicationController
 	def 關於意傳
 	end
