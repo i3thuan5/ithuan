@@ -12,7 +12,7 @@ class WebsiteController < ApplicationController
   end
   def 閩客歷史
   end
-  def 相關網站
+  def 相關連結
   end
 end
 
