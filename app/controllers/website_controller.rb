@@ -8,11 +8,17 @@ class WebsiteController < ApplicationController
 	end
 	def 線上組字
 	end
-  def 聯絡我們
-  end
-  def 閩客歷史
-  end
-  def 相關連結
-  end
+	def 聯絡我們
+	end
+	def 閩客歷史
+	end
+	def 相關連結
+	end
+	def method_missing(name, *args, &block)
+		redirect_to '/', status: 302 
+	end
+	def index
+		redirect_to '/', status: 302 
+	end
 end
 
