@@ -1,7 +1,7 @@
 
 /*encoding: utf-8*/ 
 body{
-	font-size: 120%;
+	font-size: 100%;
 }
 
 #內容 {
@@ -74,6 +74,10 @@ body{
 	margin-bottom: 1em;
 	direction: rtl;
 	unicode-bidi: bidi-override;
+}
+
+#文章{
+	font-size: 200%;
 }
 
 .tit8 {
