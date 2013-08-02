@@ -10,8 +10,10 @@ class WebsiteController < ApplicationController
 	end
 	def 聯絡我們
 	end
-	def 閩客歷史
-	end
+  def 閩客歷史
+  end
+  def 悲慘世界
+  end
 	def 相關連結
 	end
 	def method_missing(name, *args, &block)
