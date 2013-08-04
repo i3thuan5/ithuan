@@ -4,8 +4,10 @@ class WebsiteController < ApplicationController
 	end
 	def 橫式範例
 	end
-	def 標音方法
-	end
+  def 注音介紹
+  end
+  def 標音方法
+  end
 	def 線上組字
 	end
 	def 聯絡我們
