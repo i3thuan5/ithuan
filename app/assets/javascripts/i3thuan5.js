@@ -4,7 +4,7 @@ function pian3tit8() {
 		lang : 'zh-tw',
 		multiColumnEnabled : 'auto',
 		fontFamily : 'sans-serif',
-		height : '25em'
+		height : '20em'
 	}).element('div.tit8').toVertical();
 	// ]]>
 }
