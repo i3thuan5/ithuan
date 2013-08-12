@@ -4,7 +4,49 @@
 		<section>
 			標音方法
 			<hr />
-			<p>會介紹如何在網站上標台語音標，敬請期待</p>
+			<script src="http://code.jquery.com/jquery-1.10.2.min.js"
+				type="text/javascript"></script>
+			<p>
+				目前先以閩南語漳州腔來測試，泉州腔及客家話待功能完整即會放上。<br />
+			</p>
+			<p>
+				<input type="text" size="20" id="ai3tsha5"><input
+					type="button"
+					onClick="javascript:tsha5('./自動標音/'+$('#ai3tsha5').val())"><span
+					id="kiet4ko2"></span>
+			</p>
+	<script type="text/javascript">
+		tsha5 = function(bang2tsi2) {
+			$
+					.ajax({
+						url : bang2tsi2 + '?callback=?',
+						type : 'GET',
+						data : {},
+						error : function(xhr) {
+							$('#kiet4ko2').html('發生錯誤！！');
+							$('#kiet4ko2').fadeIn();
+						},
+						success : function(response) {
+							var msg = eval(response.substr(1));
+							var suan2 = new Array(msg.length);
+							for ( var i = 0; i < suan2.length; ++i)
+								suan2[i] = 0;
+							for ( var i = 0; i < msg.length; ++i)
+								for ( var k = 0; k < msg[i][suan2[i]].綜合標音.length; ++k) {
+									str += '<ruby class="suan2" id="s'+i+'"><rb>';
+									str += msg[i][suan2[i]].綜合標音[k].型體;
+									str += msg[i][suan2[i]].綜合標音[k].吳守禮方音;
+									str += '</rb><rt>';
+									str += msg[i][suan2[i]].綜合標音[k].臺羅數字調;
+									str += '</rt></ruby>';
+								}
+							$('#kiet4ko2').html(str);
+							$('#kiet4ko2').fadeIn();
+
+						}
+					});
+		};
+	</script>
 
 		</section>
 	</article>
