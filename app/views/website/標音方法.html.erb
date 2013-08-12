@@ -13,40 +13,43 @@
 				<input type="text" size="20" id="ai3tsha5"><input
 					type="button"
 					onClick="javascript:tsha5('./自動標音/'+$('#ai3tsha5').val())"><span
-					id="kiet4ko2"></span>
+					id="tsha5e5kiet4ko2"></span>
 			</p>
-	<script type="text/javascript">
-		tsha5 = function(bang2tsi2) {
-			$
-					.ajax({
-						url : bang2tsi2 + '?callback=?',
-						type : 'GET',
-						data : {},
-						error : function(xhr) {
-							$('#kiet4ko2').html('發生錯誤！！');
-							$('#kiet4ko2').fadeIn();
-						},
-						success : function(response) {
-							var msg = eval('('+response+')');
-							var suan2 = new Array(msg.length);
-							for ( var i = 0; i < suan2.length; ++i)
-								suan2[i] = 0;
-							for ( var i = 0; i < msg.length; ++i)
-								for ( var k = 0; k < msg[i][suan2[i]].綜合標音.length; ++k) {
-									str += '<ruby class="suan2" id="s'+i+'"><rb>';
-									str += msg[i][suan2[i]].綜合標音[k].型體;
-									str += msg[i][suan2[i]].綜合標音[k].吳守禮方音;
-									str += '</rb><rt>';
-									str += msg[i][suan2[i]].綜合標音[k].臺羅數字調;
-									str += '</rt></ruby>';
-								}
-							$('#kiet4ko2').html(str);
-							$('#kiet4ko2').fadeIn();
+			<script type="text/javascript">
+				tsha5 = function(bang2tsi2) {
+					$('#tsha5e5kiet4ko2').html(bang2tsi2);
+					alert(bang2tsi2);
+					$
+							.ajax({
+								url : bang2tsi2,
+								type : 'GET',
+								data : {},
+								error : function(xhr) {
+									$('#tsha5e5kiet4ko2').html('發生錯誤！！');
+									$('#tsha5e5kiet4ko2').fadeIn();
+								},
+								success : function(response) {
+									$('#tsha5e5kiet4ko2').html(response);
+									var msg = eval('(' + response + ')');
+									var suan2 = new Array(msg.length);
+									for ( var i = 0; i < suan2.length; ++i)
+										suan2[i] = 0;
+									for ( var i = 0; i < msg.length; ++i)
+										for ( var k = 0; k < msg[i][suan2[i]].綜合標音.length; ++k) {
+											str += '<ruby class="suan2" id="s'+i+'"><rb>';
+											str += msg[i][suan2[i]].綜合標音[k].型體;
+											str += msg[i][suan2[i]].綜合標音[k].吳守禮方音;
+											str += '</rb><rt>';
+											str += msg[i][suan2[i]].綜合標音[k].臺羅數字調;
+											str += '</rt></ruby>';
+										}
+									$('#tsha5e5kiet4ko2').html(str);
+									$('#tsha5e5kiet4ko2').fadeIn();
 
-						}
-					});
-		};
-	</script>
+								}
+							});
+				};
+			</script>
 
 		</section>
 	</article>
