@@ -10,10 +10,13 @@
 				目前先以閩南語漳州腔來測試，泉州腔及客家話待功能完整即會放上。<br />
 			</p>
 			<p>
+			<form>
 				<input type="text" size="20" id="ai3tsha5"><input
-					type="button"
-					onClick="javascript:tsha5('./自動標音/'+$('#ai3tsha5').val())"><span
-					id="tsha5e5kiet4ko2"></span>
+					type="submit" value="標音"
+					onClick="javascript:tsha5('./自動標音/'+$('#ai3tsha5').val())"
+					onSubmit="javascript:tsha5('./自動標音/'+$('#ai3tsha5').val());return false;">
+			</form>
+			<br /> <span id="tsha5e5kiet4ko2"></span>
 			</p>
 			<script type="text/javascript">
 				tsha5 = function(bang2tsi2) {
@@ -34,7 +37,7 @@
 									var suan2 = new Array(msg.length);
 									for ( var i = 0; i < suan2.length; ++i)
 										suan2[i] = 0;
-						            var str='';
+									var str = '';
 									for ( var i = 0; i < msg.length; ++i)
 										for ( var k = 0; k < msg[i][suan2[i]].綜合標音.length; ++k) {
 											str += '<ruby class="suan2" id="s'+i+'"><rb>';
