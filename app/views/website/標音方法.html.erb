@@ -1,5 +1,5 @@
 <%# encoding: utf-8 %>
-<div class="tit8">
+<div class="huainn5">
 	<article>
 		<section>
 			標音方法
@@ -27,7 +27,7 @@
 							$('#kiet4ko2').fadeIn();
 						},
 						success : function(response) {
-							var msg = eval(response.substr(1));
+							var msg = eval('('+response+')');
 							var suan2 = new Array(msg.length);
 							for ( var i = 0; i < suan2.length; ++i)
 								suan2[i] = 0;
