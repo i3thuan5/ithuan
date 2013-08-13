@@ -11,6 +11,28 @@
 			</p>
 			<p>
 			<form onSubmit="javascript:return tsha5('./自動標音/'+$('#ai3tsha5').val())">
+				<p>
+				<input type="radio" name="言語種類" value="閩南語混合腔" onClick="javascript:重設文白()" disabled="disabled">閩南語混合腔
+				<input type="radio" name="言語種類" value="閩南語偏漳腔" onClick="javascript:重設文白()" checked>閩南語偏漳腔
+				<input type="radio" name="言語種類" value="閩南語偏泉腔" onClick="javascript:重設文白()" disabled="disabled">閩南語偏泉腔<br/>
+				<input type="radio" name="言語種類" value="客家話四縣腔" onClick="javascript:重設文白()" disabled="disabled">客家話四縣腔
+				<input type="radio" name="言語種類" value="客家話海陸腔" onClick="javascript:重設文白()" disabled="disabled">客家話海陸腔
+				<input type="radio" name="言語種類" value="客家話大埔腔" onClick="javascript:重設文白()" disabled="disabled">客家話大埔腔<br/>
+				<input type="radio" name="言語種類" value="客家話饒平腔" onClick="javascript:重設文白()" disabled="disabled">客家話饒平腔
+				<input type="radio" name="言語種類" value="客家話詔安腔" onClick="javascript:重設文白()" disabled="disabled">客家話詔安腔
+				<input type="radio" name="言語種類" value="國語" onClick="javascript:重設文白()" disabled="disabled">國語<br/>
+				</p>
+				<p>
+					標音選項：<select name="標音選項" disabled="disabled">
+						<option value="臺羅數字加注音">臺羅數字加注音</option>
+						<option value="臺羅閏號加注音">臺羅閏號加注音</option>
+						<option value="通用加注音">通用加注音</option>
+						<option value="注音符號">注音符號</option>
+						<option value="臺羅數字調">臺羅數字調</option>
+						<option value="臺羅閏號調">臺羅閏號調</option>
+						<option value="通用拼音">通用拼音</option>
+					</select>
+				</p>
 				<input type="radio" name="言語層" value="白話音" onClick="javascript:重設文白()" checked>白話音
 				<input type="radio" name="言語層" value="文讀音" onClick="javascript:重設文白()">文讀音<br>
 				<input type="text" size="20" id="ai3tsha5"><input
