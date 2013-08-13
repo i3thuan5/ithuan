@@ -10,18 +10,16 @@
 				目前先以閩南語漳州腔來測試，泉州腔及客家話待功能完整即會放上。<br />
 			</p>
 			<p>
-			<form>
+			<form onSubmit="javascript:return tsha5('./自動標音/'+$('#ai3tsha5').val())">
 				<input type="text" size="20" id="ai3tsha5"><input
-					type="button" value="標音"
-					onClick="javascript:tsha5('./自動標音/'+$('#ai3tsha5').val())">
-				<!-- 	onSubmit="javascript:return tsha5('./自動標音/'+$('#ai3tsha5').val())" -->
+					type="submit" value="標音">
 			</form>
 			<br /> <span id="tsha5e5kiet4ko2"></span>
 			</p>
 			<script type="text/javascript">
 				tsha5 = function(bang2tsi2) {
-					/*$('#tsha5e5kiet4ko2').html(bang2tsi2);
-					alert(bang2tsi2);//*/
+					$('#tsha5e5kiet4ko2').html('處理中……');
+					/*alert(bang2tsi2);//*/
 					$
 							.ajax({
 								url : bang2tsi2,
@@ -49,10 +47,10 @@
 										}
 									$('#tsha5e5kiet4ko2').html(str);
 									$('#tsha5e5kiet4ko2').fadeIn();
+									tshue7tsoo2ji7(document.getElementById('tsha5e5kiet4ko2'));
 
 								}
 							});
-					tshue7tsoo2ji7(document.getElementById('tsha5e5kiet4ko2'));
 					return false;
 				};
 			</script>
