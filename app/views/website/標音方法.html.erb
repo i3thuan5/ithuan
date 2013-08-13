@@ -11,8 +11,8 @@
 			</p>
 			<p>
 			<form onSubmit="javascript:return tsha5('./自動標音/'+$('#ai3tsha5').val())">
-				<input type="radio" name="言語層" value="白話音" checked>白話音
-				<input type="radio" name="言語層" value="文讀音">文讀音<br>
+				<input type="radio" name="言語層" value="白話音" onClick="javascript:重設文白()" checked>白話音
+				<input type="radio" name="言語層" value="文讀音" onClick="javascript:重設文白()">文讀音<br>
 				<input type="text" size="20" id="ai3tsha5"><input
 					type="submit" value="標音">
 			</form>
@@ -20,7 +20,7 @@
 			</p>
 			<script type="text/javascript">
 				var tsha5tioh4=new Array();
-				var suan2=new Array（）;
+				var suan2=new Array();
 				tsha5 = function(bang2tsi2) {
 					$('#tsha5e5kiat4ko2').html('處理中……');
 					/*alert(bang2tsi2);//*/
@@ -46,20 +46,7 @@
 										str += '</span>';
 									}
 									$('#tsha5e5kiat4ko2').html(str);
-									if($('input[name=言語層]:checked').val()=='文讀音')
-									{
-										for ( var i = 0; i < suan2.length; ++i)
-											suan2[i]=tsha5tioh4[i].length-1;
-									}
-									else //if($('input[name=言語層]:checked').val()=='白話音')
-									{
-										for ( var i = 0; i < suan2.length; ++i)
-											suan2[i] = 0;
-									}
-									for ( var i = 0; i < tsha5tioh4.length; ++i)
-									{
-										san2sing1ji7kiat4ko2(document.getElementById('tsha5e5kiat4ko2_'+i));
-									}
+									重設文白();
 									$('#tsha5e5kiat4ko2').fadeIn();
 								}
 							});
@@ -95,6 +82,23 @@
 					//alert(ji7kiat4ko2.id+suan2.length);
 					//$('#'+ji7kiat4ko2.id).html('');
 					//ji7kiat4ko2.innerHTML='';
+				}
+				function 重設文白()
+				{
+					if($('input[name=言語層]:checked').val()=='文讀音')
+					{
+						for ( var i = 0; i < suan2.length; ++i)
+							suan2[i]=tsha5tioh4[i].length-1;
+					}
+					else //if($('input[name=言語層]:checked').val()=='白話音')
+					{
+						for ( var i = 0; i < suan2.length; ++i)
+							suan2[i] = 0;
+					}
+					for ( var i = 0; i < tsha5tioh4.length; ++i)
+					{
+						san2sing1ji7kiat4ko2(document.getElementById('tsha5e5kiat4ko2_'+i));
+					}
 				}
 			</script>
 
