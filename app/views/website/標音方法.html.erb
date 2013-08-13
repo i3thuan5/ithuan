@@ -9,7 +9,6 @@
 			<p>
 				目前先以閩南語漳州腔來測試，泉州腔及客家話待功能完整即會放上。<br />
 			</p>
-			<p>
 			<form onSubmit="javascript:return tsha5('./自動標音/'+$('#ai3tsha5').val())">
 				<p>
 				<input type="radio" name="言語種類" value="閩南語混合腔" onClick="javascript:重設文白()" disabled="disabled">閩南語混合腔
@@ -33,12 +32,19 @@
 						<option value="通用拼音">通用拼音</option>
 					</select>
 				</p>
+				<p>
 				<input type="radio" name="言語層" value="白話音" onClick="javascript:重設文白()" checked>白話音
 				<input type="radio" name="言語層" value="文讀音" onClick="javascript:重設文白()">文讀音<br>
-				<input type="text" size="20" id="ai3tsha5"><input
+				<input type="text" size="20" id="ai3tsha5" value="我有一張椅仔！！"><input
 					type="submit" value="標音">
+				</p>
 			</form>
-			<br /> <span id="tsha5e5kiat4ko2"></span>
+			<p>
+			<span id="tsha5e5kiat4ko2"></span>
+			</p>
+			<p>
+			<hr/>
+			註：若有字音不符期待，可在點選該字，就會變換標音！！
 			</p>
 			<script type="text/javascript">
 				var tsha5tioh4=new Array();
