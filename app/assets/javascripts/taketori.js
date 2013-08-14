@@ -1268,7 +1268,7 @@ Taketori.prototype = {
 
 	setCJK : function () {
 		if (this.process.noCJK > 0) {
-			this.process.columnHTML = ((this.process.noCJK == this.process.latin && this.process.latin <= 2) ? this.process.columnHTML.replace('<span class="nocjk notcy">','<span class="nocjk">') : this.process.columnHTML.replace('<span class="nocjk notcy">','<span class="nocjk">')) + '</span>';
+			this.process.columnHTML = ((this.process.noCJK == this.process.latin && this.process.latin <= 2) ? this.process.columnHTML.replace('<span class="nocjk notcy">','<span class="tcy">') : this.process.columnHTML.replace('<span class="nocjk notcy">','<span class="nocjk">')) + '</span>';
 		}
 		this.process.latin = this.process.noCJK = 0;
 	},

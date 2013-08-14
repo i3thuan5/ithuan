@@ -93,15 +93,18 @@ body{
 	width: inherit;
 }
 
-.taketori-ttb .nocjk {
+.taketori-ttb .nng2tsua1 .nocjk {
 	display: -moz-inline-block;
 	display: inline-block;
-	-moz-transform: rotate(-90deg);
+}
+
+.taketori-ttb .nocjk {
+	/*-moz-transform: rotate(-90deg);
 	-webkit-transform: rotate(-90deg);
 	-o-transform: rotate(-90deg);
-	transform: rotate(-90deg);
-	font-size: 0.5em;
-	width: 2em;
+	transform: rotate(-90deg);*/
+	font-size: 0.8em;
+	width: 1em;
 	text-align: center;
 }
 
