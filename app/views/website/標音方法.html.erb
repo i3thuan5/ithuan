@@ -55,7 +55,7 @@
 			</p>
 			<p>
 				<input type="button" value="製表" onClick="javascript:製稿表()">
-				<div class="稿表"></div>
+				<div id="稿表"></div>
 			</p>
 			<p>
 			<hr />
@@ -170,12 +170,13 @@
 								下跤 = '';
 							}
 							面頂 += '<td>';
-							面頂 += tsha5tioh4[i][suan2[i]].綜合標音[k].型體;
-							面頂 += tsha5tioh4[i][suan2[i]].綜合標音[k].吳守禮方音;
+							面頂 += tsha5tioh4[i][suan2[i]].綜合標音[j].型體;
+							面頂 += tsha5tioh4[i][suan2[i]].綜合標音[j].吳守禮方音;
 							面頂 += '</td>';
 							下跤 += '<td>';
-							下跤 += tsha5tioh4[i][suan2[i]].綜合標音[k].臺羅數字調;
+							下跤 += tsha5tioh4[i][suan2[i]].綜合標音[j].臺羅數字調;
 							下跤 += '</td>';
+							第幾字 += 1;
 						}
 					}
 					語法 += '<table><tr>';
