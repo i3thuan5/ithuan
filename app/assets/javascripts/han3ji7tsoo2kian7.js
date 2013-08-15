@@ -1,4 +1,4 @@
-var tsoo2ji7ting5sik4 = 'http://意傳.台灣/組字/';
+var tsoo2ji7ting5sik4 = 'http://xn--v0qr21b.xn--kpry57d/組字/';
 
 function tsoo2han3ji7(beh4tshu2li2bo5) {
 	tshue7tsoo2ji7(document.getElementsByTagName('body')[0], beh4tshu2li2bo5);
