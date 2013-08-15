@@ -185,17 +185,23 @@ ruby {
 
 ruby>rt {
 	display: table-row;
-	font-size: 0.5em;
-	min-width: 1.5em;
 }
 
 ruby>rb {
 	display: table-header-group;
-	text-align: center;
-	font-size: 1em;
-	min-width: 1.5em;
 }
 
 ruby>rp {
 	display: none;
+}
+
+ruby>rt, td.表的音 {
+	font-size: 0.5em;
+	min-width: 1.5em;
+}
+
+ruby>rb, td.表的字 {
+	text-align: center;
+	font-size: 1em;
+	min-width: 1.5em;
 }
