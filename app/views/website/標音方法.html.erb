@@ -9,17 +9,27 @@
 			<p>
 				目前先以閩南語漳州腔來測試，泉州腔及客家話待功能完整即會放上。<br />
 			</p>
-			<form onSubmit="javascript:return tsha5('./自動標音/'+$('#ai3tsha5').val())">
+			<form
+				onSubmit="javascript:return tsha5('./自動標音/'+$('#ai3tsha5').val())">
 				<p>
-				<input type="radio" name="言語種類" value="閩南語混合腔" onClick="javascript:重設文白()" disabled="disabled">閩南語混合腔
-				<input type="radio" name="言語種類" value="閩南語偏漳腔" onClick="javascript:重設文白()" checked>閩南語偏漳腔
-				<input type="radio" name="言語種類" value="閩南語偏泉腔" onClick="javascript:重設文白()" disabled="disabled">閩南語偏泉腔<br/>
-				<input type="radio" name="言語種類" value="客家話四縣腔" onClick="javascript:重設文白()" disabled="disabled">客家話四縣腔
-				<input type="radio" name="言語種類" value="客家話海陸腔" onClick="javascript:重設文白()" disabled="disabled">客家話海陸腔
-				<input type="radio" name="言語種類" value="客家話大埔腔" onClick="javascript:重設文白()" disabled="disabled">客家話大埔腔<br/>
-				<input type="radio" name="言語種類" value="客家話饒平腔" onClick="javascript:重設文白()" disabled="disabled">客家話饒平腔
-				<input type="radio" name="言語種類" value="客家話詔安腔" onClick="javascript:重設文白()" disabled="disabled">客家話詔安腔
-				<input type="radio" name="言語種類" value="國語" onClick="javascript:重設文白()" disabled="disabled">國語<br/>
+					<input type="radio" name="言語種類" value="閩南語混合腔"
+						onClick="javascript:重設文白()" disabled="disabled">閩南語混合腔 <input
+						type="radio" name="言語種類" value="閩南語偏漳腔"
+						onClick="javascript:重設文白()" checked>閩南語偏漳腔 <input
+						type="radio" name="言語種類" value="閩南語偏泉腔"
+						onClick="javascript:重設文白()" disabled="disabled">閩南語偏泉腔<br />
+					<input type="radio" name="言語種類" value="客家話四縣腔"
+						onClick="javascript:重設文白()" disabled="disabled">客家話四縣腔 <input
+						type="radio" name="言語種類" value="客家話海陸腔"
+						onClick="javascript:重設文白()" disabled="disabled">客家話海陸腔 <input
+						type="radio" name="言語種類" value="客家話大埔腔"
+						onClick="javascript:重設文白()" disabled="disabled">客家話大埔腔<br />
+					<input type="radio" name="言語種類" value="客家話饒平腔"
+						onClick="javascript:重設文白()" disabled="disabled">客家話饒平腔 <input
+						type="radio" name="言語種類" value="客家話詔安腔"
+						onClick="javascript:重設文白()" disabled="disabled">客家話詔安腔 <input
+						type="radio" name="言語種類" value="國語" onClick="javascript:重設文白()"
+						disabled="disabled">國語<br />
 				</p>
 				<p>
 					標音選項：<select name="標音選項" disabled="disabled">
@@ -33,23 +43,29 @@
 					</select>
 				</p>
 				<p>
-				<input type="radio" name="言語層" value="白話音" onClick="javascript:重設文白()" checked>白話音
-				<input type="radio" name="言語層" value="文讀音" onClick="javascript:重設文白()">文讀音<br>
-				<input type="text" size="20" id="ai3tsha5" value="我有一張椅仔！！"><input
-					type="submit" value="標音">
+					<input type="radio" name="言語層" value="白話音"
+						onClick="javascript:重設文白()" checked>白話音 <input
+						type="radio" name="言語層" value="文讀音" onClick="javascript:重設文白()">文讀音<br>
+					<input type="text" size="20" id="ai3tsha5" value="我有一張椅仔！！"><input
+						type="submit" value="標音">
 				</p>
 			</form>
 			<p>
-			<span id="tsha5e5kiat4ko2"></span>
+				<span id="tsha5e5kiat4ko2"></span>
 			</p>
 			<p>
-			<hr/>
+				<input type="button" value="製表" onClick="javascript:製稿表()">
+				<div class="稿表"></div>
+			</p>
+			<p>
+			<hr />
 			註：若有字音不符期待，可點選該字，就會變換標音！！
 			</p>
 			<script type="text/javascript">
-				var tsha5tioh4=new Array();
-				var suan2=new Array();
-				tsha5 = function(bang2tsi2) {
+				var tsha5tioh4 = new Array();
+				var suan2 = new Array();
+				tsha5 = function(bang2tsi2)
+				{
 					$('#tsha5e5kiat4ko2').html('處理中……');
 					/*alert(bang2tsi2);//*/
 					$
@@ -57,11 +73,13 @@
 								url : bang2tsi2,
 								type : 'GET',
 								data : {},
-								error : function(xhr) {
+								error : function(xhr)
+								{
 									$('#tsha5e5kiat4ko2').html('發生錯誤！！');
 									$('#tsha5e5kiat4ko2').fadeIn();
 								},
-								success : function(response) {
+								success : function(response)
+								{
 									//$('#tsha5e5kiat4ko2').html(response);
 									//alert(response);
 									tsha5tioh4 = eval('(' + response + ')');
@@ -69,8 +87,9 @@
 									var str = '';
 									for ( var i = 0; i < tsha5tioh4.length; ++i)
 									{
-										str += '<span class="suan2" id="tsha5e5kiat4ko2_'+i
-												+'" onclick="javascript:au7tsit8e5kiat4ko2(this)">';
+										str += '<span class="suan2" id="tsha5e5kiat4ko2_'
+												+ i
+												+ '" onclick="javascript:au7tsit8e5kiat4ko2(this)">';
 										str += '</span>';
 									}
 									$('#tsha5e5kiat4ko2').html(str);
@@ -80,10 +99,12 @@
 							});
 					return false;
 				};
-				function san2sing1ji7kiat4ko2(ji7kiat4ko2){
-					var i=+ji7kiat4ko2.id.split('_',2)[1];
-					var str='';
-					for ( var k = 0; k < tsha5tioh4[i][suan2[i]].綜合標音.length; ++k) {
+				function san2sing1ji7kiat4ko2(ji7kiat4ko2)
+				{
+					var i = +ji7kiat4ko2.id.split('_', 2)[1];
+					var str = '';
+					for ( var k = 0; k < tsha5tioh4[i][suan2[i]].綜合標音.length; ++k)
+					{
 						str += '<ruby><rb>';
 						str += tsha5tioh4[i][suan2[i]].綜合標音[k].型體;
 						str += tsha5tioh4[i][suan2[i]].綜合標音[k].吳守禮方音;
@@ -91,21 +112,21 @@
 						str += tsha5tioh4[i][suan2[i]].綜合標音[k].臺羅數字調;
 						str += '</rt></ruby>';
 					}
-					ji7kiat4ko2.innerHTML=str;
+					ji7kiat4ko2.innerHTML = str;
 					tshue7tsoo2ji7(ji7kiat4ko2);
 				}
 				function au7tsit8e5kiat4ko2(ji7kiat4ko2)
 				{
-					var i=+ji7kiat4ko2.id.split('_',2)[1];
-					if($('input[name=言語層]:checked').val()=='文讀音')
+					var i = +ji7kiat4ko2.id.split('_', 2)[1];
+					if ($('input[name=言語層]:checked').val() == '文讀音')
 					{
-						suan2[i]+=tsha5tioh4[i].length-1;
-					}
-					else //if($('input[name=言語層]:checked').val()=='白話音')
+						suan2[i] += tsha5tioh4[i].length - 1;
+					} else
+					//if($('input[name=言語層]:checked').val()=='白話音')
 					{
-						suan2[i]+=1;
+						suan2[i] += 1;
 					}
-					suan2[i]%=tsha5tioh4[i].length;
+					suan2[i] %= tsha5tioh4[i].length;
 					san2sing1ji7kiat4ko2(ji7kiat4ko2);
 					//alert(ji7kiat4ko2.id+suan2.length);
 					//$('#'+ji7kiat4ko2.id).html('');
@@ -113,20 +134,58 @@
 				}
 				function 重設文白()
 				{
-					if($('input[name=言語層]:checked').val()=='文讀音')
+					if ($('input[name=言語層]:checked').val() == '文讀音')
 					{
 						for ( var i = 0; i < suan2.length; ++i)
-							suan2[i]=tsha5tioh4[i].length-1;
-					}
-					else //if($('input[name=言語層]:checked').val()=='白話音')
+							suan2[i] = tsha5tioh4[i].length - 1;
+					} else
+					//if($('input[name=言語層]:checked').val()=='白話音')
 					{
 						for ( var i = 0; i < suan2.length; ++i)
 							suan2[i] = 0;
 					}
 					for ( var i = 0; i < tsha5tioh4.length; ++i)
 					{
-						san2sing1ji7kiat4ko2(document.getElementById('tsha5e5kiat4ko2_'+i));
+						san2sing1ji7kiat4ko2(document
+								.getElementById('tsha5e5kiat4ko2_' + i));
 					}
+				}
+				function 製稿表()
+				{
+					var 第幾字 = 0;
+					var 語法 = '';
+					var 面頂 = '', 下跤 = '';
+					for ( var i = 0; i < tsha5tioh4.length; ++i)
+					{
+						for ( var j = 0; j < tsha5tioh4[i][suan2[i]].綜合標音.length; j++)
+						{
+							if (第幾字 % 10 == 0 && 第幾字 != 0)
+							{
+								語法 += '<table><tr>';
+								語法 += 面頂;
+								語法 += '</tr><tr>';
+								語法 += 下跤;
+								語法 += '</tr></table>';
+								面頂 = '';
+								下跤 = '';
+							}
+							面頂 += '<td>';
+							面頂 += tsha5tioh4[i][suan2[i]].綜合標音[k].型體;
+							面頂 += tsha5tioh4[i][suan2[i]].綜合標音[k].吳守禮方音;
+							面頂 += '</td>';
+							下跤 += '<td>';
+							下跤 += tsha5tioh4[i][suan2[i]].綜合標音[k].臺羅數字調;
+							下跤 += '</td>';
+						}
+					}
+					語法 += '<table><tr>';
+					語法 += 面頂;
+					語法 += '</tr><tr>';
+					語法 += 下跤;
+					語法 += '</tr></table>';
+					var 表 = document.getElementById('稿表');
+					表.innerHTML = 語法;
+					tshue7tsoo2ji7(表);
 				}
 			</script>
 
