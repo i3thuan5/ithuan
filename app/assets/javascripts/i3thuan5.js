@@ -3,7 +3,7 @@ function pian3tit8() {
 	var taketori = (new Taketori()).set({
 		lang : 'zh-tw',
 		multiColumnEnabled : 'auto',
-		fontFamily : 'sans-serif',
+		fontFamily : 'kai',
 		height : '20em'
 	}).element('div.tit8').toVertical();
 	// ]]>
