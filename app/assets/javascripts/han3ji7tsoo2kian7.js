@@ -74,6 +74,7 @@ function ka7ji7uann7tiau7(textNode, fontFamily, fontSize, fontWeight,
 			img.setAttribute('alt', tsoo2ji3);
 			img.setAttribute('title', tsoo2ji3);
 			img.setAttribute('height', fontSize);
+			img.setAttribute('width', fontSize);/*for ie = =++*/
 			newArray[newArray.length] = img;// */
 			start = i;
 			--i;
