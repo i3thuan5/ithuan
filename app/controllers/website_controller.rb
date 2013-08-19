@@ -1,7 +1,9 @@
 # encoding: UTF-8
 class WebsiteController < ApplicationController
-	def 關於意傳
-	end
+  def 關於意傳
+  end
+  def 產品資訊
+  end
 	def 橫式範例
 	end
   def 注音介紹
