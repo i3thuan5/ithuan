@@ -88,11 +88,12 @@ function 製稿表()
 	var 第幾字 = 0;
 	var 語法 = '';
 	var 面頂 = '', 下跤 = '';
+	var 逐逝字數 = $('#逐逝幾字').val();
 	for ( var i = 0; i < tsha5tioh4.length; ++i)
 	{
 		for ( var j = 0; j < tsha5tioh4[i][suan2[i]].綜合標音.length; j++)
 		{
-			if (第幾字 % 10 == 0 && 第幾字 != 0)
+			if (第幾字 % 逐逝字數 == 0 && 第幾字 != 0)
 			{
 				語法 += '<table><tr>';
 				語法 += 面頂;
@@ -120,4 +121,14 @@ function 製稿表()
 	var 表 = document.getElementById('稿表');
 	表.innerHTML = 語法;
 	tshue7tsoo2ji7(表);
+	調整表字體大細();
+}
+
+function 調整表字體大細() {
+	var 字大細=$("#字大細").val()+"px";
+	var 音大細=($("#字大細").val()/2)+"px";
+    $('#稿表 .表的字').css("font-size",字大細);
+    $('#稿表 .表的音').css("font-size",音大細);
+    $('#稿表 .tsoo2ji3').css("height",字大細);
+    $('#稿表 .tsoo2ji3').css("width", 字大細);
 }

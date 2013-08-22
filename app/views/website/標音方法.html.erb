@@ -30,7 +30,7 @@
 						disabled="disabled">國語<br />
 				</p>
 				<p>
-					標音選項：<select name="標音選項" disabled="disabled">
+					標音選項：<select id="標音選項" disabled="disabled">
 						<option value="臺羅數字加注音">臺羅數字加注音</option>
 						<option value="臺羅閏號加注音">臺羅閏號加注音</option>
 						<option value="通用加注音">通用加注音</option>
@@ -52,12 +52,38 @@
 				<span id="tsha5e5kiat4ko2"></span>
 			</p>
 			<p>
+				製表字體大小：<select id="字大細" onchange="javascript:調整表字體大細()">
+					<option value="16">16</option>
+					<option value="20">20</option>
+					<option value="24" selected="selected">24</option>
+					<option value="36">36</option>
+					<option value="48">48</option>
+				</select><br /> 製表每行字數：<select id="逐逝幾字">
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11" selected="selected">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</select><br />
 				<input type="button" value="製表" onClick="javascript:製稿表()">
-			<div id="稿表"></div>
 			</p>
-			<p>
+			<div id="稿表"></div>
 			<hr />
-			註：若有字音不符期待，可點選該字，就會變換標音！！
+			<p>
+				註甲：若有字音不符期待，可點選該字，就會變換標音！！<br />
+				註乙：若字體大小選16，建議每行字數為16；大小20，建議字數13；大小24，建議字數為11；大小36，建議字數8；大小48，建議字數6。<br />
 			</p>
 		</section>
 		<section>
@@ -110,8 +136,8 @@
 				"suet4bing5too5") %><br />
 			</p>
 			<p>
-				11.之後可依習慣選擇文書處理器。<br /> <%= image_tag('piau1im1/11.jpg', :class =>
-				"suet4bing5too5") %><br />
+				11.之後可依習慣選擇文書處理器。若使用注音，漢字建議調整為24，與圖同寬。<br /> <%=
+				image_tag('piau1im1/11.jpg', :class => "suet4bing5too5") %><br />
 			</p>
 			<p>
 				註：若選擇使用微軟的Word，其2007之後的版本已支援odt，2003之前的版本需裝「Sun ODF Plugin for
