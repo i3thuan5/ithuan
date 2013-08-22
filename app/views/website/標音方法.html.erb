@@ -10,12 +10,12 @@
 			<form
 				onSubmit="javascript:return tsha5('./自動標音/'+$('#ai3tsha5').val())">
 				<p>
-					<input type="radio" name="言語種類" value="閩南語混合腔"
-						onClick="javascript:重設文白()" disabled="disabled">閩南語混合腔 <input
-						type="radio" name="言語種類" value="閩南語偏漳腔"
+					<input type="radio" name="言語種類" value="閩南語偏漳腔"
 						onClick="javascript:重設文白()" checked>閩南語偏漳腔 <input
 						type="radio" name="言語種類" value="閩南語偏泉腔"
-						onClick="javascript:重設文白()" disabled="disabled">閩南語偏泉腔<br />
+						onClick="javascript:重設文白()" disabled="disabled">閩南語偏泉腔 <input
+						type="radio" name="言語種類" value="閩南語混合腔"
+						onClick="javascript:重設文白()" disabled="disabled">閩南語混合腔 <br />
 					<input type="radio" name="言語種類" value="客家話四縣腔"
 						onClick="javascript:重設文白()" disabled="disabled">客家話四縣腔 <input
 						type="radio" name="言語種類" value="客家話海陸腔"
@@ -98,8 +98,8 @@
 				image_tag('piau1im1/07.jpg', :class => "suet4bing5too5") %><br />
 			</p>
 			<p>
-				8.可以看到網頁，將製表以外的額外頁面刪除，留需要的部份。<br /> <%= image_tag('piau1im1/08.jpg',
-				:class => "suet4bing5too5") %><br />
+				8.可以看到網頁，將製表以外的額外頁面刪除，留需要的部份。<br /> <%=
+				image_tag('piau1im1/08.jpg', :class => "suet4bing5too5") %><br />
 			</p>
 			<p>
 				9.另存新檔，將存成odt檔。<br /> <%= image_tag('piau1im1/09.jpg', :class =>
