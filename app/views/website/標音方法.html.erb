@@ -51,6 +51,9 @@
 			<p>
 				<span id="tsha5e5kiat4ko2"></span>
 			</p>
+			<ul>
+				<li>註：若有字音不符期待，可點選該字，就會變換標音！！</li>
+			</ul>
 			<p>
 				<b>文書處理器複製用表格</b><br />字體大小：<select id="字大細"
 					onchange="javascript:改表內字大細()">
@@ -60,6 +63,7 @@
 					<option value="36">36</option>
 					<option value="48">48</option>
 				</select><br /> 每行字數：<select id="逐逝幾字" onchange="javascript:製稿表()">
+					<option value="3">3</option>
 					<option value="4">4</option>
 					<option value="5">5</option>
 					<option value="6">6</option>
@@ -81,16 +85,13 @@
 				<!-- <input type="button" value="製表" onClick="javascript:製稿表()">  -->
 			</p>
 			<div id="稿表"></div>
-			<hr />
-			<p>
-				註：若有字音不符期待，可點選該字，就會變換標音！！<br />
-			</p>
+			<br />
 		</section>
 		<section>
 			文書處理器編輯說明
 			<hr />
 			<p>
-				標音結果可於微軟Ｗord文書處理器上編輯，但是因為Word本身限制，需先由LibreOffice將製表結果存至odt檔（若量小可以使用複製的），再由微軟Word打開，詳細流程如下：<br />
+				標音結果可於複製到微軟Ｗord文書處理器上編輯。若有注音符號或是罕用字等圖片，因為Word本身限制，需先由LibreOffice將製表結果存至odt檔（若量小可以使用複製的），再由微軟Word打開，詳細流程如下：<br />
 			</p>
 			<p>
 				0.請先下載並安裝<%= link_to("LibreOffice",
@@ -122,7 +123,7 @@
 				"suet4bing5too5") %><br />
 			</p>
 			<p>
-				7.使用第０步下載的LibreOffice Writer打開。<br /> <%=
+				7.使用第0步下載的LibreOffice Writer打開。<br /> <%=
 				image_tag('piau1im1/07.jpg', :class => "suet4bing5too5") %><br />
 			</p>
 			<p>
