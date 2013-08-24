@@ -52,13 +52,14 @@
 				<span id="tsha5e5kiat4ko2"></span>
 			</p>
 			<p>
-				製表字體大小：<select id="字大細" onchange="javascript:調整表字體大細()">
+				<b>文書處理器複製用表格</b><br />字體大小：<select id="字大細"
+					onchange="javascript:改表內字大細()">
 					<option value="16">16</option>
 					<option value="20">20</option>
 					<option value="24" selected="selected">24</option>
 					<option value="36">36</option>
 					<option value="48">48</option>
-				</select><br /> 製表每行字數：<select id="逐逝幾字">
+				</select><br /> 每行字數：<select id="逐逝幾字" onchange="javascript:製稿表()">
 					<option value="4">4</option>
 					<option value="5">5</option>
 					<option value="6">6</option>
@@ -77,13 +78,12 @@
 					<option value="19">19</option>
 					<option value="20">20</option>
 				</select><br />
-				<input type="button" value="製表" onClick="javascript:製稿表()">
+				<!-- <input type="button" value="製表" onClick="javascript:製稿表()">  -->
 			</p>
 			<div id="稿表"></div>
 			<hr />
 			<p>
-				註甲：若有字音不符期待，可點選該字，就會變換標音！！<br />
-				註乙：若字體大小選16，建議每行字數為16；大小20，建議字數13；大小24，建議字數為11；大小36，建議字數8；大小48，建議字數6。<br />
+				註：若有字音不符期待，可點選該字，就會變換標音！！<br />
 			</p>
 		</section>
 		<section>
@@ -93,8 +93,10 @@
 				標音結果可於微軟Ｗord文書處理器上編輯，但是因為Word本身限制，需先由LibreOffice將製表結果存至odt檔（若量小可以使用複製的），再由微軟Word打開，詳細流程如下：<br />
 			</p>
 			<p>
-				0.請先下載並安裝<%= link_to("LibreOffice", "http://zh-tw.libreoffice.org/download/", :target => "_blank") %>，選最新版的（第一個）即可。<br />
-				<%= image_tag('piau1im1/00.jpg', :class => "suet4bing5too5") %><br />
+				0.請先下載並安裝<%= link_to("LibreOffice",
+				"http://zh-tw.libreoffice.org/download/", :target => "_blank")
+				%>，選最新版的（第一個）即可。<br /> <%= image_tag('piau1im1/00.jpg', :class =>
+				"suet4bing5too5") %><br />
 			</p>
 			<p>
 				1.先選擇需要的腔，標音方法，並輸入要標音的字。<br /> <%= image_tag('piau1im1/01.jpg',

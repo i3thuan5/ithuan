@@ -48,6 +48,7 @@ function san2sing1ji7kiat4ko2(ji7kiat4ko2)
 	}
 	ji7kiat4ko2.innerHTML = str;
 	tshue7tsoo2ji7(ji7kiat4ko2);
+	製稿表();
 }
 function au7tsit8e5kiat4ko2(ji7kiat4ko2)
 {
@@ -124,11 +125,37 @@ function 製稿表()
 	調整表字體大細();
 }
 
-function 調整表字體大細() {
-	var 字大細=$("#字大細").val()+"px";
-	var 音大細=($("#字大細").val()/2)+"px";
-    $('#稿表 .表的字').css("font-size",字大細);
-    $('#稿表 .表的音').css("font-size",音大細);
-    $('#稿表 .tsoo2ji3').css("height",字大細);
-    $('#稿表 .tsoo2ji3').css("width", 字大細);
+function 調整表字體大細()
+{
+	var 字大細 = $("#字大細").val() + "px";
+	var 音大細 = ($("#字大細").val() / 2) + "px";
+	$('#稿表 .表的字').css("font-size", 字大細);
+	$('#稿表 .表的音').css("font-size", 音大細);
+	$('#稿表 .tsoo2ji3').css("height", 字大細);
+	$('#稿表 .tsoo2ji3').css("width", 字大細);
+}
+
+function 改表內字大細()
+{
+	switch ($("#字大細").val())
+	{
+	case "16":
+		$('#逐逝幾字').val("16");
+		break;
+	case "20":
+		$('#逐逝幾字').val("13");
+		break;
+	case "24":
+		$('#逐逝幾字').val("11");
+		break;
+	case "36":
+		$('#逐逝幾字').val("8");
+		break;
+	case "48":
+		$('#逐逝幾字').val("6");
+		break;
+	default:
+		break;
+	}
+	製稿表();
 }
