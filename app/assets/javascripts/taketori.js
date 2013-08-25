@@ -184,7 +184,7 @@ Taketori.prototype = {
 		var viewerCssImported = false;
 		var links = document.getElementsByTagName('link');
 		for (var i=0; i<links.length; i++) {
-			if (links[i].href != null && links[i].href.search(/taketori\.css$/) != -1) {
+			if (links[i].href != null && links[i].href.search(/taketori\.css/) != -1) {
 				cssImported = true;
 			}
 		}
