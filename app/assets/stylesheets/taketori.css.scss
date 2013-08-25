@@ -52,7 +52,7 @@
   transform:rotate(90deg);
 }
 .taketori-ttb .taketori-col span.cjk {
-  display: -moz-inline-block;
+  /*display: -moz-inline-block;*/
   display: inline-block;
 }
 .taketori-ttb span.tcy {
@@ -61,7 +61,7 @@
   cursor: text;
 }
 .taketori-ttb span.cjk, .taketori-ttb span.tcy, .taketori-ttb span.ltr {
-  display: -moz-inline-block;
+  /*display: -moz-inline-block;*/
   display: inline-block;
   -moz-transform:rotate(-90deg);
   -webkit-transform:rotate(-90deg);
@@ -132,7 +132,7 @@
   background: transparent none !important;
 }
 .taketori-ttb span.kinsoku {
-  display: -moz-inline-block;
+  /*display: -moz-inline-block;*/
   display: inline-block;
 }
 
@@ -198,7 +198,7 @@
 }
 .taketori-ttb del span.cjk:after {
   content: "\2503";
-  display: -moz-inline-block;
+  /*display: -moz-inline-block;*/
   display: inline-block;
   position: absolute;
   top: 0;
@@ -231,7 +231,7 @@
   transform:rotate(-90deg) skew(0,-20deg);
 }
 .taketori-ttb .italic span.kakko {
-  display: -moz-inline-block;
+  /*display: -moz-inline-block;*/
   display: inline-block;
   -moz-transform:skew(20deg,0);
   -webkit-transform:skew(20deg,0);
@@ -254,7 +254,7 @@
 }
 .taketori-ttb strong span.cjk:after {
   content: "\3001";
-  display: -moz-inline-block;
+  /*display: -moz-inline-block;*/
   display: inline-block;
   position: absolute;
   top: 0;
@@ -300,7 +300,7 @@
 }
 .taketori-ttb ul.cjk li:before, .taketori-ttb ol.cjk li:before {
   content: attr(data-marker);
-  display: -moz-inline-block;
+  /*display: -moz-inline-block;*/
   display: inline-block;
   width: 3em;
   text-align: center;
@@ -313,7 +313,7 @@
 }
 
 .taketori-ruby-disabled ruby {
-  display: -moz-inline-block;
+  /*display: -moz-inline-block;*/
   display: inline-block;
   position: relative;
 }
@@ -386,7 +386,7 @@
   list-style-type: none;
 }
 .taketori-writingmode-ttb ul.cjk li:before, .taketori-writingmode-ttb ol.cjk li:before {
-  display: -moz-inline-block;
+  /*display: -moz-inline-block;*/
   display: inline-block;
   content: attr(data-marker);
   -moz-writing-mode: horizontal-tb;
