@@ -30,7 +30,7 @@
 						disabled="disabled">國語<br />
 				</p>
 				<p>
-					標音選項：<select id="標音選項" disabled="disabled">
+					標音選項：<select id="標音選項" onClick="javascript:製標音展示()">
 						<option value="臺羅數字加注音">臺羅數字加注音</option>
 						<option value="臺羅閏號加注音">臺羅閏號加注音</option>
 						<option value="通用加注音">通用加注音</option>
@@ -42,8 +42,8 @@
 				</p>
 				<p>
 					<input type="radio" name="言語層" value="白話音"
-						onClick="javascript:重設文白()" checked>白話音 <input
-						type="radio" name="言語層" value="文讀音" onClick="javascript:重設文白()">文讀音<br>
+						onClick="javascript:重設文白();製標音展示()" checked>白話音 <input
+						type="radio" name="言語層" value="文讀音" onClick="javascript:重設文白();製標音展示()">文讀音<br>
 					<textarea id="ai3tsha5">我有一張椅仔！！</textarea><br/><input
 						type="submit" value="標音">
 				</p>

@@ -1,5 +1,9 @@
 var tsha5tioh4 = new Array();
 var suan2 = new Array();
+var 臺羅數字=true;
+var 吳守禮方音=true;
+var 臺羅閏號=false;
+var 通用拼音=false;
 tsha5 = function(bang2tsi2)
 {
 	$('#tsha5e5kiat4ko2').html('處理中……');
@@ -28,6 +32,7 @@ tsha5 = function(bang2tsi2)
 			}
 			$('#tsha5e5kiat4ko2').html(str);
 			重設文白();
+			製標音展示();
 			$('#tsha5e5kiat4ko2').fadeIn();
 		}
 	});
@@ -41,9 +46,15 @@ function san2sing1ji7kiat4ko2(ji7kiat4ko2)
 	{
 		str += '<ruby><rb>';
 		str += tsha5tioh4[i][suan2[i]].綜合標音[k].型體;
-		str += tsha5tioh4[i][suan2[i]].綜合標音[k].吳守禮方音;
+		if(吳守禮方音)
+			str += tsha5tioh4[i][suan2[i]].綜合標音[k].吳守禮方音;
 		str += '</rb><rt>';
-		str += tsha5tioh4[i][suan2[i]].綜合標音[k].臺羅數字調;
+		if(臺羅數字)
+			str += tsha5tioh4[i][suan2[i]].綜合標音[k].臺羅數字調;
+		else if(臺羅閏號)
+			str += tsha5tioh4[i][suan2[i]].綜合標音[k].臺羅閏號調;
+		else if(通用拼音)
+			str += tsha5tioh4[i][suan2[i]].綜合標音[k].通用數字調;
 		str += '</rt></ruby>';
 	}
 	ji7kiat4ko2.innerHTML = str;
@@ -79,6 +90,26 @@ function 重設文白()
 		for ( var i = 0; i < suan2.length; ++i)
 			suan2[i] = 0;
 	}
+}
+function 製標音展示()
+{
+	var 標音選項=$('#標音選項').val();
+	if(標音選項.indexOf('臺羅數字')!=-1)
+		臺羅數字=true;
+	else
+		臺羅數字=false;
+	if(標音選項.indexOf('注音')!=-1)
+		吳守禮方音=true;
+	else
+		吳守禮方音=false;
+	if(標音選項.indexOf('臺羅閏號')!=-1)
+		臺羅閏號=true;
+	else
+		臺羅閏號=false;
+	if(標音選項.indexOf('通用')!=-1)
+		通用拼音=true;
+	else
+		通用拼音=false;	
 	for ( var i = 0; i < tsha5tioh4.length; ++i)
 	{
 		san2sing1ji7kiat4ko2(document.getElementById('tsha5e5kiat4ko2_' + i));
@@ -106,10 +137,16 @@ function 製稿表()
 			}
 			面頂 += '<td class="表的字">';
 			面頂 += tsha5tioh4[i][suan2[i]].綜合標音[j].型體;
-			面頂 += tsha5tioh4[i][suan2[i]].綜合標音[j].吳守禮方音;
+			if(吳守禮方音)
+				面頂 += tsha5tioh4[i][suan2[i]].綜合標音[j].吳守禮方音;
 			面頂 += '</td>';
 			下跤 += '<td class="表的音">';
-			下跤 += tsha5tioh4[i][suan2[i]].綜合標音[j].臺羅數字調;
+			if(臺羅數字)
+				下跤 += tsha5tioh4[i][suan2[i]].綜合標音[j].臺羅數字調;
+			else if(臺羅閏號)
+				下跤 += tsha5tioh4[i][suan2[i]].綜合標音[j].臺羅閏號調;
+			else if(通用拼音)
+				下跤 += tsha5tioh4[i][suan2[i]].綜合標音[j].通用數字調;
 			下跤 += '</td>';
 			第幾字 += 1;
 		}
