@@ -12,6 +12,8 @@ body {
 	padding: 0;
 	width: 100%;
 	height: 100%;
+	min-width:600px;
+	min-height:28em;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -42,12 +44,11 @@ body {
 #頁首 {
 	/*vertical-align: center;*/
 	/*display: table-row;*/
-	text-align: left;
+	height : 2em;
 	padding: 0.5em;
 	top:0;
 	left:0;
 	right: 0;
-	 height : 2em;
 	overflow: auto;
 	position: absolute;
 }
@@ -55,7 +56,7 @@ body {
 #myfooter {
 	text-align: left;
 	padding: 0.5em;
-	height: 2em;
+	height: 1.5em;
 	overflow: auto;
 	position: absolute;
 	left:0;
@@ -68,7 +69,7 @@ body {
 	/*height:inherit;*/
 	top: 2em;
 	left: 0px;
-	bottom: 2em;
+	bottom: 1.5em;
 	right: 0px;
 	overflow: auto;
 	font-size: 180%;
@@ -77,12 +78,20 @@ body {
 
 #標題 {
 	float: left;
+	/*
+	position:absolute;
+	top:5px;
+	left:5px;*/
 }
 
 #公告 {
 	float: right;
 	font-size: 0.8em;
+	/*
 	vertical-align: bottom;
+	position: absolute;
+	right:0px;
+	bottom: 0px;*/line-height: 2.5em;
 }
 
 #公告,#公告 a:link,#公告 a:visited,#公告 a:active,#公告 a:hover {
@@ -124,12 +133,10 @@ body {
 
 .tit8 {
 	margin: 0.5em;
-	overflow: auto;
 }
 
 .huainn5 {
 	margin: 0.5em;
-	overflow: auto;
 }
 
 .大字 {
