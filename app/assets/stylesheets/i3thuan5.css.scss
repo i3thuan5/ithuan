@@ -1,32 +1,78 @@
-
-/*encoding: utf-8*/ 
-body{
+/*encoding: utf-8*/
+body {
 	font-size: 100%;
-  	font-family: 'Apple LiSong', Times, 'Times New Roman', '新細明體', PMingLiu, serif !important;
+	font-family: 'Apple LiSong', Times, 'Times New Roman', '新細明體', PMingLiu,
+		serif !important;
+	margin: 0;
+	padding: 0;
+}
+
+#網頁最外圍 {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow:hidden;
+}
+
+#目錄 {
+	width: 200px; /*em?*/
+	height: 100%;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	/*float: right;*/
+	z-index: 0;
+	text-align: center;
 }
 
 #內容 {
+	height: 100%;
 	position: absolute;
-	right: 200px;
 	left: 0px;
 	top: 0px;
-}
-
-#頁首,#目錄 {
-	background-color: rgb(40, 40, 40);
-	color: white;
-}
-
-#目錄 a:link,#目錄 a:visited,#目錄 a:active,#目錄 a:hover {
-	color: white;
-	text-decoration: none;
+	right: 200px;
+	/*display: table;*/
 }
 
 #頁首 {
-	vertical-align: center;
+	/*vertical-align: center;*/
+	/*display: table-row;*/
 	text-align: left;
 	padding: 0.5em;
+	top:0;
+	left:0;
+	right: 0;
+	 height : 2em;
 	overflow: auto;
+	position: absolute;
+}
+
+#myfooter {
+	text-align: left;
+	padding: 0.5em;
+	height: 2em;
+	overflow: auto;
+	position: absolute;
+	left:0;
+	right: 0px;
+	bottom: 0px;
+}
+
+#文章 {
+	position: absolute;
+	/*height:inherit;*/
+	top: 2em;
+	left: 0px;
+	bottom: 2em;
+	right: 0px;
+	overflow: auto;
+	font-size: 180%;
+	/*display: table-row;*/
 }
 
 #標題 {
@@ -44,17 +90,6 @@ body{
 	font-weight: bold;
 }
 
-#目錄 {
-	position: fixed;
-	width: 200px; /*em?*/
-	height: 100%;
-	float: right;
-	right: 0px;
-	top: 0px;
-	z-index: 0;
-	text-align: center;
-}
-
 .上 {
 	position: relative;
 	top: -0.3em;
@@ -63,6 +98,16 @@ body{
 .下 {
 	position: relative;
 	top: +0.3em;
+}
+
+#頁首,#目錄,#myfooter {
+	background-color: rgb(40, 40, 40);
+	color: white;
+}
+
+#目錄 a:link,#目錄 a:visited,#目錄 a:active,#目錄 a:hover {
+	color: white;
+	text-decoration: none;
 }
 
 #目錄 ul li {
@@ -77,16 +122,18 @@ body{
 	unicode-bidi: bidi-override;
 }
 
-#文章{
-	font-size: 180%;
-}
-
-.大字{
-	font-size: 160%;
-}
-
 .tit8 {
 	margin: 0.5em;
+	overflow: auto;
+}
+
+.huainn5 {
+	margin: 0.5em;
+	overflow: auto;
+}
+
+.大字 {
+	font-size: 160%;
 }
 
 .taketori-ttb article {
@@ -169,10 +216,6 @@ body{
 	transform: rotate(0deg);
 }
 
-.huainn5 {
-	margin: 0.5em;
-}
-
 table.gi2im1hak8,table.gi2im1hak8 tr,table.gi2im1hak8 tr td {
 	border: 1px solid black;
 	vertical-align: middle;
@@ -196,13 +239,14 @@ ruby>rp {
 	display: none;
 }
 
-ruby>rt, td.表的音 {
+ruby>rt,td.表的音 {
 	font-size: 0.5em;
 	min-width: 1.5em;
 }
 
-ruby>rb, td.表的字 {
-  	font-family: '教育部標準楷書', '全字庫正楷體', '標楷體', 'BiauKai', 'STKaiti', Kai, serif !important;
+ruby>rb,td.表的字 {
+	font-family: '教育部標準楷書', '全字庫正楷體', '標楷體', 'BiauKai', 'STKaiti', Kai,
+		serif !important;
 	text-align: center;
 	font-size: 1em;
 	min-width: 1.5em;
@@ -212,10 +256,11 @@ ruby>rb, td.表的字 {
 	min-width: 60%;
 }
 
-textarea,select,button,submit{
+textarea,select,button,submit {
 	font-family: inherit;
 	font-size: inherit;
 }
+
 .suet4bing5too5 {
 	border: 1px solid black;
 }
