@@ -155,7 +155,7 @@ Taketori.prototype = {
 						 || typeof (document.createElement('div')).style.MozWritingMode != 'undefined'
 						 || (typeof (document.createElement('div')).style.webkitWritingMode != 'undefined' && (!window.devicePixelRatio || window.devicePixelRatio < 2 || navigator.userAgent.search(/Chrome\/([0-9]+)/) == -1 || parseInt(RegExp.$1) > 30))
 						 || typeof (document.createElement('div')).style.OWritingMode != 'undefined'
-						 ) ? true : false),
+						 ) ? false : false),
 	isMultiColumnReady : ((
 							typeof (document.createElement('div')).style.MozColumnWidth != 'undefined'
 						 || typeof (document.createElement('div')).style.webkitColumnWidth != 'undefined'

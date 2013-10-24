@@ -16,10 +16,11 @@ function bang2tsam7khai1si2()
 	tsoo2han3ji7();
 	if (liu5lam2khi3 == 'Firefox')
 		pian3tit8();
-
 	else if (liu5lam2khi3 == 'Chrome')
 	{
-	} else
+		pian3tit8();
+	}
+	else
 	{
 		瀏覽器警告();
 	}
