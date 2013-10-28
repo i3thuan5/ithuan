@@ -7,30 +7,41 @@
 			<p>
 				目前先以閩南語漳州腔來測試，泉州腔及客家話待功能完整即會放上。<br />
 			</p>
+		<script type="text/javascript">
+			function suan2gi2()
+			{
+				var 語=$('input[name=言語種類]:checked');
+				return tsha5('./自動標音/'+語.val()+'/'+$('#ai3tsha5').val());
+				if(語.val()=='閩南語偏漳腔')
+					return tsha5('./自動標音/'+$('#ai3tsha5').val());
+				else
+					return tsha5('./自動標音/4/'+$('#ai3tsha5').val());
+			}
+		</script>
 			<form
-				onSubmit="javascript:return tsha5('./自動標音/'+$('#ai3tsha5').val())">
+				onSubmit="javascript:return suan2gi2();">
 				<p>
-					<input type="radio" name="言語種類" value="閩南語偏漳腔"
+					<input type="radio" name="言語種類" value="漢語族閩方言閩南語偏漳腔"
 						onClick="javascript:重設文白()" checked>閩南語偏漳腔 <input
-						type="radio" name="言語種類" value="閩南語偏泉腔"
-						onClick="javascript:重設文白()" disabled="disabled">閩南語偏泉腔 <input
-						type="radio" name="言語種類" value="閩南語混合腔"
-						onClick="javascript:重設文白()" disabled="disabled">閩南語混合腔 <br />
-					<input type="radio" name="言語種類" value="客家話四縣腔"
-						onClick="javascript:重設文白()" disabled="disabled">客家話四縣腔 <input
-						type="radio" name="言語種類" value="客家話海陸腔"
-						onClick="javascript:重設文白()" disabled="disabled">客家話海陸腔 <input
-						type="radio" name="言語種類" value="客家話大埔腔"
-						onClick="javascript:重設文白()" disabled="disabled">客家話大埔腔<br />
-					<input type="radio" name="言語種類" value="客家話饒平腔"
-						onClick="javascript:重設文白()" disabled="disabled">客家話饒平腔 <input
-						type="radio" name="言語種類" value="客家話詔安腔"
-						onClick="javascript:重設文白()" disabled="disabled">客家話詔安腔 <input
-						type="radio" name="言語種類" value="國語" onClick="javascript:重設文白()"
-						disabled="disabled">國語<br />
+						type="radio" name="言語種類" value="漢語族閩方言閩南語偏泉腔"
+						onClick="javascript:重設文白()" >閩南語偏泉腔 <input
+						type="radio" name="言語種類" value="漢語族閩方言閩南語混合腔"
+						onClick="javascript:重設文白()" >閩南語混合腔 <br />
+					<input type="radio" name="言語種類" value="漢語族客家方言四縣腔"
+						onClick="javascript:重設文白()">客家話四縣腔 <input
+						type="radio" name="言語種類" value="漢語族客家方言海陸腔"
+						onClick="javascript:重設文白()" >客家話海陸腔 <input
+						type="radio" name="言語種類" value="漢語族客家方言大埔腔"
+						onClick="javascript:重設文白()" >客家話大埔腔<br />
+					<input type="radio" name="言語種類" value="漢語族客家方言饒平腔"
+						onClick="javascript:重設文白()" >客家話饒平腔 <input
+						type="radio" name="言語種類" value="漢語族客家方言詔安腔"
+						onClick="javascript:重設文白()" >客家話詔安腔 <input
+						type="radio" name="言語種類" value="漢語族官話方言北京官話臺灣腔" onClick="javascript:重設文白()"
+						>國語<br />
 				</p>
 				<p>
-					標音選項：<select id="標音選項" onClick="javascript:製標音展示()">
+					標音選項：<select id="標音選項" onClick="javascript:製標音展示()" disable="disable" >
 						<option value="臺羅數字加注音">臺羅數字加注音</option>
 						<option value="臺羅閏號加注音">臺羅閏號加注音</option>
 						<option value="通用加注音">通用加注音</option>
@@ -42,7 +53,7 @@
 				</p>
 				<p>
 					<input type="radio" name="言語層" value="白話音"
-						onClick="javascript:重設文白();製標音展示()" checked>白話音 <input
+						onClick="javascript:重設文白();製標音展示()" disable="disable" checked>白話音 <input
 						type="radio" name="言語層" value="文讀音" onClick="javascript:重設文白();製標音展示()">文讀音<br>
 					<textarea id="ai3tsha5">我有一張椅仔！！</textarea><br/><input
 						type="submit" value="標音">
@@ -87,7 +98,7 @@
 			<div id="稿表"></div>
 			<br />
 		</section>
-		<script type="text/javascript">tsha5('./自動標音/'+$('#ai3tsha5').val());</script>
+		<script type="text/javascript">suan2gi2();</script>
 		<section>
 			文書處理器編輯說明
 			<hr />
