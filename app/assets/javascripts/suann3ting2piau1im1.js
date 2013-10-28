@@ -1,5 +1,7 @@
 var tsha5tioh4 = new Array();
 var suan2 = new Array();
+var 標音言語='';
+var 標音字串='';
 var 臺羅數字 = true;
 var 吳守禮方音 = true;
 var 臺羅閏號 = false;
@@ -48,7 +50,9 @@ tsha5 = function(bang2tsi2) {
 function suan2gi2()
 {
 	var 語=$('input[name=言語種類]:checked');
-	return tsha5('./自動標音/'+語.val()+'/'+$('#ai3tsha5').val());
+	標音言語=語.val();
+	標音字串=$('#ai3tsha5').val();
+	return tsha5('./自動標音/'+標音言語+'/'+標音字串);
 }
 function san2sing1ji7kiat4ko2(ji7kiat4ko2) {
 	var i = +ji7kiat4ko2.id.split('_', 2)[1];
@@ -207,4 +211,10 @@ function 改表內字大細() {
 		break;
 	}
 	製稿表();
+}
+
+function 集選擇()
+{
+	var 選擇結果=suan2.join();
+	alert('/'+標音言語+'/'+標音字串+'/'+選擇結果);
 }
