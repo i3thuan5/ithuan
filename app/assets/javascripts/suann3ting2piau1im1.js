@@ -45,6 +45,11 @@ tsha5 = function(bang2tsi2) {
 	});
 	return false;
 };
+function suan2gi2()
+{
+	var 語=$('input[name=言語種類]:checked');
+	return tsha5('./自動標音/'+語.val()+'/'+$('#ai3tsha5').val());
+}
 function san2sing1ji7kiat4ko2(ji7kiat4ko2) {
 	var i = +ji7kiat4ko2.id.split('_', 2)[1];
 	var str = '';

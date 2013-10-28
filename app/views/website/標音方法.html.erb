@@ -7,17 +7,6 @@
 			<p>
 				目前先以閩南語漳州腔來測試，泉州腔及客家話待功能完整即會放上。<br />
 			</p>
-		<script type="text/javascript">
-			function suan2gi2()
-			{
-				var 語=$('input[name=言語種類]:checked');
-				return tsha5('./自動標音/'+語.val()+'/'+$('#ai3tsha5').val());
-				if(語.val()=='閩南語偏漳腔')
-					return tsha5('./自動標音/'+$('#ai3tsha5').val());
-				else
-					return tsha5('./自動標音/4/'+$('#ai3tsha5').val());
-			}
-		</script>
 			<form
 				onSubmit="javascript:return suan2gi2();">
 				<p>
@@ -53,8 +42,8 @@
 				</p>
 				<p>
 					<input type="radio" name="言語層" value="白話音"
-						onClick="javascript:重設文白();製標音展示()" disable="disable" checked>白話音 <input
-						type="radio" name="言語層" value="文讀音" onClick="javascript:重設文白();製標音展示()">文讀音<br>
+						onClick="javascript:重設文白();製標音展示()" disabled="disabled" checked>白話音 <input
+						type="radio" name="言語層" value="文讀音" onClick="javascript:重設文白();製標音展示()" disabled="disabled">文讀音<br>
 					<textarea id="ai3tsha5">我有一張椅仔！！</textarea><br/><input
 						type="submit" value="標音">
 				</p>
@@ -98,7 +87,7 @@
 			<div id="稿表"></div>
 			<br />
 		</section>
-		<script type="text/javascript">suan2gi2();</script>
+		<script type="text/javascript">重設文白();suan2gi2();</script>
 		<section>
 			文書處理器編輯說明
 			<hr />
