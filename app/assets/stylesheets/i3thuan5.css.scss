@@ -263,11 +263,16 @@ ruby>rb,td.表的字 {
 	min-width: 60%;
 }
 
-textarea,select,button,submit {
+textarea,select,button,submit,input{
 	font-family: inherit;
 	font-size: inherit;
 }
 
 .suet4bing5too5 {
 	border: 1px solid black;
+}
+
+#聲音區{
+	/*visibility: hidden;-*/
+	display: none;
 }
