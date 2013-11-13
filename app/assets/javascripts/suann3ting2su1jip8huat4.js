@@ -6,7 +6,7 @@ function tsit8khai1si2() {
 	ket4ko2 = document.getElementById('ket4ko2');
 	oo1 = '■';
 	beh8 = '□';
-	ket4ko2.focus();
+	//ket4ko2.focus();
 	ki3lok8huan7ui5();
 	su1jip8.focus();
 	kiam2tsa1();
