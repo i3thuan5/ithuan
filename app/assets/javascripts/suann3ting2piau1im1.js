@@ -51,7 +51,7 @@ function suan2gi2()
 {
 	var 語=$('input[name=言語種類]:checked');
 	標音言語=語.val();
-	標音字串=$('#ai3tsha5').val();
+	標音字串=encodeURIComponent($('#ai3tsha5').val());
 	return tsha5('./自動標音/'+標音言語+'/'+標音字串);
 }
 function san2sing1ji7kiat4ko2(ji7kiat4ko2) {
