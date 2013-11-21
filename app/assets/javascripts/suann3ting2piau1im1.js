@@ -1,5 +1,6 @@
 var tsha5tioh4 = new Array();
 var suan2 = new Array();
+var 標音方法='';
 var 標音言語='';
 var 標音字串='';
 var 臺羅數字 = true;
@@ -47,12 +48,13 @@ tsha5 = function(bang2tsi2) {
 	});
 	return false;
 };
-function suan2gi2()
+function suan2gi2(方法)
 {
+	標音方法=方法;
 	var 語=$('input[name=言語種類]:checked');
 	標音言語=語.val();
 	標音字串=encodeURIComponent($('#ai3tsha5').val());
-	return tsha5('./自動標音/'+標音言語+'/'+標音字串);
+	return tsha5('./'+標音方法+'/'+標音言語+'/'+標音字串);
 }
 function san2sing1ji7kiat4ko2(ji7kiat4ko2) {
 	var i = +ji7kiat4ko2.id.split('_', 2)[1];
@@ -215,8 +217,20 @@ function 改表內字大細() {
 
 function 集選擇()
 {
+	if(標音言語=='漢語族官話方言北京官話臺灣腔')
+	{
+		alert('國語語音尚未完成，敬請期待～～');
+		return;
+	}
 	var 選擇結果=suan2.join();
-	網址='./語音合成/'+標音言語+'/'+選擇結果+'/'+標音字串+'.wav';
+	var 合成功能;
+	if(標音方法=='自動標音')
+		合成功能='語音合成';
+	else if (標音方法=='翻譯國語')
+		合成功能='翻譯合成';
+	else
+		合成功能='語音合成';
+	網址='./'+合成功能+'/'+標音言語+'/'+選擇結果+'/'+標音字串+'.wav';
 	聲音物件=$('#聲音放送');
 	聲音物件.attr('src',網址);
 	聲音物件.get(0).play();

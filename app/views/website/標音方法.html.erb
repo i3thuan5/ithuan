@@ -10,7 +10,7 @@
 			</p>
 			--->
 			<form
-				onSubmit="javascript:return suan2gi2();">
+				onSubmit="javascript:return false;">
 				<p>
 					<input type="radio" name="言語種類" value="漢語族閩方言閩南語偏漳腔"
 						onClick="javascript:重設文白()" checked>閩南語偏漳腔 <input
@@ -46,8 +46,9 @@
 					<input type="radio" name="言語層" value="白話音"
 						onClick="javascript:重設文白();製標音展示()" checked>白話音 <input
 						type="radio" name="言語層" value="文讀音" onClick="javascript:重設文白();製標音展示()">文讀音<br>
-					<textarea id="ai3tsha5">我有一張椅仔！！</textarea><br/><input
-						type="submit" value="標音">
+					<textarea id="ai3tsha5">我有一張椅仔！！</textarea><br/>先<input
+						type="button" value="翻譯" onClick="javascript:suan2gi2('翻譯國語')">或<input
+						type="button" value="標音" onClick="javascript:suan2gi2('自動標音');">再
 				<input type="button" value="發音" onClick="javascript:集選擇()">
 				<span id='聲音區'>
 				<audio controls='controls' id='聲音放送'>
@@ -95,7 +96,7 @@
 			<div id="稿表"></div>
 			<br />
 		</section>
-		<script type="text/javascript">重設文白();suan2gi2();</script>
+		<script type="text/javascript">重設文白();suan2gi2('自動標音');</script>
 		<section>
 			文書處理器編輯說明
 			<hr />
