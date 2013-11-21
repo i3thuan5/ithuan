@@ -33,55 +33,60 @@
 			<div id="logo"></div>
 		<nav id="topNav">
 			<ul>
-				<li><a href="#AAAAA">關於意傳</a>
+				<li><%= link_to "關於意傳", :action=>"關於意傳" %>
 					<table>
 					<tr><td class="subcolor1"><a href="#AAAAA">關於意傳</a></td></tr>
 					<tr><td class="subcolor2"><a href="#AAAAA">標音成果</a></td></tr>
 					<tr><td class="subcolor3"><a href="#AAAAA">特此聲明</a></td></tr>
 					</table>
 				</li>
-				<li><a href="#AAAAA">橫式範例</a>
+				
+				<li><%= link_to "服務資訊", :action=>"產品資訊" %>
 					<table>
 					<tr><td class="subcolor1"><a href="#AAAAA">範例一</a></td></tr>
 					<tr><td class="subcolor2"><a href="#AAAAA">範例二</a></td></tr>
 					</table>
 				</li>
-				<li><a href="#AAAAA">線上標音</a>
+
+				<li><%= link_to "橫式範例", :action=>"橫式範例" %>
+					<table>
+					<tr><td class="subcolor1"><a href="#AAAAA">範例一</a></td></tr>
+					<tr><td class="subcolor2"><a href="#AAAAA">範例二</a></td></tr>
+					</table>
+				</li>
+				
+				<li><%= link_to "注音介紹", :action=>"注音介紹" %>
+					<table>
+					<tr><td class="subcolor1"><a href="#AAAAA">範例一</a></td></tr>
+					<tr><td class="subcolor2"><a href="#AAAAA">範例二</a></td></tr>
+					</table>
+				</li>
+				
+				<li><%= link_to "標音方法", :action=>"標音方法" %>
 					<table>
 					<tr><td class="subcolor1"><a href="#AAAAA">標音發音</a></td></tr>
 					<tr><td class="subcolor2"><a href="#AAAAA">標音的輸出方法</a></td></tr>							
 					</table>
 				</li>				
-				<li><a href="#AAAAA">線上組字</a>
+				<li><%= link_to "線上組字", :action=>"線上組字" %>
 					<table>
 					<tr><td class="subcolor1"><a href="#AAAAA">組字</a></td>
 					<tr><td class="subcolor2"><a href="#AAAAA">組字的輸出方法</a></td></tr>
 					</table>
 				</li>				
-				<li><a href="#AAAAA">閩客故事</a>
+				<li><%= link_to "閩客故事", :action=>"閩客歷史" %>
 					<table>
 					<tr><td class="subcolor1"><a href="#AAAAA">閩客有漢字嗎？</a></td></tr>
 					<tr><td class="subcolor2"><a href="#AAAAA">閩客聲韻學</a></td></tr>
 					<tr><td class="subcolor3"><a href="#AAAAA">閩客注音</a></td></tr>
 					</table>
 				</li>				
-				<li class="last"><a href="#AAAAA">聯絡我們</a></li>
+				<li><%= link_to "相關連結", :action=>"相關連結" %></li>
+				<li class="last"><%= link_to "聯絡我們", :action=>"聯絡我們" %></li>
 			</ul>
 		</nav>
-			<ul>
-				<li><%= link_to "關於意傳", :action=>"關於意傳" %></li>
-				<li><%= link_to "服務資訊", :action=>"產品資訊" %></li>
-				<li><%= link_to "橫式範例", :action=>"橫式範例" %></li>
-				<li><%= link_to "注音介紹", :action=>"注音介紹" %></li>
-				<li><%= link_to "標音方法", :action=>"標音方法" %></li>
-				<li><%= link_to "線上組字", :action=>"線上組字" %></li>
-				<li><%= link_to "閩客歷史", :action=>"閩客歷史" %></li>
-				<li><%= link_to "相關連結", :action=>"相關連結" %></li>
-				<li><%= link_to "聯絡我們", :action=>"聯絡我們" %></li>
-			</ul> 
 		</div>		
 	</div>
-	<script type="text/javascript">bang2tsam7khai1si2()</script>
 	<script>
 		(function($){
 			
@@ -107,5 +112,6 @@
 			});
 		})(jQuery);
 	</script>
+	<script type="text/javascript">bang2tsam7khai1si2();</script>
 </body>
 </html>
