@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>意傳文化科技　－　傳達你的心意</title>
-
+<!--
 	<%= stylesheet_link_tag "taketori" %>
 	<%= stylesheet_link_tag "i3thuan5" %>
 	<%= stylesheet_link_tag "han3ji7tsoo2kian7" %>
@@ -18,13 +18,17 @@
 	<%= javascript_include_tag "suann3ting2piau1im1" %>
 	<%= javascript_include_tag "liu5lam2khi7kiam2tsa1" %>
 	<%= javascript_include_tag "taketori" %>
+	 -->
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
 
 </head>
 
 <body>
 	<div id="網頁最外圍">
-		<div id="內容">
-			<div id="頁首">
+		<div id="leftWrapper">
+			<div id="banner">
 				<div id="標題">
 					<b>意傳文化科技</b> － 閩南語、客家話教材系統開發
 				</div>
@@ -33,16 +37,51 @@
 					若熟悉南島語（原住民語），歡迎與我們聯絡！！
 				</div>
 			</div>
-			<div id="文章">
+			<div id="mainContainer">
 				<%= yield :layout %>
 			</div>
-			<div id="myfooter">感謝參觀，歡迎推廣。本站各項功能近期內皆會公開程式碼供大家使用</div>
+			<div id="footer">感謝參觀，歡迎推廣。本站各項功能近期內皆會公開程式碼供大家使用</div>
 			<address></address>
 		</div>
-		<div id="目錄">
-			<h2>
-				<font class="上">意</font><font class="下">傳</font>
-			</h2>
+		<div id="rightWrapper">
+			<div id="logo"></div>
+		<nav id="topNav">
+			<ul>
+				<li><a href="#AAAAA">關於意傳</a>
+					<table>
+					<tr><td class="subcolor1"><a href="#AAAAA">關於意傳</a></td></tr>
+					<tr><td class="subcolor2"><a href="#AAAAA">標音成果</a></td></tr>
+					<tr><td class="subcolor3"><a href="#AAAAA">特此聲明</a></td></tr>
+					</table>
+				</li>
+				<li><a href="#AAAAA">橫式範例</a>
+					<table>
+					<tr><td class="subcolor1"><a href="#AAAAA">範例一</a></td></tr>
+					<tr><td class="subcolor2"><a href="#AAAAA">範例二</a></td></tr>
+					</table>
+				</li>
+				<li><a href="#AAAAA">線上標音</a>
+					<table>
+					<tr><td class="subcolor1"><a href="#AAAAA">標音發音</a></td></tr>
+					<tr><td class="subcolor2"><a href="#AAAAA">標音的輸出方法</a></td></tr>							
+					</table>
+				</li>				
+				<li><a href="#AAAAA">線上組字</a>
+					<table>
+					<tr><td class="subcolor1"><a href="#AAAAA">組字</a></td>
+					<tr><td class="subcolor2"><a href="#AAAAA">組字的輸出方法</a></td></tr>
+					</table>
+				</li>				
+				<li><a href="#AAAAA">閩客故事</a>
+					<table>
+					<tr><td class="subcolor1"><a href="#AAAAA">閩客有漢字嗎？</a></td></tr>
+					<tr><td class="subcolor2"><a href="#AAAAA">閩客聲韻學</a></td></tr>
+					<tr><td class="subcolor3"><a href="#AAAAA">閩客注音</a></td></tr>
+					</table>
+				</li>				
+				<li class="last"><a href="#AAAAA">聯絡我們</a></li>
+			</ul>
+		</nav>
 			<ul>
 				<li><%= link_to "關於意傳", :action=>"關於意傳" %></li>
 				<li><%= link_to "服務資訊", :action=>"產品資訊" %></li>
@@ -57,5 +96,30 @@
 		</div>		
 	</div>
 	<script type="text/javascript">bang2tsam7khai1si2()</script>
+	<script>
+		(function($){
+			
+			//cache nav
+			var nav = $("#topNav");
+			
+			//add indicator and hovers to submenu parents
+			nav.find("li").each(function() {
+				if ($(this).find("table").length > 0) {
+					//$("<span>").text("^").appendTo($(this).children(":first"));
+
+					//show subnav on hover
+					$(this).mouseenter(function() {
+						$(this).find("table").stop(true, true).slideDown();
+					});
+					
+					//hide submenus on exittt
+					$(this).mouseleave(function() {
+						$(this).find("table").stop(true, true).css('display','none');
+						//slideUp()
+					});
+				}
+			});
+		})(jQuery);
+	</script>
 </body>
 </html>
