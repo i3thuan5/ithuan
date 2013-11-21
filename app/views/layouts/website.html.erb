@@ -4,21 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>意傳文化科技　－　傳達你的心意</title>
-<!--
-	<%= stylesheet_link_tag "taketori" %>
-	<%= stylesheet_link_tag "i3thuan5" %>
-	<%= stylesheet_link_tag "han3ji7tsoo2kian7" %>
-	<%= stylesheet_link_tag "suann3ting2su1jip8huat4" %>
-
-	<%= javascript_include_tag "jquery-1.10.2.min" %>
-	<%= javascript_include_tag "jquery.cookie" %>
-	<%= javascript_include_tag "i3thuan5" %>
-	<%= javascript_include_tag "han3ji7tsoo2kian7" %>
-	<%= javascript_include_tag "suann3ting2su1jip8huat4" %>
-	<%= javascript_include_tag "suann3ting2piau1im1" %>
-	<%= javascript_include_tag "liu5lam2khi7kiam2tsa1" %>
-	<%= javascript_include_tag "taketori" %>
-	 -->
+	
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -109,7 +95,7 @@
 
 					//show subnav on hover
 					$(this).mouseenter(function() {
-						$(this).find("table").stop(true, true).slideDown();
+						$(this).find("table").stop(true, true).toggle("slideDown");
 					});
 					
 					//hide submenus on exittt
