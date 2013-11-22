@@ -7,28 +7,39 @@
 		
 		以下是造字工具雛形，介面仍會調整，說明會儘快放上來的！！
 		<p>
+		<table><tr><td>
 		<div id="too5tsip8">
 			<img id="hian2si7too5it4" /> <img id="hian2si7too5ji7" />
 		</div>
-		<br />
+		</td><td>
 		<form onsubmit="javascript:sang3tsut4su1jip8();return false;">
 			<input type="text" id="su1jip8" onChange="" onkeyup="kiam2tsa1()"
 				onkeydown="kiam2tsa1()" onPaste="kiam2tsa1()" oncut="kiam2tsa1()"
 				oninput="kiam2tsa1()"> <input id="sang3tsut4liu2a2"
-				type="submit" value="全送出" /> <br /> <input class="tsoo2ji7liu2a2"
-				type="button" value="⿰"
-				onclick="javascript:addTextonInputSelection(su1jip8,this.value)" />
-			<input class="tsoo2ji7liu2a2" type="button" value="⿱"
-				onclick="javascript:addTextonInputSelection(su1jip8,this.value)" />
-			<input class="tsoo2ji7liu2a2" type="button" value="⿴"
-				onclick="javascript:addTextonInputSelection(su1jip8,this.value)" />
-			<input class="tsoo2ji7liu2a2" type="button" value="⿴辶"
-				onclick="javascript:addTextonInputSelection(su1jip8,this.value)" />
-			<input class="tsoo2ji7liu2a2" type="button" value="⿴囗"
-				onclick="javascript:addTextonInputSelection(su1jip8,this.value)" />
-			<input class="tsoo2ji7liu2a2" type="button" value="⿴辶⿴宀⿱珤⿰隹⿰貝招"
-				onclick="javascript:addTextonInputSelection(su1jip8,this.value)" /><br />
+				type="submit" value="全送出" /> 
+				</td></tr></table>
+		
+				<br />
 				
+		<!--<table><tr><td>-->
+		<table class="鍵盤"><tr><td>
+			一般符號：
+				<% 陣列=[["⿰","⿱","⿴"],
+				["⿰","⿰糸","⿰","⿰爿"],
+				["⿰","⿰","⿱"],
+				["⿴囗","⿴辶","⿴气","⿴宀"],
+					["⿰因","⿱任心","⿴囗或"],
+					["⿱金⿰金金","⿱⿰火火⿰火火"],
+					["⿴辶⿴宀⿱珤⿰隹⿰貝招"],
+					] %>
+				<% 陣列.each do |逝| %>
+				<% 逝.each do |字| %>
+			<input class="tsoo2ji7liu2a2" type="button" value="<%= 字 %>"
+				onclick="javascript:addTextonInputSelection(su1jip8,this.value)" />
+					<% end %>
+					<br/>
+				<% end %>
+				</td><td>
 		注音符號：
 			<input class="tsoo2ji7liu2a2" type="button" value="⿳"
 				onclick="javascript:addTextonInputSelection(su1jip8,this.value)" /><br/>
@@ -45,11 +56,6 @@
 					["ˊ","ˇ","ˋ","˙","˪","˫","^","㆐"],
 					["ㆴ","ㆵ","ㆶ","ㆷ"]
 					] %>
-
-
-
-
-
 				<% 陣列.each do |逝| %>
 				<% 逝.each do |字| %>
 			<input class="tsoo2ji7liu2a2" type="button" value="<%= 字 %>"
@@ -57,25 +63,31 @@
 					<% end %>
 					<br/>
 				<% end %>
-			
+			</td><td>
 			異寫字：<input class="tsoo2ji7liu2a2" type="button" value="⿻"
 				onclick="javascript:addTextonInputSelection(su1jip8,this.value)" />
+				<br/>
 				<input class="tsoo2ji7liu2a2" type="button" value="⿻真甲"
 				onclick="javascript:addTextonInputSelection(su1jip8,this.value)" />
 				<input class="tsoo2ji7liu2a2" type="button" value="⿻真乙"
 				onclick="javascript:addTextonInputSelection(su1jip8,this.value)" />
 		</form>
+		</td></tr></table>
+		<!--</td></tr></table>-->
+		<br />
+
+				
 		<div id="ket4ko2" contenteditable="true" onfocus="ki3lok8huan7ui5();"
 			onkeyup="ki3lok8huan7ui5();" onmouseout="ki3lok8huan7ui5();"
 			onmouseover="ki3lok8huan7ui5();"></div>
-		<br />
 		<form>
 			<input class="ket4ko2liu2a2" type="button" value="產生組字"
 				onclick="javascript:tshue7tsoo2ji7(ket4ko2)" /> <input
 				class="ket4ko2liu2a2" type="button" value="變轉組字式"
 				onclick="javascript:pian3tng2tsoo2ji7sik4()" />
 		</form>
-
+		
+		
 		</p>
  
 			<script type="text/javascript">
