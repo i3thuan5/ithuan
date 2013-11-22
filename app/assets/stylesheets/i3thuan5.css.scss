@@ -75,13 +75,18 @@ body {
 		position:relative;
 		float:right;
 	}
-	#logo {
-		width:45%;
+	div #logobox {
+		width:50%;
 		height:20%;
+		margin:10px auto 30px auto;
+		}
+	a#logo {
+		/*width:50%;
+		height:40%;*/
 		margin:0 auto;	
-		background-image:url(/assets/pan2_hing5/ituanLOGO_1.png);
+		/*background-image:url(/assets/pan2_hing5/ituanLOGO_1.png);
 		background-size:100% 100%;
-		background-repeat:no-repeat;
+		background-repeat:no-repeat;*/
 	}
 	#topNav {
 		width:50%;
@@ -112,14 +117,19 @@ body {
 	#topNav ul li.last:hover {border-bottom-left-radius:20px;}
 	
 	#topNav ul li table {
+		display:none;
 		margin:0;
 		padding:0;
 		position:absolute;
 		top:0;
-		right:100%; /*貼著爸爸的左側＝遠離爸爸右側*/
-		display:none;
+		right:100%; /*貼著爸爸的左側＝遠離爸爸右側*/ 
 	}
-	#topNav ul li td a {width:140px; padding:3px; line-height:2em;}
+	#topNav ul li td a {
+		width:140px; 
+		padding:3px; 
+		line-height:2em; 
+		white-space:nowrap;/*保證子標題不換行*/
+	}
 	#topNav ul li td.subcolor1 {background-color:#333;}
 	#topNav ul li td.subcolor2 {background-color:#555;}
 	#topNav ul li td.subcolor3 {background-color:#777;}
