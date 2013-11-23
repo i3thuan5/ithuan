@@ -131,10 +131,7 @@ body {
 		line-height:2em; 
 		white-space:nowrap;/*保證子標題不換行*/
 	}
-	#topNav ul li table.trlongtext a {
-		width:250px; 
-		
-	}
+	
 	#topNav ul li td.subcolor1 {background-color:#333;}
 	#topNav ul li td.subcolor2 {background-color:#555;}
 	#topNav ul li td.subcolor3 {background-color:#777;}
@@ -143,25 +140,21 @@ body {
 	#topNav ul li, #topNav ul li>table {font-size:20px;}
 	#topNav ul li:hover {
 		background-color: #999; /*fallback*/
-		/*background-image:-webkit-linear-gradient(top, #999, #222);
-		background-image:-moz-linear-gradient(top, #999, #222);*/
 	}
 	#topNav ul li td:hover{
 		background-color: rgba(0,0,0,1); /*fallback*/
-		/*background-image:-webkit-linear-gradient(top, #999, #222);
-		background-image:-moz-linear-gradient(top, #999, #222);*/
 	}
 	
 	#topNav a {display: inline-block; width:100%; text-decoration:none; }
 	
 	#topNav ul li>a:link {color:black; }
 	#topNav ul li>a:visited {color:black; }
-	#topNav ul li>a:hover {color:white;} 
+	#topNav ul li>a:hover {color:yellow;} 
 	#topNav ul li>a:active {color:black; }
 	
 	#topNav ul li td>a:link {color:white;}
 	#topNav ul li td>a:visited {color:white;}
-	#topNav ul li td>a:hover {color:white;}
+	#topNav ul li td>a:hover {color:yellow;}
 	#topNav ul li td>a:active{color:white;}
 	
 	
