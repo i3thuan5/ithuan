@@ -40,50 +40,49 @@
 			<ul>
 				<li><%= link_to "關於意傳", :action=>"關於意傳" %>
 					<table>
-					<tr><td class="subcolor1"><a href="#AAAAA">關於意傳</a></td></tr>
-					<tr><td class="subcolor2"><a href="#AAAAA">標音成果</a></td></tr>
-					<tr><td class="subcolor3"><a href="#AAAAA">特此聲明</a></td></tr>
+					<tr><td class="subcolor1"><%= link_to "關於意傳", :action=>"關於意傳" %></td></tr>
+					<tr><td class="subcolor2"><%= link_to "特此聲明", :action=>"關於意傳" %></td></tr>
 					</table>
 				</li>
 				
 				<li><%= link_to "服務資訊", :action=>"產品資訊" %>
 					<table>
-					<tr><td class="subcolor1"><a href="#AAAAA">範例一</a></td></tr>
-					<tr><td class="subcolor2"><a href="#AAAAA">範例二</a></td></tr>
+					<tr><td class="subcolor1"><%= link_to "服務資訊", :action=>"產品資訊" %></td></tr>
 					</table>
 				</li>
-
-				<li><%= link_to "橫式範例", :action=>"橫式範例" %>
-					<table>
-					<tr><td class="subcolor1"><a href="#AAAAA">範例一</a></td></tr>
-					<tr><td class="subcolor2"><a href="#AAAAA">範例二</a></td></tr>
-					</table>
-				</li>
-				
+			
 				<li><%= link_to "注音介紹", :action=>"注音介紹" %>
-					<table>
-					<tr><td class="subcolor1"><a href="#AAAAA">範例一</a></td></tr>
-					<tr><td class="subcolor2"><a href="#AAAAA">範例二</a></td></tr>
+					<table class="trlongtext">
+					<tr><td class="subcolor1"><%= link_to "臺灣閩南語羅馬拼音方案", :action=>"注音介紹" %></td></tr>
+					<tr><td class="subcolor2"><%= link_to "臺灣客家語羅馬拼音方案", :action=>"注音介紹" %></td></tr>
+					<tr><td class="subcolor3"><%= link_to "吳守禮方音改良式", :action=>"注音介紹" %></td></tr>
 					</table>
 				</li>
-				
-				<li><%= link_to "標音方法", :action=>"標音方法" %>
+				<li><%= link_to "標音範例", :action=>"橫式範例" %>
 					<table>
-					<tr><td class="subcolor1"><a href="#AAAAA">標音發音</a></td></tr>
-					<tr><td class="subcolor2"><a href="#AAAAA">標音的輸出方法</a></td></tr>							
+					<tr><td class="subcolor1"><%= link_to "身騎白馬", :action=>"橫式範例" %></td></tr>
+					<tr><td class="subcolor2"><%= link_to "登鸛雀樓", :action=>"橫式範例" %></td></tr>
+					<tr><td class="subcolor3"><%= link_to "點仔膠", :action=>"橫式範例" %></td></tr>
+					<tr><td class="subcolor4"><%= link_to "客家本色", :action=>"橫式範例" %></td></tr>
+					</table>
+				</li>
+				<li><%= link_to "線上標音", :action=>"標音方法" %>
+					<table>
+					<tr><td class="subcolor1"><%= link_to "線上標音", :action=>"標音方法" %></td></tr>
+					<tr><td class="subcolor2"><%= link_to "使用說明", :action=>"標音方法" %></td></tr>							
 					</table>
 				</li>				
 				<li><%= link_to "線上組字", :action=>"線上組字" %>
 					<table>
-					<tr><td class="subcolor1"><a href="#AAAAA">組字</a></td>
-					<tr><td class="subcolor2"><a href="#AAAAA">組字的輸出方法</a></td></tr>
+					<tr><td class="subcolor1"><%= link_to "線上組字", :action=>"線上組字" %></td></tr>
+					<tr><td class="subcolor2"><%= link_to "使用說明", :action=>"線上組字" %></td></tr>
 					</table>
 				</li>				
 				<li><%= link_to "閩客故事", :action=>"閩客歷史" %>
 					<table>
-					<tr><td class="subcolor1"><a href="#AAAAA">閩客有漢字嗎？</a></td></tr>
-					<tr><td class="subcolor2"><a href="#AAAAA">閩客聲韻學</a></td></tr>
-					<tr><td class="subcolor3"><a href="#AAAAA">閩客注音</a></td></tr>
+					<tr><td class="subcolor1"><%= link_to "閩客有漢字嗎？", :action=>"閩客歷史" %></td></tr>
+					<tr><td class="subcolor2"><%= link_to "閩客聲韻學", :action=>"閩客歷史" %></td></tr>
+					<tr><td class="subcolor3"><%= link_to "閩客注音", :action=>"閩客歷史" %></td></tr>
 					</table>
 				</li>				
 				<li><%= link_to "相關連結", :action=>"相關連結" %></li>

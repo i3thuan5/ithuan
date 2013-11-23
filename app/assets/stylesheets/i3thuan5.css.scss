@@ -131,6 +131,10 @@ body {
 		line-height:2em; 
 		white-space:nowrap;/*保證子標題不換行*/
 	}
+	#topNav ul li table.trlongtext a {
+		width:250px; 
+		
+	}
 	#topNav ul li td.subcolor1 {background-color:#333;}
 	#topNav ul li td.subcolor2 {background-color:#555;}
 	#topNav ul li td.subcolor3 {background-color:#777;}
