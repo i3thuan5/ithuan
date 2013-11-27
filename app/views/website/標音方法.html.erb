@@ -1,8 +1,8 @@
 <%# encoding: utf-8 %>
 <div class="huainn5">
 	<article>
-		<section>
-			標音方法
+		<section id="線上標音">
+			線上標音
 			<hr />
 			<!---
 			<p>
@@ -97,7 +97,7 @@
 			<br />
 		</section>
 		<script type="text/javascript">重設文白();suan2gi2('自動標音');</script>
-		<section>
+		<section id="使用說明">
 			文書處理器編輯說明
 			<hr />
 			<p>
@@ -157,6 +157,16 @@
 				Microsoft Office」，且需再另外新檔為doc檔編輯。<br /> <%=
 				image_tag('piau1im1/12.jpg', :class => "suet4bing5too5") %><br />
 			</p>
+			<br/>
+		</section>
+		<section id="程式下載">
+		程式下載<hr/>
+		<p>
+			臺灣言語工具採用SocialCalc設計的通用公共授權（Common Public Attribution License, CPAL)開放原始碼。<br/>
+		</p>
+		<p>
+			臺灣言語工具使用python3撰寫，postgreSQL做資料庫。如有需要，請參考<%= link_to 'github專案','https://github.com/sih4sing5hong5/tai5_uan5_gian5_gi2_kang1_ku7' %>內部說明佮<%= link_to '下載資料庫','/言語資料庫/臺灣言語工具1021127.sql.bz2' %>。
+		</p>
 		</section>
 	</article>
 </div>

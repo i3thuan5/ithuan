@@ -66,16 +66,18 @@
 					<tr><td class="subcolor4"><%= link_to "客家本色", :action=>"橫式範例" %></td></tr>
 					</table>
 				</li>
-				<li><%= link_to "線上標音", :action=>"標音方法" %>
+				<li><%= link_to "言語工具", :action=>"標音方法" %>
 					<table>
-					<tr><td class="subcolor1"><%= link_to "線上標音", :action=>"標音方法" %></td></tr>
-					<tr><td class="subcolor2"><%= link_to "使用說明", :action=>"標音方法" %></td></tr>							
+					<tr><td class="subcolor1"><%= link_to "線上標音", :action=>"標音方法",:anchor=>'線上標音' %></td></tr>
+					<tr><td class="subcolor2"><%= link_to "使用說明", :action=>"標音方法",:anchor=>'使用說明'  %></td></tr>
+					<tr><td class="subcolor2"><%= link_to "程式下載", :action=>"標音方法",:anchor=>'程式下載'  %></td></tr>							
 					</table>
 				</li>				
-				<li><%= link_to "線上組字", :action=>"線上組字" %>
+				<li><%= link_to "漢字組建", :action=>"線上組字" %>
 					<table>
-					<tr><td class="subcolor1"><%= link_to "線上組字", :action=>"線上組字" %></td></tr>
-					<tr><td class="subcolor2"><%= link_to "使用說明", :action=>"線上組字" %></td></tr>
+					<tr><td class="subcolor1"><%= link_to "線上組字", :action=>"線上組字",:anchor=>'線上組字' %></td></tr>
+					<tr><td class="subcolor2"><%= link_to "使用說明", :action=>"線上組字",:anchor=>'使用說明' %></td></tr>
+					<tr><td class="subcolor2"><%= link_to "程式下載", :action=>"線上組字",:anchor=>'程式下載' %></td></tr>
 					</table>
 				</li>				
 				<li><%= link_to "閩客故事", :action=>"閩客歷史" %>
