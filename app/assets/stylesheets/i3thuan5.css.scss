@@ -2,6 +2,8 @@
 * {
 	margin:0;
 	padding:0;
+	font-size: 100%;
+    font: inherit;
 }
 
 body {
@@ -21,8 +23,9 @@ body {
 	background-image:url(/assets/pan2_hing5/hakkadots_1960x1460.png);
 	background-size:cover;
 	font-size: 100%;
-	font-family: 'Apple LiSong', Times, 'Times New Roman', '新細明體', PMingLiu,
-		serif !important;
+	/*font-family: 'Apple LiSong', Times, 'Times New Roman', '新細明體', PMingLiu,
+		serif !important;*/
+	font-family:Comic Sans MS,arial,helvetica,sans-serif;
 	overflow:hidden;
 }
 /*-----------------------------*/	
