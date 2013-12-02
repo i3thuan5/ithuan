@@ -33,7 +33,7 @@ body {
 		width:83%;
 		height:100%;
 		margin:0;
-		padding-left:5px;
+		/*padding-left:5px;*/
 		position:relative;
 		top:0;
 		bottom:0;
@@ -71,6 +71,8 @@ body {
 	div#footer {
 		clear:both; /*assure not to float upward*/
 		opacity:1;
+		margin-left:20px;
+		margin-top:10px;
 	}
 	/*-----------------------------*/	
 	#rightWrapper {
@@ -79,7 +81,7 @@ body {
 		position:relative;
 		float:right;
 	}
-	div #logobox {
+	div#logobox {
 		width:50%;
 		height:20%;
 		margin:10px auto 30px auto;
@@ -219,12 +221,9 @@ body {
 	/*display: table-row;*/
 }
 
-#標題 {
+div#標題 {
 	float: left;
-	/*
-	position:absolute;
-	top:5px;
-	left:5px;*/
+	margin:20px 0px 0px 40px;
 }
 
 #公告 {
