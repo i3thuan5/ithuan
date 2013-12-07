@@ -94,6 +94,8 @@ body {
 		background-size:100% 100%;
 		background-repeat:no-repeat;*/
 	}
+	/*清除超連結圖片的虛線外框*/
+	a, a#logo>img{outline:none;}
 	#topNav {
 		width:50%;
 		height:450px;
