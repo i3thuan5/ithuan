@@ -87,18 +87,16 @@ body {
 		margin:10px auto 30px auto;
 		}
 	a#logo {
-		/*width:50%;
-		height:40%;*/
 		margin:0 auto;	
 		/*background-image:url(/assets/pan2_hing5/ituanLOGO_1.png);
 		background-size:100% 100%;
 		background-repeat:no-repeat;*/
 	}
 	/*清除超連結圖片的虛線外框*/
-	a, a#logo>img{outline:none;}
+	a{outline:none;}
 	#topNav {
 		width:50%;
-		height:450px;
+		height:360px;
 		margin:0 auto;
 		padding:0;
 		background-color:white;
@@ -112,17 +110,16 @@ body {
 		padding:0;
 		list-style-type:none;
 	} 
-	#topNav ul li>a { /* YOU HAVE LINK BUT i*/ 
+	#topNav ul li>a {  
 		text-align:center; 
 	    line-height:2em;
 	}
 	
 	#topNav ul li,#topNav a{ 
-		height:50px;
+		height:40px;
 		position:relative; 
 	}
-	#topNav ul li.last {height:50px;}
-	#topNav ul li.last:hover {border-bottom-left-radius:20px;}
+	#topNav ul li.last {height:40px;border-bottom-left-radius:20px;}
 	
 	#topNav ul li table {
 		display:none;
