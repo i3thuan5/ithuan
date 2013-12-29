@@ -32,20 +32,6 @@
 						>國語<br />
 				</p>
 				<p>
-					標音選項：<select id="標音選項" onClick="javascript:製標音展示()" disable="disable" >
-						<option value="臺羅數字加注音">臺羅數字加注音</option>
-						<option value="臺羅閏號加注音">臺羅閏號加注音</option>
-						<option value="通用加注音">通用加注音</option>
-						<option value="注音符號">注音符號</option>
-						<option value="臺羅數字調">臺羅數字調</option>
-						<option value="臺羅閏號調">臺羅閏號調</option>
-						<option value="通用拼音">通用拼音</option>
-					</select>
-				</p>
-				<p>
-					<input type="radio" name="言語層" value="白話音"
-						onClick="javascript:重設文白();製標音展示()" checked>白話音 <input
-						type="radio" name="言語層" value="文讀音" onClick="javascript:重設文白();製標音展示()">文讀音<br>
 					<textarea id="ai3tsha5">我有一張椅仔！！</textarea><br/>先<input
 						type="button" value="翻譯" onClick="javascript:suan2gi2('翻譯國語')">或<input
 						type="button" value="標音" onClick="javascript:suan2gi2('自動標音');">再
@@ -60,6 +46,20 @@
 			<p>
 				<span id="tsha5e5kiat4ko2"></span>
 			</p>
+				<p>
+					<input type="radio" name="言語層" value="白話音"
+						onClick="javascript:重設文白();製標音展示()" checked>白話音 <input
+						type="radio" name="言語層" value="文讀音" onClick="javascript:重設文白();製標音展示()">文讀音
+					<select id="標音選項" onClick="javascript:製標音展示()" disable="disable" >
+						<option value="臺羅數字加注音">臺羅數字加注音</option>
+						<option value="臺羅閏號加注音">臺羅閏號加注音</option>
+						<option value="通用加注音">通用加注音</option>
+						<option value="注音符號">注音符號</option>
+						<option value="臺羅數字調">臺羅數字調</option>
+						<option value="臺羅閏號調">臺羅閏號調</option>
+						<option value="通用拼音">通用拼音</option>
+					</select>
+				</p>
 			<ul>
 				<li>註：若有字音不符期待，可點選該字，就會變換標音！！</li>
 			</ul>
