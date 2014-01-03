@@ -26,7 +26,7 @@ tsha5 = function(bang2tsi2) {
 		type : 'GET',
 		data : {},
 		error : function(xhr) {
-			$('#tsha5e5kiat4ko2').html('發生錯誤！！');
+			$('#tsha5e5kiat4ko2').html('系統更新中，請稍候再試');
 			$('#tsha5e5kiat4ko2').fadeIn();
 		},
 		success : function(response) {
