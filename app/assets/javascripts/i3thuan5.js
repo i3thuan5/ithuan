@@ -31,7 +31,7 @@ function 瀏覽器警告()
 {
 	if ($.cookie("看過警告") == null)
 	{
-		alert("您知道您的瀏覽器不支援新技術嗎！？會嚴重影響本站品質，請使用Firefox或Chrome！");
+		alert("您的瀏覽器無法支援新技術，請使用Firefox或Chrome。");
 	}
 	var date = new Date();
 	var minutes = 30;
