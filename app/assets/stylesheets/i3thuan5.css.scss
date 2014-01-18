@@ -21,82 +21,58 @@ body {
 	height: 100%;
 	min-width:600px;
 	min-height:28em;
-	/*background-image:url(/assets/pan2_hing5/hakkadots_1960x1460.png);*/
 	background-image:url(/assets/pan2_hing5/hakka3003.png),
 					-moz-radial-gradient(top,#FFE6D5,#FFCCAA);
+	background-image:url(/assets/pan2_hing5/hakka3003.png),
+					-webkit-radial-gradient(top,#FFE6D5,#FFCCAA);
+	background-image:url(/assets/pan2_hing5/hakka3003.png),
+					-o-radial-gradient(top,#FFE6D5,#FFCCAA);
 	background-repeat:no-repeat;
 	background-size:100% 30%, cover;
 	background-position:center bottom,center;
 	font-size: 100%;
-	/*font-family: 'Apple LiSong', Times, 'Times New Roman', '新細明體', PMingLiu,
-		serif !important;*/
 	font-family:Comic Sans MS,arial,helvetica,sans-serif;
 	overflow:hidden;
 }
 /*-----------------------------*/	
 	#leftWrapper {
-		width:83%;
-		height:100%;
+		float:left;
 		position:relative;
 		top:0px;
 		left:35px; /*distance from webpage left side*/
-		bottom:0;
-		float:left;
-	}
-	#banner {
-		width:100%;
-		height:10%;
-		margin:0;
-		padding:0;
-		position:relative;
-		top:0;
-		left:0px;
+		width:83%;
+		height:100%;
 	}
 	#mainContainer {
+		position:relative;
 		width:100%;
 		height:100%;
-		margin:0;
-		padding:0;
-		position:relative;
-		background-color:rgba(255,255,255,0.5);
-		/*box-shadow: 5px 5px 10px black;*//*box-shadow: x y blur spread color inset;*/
-		-webkit-border-radius:25px;
 		overflow-y:auto;
 		font-size:150%;
+		background-color:rgba(255,255,255,0.5);
 	}
-	.text {
-		color:blue;
-		line-height:1em;	
-	}
-	div#footer {
-		clear:both; /*assure not to float upward*/
-		opacity:1;
-		margin-left:20px;
-		margin-top:10px;
-	}
+	
 	/*-----------------------------*/	
 	#rightWrapper {
+		float:right;
+		position:relative;
 		width:15%;
 		height:100%;
-		position:relative;
-		float:right;
 	}
 	div#logobox {
 		width:50%;
 		height:20%;
 		margin:10px auto 0px auto;
-		}
-	a#logo {
-		margin:0 auto;	
-		/*background-image:url(/assets/pan2_hing5/ituanLOGO_1.png);
-		background-size:100% 100%;
-		background-repeat:no-repeat;*/
 	}
-	/*清除超連結圖片的虛線外框*/
-	a{outline:none;}
-	
-	div#標題, div#副標題{font-size:18px; width:100%; text-align:center;}
-	div#副標題{font-size:18px; margin:5px 0; 
+	a#logo {
+		margin:0 auto;
+		outline:none;/*清除超連結圖片的虛線外框*/	
+	}
+	div#副標題{
+		font-size:18px; 
+		width:100%; 
+		margin:5px 0;
+		text-align:center;
 		color:#A60000;
 		text-shadow:0px 1px 5px white;
 	}
@@ -105,7 +81,6 @@ body {
 		width:70%;
 		height:360px;
 		margin:0 auto;
-		padding:0;
 		background-color:white;
 		background-color:rgba(249,249,249,0.92);
 		box-shadow: 5px 5px 10px black;
