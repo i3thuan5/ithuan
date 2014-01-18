@@ -9,26 +9,14 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-
 </head>
 
 <body>
 	<div id="網頁最外圍">
 		<div id="leftWrapper">
-			<!--<div id="banner">
-				 <div id="標題">
-					<b>意傳文化科技</b> － 閩南語、客家話教材系統開發
-				</div>-->
-				<!--  <div id="公告">
-					<!-- 本站各項功能近期內皆會公開程式碼供大家使用－敬請期待<br/>-->
-					<!--  若熟悉南島語（原住民語），歡迎與我們聯絡！！
-				</div>
-			</div>-->
 			<div id="mainContainer">
 				<%= yield :layout %>
 			</div>
-			<!-- <div id="footer">感謝參觀，歡迎推廣。本站各項功能近期內皆會公開程式碼供大家使用</div>
-			<address></address> -->
 		</div>
 		
 		<div id="rightWrapper">
@@ -37,8 +25,8 @@
 					<img alt="LOGO" src="/assets/pan2_hing5/ituanLOGO_1.png" border="0" width="150px"></img>
 				</a>
 			</div>
-			<div  id="副標題">閩南語、客語教材系統</div>
-		
+			<div  id="副標題" style="font-family:'AR PL UKai TW';">閩南語、客語教材系統</div>
+			
 			<nav id="topNav">
 			<ul>
 				<li><%= link_to "關於意傳", :action=>"關於意傳" %>
@@ -94,9 +82,11 @@
 				<li class="last"><%= link_to "聯絡我們", :action=>"聯絡我們" %></li>
 			</ul>
 			</nav>
+			<span class="unicodeRange">我最喜歡薛</span>
 		</div>		
 	</div>
 	<script>
+	
 		(function($){
 			
 			//cache nav
@@ -119,8 +109,15 @@
 					});
 				}
 			});
+			
 		})(jQuery);
 	</script>
-	<script type="text/javascript">bang2tsam7khai1si2();</script>
+	<script type="text/javascript">bang2tsam7khai1si2();
+	$(function()
+			{
+				$('#mainContainer').jScrollPane({showArrows: true});
+	});
+	</script>
+	
 </body>
 </html>
