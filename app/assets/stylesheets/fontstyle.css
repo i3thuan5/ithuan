@@ -50,3 +50,6 @@
 	font-family: Helvetica, Arial, 'LiHei Pro', 'PMingLiu', sans-serif;
 }
 .fontDigit{font-family:Helvetica,Arial/*windows, os x preferred*/;}
+
+/*-----文字大小----*/
+.subtext_Title {font-size:20px;}
