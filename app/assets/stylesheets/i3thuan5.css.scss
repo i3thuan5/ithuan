@@ -85,7 +85,7 @@ body {
 	
 	#topNav {
 		width:70%;
-		height:360px;
+		height:300px;
 		margin:0 auto;
 		background-color:white;
 		background-color:rgba(249,249,249,0.92);
@@ -104,10 +104,10 @@ body {
 	}
 	
 	#topNav ul li,#topNav a{ 
-		height:40px;
+		height:50px;
 		position:relative; 
 	}
-	#topNav ul li.last {height:40px;border-bottom-left-radius:20px;}
+	#topNav ul li.last {border-bottom-left-radius:20px;}
 	
 	#topNav ul li table {
 		display:none;
@@ -116,9 +116,11 @@ body {
 		position:absolute;
 		top:0;
 		right:100%; /*貼著爸爸的左側＝遠離爸爸右側*/ 
+		border-collapse:collapse;
 	}
 	#topNav ul li td a {
 		width:140px; 
+		height:40px;
 		padding:3px; 
 		line-height:2em; 
 		white-space:nowrap;/*保證子標題不換行*/
