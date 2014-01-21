@@ -6,7 +6,6 @@
     font: inherit;
     font-family:"LiHei Pro",
 				"Heiti TC"/*os x*/,
-				"SimHei",
 				"Microsoft JhengHei"/*windows*/,
 				"WenQuanYi Micro Hei Mono",
 				"WenQuanYi Zen Hei Sharp"/*linux*/;
@@ -263,6 +262,8 @@ div#標題 {
 }
 
 /******************舊版型結束*****************/
+ol {margin:0 0 0 40px;}
+
 .tit8 {
 	margin: 0.5em;
 }
