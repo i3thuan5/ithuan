@@ -280,9 +280,13 @@ section + section {margin-top:1.5em;}
 div.tit8 section + section {margin-top:1em;}
 div.huainn5 section + section {margin:2em auto 0;}
 
-/*---使用說明---*/
+/*---標音說明---*/
 nav span a {text-decoration:none;}
 nav span a:active,nav span a:hover {text-decoration:underline;}
+/*---組字說明---*/
+span.wordoo:before {content:'⿴';}
+span.wordpq:before {content:'⿰';}
+span.wordB:before {content:'⿱';}
 
 .大字 {
 	font-size: 160%;
