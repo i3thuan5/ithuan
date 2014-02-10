@@ -56,7 +56,9 @@ body {
 		font-size:150%;
 		background-color:rgba(255,255,255,0.5);
 	}
-	section.font22px + section.font22px {margin-top:1em;}
+	
+			  section.font22px + section.font22px {margin-top:1.5em;}
+	div.tit8 section.font22px + section.font22px {margin-top:1em;}
 	
 	/*-----------------------------*/	
 	#rightWrapper {
@@ -271,6 +273,10 @@ ol {margin:0 0 0 40px;}
 
 .huainn5 {
 	margin: 0.5em;
+}
+.huainn5 article section{
+	width:80%;
+	margin:0.5em auto;	
 }
 
 .大字 {
