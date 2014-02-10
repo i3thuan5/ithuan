@@ -1,59 +1,63 @@
 <%# encoding: utf-8 %>
 <div class="huainn5">
 <article>
-	<section style="font-size:24px;">
-		<p>標音工具提供標示注音、國語翻譯、語音合成三個功能，前兩項功能根據不同需求選擇使用，做完就可使用語音合成。</p>
+
+	<section class="font22px">
+		<header>標音工具說明<hr/></header>
+		<p>標音工具提供標示注音、國語翻譯、語音合成三個功能，前兩項功能根據不同需求選擇使用，做完就可使用語音合成。</p>		
 		
 		<table style="border:1px solid black;width:80%;margin:0 auto;">
 		<tr>
 			<td>狀況一.如何用閩客語寫這一句國語？
-			<td>答：國語翻譯
+			<td>答：<strong class="blue">國語翻譯</strong>
 		</tr>
 		<tr>
 			<td>狀況二.如何寫這一句閩客語的注音？
-			<td>答：您輸入的方言句子 -> 標示注音  
+			<td>答：您輸入的方言句子 -> <strong class="red">標示注音</strong>  
 			
 		</tr>
 		<tr>
 			<td>狀況三. 如何用閩客語唸這一句國語？
-			<td>答：國語翻譯  -> 語音合成（閩客語）
+			<td>答：<strong class="blue">國語翻譯</strong>  -> <strong class="green">語音合成</strong>
 		</tr>
 		</table>
 		<br/>
 		
-		<p>國語翻譯</p>
-		<ol>
-		<li>左方的文字區輸入欲標示的國語句子
-		<li>指定右方上面的翻譯腔調，例如：閩南泉腔（閩南語的泉州腔）
-		<li>按下「翻譯」
-		<li>右方下面顯示翻譯後的句子
-		</ol>
-		
-		<p>標示注音</p>
-		<p>輸入漢字以外，也可以輸入臺灣閩客語羅馬拼音、從《組字工具》複製您的組字式或是這三種混合使用。</p>
-		<ol>
-		<li>左方的文字區輸入欲標示的國語句子
-		<li>左右兩邊選擇一樣的腔調，例如：左右都選擇閩南泉腔。
-		<li>按下「標音」
-		<li>右方下面顯示標音後的句子
-		</ol>
+		<ul>
+		<li><strong class="blue">國語翻譯</strong>
+			<ol>
+			<li>左方的文字區輸入國語句子
+			<li>指定右方上面的翻譯腔調，例如：閩南泉腔（閩南語的泉州腔）
+			<li>按下「翻譯」
+			<li>右方下面顯示翻譯句
+			</ol>
+		</li>
 			
-		<p>語音合成</p>
-		<ol>
-		<li>做完翻譯或標音後 （必須先完成其一）
-		<li>按下喇叭圖示
-		<li>幾秒後，可聽見發音
-		</ol>
-		
+		<li><strong class="red">標示注音</strong>
+			<ol>
+			<li>左方的文字區輸入方言句子，也可以混合輸入臺灣閩客語羅馬拼音、<%= link_to "組字工具", :action=>"線上組字" %>組字式
+			<li>左右兩邊選擇一樣的腔調，例如：左右都選擇閩南泉腔
+			<li>按下「標音」
+			<li>右方下面顯示標音句
+			</ol>
+		</li>
+
+		<li><strong class="green">語音合成</strong>
+			<ol>
+			<li>做完翻譯或標音後 <strong class="green">※必須先完成其一</strong>
+			<li>按下喇叭圖示
+			<li>幾秒後，可聽見發音
+			</ol>
+		</li>
+		</ul>	
 	</section>
 	
-	<p style="text-align:center;">○●○●</p>
+	<!-- <p style="text-align:center;">○●○●</p> -->
 	
-	<section id="使用說明"  style="font-size:24px;">
-	<p>下載標音檔</p>
-	<hr />
+	<section  class="font22px" id="使用說明" >
+		<header>下載標音檔<hr /></header>
 		<p>
-			標音結果可於複製到微軟Ｗord文書處理器上編輯。若有注音符號或是罕用字等圖片，因為Word本身限制，需先由LibreOffice將製表結果存至odt檔（若量小可以使用複製的），再由微軟Word打開，詳細流程如下：<br />
+			標音結果可複製到微軟Ｗord文書處理器上編輯。若有注音符號或是罕用字等圖片，因為Word本身限制，需先由LibreOffice將製表結果存至odt檔（若量小可以使用複製的），再由微軟Word打開，詳細流程如下：<br />
 		</p>
 		<p>
 			0.請先下載並安裝<%= link_to("LibreOffice",
@@ -109,7 +113,7 @@
 			Microsoft Office」，且需再另外新檔為doc檔編輯。<br /> <%=
 			image_tag('piau1im1/12.jpg', :class => "suet4bing5too5") %><br />
 		</p>
-		<br/>
+		<div style="width:10px;height:200px;"></div>
 	</section> 
 </article>
 </div>
