@@ -1,8 +1,12 @@
 <%# encoding: utf-8 %>
 <div class="huainn5">
 <article>
-
-	<section class="font22px">
+	<section class="font22px" id="標音工具使用說明">
+		<nav>
+			<span><a href="#標音工具使用說明">▼標音工具說明</a></span>
+			<span><a href="#下載標音或翻譯結果">▼下載標音結果/翻譯結果</a></span>
+		</nav><br/>
+		
 		<header>標音工具說明<hr/></header>
 		<p>標音工具提供標示注音、國語翻譯、語音合成三個功能，前兩項功能根據不同需求選擇使用，做完就可使用語音合成。</p>		
 		
@@ -53,19 +57,17 @@
 	</section>
 	
 	
-	<section  class="font22px" id="使用說明" >
+	<section  class="font22px" id="下載標音或翻譯結果">
 		<header>下載標音結果/翻譯結果<hr /></header>
 		<p>
-			完成翻譯或是標音的句子可以用在任何文字編輯器。如果句子無法正常顯示，請先由LibreOffice將標音結果存至odt檔。<br />
-			詳細流程如下：<br />
+			完成翻譯或是標音的句子可以用在任何文字編輯器。如果句子無法正常顯示，請先由LibreOffice將標音結果存至odt檔。詳細流程如下：<br />
 		</p>
 		
 		<ol>
 		<li>
-			請先下載並安裝<%= link_to("LibreOffice",
-			"http://zh-tw.libreoffice.org/download/", :target => "_blank")
-			%>，選最新版的（第一個）即可。<br /> <%= image_tag('piau1im1/00.jpg', :class =>
-			"suet4bing5too5") %><br />
+			請先下載並安裝<%= link_to("LibreOffice","http://zh-tw.libreoffice.org/download/", :target => "_blank")%>
+			，選最新版的（第一個）即可。<br /><br /> 
+			<%= image_tag('piau1im1/00.jpg', :class =>"suet4bing5too5") %><br /><br />
 		</li>
 		<!-- <p>
 			1.先選擇需要的腔，標音方法，並輸入要標音的字。<br /> <%= image_tag('piau1im1/01.jpg',
@@ -91,7 +93,7 @@
 			"suet4bing5too5") %><br />
 		</p> -->
 		<li>
-			開啟LibreOffice <br /> <!-- <%=
+			開啟LibreOffice <br /><br /> <!-- <%=
 			image_tag('piau1im1/07.jpg', :class => "suet4bing5too5") %><br /> -->
 		</li>
 		<!-- <li>
@@ -99,17 +101,16 @@
 			image_tag('piau1im1/08.jpg', :class => "suet4bing5too5") %><br />
 		</li>-->
 		<li>
-			複製網頁上的標音結果（漢字大小比例預設為24），複製到LibreOffice <br /> <%= image_tag('piau1im1/09.jpg', :class =>
-			"suet4bing5too5") %><br />
+			複製網頁上的標音結果（漢字大小比例預設為24），複製到LibreOffice <br /><br/>
+			<%= image_tag('piau1im1/09.jpg', :class =>"suet4bing5too5") %><br /><br />
 		</li>
 		<li>
-			選擇odt檔案格式<br /> <%= image_tag('piau1im1/10.jpg', :class =>
-			"suet4bing5too5") %><br />
+			選擇odt檔案格式<br /><br /> 
+			<%= image_tag('piau1im1/10.jpg', :class =>"suet4bing5too5") %><br /><br />
 		</li>
 		<li>
-			儲存odt檔後，就成功下載標音結果了！請用您喜好的文書處理器開啟此odt檔。<br /> 
-			※微軟 Word 2003之前的版本需再裝<a href="http://blog.ilc.edu.tw/blog/trackback.php?id=103211">「Sun ODF Plugin for Microsoft Office」</a>才能開odt檔<br />
-			<%=image_tag('piau1im1/11.jpg', :class => "suet4bing5too5") %><br />
+			儲存odt檔後，就成功下載標音結果了！請用您喜好的文書處理器開啟此odt檔。※微軟 Word 2003之前的版本需再裝<a href="http://blog.ilc.edu.tw/blog/trackback.php?id=103211">「Sun ODF Plugin for Microsoft Office」</a>才能開odt檔
+			<br /><br /><%=image_tag('piau1im1/11.jpg', :class => "suet4bing5too5") %><br /><br />
 			<!-- <%=image_tag('piau1im1/12.jpg', :class => "suet4bing5too5") %><br /> -->
 		</li>
 		</ol>

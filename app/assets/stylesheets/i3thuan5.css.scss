@@ -56,10 +56,7 @@ body {
 		font-size:150%;
 		background-color:rgba(255,255,255,0.5);
 	}
-	
-			  section.font22px + section.font22px {margin-top:1.5em;}
-	div.tit8 section.font22px + section.font22px {margin-top:1em;}
-	
+		
 	/*-----------------------------*/	
 	#rightWrapper {
 		float:right;
@@ -278,6 +275,14 @@ ol {margin:0 0 0 40px;}
 	width:80%;
 	margin:0.5em auto;	
 }
+
+section + section {margin-top:1.5em;}
+div.tit8 section + section {margin-top:1em;}
+div.huainn5 section + section {margin:2em auto 0;}
+
+/*---使用說明---*/
+nav span a {text-decoration:none;}
+nav span a:active,nav span a:hover {text-decoration:underline;}
 
 .大字 {
 	font-size: 160%;
