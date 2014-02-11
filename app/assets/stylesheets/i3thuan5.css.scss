@@ -287,6 +287,11 @@ nav span a:active,nav span a:hover {text-decoration:underline;}
 span.wordoo:before {content:'⿴';}
 span.wordpq:before {content:'⿰';}
 span.wordB:before {content:'⿱';}
+/*---閩客故事---*/
+section table ul {margin-left:-2px;}
+section table ul li + li{margin:2em 0;}
+section table ul li p {color:blue;}
+blockqoute {width:50px;}
 
 .大字 {
 	font-size: 160%;
