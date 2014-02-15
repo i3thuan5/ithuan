@@ -292,6 +292,11 @@ section table ul {margin-left:-2px;}
 section table ul li + li{margin:2em 0;}
 section table ul li p {color:blue;}
 blockqoute {width:50px;}
+section#閩客語有文字 table{text-align:left;border-collapse:collapse;}
+section#閩客語有文字 table th + th,
+section#閩客語有文字 table td + td
+{border-left:15px solid rgba(0,0,0,0);}
+
 
 .大字 {
 	font-size: 160%;
