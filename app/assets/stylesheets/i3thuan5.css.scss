@@ -292,10 +292,15 @@ section table ul {margin-left:-2px;}
 section table ul li + li{margin:2em 0;}
 section table ul li p {color:blue;}
 blockqoute {width:50px;}
-section#閩客語有文字 table{text-align:left;border-collapse:collapse;}
-section#閩客語有文字 table th + th,
-section#閩客語有文字 table td + td
+
+/*---閩客語的演變---*/
+/*article#NanHakkaStory p {display:block;width:500px;margin-right:10px;}*/
+/*article#NanHakkaStory {width:500px;word-wrap:break-word;word-break:break-all; }*/ 
+article#NanHakkaStory table{text-align:left;border-collapse:collapse; margin-left:20px;}
+article#NanHakkaStory table th + th,
+article#NanHakkaStory table td + td
 {border-left:15px solid rgba(0,0,0,0);}
+
 
 
 .大字 {
