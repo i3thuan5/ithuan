@@ -96,22 +96,26 @@ body {
 		padding:0;
 		list-style-type:none;
 	} 
-	#topNav ul li>a {  
+	#topNav ul li.last {border-bottom-left-radius:20px;}
+	
+	#topNav ul li {  
 		text-align:center; 
 	    line-height:2.2em;
+	    -webkit-user-select:none;
+	    -moz-user-select:none;
+	    user-select:none;
 	}
 	
 	#topNav ul li,#topNav a{ 
+		position:relative;
 		height:50px;
-		position:relative; 
 	}
-	#topNav ul li.last {border-bottom-left-radius:20px;}
 	
 	#topNav ul li table {
+		position:absolute;
 		display:none;
 		margin:0;
 		padding:0;
-		position:absolute;
 		top:0;
 		right:100%; /*貼著爸爸的左側＝遠離爸爸右側*/ 
 		border-collapse:collapse;
@@ -124,10 +128,10 @@ body {
 		white-space:nowrap;/*保證子標題不換行*/
 	}
 	
-	#topNav ul li td.subcolor1 {background-color:#333;}
-	#topNav ul li td.subcolor2 {background-color:#555;}
-	#topNav ul li td.subcolor3 {background-color:#777;}
-	#topNav ul li td.subcolor4 {background-color:#999;}
+	#topNav ul li td:nth-child(odd) {background-color:#333;}
+	#topNav ul li td:nth-child(even) {background-color:#777;}
+	/*#topNav ul li td.subcolor3 {background-color:#777;}
+	#topNav ul li td.subcolor4 {background-color:#999;}*/
 	
 	#topNav ul li, #topNav ul li>table {font-size:20px;}
 	#topNav ul li:hover {
@@ -141,7 +145,7 @@ body {
 	
 	#topNav ul li>a:link {color:black; }
 	#topNav ul li>a:visited {color:black; }
-	#topNav ul li>a:hover {color:yellow;} 
+	#topNav ul li:hover, #topNav ul li>a:hover {color:yellow;} 
 	#topNav ul li>a:active {color:black; }
 	
 	#topNav ul li td>a:link {color:white;}
