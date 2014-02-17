@@ -128,14 +128,12 @@ body {
 		white-space:nowrap;/*保證子標題不換行*/
 	}
 	
-	#topNav ul li td:nth-child(odd) {background-color:#333;}
-	#topNav ul li td:nth-child(even) {background-color:#777;}
-	/*#topNav ul li td.subcolor3 {background-color:#777;}
-	#topNav ul li td.subcolor4 {background-color:#999;}*/
+	#topNav ul li tr:nth-child(odd) {background-color:#555;}
+	#topNav ul li tr:nth-child(even) {background-color:#777;}
 	
 	#topNav ul li, #topNav ul li>table {font-size:20px;}
 	#topNav ul li:hover {
-		background-color: #999; /*fallback*/
+		background-color: #4ab0f8; /*fallback*/
 	}
 	#topNav ul li td:hover{
 		background-color: rgba(0,0,0,1); /*fallback*/
