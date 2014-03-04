@@ -1,3 +1,7 @@
+<% content_for:title do %>標音說明｜意傳文化科技 <% end %>
+<% content_for:description do %>幫您作出國語翻閩南語、國語翻客語、閩南語標音、客語標音。可複製翻譯和標音結果，還可以聽見發音。<% end %>
+
+
 <%# encoding: utf-8 %>
 <div class="huainn5">
 <article>
@@ -8,27 +12,27 @@
 		</nav><br/>
 		
 		<header>標音工具說明<hr/></header>
-		<p>標音工具提供標示注音、國語翻譯、語音合成三個功能，前兩項功能根據不同需求選擇使用，做完就可使用語音合成。</p>		
+		<p>標音工具提供標音、翻譯、發音三個功能，先依照不同需求選擇使用前兩項，做完就可使用發音。</p>		
 		
 		<table style="border:1px solid black;width:80%;margin:0 auto;">
 		<tr>
 			<td>狀況一.如何用閩客語寫這一句國語？
-			<td>答：<strong class="blue">國語翻譯</strong>
+			<td>答：<strong class="blue">翻譯</strong>
 		</tr>
 		<tr>
 			<td>狀況二.如何寫這一句閩客語的注音？
-			<td>答：您輸入的方言句子 -> <strong class="red">標示注音</strong>  
+			<td>答：您輸入的方言句子 -> <strong class="red">標音</strong>  
 			
 		</tr>
 		<tr>
 			<td>狀況三. 如何用閩客語唸這一句國語？
-			<td>答：<strong class="blue">國語翻譯</strong>  -> <strong class="green">語音合成</strong>
+			<td>答：<strong class="blue">翻譯</strong>  -> <strong class="green">發音</strong>
 		</tr>
 		</table>
 		<br/>
 		
 		<ul>
-		<li><strong class="blue">國語翻譯</strong>
+		<li><strong class="blue">翻譯</strong>
 			<ol>
 			<li>左方的文字區輸入國語句子
 			<li>指定右方上面的翻譯腔調，例如：閩南泉腔（閩南語的泉州腔）
@@ -37,7 +41,7 @@
 			</ol>
 		</li>
 			
-		<li><strong class="red">標示注音</strong>
+		<li><strong class="red">標音</strong>
 			<ol>
 			<li>左方的文字區輸入方言句子，也可以混合輸入臺灣閩客語羅馬拼音、<%= link_to "組字工具", :action=>"線上組字" %>組字式
 			<li>左右兩邊選擇一樣的腔調，例如：左右都選擇閩南泉腔
@@ -46,7 +50,7 @@
 			</ol>
 		</li>
 
-		<li><strong class="green">語音合成</strong>
+		<li><strong class="green">發音</strong>
 			<ol>
 			<li>做完翻譯或標音後 <strong class="green">※必須先完成其一</strong>
 			<li>按下喇叭圖示
