@@ -282,6 +282,33 @@ section + section {margin-top:1.5em;}
 div.tit8 section + section {margin-top:1em;}
 div.huainn5 section + section {margin:2em auto 0;}
 
+/*---關於意傳---*/
+ul#意傳工具小簡歷{
+		list-style-type:none;
+		text-align:center;
+		width:700px;
+		margin:20% auto 0px;
+	}
+	ul#意傳工具小簡歷 li{
+		float:left;
+		display:block;
+		height:auto;
+		margin:0 10px;
+		width:150px;
+	}
+	ul#意傳工具小簡歷 li img{width:4em;height:4em;}
+	ul#意傳工具小簡歷 li h2 {
+		color:#FF0D00;/*#00BFFF;*/
+		font-weight:bold;
+		font-size:2em;/*30px*/
+	}
+	ul#意傳工具小簡歷 li p{
+		text-align:left;
+		font-size:1em;
+		display:block;		
+		margin:0 auto;
+		width:150px;
+	}
 /*---標音說明---*/
 nav span a {text-decoration:none;}
 nav span a:active,nav span a:hover {text-decoration:underline;}
