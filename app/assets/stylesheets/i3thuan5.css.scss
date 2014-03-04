@@ -283,19 +283,25 @@ div.tit8 section + section {margin-top:1em;}
 div.huainn5 section + section {margin:2em auto 0;}
 
 /*---關於意傳---*/
+div.關於意傳{font-size:62.5%;margin-top:40px;}
+div.關於意傳 header{font-size:1em;width:600px;margin:0 auto;}
 ul#意傳工具小簡歷{
 		list-style-type:none;
+		display:block;
 		text-align:center;
 		width:700px;
-		margin:20% auto 0px;
+		min-height:250px;
+		margin:50px auto 0px;
+		
 	}
 	ul#意傳工具小簡歷 li{
 		float:left;
-		display:block;
+		/*display:block;
 		height:auto;
 		margin:0 10px;
-		width:150px;
+		width:150px;*/
 	}
+	ul#意傳工具小簡歷 li:first-child{margin-left:35px;}
 	ul#意傳工具小簡歷 li img{width:4em;height:4em;}
 	ul#意傳工具小簡歷 li h2 {
 		color:#FF0D00;/*#00BFFF;*/
@@ -309,6 +315,17 @@ ul#意傳工具小簡歷{
 		margin:0 auto;
 		width:150px;
 	}
+	
+	div.關於意傳 div#特此聲明{
+		position:relative;
+		bottom:0;
+		width:600px;
+		height:300px;
+		font-size:0.7em;
+		margin:0 auto;
+		color:rgba(65%,25%,0%,0.8);
+	}
+	div.關於意傳 div#特此聲明 h6 {text-align:center;}
 /*---標音說明---*/
 nav span a {text-decoration:none;}
 nav span a:active,nav span a:hover {text-decoration:underline;}
