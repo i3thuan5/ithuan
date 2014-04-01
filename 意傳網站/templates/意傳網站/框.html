@@ -3,11 +3,12 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="description" content="<%= content_for?(:description) ? yield(:description) : "意傳文化科技開發免費的閩南語，客語的語言工具" %>">
-	<title><%= content_for?(:title) ? yield(:title) : "意傳文化科技" %></title>
-    
-	<!-- <title>意傳文化科技　－　閩南語、客語的系統開發</title> -->
+	<meta name="description" content="{% block 網頁描述 %}意傳文化科技開發免費的閩南語，客語的語言工具{% endblock %}">
+	<title>{% block 標題 %}意傳文化科技{% endblock %}</title>
+	{% block extrahead %}{% endblock %}
+	{% load staticfiles %}
 	<!--<%= favicon_link_tag 'favicon_i3thuan5.png' ,:type => 'image/png' %>-->
+	<link rel="stylesheet" type="text/css" href="{% static '意傳網站/版面.css' %}" />
 	<link rel="shortcut icon" href="/assets/favicon_i3thuan5_pink.png" type='image/png' >
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
