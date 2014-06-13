@@ -4,11 +4,11 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="description" content="{% block 網頁描述 %}意傳文化科技開發免費的閩南語，客語的語言工具{% endblock %}">
 	<title>{% block 標題 %}意傳文化科技{% endblock %}</title>
-	{% block extrahead %}{% endblock %}
 	{% load staticfiles %}
 	<!--<%= favicon_link_tag 'favicon_i3thuan5.png' ,:type => 'image/png' %>-->
-	<link rel="stylesheet" type="text/css" href="{% static '意傳網站/版面.css' %}" />
-	<link rel="shortcut icon" href="/assets/favicon_i3thuan5_pink.png" type='image/png' >
+	<link rel="stylesheet" type="text/css" href="{% static '意傳網站/stylesheets/i3thuan5.css' %}" />
+	<link rel="shortcut icon" href="{% static '意傳網站/images/favicon_i3thuan5_pink.png' %}" type='image/png' >
+	{% block extrahead %}{% endblock %}
   
 </head>
 
