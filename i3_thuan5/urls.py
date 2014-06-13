@@ -8,5 +8,6 @@ urlpatterns = patterns('',
     # url(r'^$', 'i3_thuan5.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^admin/', include(admin.site.urls)),
+#     url(r'^admin/', include(admin.site.urls)),
+    url(r'^', include('意傳網站.網址')),
 )
