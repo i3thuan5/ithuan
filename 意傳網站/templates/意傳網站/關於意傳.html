@@ -7,16 +7,17 @@
 	意傳文化科技開發免費的閩南語，客語的語言工具，目前主要有標示注音，國語翻譯，發音合成，讓學習母語以及研究母語的人可以事半功倍。若有需要母語教材客製化，歡迎聯絡我們。
 {% endblock %}
 
+{% load staticfiles %}
 {% block 內容 %}
 <div class="huainn5 關於意傳">
 <article>
 	<section class="font22px">
 		<header>意傳文化科技開發免費的閩客言語工具，讓學習方言和方言研究都能事半功倍。若有需要母語教材客製化，歡迎聯絡我們。</header>
-		<ul id="意傳工具小簡歷" class="clearfix">
-			<li><img src="/assets/siu2iah8/標音.png"/><h2>標音</h2><p>將所有閩客文字標上音標，方便母語學習</p></li>
-			<li><img src="/assets/siu2iah8/翻譯.png"/><h2>翻譯</h2><p>幫您翻譯出閩客語文稿</p></li>
-			<li><img src="/assets/siu2iah8/發音.png"/><h2>發音</h2><p>立即聽見翻譯或標音結果</p></li>
-			<li><img src="/assets/siu2iah8/組字.png"/><h2>組字</h2><p>輕鬆組出您要的閩客語文字</p></li>				
+		<ul id="意傳工具小簡歷" class="clearfix">		
+			<li><img src="{% static '意傳網站/images/siu2iah8/標音.png' %}"/><h2>標音</h2><p>將所有閩客文字標上音標，方便母語學習</p></li>
+			<li><img src="{% static '意傳網站/images/siu2iah8/翻譯.png' %}"/><h2>翻譯</h2><p>幫您翻譯出閩客語文稿</p></li>
+			<li><img src="{% static '意傳網站/images/siu2iah8/發音.png' %}"/><h2>發音</h2><p>立即聽見翻譯或標音結果</p></li>
+			<li><img src="{% static '意傳網站/images/siu2iah8/組字.png' %}"/><h2>組字</h2><p>輕鬆組出您要的閩客語文字</p></li>				
 		</ul>	
 	</section>
 	<div id="特此聲明">
