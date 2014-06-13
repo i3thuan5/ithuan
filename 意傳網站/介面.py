@@ -20,3 +20,30 @@ class 橫式範例(TemplateView):
 
 class 聯絡我們(TemplateView):
     template_name = '意傳網站/聯絡我們.html'
+
+class 悲慘世界(TemplateView):
+    template_name = '意傳網站/悲慘世界.html'
+class 標音方法(TemplateView):
+    template_name = '意傳網站/標音方法.html'
+class 標音程式下載(TemplateView):
+    template_name = '意傳網站/標音程式下載.html'
+class 標音說明(TemplateView):
+    template_name = '意傳網站/標音說明.html'
+class 注音介紹(TemplateView):
+    template_name = '意傳網站/注音介紹.html'
+class 特此聲明(TemplateView):
+    template_name = '意傳網站/特此聲明.html'
+class 產品資訊(TemplateView):
+    template_name = '意傳網站/產品資訊.html'
+class 相關連結(TemplateView):
+    template_name = '意傳網站/相關連結.html'
+class 組字程式下載(TemplateView):
+    template_name = '意傳網站/組字程式下載.html'
+class 組字說明(TemplateView):
+    template_name = '意傳網站/組字說明.html'
+class 線上組字(TemplateView):
+    template_name = '意傳網站/線上組字.html'
+class 閩客故事(TemplateView):
+    template_name = '意傳網站/閩客故事.html'
+class 閩客語的演變(TemplateView):
+    template_name = '意傳網站/閩客語的演變.html'
