@@ -1,5 +1,14 @@
-<% content_for :title do %>聯絡我們<% end %>
-<% content_for :description do %>意傳文化科技開發免費的閩南語，客語的語言工具，目前主要有標示注音，國語翻譯，發音合成，讓學習母語以及研究母語的人可以事半功倍。若您需要母語教材客製化歡迎聯絡我們。<% end %>
+{% extends "意傳網站/框.html" %}
+
+{% block 標題 %}
+	聯絡我們
+{% endblock %}
+
+{% block 網頁描述 %}
+	意傳文化科技開發免費的閩南語，客語的語言工具，目前主要有標示注音，國語翻譯，發音合成，讓學習母語以及研究母語的人可以事半功倍。若您需要母語教材客製化歡迎聯絡我們。
+{% endblock %}
+
+{% block 內容 %}
 
 <div class="tit8">
 	<article>
@@ -16,3 +25,5 @@
 		</section>
 	</article>
 </div>
+
+{% endblock %}

@@ -1,5 +1,13 @@
-<% content_for :title do %>橫式範例｜意傳文化科技<% end %>
-<% content_for :description do %>任何文本都可以拿來標音，可以進來這裡試看標音結果。<% end %>
+{% extends "意傳網站/框.html" %}
+{% block 標題 %}
+	橫式範例
+{% endblock %}
+
+{% block 網頁描述 %}
+	任何文本都可以拿來標音，可以進來這裡試看標音結果。
+{% endblock %}
+
+{% block 內容 %}
 
 		<div class="huainn5">
 		<article>
@@ -54,4 +62,4 @@
 </p>
 </article>
 		</div>		
-		
+{% endblock %}		

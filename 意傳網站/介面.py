@@ -10,9 +10,13 @@ from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from django.db.models import Q
+from django.views.generic.base import TemplateView
 
-def 頭頁(request):
-	版 = loader.get_template('意傳網站/關於意傳.html')
-	文 = RequestContext(request, {
-	})
-	return HttpResponse(版.render(文))
+class 關於意傳(TemplateView):
+    template_name = '意傳網站/關於意傳.html'
+
+class 橫式範例(TemplateView):
+    template_name = '意傳網站/橫式範例.html'
+
+class 聯絡我們(TemplateView):
+    template_name = '意傳網站/聯絡我們.html'
