@@ -1,5 +1,14 @@
-<% content_for :title do %>組字說明｜意傳文化科技<% end %>
-<% content_for :description do %>依照每次拆解漢字的偏旁就能完成組字式，拆解方式請看底下。<% end %>
+{% extends "意傳網站/框.html" %}
+
+{% block 標題 %}
+	組字說明｜意傳文化科技
+{% endblock %}
+
+{% block 網頁描述 %}
+	依照每次拆解漢字的偏旁就能完成組字式，拆解方式請看底下。
+{% endblock %}
+
+{% block 內容 %}
 
 <%# encoding: utf-8 %>
 <div class="huainn5">
@@ -24,3 +33,4 @@
 	</section>
 </article>
 </div>
+{% endblock %}

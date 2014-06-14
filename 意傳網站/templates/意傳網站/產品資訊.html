@@ -1,5 +1,14 @@
-<% content_for :title do %>服務資訊｜意傳文化科技<% end %>
-<% content_for :description do %>本站提供閩客語的「標音工具」以及「組字工具」。標音工具包含標示注音、國語翻譯、真人發音三個功能，組字工具僅包含組字功能。<% end %>
+{% extends "意傳網站/框.html" %}
+
+{% block 標題 %}
+	服務資訊｜意傳文化科技
+{% endblock %}
+
+{% block 網頁描述 %}
+	本站提供閩客語的「標音工具」以及「組字工具」。標音工具包含標示注音、國語翻譯、真人發音三個功能，組字工具僅包含組字功能。
+{% endblock %}
+
+{% block 內容 %}
 
 <div class="tit8">
 	<article>
@@ -75,3 +84,4 @@
 
 	</article>
 </div>
+{% endblock %}

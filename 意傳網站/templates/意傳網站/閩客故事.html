@@ -1,7 +1,15 @@
-<% content_for :title do %>閩客語的小知識<% end %>
-<% content_for :description do %>你知道閩客語也是有文字的嗎？這個推論的大功臣是宋朝韻書《廣韻》，但韻書是什麼？在各個方言中，只有閩南語的「後」沒有ㄏ？希望在幾則趣文中，點出我們家鄉方言背後蘊含的文化美。<% end %>
-<%# encoding: utf-8 %>
+{% extends "意傳網站/框.html" %}
 
+{% block 標題 %}
+	閩客語的小知識
+{% endblock %}
+
+{% block 網頁描述 %}
+	你知道閩客語也是有文字的嗎？這個推論的大功臣是宋朝韻書《廣韻》，但韻書是什麼？在各個方言中，只有閩南語的「後」沒有ㄏ？希望在幾則趣文中，點出我們家鄉方言背後蘊含的文化美。<% end %>
+
+{% endblock %}
+
+{% block 內容 %}	
 <div class="tit8">
 	<article>
 		<section class="font22px">
@@ -12,19 +20,21 @@
 			<tr>
 				<td style="border-right:1px solid #666;">
 					<ul>
-					<li style="margin-top:50px;"><p><%= link_to "閩客語有文字？", :action=>"閩客語的演變", :anchor=>"閩客語有文字" %></p>
+					<li style="margin-top:50px;"><p><a href="{% url '閩客語的演變' %}#閩客語有文字">閩客語有文字？</a></p>
 						<blockqoute>沒錯，少數的詞彙原來是沒有漢字的。例如閩南語中男生...</blockqoute></a></li>
-					<li><p><%= link_to "廣韻：揭開漢語方言的演化史", :action=>"閩客語的演變", :anchor=>"廣韻" %></p>
+					
+					<li><p><a href="{% url '閩客語的演變' %}#廣韻">廣韻：揭開漢語方言的演化史</a></p>
 						<blockqoute>《廣韻》是現今保存最完整的、最古老的、也是最重要的一部韻書。...</blockqoute></li>
-					<li><p><%= link_to "閩南語「後」沒有ㄏ", :action=>"閩客語的演變", :anchor=>"閩南語的後" %></p>
+					
+					<li><p><a href="{% url '閩客語的演變' %}#閩南語的後">閩南語「後」沒有ㄏ</a></p>
 						<blockqoute>查考其他方言，只有閩南語的「後」沒有ㄏ音。大多數方言的「後」是有ㄏ的，以語音學的角度，...</blockqoute>
 					</ul>
 				</td>
 				<td>
 					<ul>
-					<li><p><%= link_to "拼音方案是什麼？", :action=>"閩客語的演變", :anchor=>"拼音方案" %></p>
+					<li><p><a href="{% url '閩客語的演變' %}#拼音方案">拼音方案是什麼？</a></p>
 						<blockqoute>「拼音」是指直接用拼音作為文字，也可以當作白話字的增補。...</blockqoute></li>
-					<li><p><%= link_to "淺談方音符號", :action=>"閩客語的演變", :anchor=>"方音符號" %></p>
+					<li><p><a href="{% url '閩客語的演變' %}#方音符號">淺談方音符號</a></p>
 						<blockqoute>方音符號又稱方言音符號，將國語注音增添一些符號來標注閩南話和客家話。...</blockqoute></li>
 					</ul>
 				</td>
@@ -33,4 +43,4 @@
 		</section>
 	</article>
 </div>
-			
+{% endblock %}			
