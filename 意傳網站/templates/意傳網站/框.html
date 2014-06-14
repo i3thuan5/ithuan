@@ -5,9 +5,22 @@
 	<meta name="description" content="{% block 網頁描述 %}意傳文化科技開發免費的閩南語，客語的語言工具{% endblock %}">
 	<title>{% block 標題 %}意傳文化科技{% endblock %}</title>
 	{% load staticfiles %}
-	<!--<%= favicon_link_tag 'favicon_i3thuan5.png' ,:type => 'image/png' %>-->
-	<link rel="stylesheet" type="text/css" href="{% static '意傳網站/stylesheets/i3thuan5.css' %}" />
 	<link rel="shortcut icon" href="{% static '意傳網站/images/favicon_i3thuan5_pink.png' %}" type='image/png' >
+	
+	<link rel="stylesheet" type="text/css" href="{% static '意傳網站/stylesheets/i3thuan5.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static '意傳網站/stylesheets/fontstyle.ccss' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static '意傳網站/stylesheets/han3ji7tsoo2kian7.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static '意傳網站/stylesheets/taketori.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static '意傳網站/stylesheets/suann3ting2su1jip8huat4.css' %}" />
+	
+	<script src="{% static '意傳網站/javascripts/jquery-1.10.2.min.js' %}" type="text/javascript"></script>
+	<script src="{% static '意傳網站/javascripts/jquery.cookie.js' %}" type="text/javascript"></script>
+	<script src="{% static '意傳網站/javascripts/i3thuan5.js' %}" type="text/javascript"></script>
+	<script src="{% static '意傳網站/javascripts/taketori.js' %}" type="text/javascript"></script>
+	<script src="{% static '意傳網站/javascripts/liu5lam2khi7kiam2tsa1.js' %}" type="text/javascript"></script>
+	<script src="{% static '意傳網站/javascripts/han3ji7tsoo2kian7.js' %}" type="text/javascript"></script>
+	<script src="{% static '意傳網站/javascripts/suann3ting2piau1im1.js' %}" type="text/javascript"></script>
+	<script src="{% static '意傳網站/javascripts/suann3ting2su1jip8huat4.js' %}" type="text/javascript"></script>
 	{% block extrahead %}{% endblock %}
   
 </head>
