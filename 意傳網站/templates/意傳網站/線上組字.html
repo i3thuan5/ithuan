@@ -33,61 +33,37 @@
 		</table>
 		
 		<br />
-				
-		<!--<table><tr><td>-->
 		<table class="鍵盤">
 			<tr><td>
 			一般符號：
-				<% 陣列=[["⿰","⿱","⿴"],
-				["⿰","⿰糸","⿰","⿰爿"],
-				["⿰","⿰","⿱"],
-				["⿴囗","⿴辶","⿴气","⿴宀"],
-					["⿰因","⿱任心","⿴囗或"],
-					["⿱金⿰金金","⿱⿰火火⿰火火"],
-					["⿴辶⿴宀⿱珤⿰隹⿰貝招"],
-					] %>
-				<% 陣列.each do |逝| %>
-				<% 逝.each do |字| %>
-			<input class="tsoo2ji7liu2a2" type="button" value="<%= 字 %>"
+				{% for 一逝 in 一般符號陣列 %}
+				{% for 字 in 一逝  %}
+			<input class="tsoo2ji7liu2a2" type="button" value="{{ 字 }}"
 				onclick="javascript:addTextonInputSelection(su1jip8,this.value)" />
-					<% end %>
+					{% endfor %}
 					<br/>
-				<% end %>
+				{% endfor %}
 				</td><td>
 		注音符號：
 			<input class="tsoo2ji7liu2a2" type="button" value="⿳"
 				onclick="javascript:addTextonInputSelection(su1jip8,this.value)" /><br/>
-				<% 陣列=[["ㄅ","ㄆ","ㄇ","ㆠ","ㄈ","ㄪ"],
-					["ㄉ","ㄊ","ㄋ","ㄌ"],
-					["ㄍ","ㄎ","ㄏ","ㆣ","ㄫ"],
-					["ㄐ","ㄑ","ㄒ","ㆢ","ㄬ"],
-					["ㄓ","ㄔ","ㄕ","ㄖ","ㄭ"],
-					["ㄗ","ㄘ","ㄙ","ㆡ"],
-					["ㄧ","ㆪ","ㄨ","ㆫ","ㆨ","ㄩ"],
-					["ㄚ","ㆩ","ㄛ","ㆦ","ㆧ","ㄜ","ㄮ"],
-					["ㄝ","ㆤ","ㆥ","ㄞ","ㆮ","ㄟ","ㄠ","ㆯ","ㄡ"],
-					["ㆬ","ㆰ","ㆱ","ㄢ","ㄣ","ㄤ","ㆲ","ㆭ","ㄥ","ㄦ"],
-					["ˊ","ˇ","ˋ","˙","˪","˫","^","㆐"],
-					["ㆴ","ㆵ","ㆶ","ㆷ"]
-					] %>
-				<% 陣列.each do |逝| %>
-				<% 逝.each do |字| %>
-			<input class="tsoo2ji7liu2a2" type="button" value="<%= 字 %>"
+				{% for 一逝 in 注音陣列 %}
+				{% for 字 in 一逝 %}
+			<input class="tsoo2ji7liu2a2" type="button" value="{{ 字 }}"
 				onclick="javascript:addTextonInputSelection(su1jip8,this.value)" />
-					<% end %>
+					{% endfor %}
 					<br/>
-				<% end %>
+				{% endfor %}
 			</td><td>
-			異寫字：<input class="tsoo2ji7liu2a2" type="button" value="⿻"
+			 <!-- 異寫字：<input class="tsoo2ji7liu2a2" type="button" value="⿻"
 				onclick="javascript:addTextonInputSelection(su1jip8,this.value)" />
 				<br/>
 				<input class="tsoo2ji7liu2a2" type="button" value="⿻真甲"
 				onclick="javascript:addTextonInputSelection(su1jip8,this.value)" />
 				<input class="tsoo2ji7liu2a2" type="button" value="⿻真乙"
-				onclick="javascript:addTextonInputSelection(su1jip8,this.value)" />
+				onclick="javascript:addTextonInputSelection(su1jip8,this.value)" /> -->
 		</form>
 		</td></tr></table>
-		<!--</td></tr></table>-->
 		<br />
 
 				

@@ -18,7 +18,7 @@ from 意傳網站.介面 import 閩客故事
 from 意傳網站.介面 import 閩客語的演變
 
 urlpatterns = patterns('',
-	url(r'^關於意傳$', 關於意傳.as_view(), name='關於意傳'),
+# 	url(r'^關於意傳$', 關於意傳.as_view(), name='關於意傳'),
 	url(r'^橫式範例$', 橫式範例.as_view(), name='橫式範例'),
 	url(r'^聯絡我們$', 聯絡我們.as_view(), name='聯絡我們'),
 	url(r'^悲慘世界$', 悲慘世界.as_view(), name='悲慘世界'),
@@ -31,7 +31,8 @@ urlpatterns = patterns('',
 	url(r'^相關連結$', 相關連結.as_view(), name='相關連結'),
 	url(r'^組字程式下載$', 組字程式下載.as_view(), name='組字程式下載'), 
 	url(r'^組字說明$', 組字說明.as_view(), name='組字說明'),
-	url(r'^線上組字$', 線上組字.as_view(), name='線上組字'),
+	url(r'^線上組字$', 線上組字, name='線上組字'),
 	url(r'^閩客故事$', 閩客故事.as_view(), name='閩客故事'),
 	url(r'^閩客語的演變$', 閩客語的演變.as_view(), name='閩客語的演變'),
+	url(r'^.*$', 關於意傳.as_view(), name='關於意傳'),
 )
