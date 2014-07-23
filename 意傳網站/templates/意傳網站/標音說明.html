@@ -18,9 +18,14 @@
 		</nav><br/>
 		
 		<header>標音工具說明<hr/></header>
+		
+		{% load staticfiles %}
+		<div style="text-align:center;min-width:300px;min-height:85px;">
+			<img src="{% static '意傳網站/images/標音流程.svg'%}" width="80%"/>
+		</div>
 		<p>標音工具提供標音、翻譯、發音三個功能，先依照不同需求選擇使用前兩項，做完就可使用發音。</p>		
 		
-		<table style="border:1px solid black;width:80%;margin:0 auto;">
+		<!-- <table style="border:1px solid black;width:80%;margin:0 auto;">
 		<tr>
 			<td>狀況一.如何用閩客語寫這一句國語？
 			<td>答：<strong class="blue">翻譯</strong>
@@ -35,7 +40,7 @@
 			<td>答：<strong class="blue">翻譯</strong>  -> <strong class="green">發音</strong>
 		</tr>
 		</table>
-		<br/>
+		<br/> -->
 		
 		<ul>
 		<li><strong class="blue">翻譯</strong>
@@ -49,7 +54,7 @@
 			
 		<li><strong class="red">標音</strong>
 			<ol>
-			<li>左方的文字區輸入方言句子，也可以混合輸入臺灣閩客語羅馬拼音、<%= link_to "組字工具", :action=>"線上組字" %>組字式
+			<li>左方的文字區輸入方言句子，也可以混合輸入臺灣閩客語羅馬拼音、<a href="{% url '線上組字' %}">組字工具</a>組字式
 			<li>左右兩邊選擇一樣的腔調，例如：左右都選擇閩南泉腔
 			<li>按下「標音」
 			<li>右方下面顯示標音句
