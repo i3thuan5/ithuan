@@ -3,6 +3,8 @@
 	<name>意傳網站</name>
 	<comment></comment>
 	<projects>
+		<project>臺灣言語工具</project>
+		<project>翻譯研究</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

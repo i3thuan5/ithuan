@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     '意傳網站',
+    '服務',
 )
 
 MIDDLEWARE_CLASSES = (

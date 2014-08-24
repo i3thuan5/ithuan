@@ -32,7 +32,8 @@ tsha5 = function(bang2tsi2) {
 		success : function(response) {
 			// $('#tsha5e5kiat4ko2').html(response);
 			// alert(response);
-			tsha5tioh4 = eval('(' + response + ')');
+			tsha5tioh4 =response;// eval('(' + response + ')');
+			$('#原始資料').html(JSON.stringify(tsha5tioh4));
 			suan2 = new Array(tsha5tioh4.length);
 			var str = '';
 			for ( var i = 0; i < tsha5tioh4.length; ++i) {
@@ -54,7 +55,7 @@ function suan2gi2(方法)
 	var 語=$('input[name=言語種類]:checked');
 	標音言語=語.val();
 	標音字串=encodeURIComponent($('#ai3tsha5').val());
-	return tsha5('./'+標音方法+'/'+標音言語+'/'+標音字串);
+	return tsha5('/服務/'+標音方法+'/'+標音言語+'/'+標音字串);
 }
 function san2sing1ji7kiat4ko2(ji7kiat4ko2) {
 	var i = +ji7kiat4ko2.id.split('_', 2)[1];
@@ -63,18 +64,18 @@ function san2sing1ji7kiat4ko2(ji7kiat4ko2) {
 		for ( var k = 0; k < tsha5tioh4[i][suan2[i]].詞組綜合標音.length; ++k) {
 			str += '<ruby><rb>';
 			str += tsha5tioh4[i][suan2[i]].詞組綜合標音[k].型體;
-			if (吳守禮方音)
+			if (吳守禮方音&&tsha5tioh4[i][suan2[i]].詞組綜合標音[k].吳守禮方音!==null)
 				str += tsha5tioh4[i][suan2[i]].詞組綜合標音[k].吳守禮方音;
-			else if (注音符號)
+			else if (注音符號&&tsha5tioh4[i][suan2[i]].詞組綜合標音[k].注音符號!==null)
 				str += tsha5tioh4[i][suan2[i]].詞組綜合標音[k].注音符號;
 			str += '</rb><rt>';
-			if (臺羅數字)
+			if (臺羅數字&&tsha5tioh4[i][suan2[i]].詞組綜合標音[k].臺羅數字調!==null)
 				str += tsha5tioh4[i][suan2[i]].詞組綜合標音[k].臺羅數字調;
-			else if (臺羅閏號)
+			else if (臺羅閏號&&tsha5tioh4[i][suan2[i]].詞組綜合標音[k].臺羅閏號調!==null)
 				str += tsha5tioh4[i][suan2[i]].詞組綜合標音[k].臺羅閏號調;
-			else if (通用拼音)
+			else if (通用拼音&&tsha5tioh4[i][suan2[i]].詞組綜合標音[k].通用數字調!==null)
 				str += tsha5tioh4[i][suan2[i]].詞組綜合標音[k].通用數字調;
-			else if (臺灣客話)
+			else if (臺灣客話&&tsha5tioh4[i][suan2[i]].詞組綜合標音[k].臺灣客話!==null)
 				str += tsha5tioh4[i][suan2[i]].詞組綜合標音[k].臺灣客話;
 			str += '</rt></ruby>';
 		}

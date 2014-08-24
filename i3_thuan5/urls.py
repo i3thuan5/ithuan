@@ -9,5 +9,6 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
 #     url(r'^admin/', include(admin.site.urls)),
+    url(r'^服務/', include('服務.網址')),
     url(r'^', include('意傳網站.網址')),
 )
