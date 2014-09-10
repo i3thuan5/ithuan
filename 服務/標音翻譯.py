@@ -58,8 +58,8 @@ def 章物件轉標仔(標仔陣列):
 	for a in 標仔陣列[:5]:
 		print('a',a)
 	愛合成標仔 = _句物件轉合成標仔.跳脫標仔陣列(標仔陣列)
-	for a in 愛合成標仔[:5]:
-		print('b',a)
+# 	for a in 愛合成標仔[:5]:
+# 		print('b',a)
 	model = 'HTSLSPtan5tso5.htsvoice'
 	s, f, n, a = htsengine.synthesize(model, 愛合成標仔)
 	回應 = HttpResponse()
