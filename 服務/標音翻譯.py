@@ -14,6 +14,8 @@ from 臺灣言語工具.斷詞.中研院工具.官方斷詞剖析工具 import �
 from 臺灣言語工具.語音合成.句物件轉合成標仔 import 句物件轉合成標仔
 import htsengine
 import wave
+import os
+from 臺灣言語工具.語音合成.音檔頭前表 import 音檔頭前表
 
 _粗胚 = 文章粗胚()
 _分析器 = 拆文分析器()
@@ -53,22 +55,18 @@ def 閩南語翻譯物件(腔口, 語句):
 		print('華語章物件', 華語章物件)
 		閩南語章物件 = _斷詞斷字翻譯.譯(斷字用戶端, 斷字用戶端, 華語章物件)
 	return 閩南語章物件
-
+_音檔頭前表 = 音檔頭前表()
 def 章物件轉標仔(標仔陣列):
-	for a in 標仔陣列[:5]:
-		print('a',a)
+# 	for a in 標仔陣列[:5]:
+# 		print('a', a)
 	愛合成標仔 = _句物件轉合成標仔.跳脫標仔陣列(標仔陣列)
-# 	for a in 愛合成標仔[:5]:
-# 		print('b',a)
-	model = 'HTSLSPtan5tso5.htsvoice'
-	s, f, n, a = htsengine.synthesize(model, 愛合成標仔)
+	模型 = 'HTSLSPtan5tso5.htsvoice'
+	一點幾位元組, 一秒幾點, 幾个聲道, 原始取樣 = \
+		htsengine.synthesize(模型, 愛合成標仔)
+	聲音檔 = _音檔頭前表.加起哩(原始取樣, 一點幾位元組, 一秒幾點, 幾个聲道)
 	回應 = HttpResponse()
+	回應.write(聲音檔)
 	回應['Content-Type'] = 'audio/wav'
-	回應['Accept-Ranges'] = 'bytes'
-	wavFile = wave.open(回應, 'wb')
-	wavFile.setsampwidth(s)
-	wavFile.setframerate(f)
-	wavFile.setnchannels(n)
-	wavFile.writeframesraw(a)
-	wavFile.close()
+	回應['Content-Disposition'] = 'attachment; filename=a.wav'
+	回應['Content-Length'] = len(聲音檔)
 	return 回應
