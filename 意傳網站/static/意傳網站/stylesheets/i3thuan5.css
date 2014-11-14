@@ -151,8 +151,8 @@ body {
 	#topNav ul li td>a:hover {color:yellow;}
 	#topNav ul li td>a:active{color:white;}
 	
-	
-	
+	.FBbox {margin:10px auto 0;}
+	.FBbox > tr {vertical-align: top;}
 /******************舊版型開始*****************/
 #目錄 {
 	width: 200px; /*em?*/
