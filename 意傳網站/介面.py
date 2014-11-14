@@ -75,3 +75,6 @@ class 閩客故事(TemplateView):
 	template_name = '意傳網站/閩客故事.html'
 class 閩客語的演變(TemplateView):
 	template_name = '意傳網站/閩客語的演變.html'
+class 測試臉書讚鈕(TemplateView):
+	template_name = '意傳網站/測試臉書社團.html'
+

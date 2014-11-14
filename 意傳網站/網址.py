@@ -16,6 +16,7 @@ from 意傳網站.介面 import 組字說明
 from 意傳網站.介面 import 線上組字
 from 意傳網站.介面 import 閩客故事
 from 意傳網站.介面 import 閩客語的演變
+from 意傳網站.介面 import 測試臉書讚鈕
 
 urlpatterns = patterns('',
 # 	url(r'^關於意傳$', 關於意傳.as_view(), name='關於意傳'),
@@ -34,5 +35,6 @@ urlpatterns = patterns('',
 	url(r'^線上組字$', 線上組字, name='線上組字'),
 	url(r'^閩客故事$', 閩客故事.as_view(), name='閩客故事'),
 	url(r'^閩客語的演變$', 閩客語的演變.as_view(), name='閩客語的演變'),
+	url(r'^測試臉書讚鈕$', 測試臉書讚鈕.as_view(), name='測試臉書讚鈕'),
 	url(r'^.*$', 關於意傳.as_view(), name='關於意傳'),
 )
