@@ -1,15 +1,6 @@
 # -*- coding: utf-8 -*-
-from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import RequestContext, loader
-from django.views import generic
-from django.shortcuts import get_object_or_404
-from django.http.response import HttpResponseRedirect
-from django.contrib.auth import authenticate, login, logout
-from django.shortcuts import redirect
-from django.contrib.auth.decorators import login_required
-from django.utils.decorators import method_decorator
-from django.db.models import Q
 from django.views.generic.base import TemplateView
 
 class 關於意傳(TemplateView):
@@ -52,6 +43,7 @@ def 線上組字(request):
 		["⿴辶⿴宀⿱珤⿰隹⿰貝招"],
 		]
 	注音陣列=[
+		["⿿"],
 		["ㄅ","ㄆ","ㄇ","ㆠ","ㄈ","ㄪ"],
 		["ㄉ","ㄊ","ㄋ","ㄌ"],
 		["ㄍ","ㄎ","ㄏ","ㆣ","ㄫ"],

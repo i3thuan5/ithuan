@@ -69,8 +69,8 @@ function ka7ji7uann7tiau7(textNode, fontFamily, fontSize, fontWeight,
 			var tsoo2ji3 = textNode.nodeValue.substring(middle, end);
 			var img = document.createElement('img');
 			img.setAttribute('class', 'tsoo2ji3');
-			img.setAttribute('src', tsoo2ji7ting5sik4 + ji7the2 + '/'
-					+ tiau5tsing2tsoo2ji7sik4(tsoo2ji3) + '.png');
+			img.setAttribute('src', tsoo2ji7ting5sik4 
+					+ tiau5tsing2tsoo2ji7sik4(tsoo2ji3) + '.png?字體='+ ji7the2 );
 			img.setAttribute('alt', tsoo2ji3);
 			img.setAttribute('title', tsoo2ji3);
 			img.setAttribute('height', fontSize);
@@ -91,9 +91,17 @@ function si7tsoo2hap8bo5(ji7) {
 	switch (ji7) {
 	case '⿰':
 	case '⿱':
-	case '⿴':
+	case '⿲':
 	case '⿳':
+	case '⿴':
+	case '⿵':
+	case '⿶':
+	case '⿷':
+	case '⿸':
+	case '⿹':
+	case '⿺':
 	case '⿻':
+	case '⿿':
 		return true;
 	}
 	return false;
