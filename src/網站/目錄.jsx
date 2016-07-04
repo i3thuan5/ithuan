@@ -17,7 +17,7 @@ export default class 目錄 extends React.Component {
           <nav id="topNav">
           <ul>
             <li><Link to='/'>關於意傳</Link></li>
-            <li><Link to='/'>母語系統</Link></li>
+            <li><Link to='/%E6%AF%8D%E8%AA%9E%E7%B3%BB%E7%B5%B1'>母語系統</Link></li>
             <li><Link to='/%E7%B7%9A%E4%B8%8A%E7%B5%84%E5%AD%97'>線上組字</Link></li>
             <li><Link to='/'>閩客故事</Link></li>        
             <li><Link to='/'>相關連結</Link></li>
