@@ -7,6 +7,25 @@ let beh8 = '□';
 
 class 組字圖 extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      顯示烏: true,
+    };
+  }
+
+  componentDidMount() {
+    this.interval = setInterval(this.圖交換.bind(this), 1000); // Call a method on the mixin
+  }
+
+  componentWillUnmount () {
+    clearInterval(this.interval);
+  }
+
+  圖交換() {
+    this.setState({ 顯示烏: !this.state.顯示烏 });
+  }
+
   組字圖片網址(組字式, 字體='宋體')
   {
     return `http://xn--p8s937b.xn--v0qr21b.xn--kpry57d/${組字式}.png?%E5%AD%97%E9%AB%94=${字體}`;
@@ -79,10 +98,14 @@ class 組字圖 extends React.Component {
   }
 
   render () {
+    let 顯示組字式;
+    if (this.state.顯示烏)
+      顯示組字式 = this.補烏組字式();
+    else
+      顯示組字式 = this.補白組字式();
     return (
                 <div id="too5tsip8">
-                  <img id="hian2si7too5it4" src={this.組字圖片網址(this.補烏組字式())}/>
-                  <img id="hian2si7too5ji7" src={this.組字圖片網址(this.補白組字式())}/>
+                  <img id="hian2si7too5it4" src={this.組字圖片網址(顯示組字式)}/>
                 </div>
      );
   }
