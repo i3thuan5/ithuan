@@ -2,7 +2,7 @@ import React from 'react';
 import {render} from 'react-dom';
 import {Router, Route, IndexRoute, browserHistory} from 'react-router';
 import 網站 from './網站/網站';
-import 首頁 from './頁/首頁';
+import 首頁 from './頁/首頁/首頁';
 import './app.css';
 
 import Debug from 'debug';
