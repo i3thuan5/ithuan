@@ -8,11 +8,11 @@ export default class 目錄 extends React.Component {
     return (
         <div id="rightWrapper">
           <div id="logobox">
-            <a id="logo" href="http://意傳.台灣/">
+            <Link id="logo" to='/'>
               <img alt="LOGO" src={Logo} width="100%"></img>
-            </a>
+            </Link>
           </div>
-          <div  id="副標題" className="fontKai">閩南語、客語教材系統</div>
+          <div  id="副標題" className="fontKai">在地資訊系統開發</div>
           
           <nav id="topNav">
           <ul>
