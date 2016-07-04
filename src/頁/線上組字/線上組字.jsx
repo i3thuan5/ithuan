@@ -1,8 +1,9 @@
 import React from 'react';
 import Transmit from 'react-transmit';
 import Router from 'react-router';
-var ReactDOM = require('react-dom');
+import ReactDOM from 'react-dom';
 import 組字圖 from './組字圖';
+import 鍵盤 from './鍵盤';
 
 class 線上組字 extends React.Component {
   constructor(props) {
@@ -28,7 +29,7 @@ class 線上組字 extends React.Component {
        <div className="huainn5">
         <article>
           <section id="線上組字" className="font22px">
-            <header>線上組字<hr /></header> 
+            <header>線上組字  { 組字式 }<hr /></header> 
             <table><tbody>
             <tr>
               <td>
@@ -36,30 +37,16 @@ class 線上組字 extends React.Component {
               </td>
               <td>
                 <textarea id='組字式輸入' ref="組字式輸入"
-                  defaultValue={組字式} onKeyUp={this.改組字式.bind(this)}></textarea>
+                  defaultValue={組字式}
+                  onKeyUp={this.改組字式.bind(this)}
+                  onChange={this.改組字式.bind(this)}
+                  ></textarea>
               </td>
             </tr>
             </tbody></table>
             
             <br />
-            <table className="鍵盤"><tbody>
-              <tr><td>
-              一般符號：
-                </td><td>
-            注音符號： 
-              <input className="tsoo2ji7liu2a2" type="button" value="{{ 字 }}"
-               onClick={this.addTextonInputSelection.bind(this, 'a')} />
-                  <br/>
-              </td><td>
-              
-            </td></tr></tbody></table>
-            <br />
-
-         
-              <script type="text/javascript">
-              tsit8khai1si2();
-              </script>
-              <br/>
+            <鍵盤 加物件={this.addTextonInputSelection.bind(this)} />
             </section>
             
           </article>
@@ -131,6 +118,7 @@ class 線上組字 extends React.Component {
       myField.focus();
       sel = document.selection.createRange();
       sel.text = myValue;
+    this.setState({ 組字式: sel.text });
     }
 
     // MOZILLA and others
@@ -142,6 +130,7 @@ class 線上組字 extends React.Component {
     } else {
       myField.value += myValue;
     }
+    this.setState({ 組字式: myField.value });
   }
 
   offsetToRangeCharacterMove(el, offset) {
