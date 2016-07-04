@@ -13,10 +13,6 @@ class 線上組字 extends React.Component {
     };
   }
 
-  componentDidMount() {
-    ReactDOM.findDOMNode(this.refs.nameInput).focus();
-  }
-
   改組字式(textarea)
   {
     let 組字式 = textarea.target.value;
@@ -29,7 +25,7 @@ class 線上組字 extends React.Component {
        <div className="huainn5">
         <article>
           <section id="線上組字" className="font22px">
-            <header>線上組字  { 組字式 }<hr /></header> 
+            <header>線上組字<hr/></header> 
             <table><tbody>
             <tr>
               <td>
@@ -118,7 +114,7 @@ class 線上組字 extends React.Component {
       myField.focus();
       sel = document.selection.createRange();
       sel.text = myValue;
-    this.setState({ 組字式: sel.text });
+      this.setState({ 組字式: sel.text });
     }
 
     // MOZILLA and others
@@ -130,6 +126,7 @@ class 線上組字 extends React.Component {
     } else {
       myField.value += myValue;
     }
+
     this.setState({ 組字式: myField.value });
   }
 
