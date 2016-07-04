@@ -1,11 +1,8 @@
 import React from 'react';
-import Transmit from 'react-transmit';
-import Router from 'react-router';
-import ReactDOM from 'react-dom';
 import 組字圖 from './組字圖';
 import 鍵盤 from './鍵盤';
 
-class 線上組字 extends React.Component {
+export default class 線上組字 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -155,5 +152,3 @@ class 線上組字 extends React.Component {
     }
   }
 }
-
-export default Transmit.createContainer(線上組字, { queries: {} });

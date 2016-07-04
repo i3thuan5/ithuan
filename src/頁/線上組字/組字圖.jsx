@@ -1,11 +1,8 @@
 import React from 'react';
-import Transmit from 'react-transmit';
-import Router from 'react-router';
-var ReactDOM = require('react-dom');
 let  oo1 = '■';
 let beh8 = '□';
 
-class 組字圖 extends React.Component {
+export default class 組字圖 extends React.Component {
 
   constructor(props) {
     super(props);
@@ -111,4 +108,3 @@ class 組字圖 extends React.Component {
   }
 }
 
-export default Transmit.createContainer(組字圖, { queries: {} });

@@ -1,12 +1,10 @@
 import React from 'react';
-import Transmit from 'react-transmit';
-import Router from 'react-router';
 import 標音 from './標音.png';
 import 翻譯 from './翻譯.png';
 import 發音 from './發音.png';
 import 組字 from './組字.png';
 
-class 首頁 extends React.Component {
+export default class 首頁 extends React.Component {
 
   render () {
     return (
@@ -26,5 +24,3 @@ class 首頁 extends React.Component {
       );
   }
 }
-
-export default Transmit.createContainer(首頁, { queries: {} });
