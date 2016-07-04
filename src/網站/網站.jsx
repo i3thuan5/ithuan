@@ -1,9 +1,9 @@
 import React from 'react';
-import Transmit from 'react-transmit';
 import './網站.css'
 import 目錄 from './目錄';
 
-class 網站 extends React.Component {
+
+export default class 網站 extends React.Component {
 
   render () {
     return (
@@ -18,5 +18,3 @@ class 網站 extends React.Component {
     );
   }
 }
-
-export default Transmit.createContainer(網站, { queries: {} });

@@ -1,8 +1,8 @@
 import React from 'react';
-import Transmit from 'react-transmit';
+import { Link } from 'react-router';
 import Logo from './LOGO_1.png';
 
-class 目錄 extends React.Component {
+export default class 目錄 extends React.Component {
 
   render () {
     return (
@@ -16,11 +16,11 @@ class 目錄 extends React.Component {
           
           <nav id="topNav">
           <ul>
-            <li><a href="">關於意傳</a></li>
-            <li>線上標音</li>       
-            <li>線上組字</li>       
-            <li><a href="">閩客故事</a></li>        
-            <li><a href="">相關連結</a></li>
+            <li><Link to='/'>關於意傳</Link></li>
+            <li><Link to='/'>母語系統</Link></li>
+            <li><Link to='/%E7%B7%9A%E4%B8%8A%E7%B5%84%E5%AD%97'>線上組字</Link></li>
+            <li><Link to='/'>閩客故事</Link></li>        
+            <li><Link to='/'>相關連結</Link></li>
             <li className="last"><a href="">聯絡我們</a></li>
           </ul>
           </nav>
@@ -37,4 +37,4 @@ class 目錄 extends React.Component {
   }
 }
 
-export default Transmit.createContainer(目錄, { queries: {} });
+
