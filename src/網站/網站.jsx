@@ -1,7 +1,6 @@
 import React from 'react';
-import './網站.css'
+import './網站.css';
 import 目錄 from './目錄';
-
 
 export default class 網站 extends React.Component {
 

@@ -25,16 +25,15 @@ export default class 目錄 extends React.Component {
           </ul>
           </nav>
           <table className="FBbox"><tbody><tr>
-            <td><div className="fb-share-button" data-href="https://www.facebook.com/i3thuan5/" 
+            <td><div className="fb-share-button" data-href="https://www.facebook.com/i3thuan5/"
               data-layout="button"></div>
             </td>
-            <td><div className="fb-like" data-href="https://www.facebook.com/i3thuan5/" 
+            <td><div className="fb-like" data-href="https://www.facebook.com/i3thuan5/"
             data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
             </td>
           </tr></tbody></table>     
-        </div>    
+        </div>
     );
   }
 }
-
 
