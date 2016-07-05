@@ -1,4 +1,5 @@
 import React from 'react';
+import './首頁.css'
 import 標音 from './標音.png';
 import 翻譯 from './翻譯.png';
 import 發音 from './發音.png';
@@ -8,7 +9,6 @@ export default class 首頁 extends React.Component {
 
   render () {
     return (
-        <div className="huainn5 關於意傳">
         <article>
             <section className="font22px">
                 <header>意傳文化科技開發母語的免費工具，讓母語學習和母語研究都能事半功倍</header>
@@ -20,7 +20,6 @@ export default class 首頁 extends React.Component {
                 </ul>   
             </section>
         </article>
-        </div>
       );
   }
 }

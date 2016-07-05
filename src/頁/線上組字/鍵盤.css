@@ -1,0 +1,10 @@
+
+.鍵盤 , .鍵盤 td
+{
+	vertical-align: top;
+}
+
+/*---組字說明---*/
+span.wordoo:before {content:'⿴';}
+span.wordpq:before {content:'⿰';}
+span.wordB:before {content:'⿱';}

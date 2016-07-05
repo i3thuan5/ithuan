@@ -55,183 +55,20 @@ body, #app {
 	}
 		
 	/*-----------------------------*/	
-	#rightWrapper {
-		float:right;
-		position:relative;
-		width:15%;
-		height:100%;
-	}
-	div#logobox {
-		width:50%;
-		margin:10px auto 0px auto;
-	}
-	a#logo {
-		margin:0 auto;
-		outline:none;/*清除超連結圖片的虛線外框*/	
-	}
-	div#副標題{
-		font-size:18px; 
-		width:100%; 
-		margin:5px 0;
-		text-align:center;
-		color:#A60000;
-		text-shadow:0px 1px 5px white;
-	}
-	
-	#topNav {
-		width:70%;
-		height:250px;
-		margin:0 auto;
-		background-color:white;
-		background-color:rgba(249,249,249,0.92);
-		box-shadow: 5px 5px 10px black;
-		border-bottom-left-radius:20px;	
-	}
-	#topNav ul {
-		width:100%; 	
-		margin:0;/*將清單內定的內距清除(無清除，則左側會多出約40px，範例二可不用加這一項*/
-		padding:0;
-		list-style-type:none;
-	} 
-	#topNav ul li.last {border-bottom-left-radius:20px;}
-	
-	#topNav ul li {  
-		text-align:center; 
-	    line-height:2.2em;
-	    -webkit-user-select:none;
-	    -moz-user-select:none;
-	    user-select:none;
-	}
-	
-	#topNav ul li,#topNav a{ 
-		position:relative;
-		height:50px;
-	}
-	
-	#topNav ul li table {
-		position:absolute;
-		display:none;
-		margin:0;
-		padding:0;
-		top:0;
-		right:100%; /*貼著爸爸的左側＝遠離爸爸右側*/ 
-		border-collapse:collapse;
-	}
-	#topNav ul li td a {
-		width:140px; 
-		height:40px;
-		padding:3px; 
-		line-height:2em; 
-		white-space:nowrap;/*保證子標題不換行*/
-	}
-	
-	#topNav ul li tr:nth-child(odd) {background-color:#555;}
-	#topNav ul li tr:nth-child(even) {background-color:#777;}
-	
-	#topNav ul li, #topNav ul li>table {font-size:20px;}
-	#topNav ul li:hover {
-		background-color: #4ab0f8; /*fallback*/
-	}
-	#topNav ul li td:hover{
-		background-color: rgba(0,0,0,1); /*fallback*/
-	}
-	
-	#topNav a {display: inline-block; width:100%; text-decoration:none; }
-	
-	#topNav ul li>a:link {color:black; }
-	#topNav ul li>a:visited {color:black; }
-	#topNav ul li:hover, #topNav ul li>a:hover {color:yellow;} 
-	#topNav ul li>a:active {color:black; }
-	
-	#topNav ul li td>a:link {color:white;}
-	#topNav ul li td>a:visited {color:white;}
-	#topNav ul li td>a:hover {color:yellow;}
-	#topNav ul li td>a:active{color:white;}
-	
-	.FBbox {margin:10px auto 0;}
-	.FBbox > tr {vertical-align: top;}
-
 ol {margin:0 0 0 40px;}
 
 
 section + section {margin-top:1.5em;}
 div.tit8 section + section {margin-top:1em;}
 div.huainn5 section + section {margin:2em auto 0;}
-
-/*---關於意傳---*/
-div.關於意傳{font-size:62.5%;margin-top:40px;}
-div.關於意傳 header{font-size:1em;width:600px;margin:0 auto;}
-ul#意傳工具小簡歷{
-		list-style-type:none;
-		display:block;
-		text-align:center;
-		width:700px;
-		min-height:250px;
-		margin:50px auto 0px;
-		
-	}
-	ul#意傳工具小簡歷 li{
-		float:left;
-		/*display:block;
-		height:auto;
-		margin:0 10px;
-		width:150px;*/
-	}
-	ul#意傳工具小簡歷 li:first-child{margin-left:35px;}
-	ul#意傳工具小簡歷 li img{width:4em;height:4em;}
-	ul#意傳工具小簡歷 li h2 {
-		color:#FF0D00;/*#00BFFF;*/
-		font-weight:bold;
-		font-size:2em;/*30px*/
-	}
-	ul#意傳工具小簡歷 li p{
-		text-align:left;
-		font-size:1em;
-		display:block;		
-		margin:0 auto;
-		width:150px;
-	}
 	
-/*---標音說明---*/
-nav span a {text-decoration:none;}
-nav span a:active,nav span a:hover {text-decoration:underline;}
-/*---組字說明---*/
-span.wordoo:before {content:'⿴';}
-span.wordpq:before {content:'⿰';}
-span.wordB:before {content:'⿱';}
-/*---閩客故事---*/
-section table ul {margin-left:-2px;}
-section table ul li + li{margin:2em 0;}
-section table ul li p {color:blue;}
-blockqoute {width:50px;}
-
-/*---閩客語的演變---*/
-/*article#NanHakkaStory p {display:block;width:500px;margin-right:10px;}*/
-/*article#NanHakkaStory {width:500px;word-wrap:break-word;word-break:break-all; }*/ 
-article#NanHakkaStory table{text-align:left;margin-left:20px;border-collapse:seperate; border-spacing:15px 0px;}
-article#NanHakkaStory table.ji7im1pio2 td{border-top:1px dotted #444;}
-article#NanHakkaStory table.ji7im1pio2 td:nth-child(2){font-size:28px;}
-
-.大字 {
-	font-size: 160%;
-}
-
-#ai3tsha5 {
-	min-width: 60%;
-}
-
 textarea,select,button,submit,input{
 	font-family: inherit;
 	font-size: inherit;
 }
 
-.suet4bing5too5 {
-	border: 1px solid black;
-	max-width:60%;
-}
 
-
-.鍵盤 , .鍵盤 td
-{
-	vertical-align: top;
-}
+section table ul {margin-left:-2px;}
+section table ul li + li{margin:2em 0;}
+section table ul li p {color:blue;}
+blockqoute {width:50px;}

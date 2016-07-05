@@ -4,9 +4,8 @@ export default class 相關連結 extends React.Component {
 
   render () {
     return (
-      <div className="tit8">
-        <article>
-          <section className="font22px">
+      <article>
+         <section className="font22px">
             
             <p>學習資源很多，在此附上適合閩南語和客語的初學者的部份資源。如果有任何好網站，歡迎聯絡我們。</p>
             
@@ -32,9 +31,8 @@ export default class 相關連結 extends React.Component {
             <a href="http://210.240.194.97/taigu.asp">白話字台語文網站</a><br/>
             <a href="http://hik-u-tw.blogspot.tw/">台語半桶師雜記</a><br/>
             </p>
-          </section>
-        </article>
-      </div>
+        </section>
+      </article>
     );
   }
 }

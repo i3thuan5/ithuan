@@ -19,30 +19,28 @@ export default class 線上組字 extends React.Component {
   render () {
     let { 組字式 } = this.state;
     return (
-       <div className="huainn5">
-        <article>
-          <section id="線上組字" className="font22px">
-            <table><tbody>
-            <tr>
-              <td>
-                <組字圖 組字式={組字式}/>
-              </td>
-              <td>
-                <textarea id='組字式輸入' ref="組字式輸入"
-                  defaultValue={組字式}
-                  onKeyUp={this.改組字式.bind(this)}
-                  onChange={this.改組字式.bind(this)}
-                  ></textarea>
-              </td>
-            </tr>
-            </tbody></table>
-            
-            <br />
-            <鍵盤 加物件={this.addTextonInputSelection.bind(this)} />
-            </section>
-            
-          </article>
-        </div>
+      <article>
+        <section id="線上組字" className="font22px">
+          <table><tbody>
+          <tr>
+            <td>
+              <組字圖 組字式={組字式}/>
+            </td>
+            <td>
+              <textarea id='組字式輸入' ref="組字式輸入"
+                defaultValue={組字式}
+                onKeyUp={this.改組字式.bind(this)}
+                onChange={this.改組字式.bind(this)}
+                ></textarea>
+            </td>
+          </tr>
+          </tbody></table>
+          
+          <br />
+          <鍵盤 加物件={this.addTextonInputSelection.bind(this)} />
+          </section>
+          
+        </article>
      );
   }
 
