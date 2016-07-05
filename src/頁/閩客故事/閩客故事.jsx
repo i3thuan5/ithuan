@@ -1,5 +1,5 @@
 import React from 'react';
-import './閩客故事.css'
+import './閩客故事.css';
 
 export default class 閩客故事 extends React.Component {
 
