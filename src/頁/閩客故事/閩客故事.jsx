@@ -6,7 +6,7 @@ export default class 閩客故事 extends React.Component {
   render () {
     return (
       <article>
-        <section className="font22px">
+        <section>
           <ul>
             <li><p>
               <a href="#閩客語有文字">閩客語有文字？</a>
@@ -27,7 +27,7 @@ export default class 閩客故事 extends React.Component {
 
         <p style={{ textAlign: 'center', margin: '1em 0' }}>○●○●</p>
           
-        <section id="閩客語有文字" name='閩客語有文字' className="font22px">
+        <section id="閩客語有文字" name='閩客語有文字'>
           <b>閩客語有文字？</b>
           <div>
             <p>
@@ -65,7 +65,7 @@ export default class 閩客故事 extends React.Component {
         
         <p style={{ textAlign: 'center', margin: '1em 0' }}>○●○●</p>
         
-        <section id="廣韻" name='廣韻' className="font22px">
+        <section id="廣韻" name='廣韻'>
           <b>廣韻：揭開漢語方言的演化史</b>
           <div>
             <p>
@@ -102,7 +102,7 @@ export default class 閩客故事 extends React.Component {
       
         <p style={{ textAlign: 'center', margin: '1em 0' }}>○●○●</p>
       
-        <section id="閩南語的後" name='閩南語的後' className="font22px">
+        <section id="閩南語的後" name='閩南語的後'>
           <b>閩南語「後」沒有ㄏ</b>
           <div>
             <p>
@@ -113,7 +113,7 @@ export default class 閩客故事 extends React.Component {
               閩籍祖先是由不同時期不同地點而來，又受到唐宋科舉讀書音的影響，造就了四個漢語語言層次，及文白兩異讀。</p>
           </div>
         </section>
-        <section id="參考資料" className="font22px">
+        <section id="參考資料">
         <p style={{ textAlign: 'center', margin: '1em 0' }}>○●○●</p>
             <div>參考資料：
               <p><span className="pai5huainn5">[1]</span>&nbsp;董忠司。<cite>臺灣閩南語概論講授資料彙編，頁3-4。</cite>民國八十五年，董忠司主編。</p>

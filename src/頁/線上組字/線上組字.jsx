@@ -20,7 +20,7 @@ export default class 線上組字 extends React.Component {
     let { 組字式 } = this.state;
     return (
       <article>
-        <section id="線上組字" className="font22px">
+        <section id="線上組字">
           <table><tbody>
           <tr>
             <td>

@@ -1,33 +1,28 @@
 /*---關於意傳---*/
-div.關於意傳{font-size:62.5%;margin-top:40px;}
-div.關於意傳 header{font-size:1em;width:600px;margin:0 auto;}
 ul#意傳工具小簡歷{
     list-style-type:none;
-    display:block;
     text-align:center;
-    width:700px;
-    min-height:250px;
-    margin:50px auto 0px;
-    
+    margin:5em auto;
   }
 ul#意傳工具小簡歷 li{
-  float:left;
-  /*display:block;
-  height:auto;
-  margin:0 10px;
-  width:150px;*/
+  display:inline-block;
+  vertical-align:top;
+  margin:0 25px auto;
 }
-ul#意傳工具小簡歷 li:first-child{margin-left:35px;}
-ul#意傳工具小簡歷 li img{width:4em;height:4em;}
+ul#意傳工具小簡歷 li img{
+  width:4em;
+  height:4em;
+  margin:0 13px auto;
+}
 ul#意傳工具小簡歷 li h2 {
   color:#FF0D00;/*#00BFFF;*/
   font-weight:bold;
   font-size:2em;/*30px*/
 }
 ul#意傳工具小簡歷 li p{
-  text-align:left;
+  text-align:center;
   font-size:1em;
   display:block;    
   margin:0 auto;
-  width:150px;
+  width:250px;
 }

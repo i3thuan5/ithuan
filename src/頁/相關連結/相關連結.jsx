@@ -5,7 +5,7 @@ export default class 相關連結 extends React.Component {
   render () {
     return (
       <article>
-         <section className="font22px">
+         <section>
             
             <p>學習資源很多，在此附上適合閩南語和客語的初學者的部份資源。如果有任何好網站，歡迎聯絡我們。</p>
             

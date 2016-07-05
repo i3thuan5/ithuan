@@ -68,7 +68,7 @@ textarea,select,button,submit,input{
 }
 
 
-section table ul {margin-left:-2px;}
-section table ul li + li{margin:2em 0;}
-section table ul li p {color:blue;}
+section  ul {margin-left:-2px;}
+section  ul li + li{margin:1em 0;}
+section  ul li p {color:blue;}
 blockqoute {width:50px;}
