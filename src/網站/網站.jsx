@@ -8,9 +8,7 @@ export default class 網站 extends React.Component {
     return (
       <div id="網頁最外圍">
         <div id="leftWrapper">
-          <div id="mainContainer">
             {this.props.children}
-          </div>
         </div>
         <目錄/>
       </div>

@@ -22,7 +22,6 @@ export default class 線上組字 extends React.Component {
        <div className="huainn5">
         <article>
           <section id="線上組字" className="font22px">
-            <header>線上組字<hr/></header> 
             <table><tbody>
             <tr>
               <td>
