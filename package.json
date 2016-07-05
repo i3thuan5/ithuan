@@ -48,6 +48,7 @@
     "react-hot-loader": "^1.3.0",
     "react-modal": "^1.4.0",
     "react-router": "^2.5.2",
+    "react-tabs": "^0.6.2",
     "strict-loader": "^1.1.0",
     "style-loader": "^0.13.1",
     "superagent": "^2.0.0",

@@ -1,5 +1,6 @@
 import React from 'react';
-import './鍵盤.css'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import './鍵盤.css';
 
 export default class 鍵盤 extends React.Component {
 
@@ -31,14 +32,43 @@ export default class 鍵盤 extends React.Component {
     let 一般陣列鈕仔 = this.轉鈕仔(一般符號陣列);
     let 注音陣列鈕仔 = this.轉鈕仔(注音陣列);
     return (
-      <table className="鍵盤"><tbody>
-      <tr><td>
-        一般符號：{一般陣列鈕仔}
-      </td><td>
-        注音符號： 
-        {注音陣列鈕仔}
-      </td><td>
-        使用說明：
+       <Tabs>
+        <TabList>
+          <Tab>使用說明</Tab>
+          <Tab>一般符號</Tab>
+          <Tab>注音符號</Tab>
+        </TabList>
+
+        <TabPanel>
+          {this.使用說明()}
+        </TabPanel>
+        <TabPanel>
+          {一般陣列鈕仔}
+        </TabPanel>
+        <TabPanel>
+          {注音陣列鈕仔}
+        </TabPanel>
+      </Tabs>
+     );
+  }
+
+  轉鈕仔(陣列) {
+    return 陣列.map(
+      (陣列, i)=>(
+        <div key={i}>
+          {陣列.map(
+            (符號)=>
+                <input className="tsoo2ji7liu2a2" type="button" key={符號} value={符號}
+                 onClick={this.props.加物件.bind(this, 符號)} />
+           )}
+        </div>
+      )
+    );
+  }
+
+  使用說明() {
+    return (
+      <div>
         <p>組字式是拆解漢字的偏旁，拆解分為上到下<span className="wordB"></span>、左到右<span className="wordpq"></span>、外到內<span className="wordoo"></span>，三個方向。</p>
 
         <div style={{ paddingLeft: '2em' }}>
@@ -54,23 +84,8 @@ export default class 鍵盤 extends React.Component {
         
         <p>漢字組建使用java撰寫，採用Affero通用公眾特許條款（Affero General Public License, AGPL)開放
           <a href="https://github.com/sih4sing5hong5/han3_ji7_tsoo1_kian3">原始碼</a>。
-        </p>            
-      </td></tr>
-      </tbody></table>
-     );
-  }
-
-  轉鈕仔(陣列) {
-    return 陣列.map(
-      (陣列, i)=>(
-        <div key={i}>
-          {陣列.map(
-            (符號)=>
-                <input className="tsoo2ji7liu2a2" type="button" key={符號} value={符號}
-                 onClick={this.props.加物件.bind(this, 符號)} />
-           )}
-        </div>
-      )
+        </p>
+      </div>
     );
   }
 }
