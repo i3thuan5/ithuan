@@ -25,7 +25,8 @@ export default class 組字圖 extends React.Component {
 
   組字圖片網址(組字式, 字體='宋體')
   {
-    return `http://xn--p8s937b.xn--v0qr21b.xn--kpry57d/${組字式}.png?%E5%AD%97%E9%AB%94=${字體}`;
+    let 編碼組字式=encodeURIComponent(組字式);
+    return `http://xn--p8s937b.xn--v0qr21b.xn--kpry57d/${編碼組字式}.png?%E5%AD%97%E9%AB%94=${字體}`;
   }
 
   幾字() {
