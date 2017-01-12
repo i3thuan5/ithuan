@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 // import 翻譯 from './翻譯.png';
 // import 發音 from './發音.png';
 // import 組字 from './組字.png';
-import { Container, Segment, Header, Grid, Item, Step, Icon } from 'semantic-ui-react';
+import { Container, Segment, Header, Grid, Item, Step, Icon, Divider } from 'semantic-ui-react';
 export default class 首頁 extends React.Component {
 
   render () {
@@ -91,7 +91,47 @@ export default class 首頁 extends React.Component {
           </Grid.Row>
         </Grid>
       </Segment>
+ 
+      <Segment vertical>
+        <Container text>
+        <Header as='h2' textAlign='center'>用程式推廣母語！</Header>
+        <p>市面上很多提供中文工具和客製化中文網站，但不一定適用全部的語言，我們希望為母語使用者和對母語有熱忱的人提供另一選擇</p>
+        </Container>
+      </Segment>
 
+      <Segment vertical>
+        <Header as='h2' textAlign='center'>參與的專案</Header>
+      <Grid>
+        <Grid.Row>
+          
+        </Grid.Row>
+      </Grid>
+      </Segment>
+
+      <Segment vertical>
+        <Container text>
+        <Header as='h2' textAlign='center'>贊助我們</Header>
+        <p>這些工具都是團隊們平日抽空，一點一滴累積的成果。不管金額多少，都能幫助加速開發這些工具。也非常歡迎任何建議或是給我們打氣。</p>
+        </Container>
+      </Segment>
+
+      <Segment inverted vertical>
+          <Container textAlign="center">
+          <Grid columns={2}>
+            <Grid.Row>
+                <Grid.Column>
+              <p>github</p>
+              <p>facebook</p>
+            </Grid.Column>
+            <Grid.Column>
+              <p></p>
+            </Grid.Column>
+            </Grid.Row>
+            </Grid>
+            <Divider/>
+            <p>意傳文化科技</p>
+          </Container>
+      </Segment>
     </div>
       );
   }
