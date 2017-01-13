@@ -32,13 +32,12 @@ export default class 首頁 extends React.Component {
     </Container>
   </Segment>
 
-    <Segment vertical>
-        <Header as='h2' textAlign='center'>我們的服務</Header>
-        <Grid stackable columns={2}>
-          <Grid.Row>
-            <Grid.Column>
-            
-              <Step.Group>
+    <Segment basic> 
+    <Container>
+    <Header as='h2' textAlign='center'>我們的服務</Header>
+        <Grid stackable centered columns={2}>
+            <Grid.Column mobile={16} tablet={8} computer={5} textAlign="right">
+              <Step.Group fluid>
                 <Step>
                   <Icon name='truck' />
                   <Step.Content>
@@ -47,10 +46,7 @@ export default class 首頁 extends React.Component {
                   </Step.Content>
                 </Step>
               </Step.Group>
-            </Grid.Column>
-
-             <Grid.Column>
-              <Step.Group>
+              <Step.Group fluid>
                 <Step>
                   <Icon name='truck' />
                   <Step.Content>
@@ -60,27 +56,20 @@ export default class 首頁 extends React.Component {
                 </Step>
               </Step.Group>
             </Grid.Column>
-          </Grid.Row>
-        </Grid>
-
-        <Grid stackable columns={2}>
-          <Grid.Row>
-            <Grid.Column>
-              <Step.Group>
+            
+            <Grid.Column mobile={16} tablet={8} computer={5}>
+              <Step.Group fluid>
                 <Step>
-                  <Icon name='database' />
+                  <Icon name='truck' />
                   <Step.Content>
                     <Step.Title>整理語料</Step.Title>
                     <Step.Description>Choose your shipping options</Step.Description>
                   </Step.Content>
                 </Step>
               </Step.Group>
-            </Grid.Column>
-
-             <Grid.Column>
-              <Step.Group>
+              <Step.Group fluid>
                 <Step>
-                  <Icon name='text cursor' />
+                  <Icon name='truck' />
                   <Step.Content>
                     <Step.Title>對齊漢字音標</Step.Title>
                     <Step.Description>Choose your shipping options</Step.Description>
@@ -88,9 +77,10 @@ export default class 首頁 extends React.Component {
                 </Step>
               </Step.Group>
             </Grid.Column>
-          </Grid.Row>
         </Grid>
-      </Segment>
+    </Container>
+    </Segment>
+
  
       <Segment vertical>
         <Container text>
