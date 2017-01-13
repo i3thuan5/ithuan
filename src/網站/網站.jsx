@@ -1,6 +1,7 @@
 import React from 'react';
 // import 目錄 from './目錄';
 import 'semantic-ui-css/semantic.min.css';
+import './網站.css';
 import { Sidebar, Segment, Button, Menu, Image, Icon, Header } from 'semantic-ui-react';
 import Debug from 'debug';
 var debug = Debug('ithuan:網站');
@@ -19,7 +20,7 @@ export default class 網站 extends React.Component {
     const { visible } = this.state;
     return (
       <div>
-       <Menu icon vertical inverted fixed='top'>
+       <Menu id="KuahPau" icon vertical inverted fixed='top'>
             <Menu.Item name='kuahpau'>
               <Button inverted icon onClick={this.toggleVisibility.bind(this)}>
                 <Icon name='sidebar' />

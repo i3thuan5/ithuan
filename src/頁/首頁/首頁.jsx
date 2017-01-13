@@ -13,11 +13,8 @@ export default class 首頁 extends React.Component {
       <div>
       <Segment textAlign='center' inverted vertical>
 
-    <Container>
+    <Container id="appNav">
       <div className="ui large secondary inverted pointing menu">
-        <a className="toc item">
-          <i className="sidebar icon"></i>
-        </a>
         <Link to="/" className="active item">首頁</Link>
         <a className="item">Work</a>
         <a className="item">Company</a>

@@ -1,69 +1,15 @@
-/*encoding: utf-8*/
-* {
-	margin:0;
-	padding:0;
-	font-size: 100%;
-    font: inherit;
-    font-family:"LiHei Pro",
-				"Heiti TC"/*os x*/,
-				"Microsoft JhengHei"/*windows*/,
-				"WenQuanYi Micro Hei Mono",
-				"WenQuanYi Zen Hei Sharp"/*linux*/;
-}
-p {margin:10px 0;}
-ul {padding-left:40px; list-style-type:none;}
-body, #app {
-	/*設定body：使網頁有視窗的寬高*/
-	position: absolute; 
-	top: 0;
-	left: 0;
-	bottom:0;
-	right:0;
-}
-
-#網頁最外圍 {
-	width: 100%;
-	height: 100%;
-	min-width:800px;
-	min-height:28em;
-	background:radial-gradient(50% 0%,#FFE6D5,#FFCCAA);
-	background:-moz-radial-gradient(50% 0%,#FFE6D5,#FFCCAA);
-	background:-webkit-radial-gradient(50% 0%,#FFE6D5,#FFCCAA);
-	background:-o-radial-gradient(50% 0%,#FFE6D5,#FFCCAA);
-	font-size: 100%;
-	/*font-family:Comic Sans MS,arial,helvetica,sans-serif;*/
-	overflow:hidden;
-	padding:0.5em 0em;
-}
-/*-----------------------------*/	
-	#leftWrapper {
-		float:left;
-		position:relative;
-		left:2%; /*distance from webpage left side*/
-		width:81%;
-		height:97%;
-		overflow-y:auto;
-		font-size:150%;
-		background-color:rgba(255,255,255,0.5);
-		margin: 0.5em;
-		padding:0.5em;
+/* PC */
+@media only screen and (min-width: 768px)
+{
+	#KuahPau {
+		display: none;
 	}
-		
-	/*-----------------------------*/	
-ol {margin:0 0 0 40px;}
-
-
-section + section {margin-top:1.5em;}
-div.tit8 section + section {margin-top:1em;}
-div.huainn5 section + section {margin:2em auto 0;}
-	
-textarea,select,button,submit,input{
-	font-family: inherit;
-	font-size: inherit;
 }
 
 
-section  ul {margin-left:-2px;}
-section  ul li + li{margin:1em 0;}
-section  ul li p {color:blue;}
-blockqoute {width:50px;}
+/* Mobile */
+@media only screen and (max-width: 767px) {
+	#appNav {
+		display: none;
+	}
+}
