@@ -2,7 +2,7 @@ import React from 'react';
 // import 目錄 from './目錄';
 import 'semantic-ui-css/semantic.min.css';
 import './網站.css';
-import { Sidebar, Segment, Button, Menu, Image, Icon, Header } from 'semantic-ui-react';
+import { Sidebar, Segment, Dimmer, Button, Menu, Image, Icon, Header } from 'semantic-ui-react';
 import Debug from 'debug';
 var debug = Debug('ithuan:網站');
 
@@ -14,6 +14,7 @@ export default class 網站 extends React.Component {
 
   toggleVisibility() {
     this.setState({ visible: !this.state.visible });
+
   }
 
   render () {
@@ -22,7 +23,9 @@ export default class 網站 extends React.Component {
       <div>
        <Menu id="KuahPau" icon vertical inverted fixed='top'>
             <Menu.Item name='kuahpau'>
-              <Button inverted icon onClick={this.toggleVisibility.bind(this)}>
+              <Button inverted icon
+              onClick={this.toggleVisibility.bind(this)}
+              style={{ display: !this.state.visible ? 'block' : 'none' }}>
                 <Icon name='sidebar' />
               </Button>
             </Menu.Item>
@@ -43,17 +46,11 @@ export default class 網站 extends React.Component {
             </Menu.Item>
           </Sidebar>
           
-         
-          <Sidebar.Pusher>
-          
-            {/*<Menu fixed='top'>
-            <Menu.Item name='kuahpau'>
-              <Button icon onClick={this.toggleVisibility.bind(this)}>
-                <Icon name='sidebar' />
-              </Button>
-            </Menu.Item>
-            </Menu>*/}
+          <Sidebar.Pusher style={{ height: '100vh', overflowY: 'scroll', overflowX: 'hidden' }}>
+            <Dimmer.Dimmable dimmed={visible}>
+            <Dimmer active={visible} onClickOutside={this.toggleVisibility.bind(this)} />
             {this.props.children}
+            </Dimmer.Dimmable>
           </Sidebar.Pusher>
         </Sidebar.Pushable>
         </div>
