@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 // import 翻譯 from './翻譯.png';
 // import 發音 from './發音.png';
 // import 組字 from './組字.png';
-import { Container, Segment, Header, Grid, Item, Step, Icon, Divider } from 'semantic-ui-react';
+import { Menu, Button, Container, Segment, Header, Grid, Item, Step, Icon, Divider } from 'semantic-ui-react';
 export default class 首頁 extends React.Component {
 
   render () {

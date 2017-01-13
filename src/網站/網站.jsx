@@ -1,7 +1,7 @@
 import React from 'react';
 // import 目錄 from './目錄';
 import 'semantic-ui-css/semantic.min.css';
-import { Sidebar, Button, Menu, Image, Icon, Header } from 'semantic-ui-react';
+import { Sidebar, Segment, Button, Menu, Image, Icon, Header } from 'semantic-ui-react';
 import Debug from 'debug';
 var debug = Debug('ithuan:網站');
 
@@ -19,9 +19,15 @@ export default class 網站 extends React.Component {
     const { visible } = this.state;
     return (
       <div>
-        <Button onClick={this.toggleVisibility.bind(this)}>Toggle Visibility</Button>
+       <Menu icon vertical inverted fixed='top'>
+            <Menu.Item name='kuahpau'>
+              <Button inverted icon onClick={this.toggleVisibility.bind(this)}>
+                <Icon name='sidebar' />
+              </Button>
+            </Menu.Item>
+            </Menu>
         <Sidebar.Pushable>
-          <Sidebar as={Menu} animation='push' width='thin' visible={visible} icon='labeled' vertical inverted>
+          <Sidebar as={Menu} fixed="left" animation='push' width='thin' visible={visible} icon='labeled' vertical inverted>
             <Menu.Item name='home'>
               <Icon name='home' />
               Home
@@ -35,10 +41,21 @@ export default class 網站 extends React.Component {
               Channels
             </Menu.Item>
           </Sidebar>
+          
+         
           <Sidebar.Pusher>
-           {this.props.children}
+          
+            {/*<Menu fixed='top'>
+            <Menu.Item name='kuahpau'>
+              <Button icon onClick={this.toggleVisibility.bind(this)}>
+                <Icon name='sidebar' />
+              </Button>
+            </Menu.Item>
+            </Menu>*/}
+            {this.props.children}
           </Sidebar.Pusher>
         </Sidebar.Pushable>
-      </div>);
+        </div>
+      );
   }
 }
