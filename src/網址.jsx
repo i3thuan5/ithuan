@@ -9,7 +9,7 @@ import 閩客故事 from './頁/閩客故事/閩客故事';
 import 相關連結 from './頁/相關連結/相關連結';
 
 import Debug from 'debug';
-Debug.enable('ithuan:*');
+Debug.enable('*');
 
 const root = document.getElementById('app');
 
