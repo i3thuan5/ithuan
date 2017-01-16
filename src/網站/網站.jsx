@@ -21,11 +21,11 @@ export default class 網站 extends React.Component {
     const { visible } = this.state;
     return (
       <div>
-       <Menu id="KuahPau" icon vertical inverted fixed='top'>
+       <Menu id="KuahPau" icon vertical inverted fixed='top'
+        style={{ display: !this.state.visible ? 'block' : 'none' }}>
             <Menu.Item name='kuahpau'>
               <Button inverted icon
-              onClick={this.toggleVisibility.bind(this)}
-              style={{ display: !this.state.visible ? 'block' : 'none' }}>
+              onClick={this.toggleVisibility.bind(this)}>
                 <Icon name='sidebar' />
               </Button>
             </Menu.Item>

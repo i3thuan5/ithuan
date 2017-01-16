@@ -5,7 +5,10 @@ import { Link } from 'react-router';
 // import 翻譯 from './翻譯.png';
 // import 發音 from './發音.png';
 // import 組字 from './組字.png';
-import { Menu, Button, Container, Segment, Header, Grid, Item, Step, Icon, Divider } from 'semantic-ui-react';
+import { Menu, Button, Container, Card, Segment, Header, Grid, Item, Step, Icon, Divider } from 'semantic-ui-react';
+import LogoItaigi from './itaigi.svg';
+import LogoSu5lui7 from './su5lui7_hun1kip4.png';
+
 export default class 首頁 extends React.Component {
 
   render () {
@@ -33,7 +36,7 @@ export default class 首頁 extends React.Component {
     <Container>
     <Header as='h2' textAlign='center'>我們的服務</Header>
         <Grid stackable centered columns={2}>
-            <Grid.Column mobile={16} tablet={8} computer={5} textAlign="right">
+            <Grid.Column mobile={16} tablet={8} computer={6} textAlign="right">
               <Step.Group fluid>
                 <Step>
                   <Icon name='truck' />
@@ -54,7 +57,7 @@ export default class 首頁 extends React.Component {
               </Step.Group>
             </Grid.Column>
             
-            <Grid.Column mobile={16} tablet={8} computer={5}>
+            <Grid.Column mobile={16} tablet={8} computer={6}>
               <Step.Group fluid>
                 <Step>
                   <Icon name='truck' />
@@ -88,11 +91,28 @@ export default class 首頁 extends React.Component {
 
       <Segment vertical>
         <Header as='h2' textAlign='center'>參與的專案</Header>
-      <Grid>
+        <Container text>
+        <Grid columns={2}>
         <Grid.Row>
-          
-        </Grid.Row>
-      </Grid>
+        <Grid.Column mobile={16} tablet={8} computer={8}>
+          <Card
+          centered
+            image={LogoItaigi}
+            header='Itaigi'
+            meta='臺語字典'
+            description='『這個字怎麼說？』除了查詢，每個人都能上傳新字，評分最棒的念法。'/>
+        </Grid.Column>
+        <Grid.Column mobile={16} tablet={8} computer={8}>
+            <Card
+            centered
+            image={LogoSu5lui7}
+            header='詞彙分級'
+            meta='中教大臺語文系的合作網站'
+            description='人工編輯音標和漢字後，就由程式自動斷詞對齊漢字和音標'/>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+        </Container>
       </Segment>
 
       <Segment vertical>
