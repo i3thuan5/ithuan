@@ -123,23 +123,6 @@ export default class 首頁 extends React.Component {
         </Container>
       </Segment>
 
-      <Segment inverted vertical>
-          <Container textAlign="center">
-          <Grid columns={2}>
-            <Grid.Row>
-                <Grid.Column>
-              <p>github</p>
-              <p>facebook</p>
-            </Grid.Column>
-            <Grid.Column>
-              <p></p>
-            </Grid.Column>
-            </Grid.Row>
-            </Grid>
-            <Divider/>
-            <p>意傳文化科技</p>
-          </Container>
-      </Segment>
     </div>
       );
   }
