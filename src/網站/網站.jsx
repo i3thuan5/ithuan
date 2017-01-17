@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router';
+import { Sidebar, Dimmer, Button, Menu, Icon } from 'semantic-ui-react';
+import Debug from 'debug';
+import 頁首 from './頁首';
+import 頁腳 from './頁腳';
 import 'semantic-ui-css/semantic.min.css';
 import './網站.css';
-import { Sidebar, Segment, Dimmer, Button, Menu, Image, Icon, Header } from 'semantic-ui-react';
-import Debug from 'debug';
-import 頁腳 from './頁腳';
-// import 目錄 from './目錄';
 
 var debug = Debug('ithuan:網站');
 
@@ -59,6 +59,7 @@ export default class 網站 extends React.Component {
           <Sidebar.Pusher style={{ height: '100vh', overflowY: 'scroll', overflowX: 'hidden' }}>
             <Dimmer.Dimmable dimmed={visible}>
             <Dimmer active={visible} onClickOutside={this.toggleVisibility.bind(this)} />
+            <頁首/>
             {this.props.children}
             <頁腳/>
             </Dimmer.Dimmable>

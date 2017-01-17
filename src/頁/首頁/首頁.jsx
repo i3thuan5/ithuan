@@ -16,22 +16,11 @@ export default class 首頁 extends React.Component {
     return (
       <div>
       <Segment textAlign='center' inverted vertical>
-
-    <Container id="appNav">
-      <div className="ui large secondary inverted pointing menu">
-        <Link to="/" className="active item">首頁</Link>
-        <Link to="/%E7%B7%9A%E4%B8%8A%E7%B5%84%E5%AD%97" className="item">線上組字</Link>
-        <Link to="/%E9%96%A9%E5%AE%A2%E6%95%85%E4%BA%8B" className="item">閩客故事</Link>
-        <Link to="/%E7%9B%B8%E9%97%9C%E9%80%A3%E7%B5%90" className="item">相關連結</Link>
-      </div>
-    </Container>
-
-    <Container text>
-      <Header as='h1' inverted>意傳文化科技</Header>
-      <Header as='h2' inverted>Do whatever you want when you want to.</Header>
-      <div className="ui huge primary button">了解意傳 <i className="right arrow icon"></i></div>
-    </Container>
-  </Segment>
+        <Container text>
+          <Header as='h1' inverted>意傳文化科技</Header>
+          <Header as='h2' inverted>Do whatever you want when you want to.</Header>
+        </Container>
+      </Segment>
 
     <Segment basic> 
     <Container>
