@@ -73,8 +73,8 @@ export default class 網站 extends React.Component {
           <Sidebar.Pusher style={{ height: '100vh', overflowY: 'scroll', overflowX: 'hidden' }}>
             <Dimmer.Dimmable dimmed={visible}>
             <Dimmer active={visible} onClickOutside={this.toggleVisibility.bind(this)} />
-            <頁首/>
-            {this.props.children}
+            <頁首 paths={this.state.paths} getClasses={this.getClasses.bind(this)} handleItemClick={this.handleItemClick.bind(this)}/>
+             {this.props.children}
             <頁腳/>
             </Dimmer.Dimmable>
           </Sidebar.Pusher>
