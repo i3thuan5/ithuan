@@ -22,6 +22,7 @@ export default class 網站 extends React.Component {
         siongkuan: '/%E7%9B%B8%E9%97%9C%E9%80%A3%E7%B5%90',
       },
     };
+    this.closeVisibility = this.closeVisibility.bind(this);
   }
 
   openVisibility() {
@@ -32,14 +33,8 @@ export default class 網站 extends React.Component {
     this.setState({ visible: false });
   }
 
-  handleItemClick(activeItem) {
-    this.setState({ activeItem });
-    this.closeVisibility();
-    debug('parent click!');
-  }
-
   getClasses(link) {
-    if (this.state.activeItem === link) {
+    if (this.props.location.pathname === link) {
       return 'active item';
     }
 
@@ -47,7 +42,7 @@ export default class 網站 extends React.Component {
   }
 
   render () {
-    const { visible, activeItem, paths } = this.state;
+    const { visible, paths } = this.state;
 
     return (
       <div>
@@ -61,16 +56,16 @@ export default class 網站 extends React.Component {
             </Menu>
         <Sidebar.Pushable>
           <Sidebar as={Menu} fixed="left" animation='push' width='thin' visible={visible} icon='labeled' vertical inverted>
-              <Link to={paths.home} className={this.getClasses(paths.home)} onClick={this.handleItemClick.bind(this, paths.home)}>
+              <Link to={paths.home} className={this.getClasses(paths.home)} onClick={this.closeVisibility}>
                 <Icon name='home'/>首頁
               </Link>
-              <Link to={paths.tsooji} className={this.getClasses(paths.tsooji)} onClick={this.handleItemClick.bind(this, paths.tsooji)}>
+              <Link to={paths.tsooji} className={this.getClasses(paths.tsooji)} onClick={this.closeVisibility}>
                 <Icon name='gamepad'/>線上組字
               </Link>
-              <Link to={paths.kosu} className={this.getClasses(paths.kosu)} onClick={this.handleItemClick.bind(this, paths.kosu)}>
+              <Link to={paths.kosu} className={this.getClasses(paths.kosu)} onClick={this.closeVisibility}>
                 <Icon name='camera'/>閩客故事
               </Link>
-              <Link to={paths.siongkuan} className={this.getClasses(paths.siongkuan)} onClick={this.handleItemClick.bind(this, paths.siongkuan)}>
+              <Link to={paths.siongkuan} className={this.getClasses(paths.siongkuan)} onClick={this.closeVisibility}>
                 <Icon name='camera'/>相關連結
               </Link>
           </Sidebar>
@@ -78,7 +73,7 @@ export default class 網站 extends React.Component {
           <Sidebar.Pusher style={{ height: '100vh', overflowY: 'scroll', overflowX: 'hidden' }}>
             <Dimmer.Dimmable dimmed={visible}>
             <Dimmer active={visible} onClickOutside={this.closeVisibility.bind(this)} />
-            <頁首 paths={this.state.paths} getClasses={this.getClasses.bind(this)} handleItemClick={this.handleItemClick.bind(this)}/>
+            <頁首 paths={this.state.paths} getClasses={this.getClasses.bind(this)}/>
              {this.props.children}
             <頁腳/>
             </Dimmer.Dimmable>
