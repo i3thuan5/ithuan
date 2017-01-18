@@ -24,13 +24,18 @@ export default class 網站 extends React.Component {
     };
   }
 
-  toggleVisibility() {
-    this.setState({ visible: !this.state.visible });
+  openVisibility() {
+    this.setState({ visible: true });
+  }
+
+  closeVisibility() {
+    this.setState({ visible: false });
   }
 
   handleItemClick(activeItem) {
     this.setState({ activeItem });
-    this.toggleVisibility();
+    this.closeVisibility();
+    debug('parent click!');
   }
 
   getClasses(link) {
@@ -49,14 +54,14 @@ export default class 網站 extends React.Component {
        <Menu id="KuahPau" icon vertical inverted fixed='top'>
             <Menu.Item name='kuahpau' style={{ display: !this.state.visible ? 'block' : 'none' }}>
               <Button inverted icon
-              onClick={this.toggleVisibility.bind(this)}>
+              onClick={this.openVisibility.bind(this)}>
                 <Icon name='sidebar' />
               </Button>
             </Menu.Item>
             </Menu>
         <Sidebar.Pushable>
           <Sidebar as={Menu} fixed="left" animation='push' width='thin' visible={visible} icon='labeled' vertical inverted>
-              <Link to="/" className={this.getClasses(paths.home)} onClick={this.handleItemClick.bind(this, paths.home)}>
+              <Link to={paths.home} className={this.getClasses(paths.home)} onClick={this.handleItemClick.bind(this, paths.home)}>
                 <Icon name='home'/>首頁
               </Link>
               <Link to={paths.tsooji} className={this.getClasses(paths.tsooji)} onClick={this.handleItemClick.bind(this, paths.tsooji)}>
@@ -72,7 +77,7 @@ export default class 網站 extends React.Component {
           
           <Sidebar.Pusher style={{ height: '100vh', overflowY: 'scroll', overflowX: 'hidden' }}>
             <Dimmer.Dimmable dimmed={visible}>
-            <Dimmer active={visible} onClickOutside={this.toggleVisibility.bind(this)} />
+            <Dimmer active={visible} onClickOutside={this.closeVisibility.bind(this)} />
             <頁首 paths={this.state.paths} getClasses={this.getClasses.bind(this)} handleItemClick={this.handleItemClick.bind(this)}/>
              {this.props.children}
             <頁腳/>
