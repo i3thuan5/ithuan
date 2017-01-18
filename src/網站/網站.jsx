@@ -30,6 +30,7 @@ export default class 網站 extends React.Component {
 
   handleItemClick(activeItem) {
     this.setState({ activeItem });
+    this.toggleVisibility();
   }
 
   getClasses(link) {
