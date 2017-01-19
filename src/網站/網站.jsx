@@ -75,7 +75,7 @@ export default class 網站 extends React.Component {
             <Dimmer active={visible} onClickOutside={this.closeVisibility.bind(this)} />
             <頁首 paths={this.state.paths} getClasses={this.getClasses.bind(this)}/>
              {this.props.children}
-            <頁腳/>
+            <頁腳 paths={this.state.paths}/>
             </Dimmer.Dimmable>
           </Sidebar.Pusher>
         </Sidebar.Pushable>
