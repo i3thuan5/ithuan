@@ -23,20 +23,16 @@ export default class 閩客故事 extends React.Component {
           </Header.Content>
         </Header>
         <Segment basic>
-          <p>沒錯，部份詞彙原來是沒有漢字的。
-             例如閩南語當中對男生女生稱呼為查甫和查某的「查」起源自壯侗語，
-             閩南祖先從中原移居到閩越地區時，和相對多數的壯苗族裔通婚才加上的字
-             <span className="pai5huainn5">[1]</span>。
-             不過，先來念看看這三個字。
-           </p>
+          <p>來念看看這三個字</p>
 
-           <Table striped>
+           <Message warning attached><Icon name='info' />沒有標聲調</Message>
+           <Table striped unstackable attached>
             <Table.Header>
               <Table.Row>
                 <Table.HeaderCell>範例字</Table.HeaderCell>
                 <Table.HeaderCell>華語</Table.HeaderCell>
                 <Table.HeaderCell>閩南語</Table.HeaderCell>
-                <Table.HeaderCell>客家四縣腔&nbsp;（沒有標聲調）</Table.HeaderCell>
+                <Table.HeaderCell>客家四縣腔</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
 
@@ -61,11 +57,15 @@ export default class 閩客故事 extends React.Component {
               </Table.Row>
             </Table.Body>
           </Table>
-
-          <p>
-            為什麼狗、頭、後在各個語言都有押韻呢？
-            因為狗、頭、後在古代漢語是押韻的，可以推測從古代漢語分化成國閩客三種方言後，狗、頭、後仍然互相押韻。換句話說，國閩客語繼承了古代漢語的押韻規律，所以推論：閩南語及客家話和華語一樣也繼承了漢字。
-          </p>
+          <br/>
+          <p>為什麼狗、頭、後在各個語言都有押韻呢？</p>
+          <p>因為狗、頭、後在古代漢語是押韻的，可以推測從古代漢語分化成國閩客三種方言後，狗、頭、後仍然互相押韻。</p>
+          <p>換句話說，國閩客語繼承了古代漢語的押韻規律，所以推論：閩南語及客家話和華語一樣也繼承了漢字。</p>
+          <p>不過，部份詞彙原來是沒有漢字的。
+             例如閩南語當中對男生女生稱呼為查甫和查某的「查」起源自壯侗語，
+             閩南祖先從中原移居到閩越地區時，和相對多數的壯苗族裔通婚才加上的字
+             <span className="pai5huainn5">[1]</span>。</p>
+          
         </Segment>
 
         
@@ -76,12 +76,11 @@ export default class 閩客故事 extends React.Component {
           </Header.Content>
         </Header>
         <Segment basic>
-            <p>
-            《廣韻》是現今保存最完整的、最古老的、也是最重要的一部韻書。
-              韻書是一種按韻編排的字典，用來查哪些字押韻。現代的學者可以依據《廣韻》確知隋唐時期中古語音的聲母、韻母及聲調情況，進而上推古音（秦漢前）、下證今音（清末後）<span className="pai5huainn5">[3]</span>。
+            <p>《廣韻》是現今保存最完整的、最古老的、也是最重要的一部韻書。</p>
+            <p>韻書是一種按韻編排的字典，用來查哪些字押韻。現代的學者可以依據《廣韻》確知隋唐時期中古語音的聲母、韻母及聲調情況，進而上推古音（秦漢前）、下證今音（清末後）<span className="pai5huainn5">[3]</span>。
             </p>
             <p>當時為什麼要寫這本書呢？《廣韻》前序有寫，當年考詩詞遇到一個問題，就是考生說各自家鄉的方言，寫的是家鄉方言的韻字。例如：</p>
-            <Table striped>
+            <Table striped unstackable>
             <Table.Header>
               <Table.Row>
                 <Table.HeaderCell>範例字</Table.HeaderCell>
@@ -119,7 +118,7 @@ export default class 閩客故事 extends React.Component {
             <Icon name='info' />
             前一節提到狗、頭、後<br/>
             從《廣韻》來佐證這三個字同屬「侯韻」，遵循侯韻從中古音分化成國閩客的韻母，才會使這三個字在國閩客語都押韻。
-            <Table striped >
+            <Table striped unstackable>
             <Table.Header>
               <Table.Row>
                 <Table.HeaderCell>範例字</Table.HeaderCell>
@@ -154,13 +153,14 @@ export default class 閩客故事 extends React.Component {
             
 
             <p>再舉個有趣的例子：</p>
-            <Table striped>
+            <Message warning attached><Icon name='info' />沒有標聲調</Message>
+            <Table striped unstackable attached>
             <Table.Header>
               <Table.Row>
                 <Table.HeaderCell>範例字</Table.HeaderCell>
                 <Table.HeaderCell>華語</Table.HeaderCell>
                 <Table.HeaderCell>閩南語</Table.HeaderCell>
-                <Table.HeaderCell>客家四縣腔&nbsp;（沒有標聲調）</Table.HeaderCell>
+                <Table.HeaderCell>客家四縣腔</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
 
@@ -185,11 +185,10 @@ export default class 閩客故事 extends React.Component {
               </Table.Row>
             </Table.Body>
             </Table>
-            <p>
-              為什麼狗、手、周在華語押韻，閩客語卻沒有押韻呢？
-              原來手和周在《廣韻》屬於「尤韻」，閩客語保留了手周的尤韻，所以手周在閩客語當然不會按照侯韻的演變方式！
-              不過宋朝以後華語的尤韻和侯韻合流了，所以才會造成這三個字在華語押韻，但不在閩客語押韻的有趣現象。
-            </p>
+            <br/>
+            <p>狗、手、周在華語押韻，為什麼在閩客語卻沒有押韻呢？</p>
+            <p>原來手和周在《廣韻》屬於「尤韻」，閩客語保留了手周的尤韻，所以手周在閩客語當然不會按照侯韻的演變方式！
+              不過宋朝以後華語的尤韻和侯韻合流了，所以才會造成這三個字在華語押韻，但不在閩客語押韻的有趣現象。</p>
             <p>其它還有很多很多有趣的推論，都是由《廣韻》提供學者們重要佐證，所以說《廣韻》不只是當年讓文人作詩的工具書，更是現今學者研究漢語音韻史、研究當代漢語方言不可缺少的典籍。</p>
          </Segment>
 
