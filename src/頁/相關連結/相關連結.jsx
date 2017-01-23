@@ -8,7 +8,7 @@ export default class 相關連結 extends React.Component {
   render () {
     return (
       <Container text>
-        <Segment basic padded>
+        <Segment basic>
           <p>一直都有很多團隊努力提供閩南語、客語的學習資源，在此部份推薦</p>
         </Segment>
         <Divider/>

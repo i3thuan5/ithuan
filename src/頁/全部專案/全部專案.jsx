@@ -6,13 +6,16 @@ export default class 全部專案 extends React.Component {
   render () {
     return (
       <Container text>
-        <Segment basic padded>
+        <Segment basic>
           <List>
             <List.Item>參與的專案</List.Item>
             <List.Item as='a' href="http://itaigi.tw" target="_blank">itaigi</List.Item>
             <List.Item as='a' href="http://寫啥物.意傳.台灣/" target="_blank">寫啥物</List.Item>
+            <List.Item as='a' href="http://組字.意傳.台灣/" target="_blank">組字</List.Item>
           </List>
-          
+        </Segment>  
+
+        <Segment basic>
           <List>
             <List.Item>函式庫</List.Item>
             <List.Item as='a' href='https://github.com/sih4sing5hong5/tai5-uan5_gian5-gi2_kang1-ku7'>臺灣言語工具</List.Item>
