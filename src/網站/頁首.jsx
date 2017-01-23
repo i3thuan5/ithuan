@@ -22,7 +22,6 @@ class 頁首 extends Component {
         <Container>
           <Menu secondary inverted size="large" pointing>
             <Link to={paths.home} className={this.getItemClass(paths.home)}>首頁</Link>
-            <Link to={paths.tsooji} className={this.getItemClass(paths.tsooji)}>線上組字</Link>
             <Link to={paths.kosu} className={this.getItemClass(paths.kosu)}>閩客故事</Link>
             <Link to={paths.siongkuan} className={this.getItemClass(paths.siongkuan)}>相關連結</Link>
           </Menu>
