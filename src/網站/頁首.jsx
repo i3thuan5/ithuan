@@ -16,14 +16,15 @@ class 頁首 extends Component {
 
   render() {
     const { paths } = this.props;
-
+    const { home, tsuanan, kosu, siongkuan } = paths;
     return (
       <Segment id="appNav" textAlign='center' inverted vertical>
         <Container>
           <Menu secondary inverted size="large" pointing>
-            <Link to={paths.home} className={this.getItemClass(paths.home)}>首頁</Link>
-            <Link to={paths.kosu} className={this.getItemClass(paths.kosu)}>閩客故事</Link>
-            <Link to={paths.siongkuan} className={this.getItemClass(paths.siongkuan)}>相關連結</Link>
+            <Link to={home} className={this.getItemClass(home)}>首頁</Link>
+            <Link to={tsuanan} className={this.getItemClass(tsuanan)}>全部專案</Link>
+            <Link to={kosu} className={this.getItemClass(kosu)}>閩客故事</Link>
+            <Link to={siongkuan} className={this.getItemClass(siongkuan)}>相關連結</Link>
           </Menu>
         </Container>
       </Segment>
