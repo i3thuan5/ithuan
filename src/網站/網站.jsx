@@ -70,7 +70,7 @@ export default class 網站 extends React.Component {
               </Link>
           </Sidebar>
           
-          <Sidebar.Pusher style={{ height: '100vh', overflowY: 'scroll', overflowX: 'hidden' }}>
+          <Sidebar.Pusher>
             <Dimmer.Dimmable dimmed={visible}>
             <Dimmer active={visible} onClickOutside={this.closeVisibility.bind(this)} />
             <頁首 paths={this.state.paths} getClasses={this.getClasses.bind(this)}/>
