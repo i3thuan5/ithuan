@@ -8,12 +8,12 @@ export default class 相關連結 extends React.Component {
   render () {
     return (
       <Container text>
-        <Segment basic>
+        <Segment basic size="large">
           <p>一直都有很多團隊努力提供閩南語、客語的學習資源，在此部份推薦</p>
         </Segment>
         <Divider/>
         
-        <Segment basic>
+        <Segment basic size="large">
         <List>
           <List.Item>閩南語</List.Item>
           <List.Item as='a' href="http://twblg.dict.edu.tw/holodict_new/" target="_blank">臺灣閩南語常用詞辭典</List.Item>
@@ -22,7 +22,7 @@ export default class 相關連結 extends React.Component {
         </List>
         </Segment>
         
-        <Segment basic>
+        <Segment basic size="large">
         <List>
           <List.Item>客家話</List.Item>
           <List.Item as='a' href="http://www.edu.tw/FileUpload/3653-15592/Documents/hakka_pinyin3.pdf" target="_blank">臺灣客家語羅馬字拼音方案使用手冊</List.Item>
@@ -31,14 +31,14 @@ export default class 相關連結 extends React.Component {
         </List>  
         </Segment>
         
-        <Segment basic>
+        <Segment basic size="large">
         <List>
           <List.Item>漢語相關</List.Item>
           <List.Item as='a' href="http://xiaoxue.iis.sinica.edu.tw/ccr/" target="_blank">漢字古今音資料庫</List.Item>
         </List>  
         </Segment>
 
-        <Segment basic>
+        <Segment basic size="large">
         <List>
           <List.Item>其他網站</List.Item>
           <List.Item as='a' href="https://www.facebook.com/pages/%E6%88%91%E6%84%9B%E5%B7%A7%E5%AE%9B%E7%84%B6/400765906649247" target="_blank">我愛巧宛然</List.Item>
@@ -48,7 +48,7 @@ export default class 相關連結 extends React.Component {
         </List>  
         </Segment>
 
-        <Segment basic>
+        <Segment basic size="large">
             <p>會持續更新網站清單，也歡迎來信和意傳分享！</p>
         </Segment>
       </Container>

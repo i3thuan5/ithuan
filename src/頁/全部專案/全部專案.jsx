@@ -11,7 +11,7 @@ export default class 全部專案 extends React.Component {
   render () {
     return (
       <Container text>
-        <Segment basic>
+        <Segment basic size="large">
         <Item.Group relaxed>
         
           <Item>
@@ -72,7 +72,7 @@ export default class 全部專案 extends React.Component {
         </Item.Group>
         </Segment>  
 
-        <Segment basic>
+        <Segment basic size="large">
         <Header as='h3'>客語</Header>
         <Item.Group relaxed>
           <Item>
@@ -89,7 +89,7 @@ export default class 全部專案 extends React.Component {
         </Item.Group>
         </Segment>  
 
-        <Segment basic>
+        <Segment basic size="large">
           <Header as='h3'><Icon name="github"/>函式庫</Header>
           <List>
             <List.Item as='a' href='https://github.com/sih4sing5hong5/tai5-uan5_gian5-gi2_kang1-ku7' target="_blank">臺灣言語工具</List.Item>

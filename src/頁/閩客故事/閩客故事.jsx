@@ -6,8 +6,8 @@ export default class 閩客故事 extends React.Component {
   render () {
     return (
       <Container text>
-        <Segment basic textAlign="center">
-        <Menu vertical compact>
+        <Segment basic textAlign="center" size="large">
+        <Menu vertical compact size="large">
           <Menu.Item href='#閩客語有文字' target='_self'>閩客語有文字？</Menu.Item>
           <Menu.Item href="#廣韻" target='_self'>廣韻：揭開漢語方言的演化史</Menu.Item>
           <Menu.Item href="#閩南語的後" target='_self'>閩南語「後」沒有ㄏ</Menu.Item>
@@ -20,7 +20,7 @@ export default class 閩客故事 extends React.Component {
             閩客語有文字？
           </Header.Content>
         </Header>
-        <Segment basic>
+        <Segment basic size="large">
           <p>來念看看這三個字</p>
 
            <Message warning attached><Icon name='info' />沒有標聲調</Message>
@@ -73,7 +73,7 @@ export default class 閩客故事 extends React.Component {
             廣韻：揭開漢語方言的演化史
           </Header.Content>
         </Header>
-        <Segment basic>
+        <Segment basic size="large">
             <p>《廣韻》是現今保存最完整的、最古老的、也是最重要的一部韻書。</p>
             <p>韻書是一種按韻編排的字典，用來查哪些字押韻。現代的學者可以依據《廣韻》確知隋唐時期中古語音的聲母、韻母及聲調情況，進而上推古音（秦漢前）、下證今音（清末後）<span className="pai5huainn5">[3]</span>。
             </p>
@@ -197,14 +197,14 @@ export default class 閩客故事 extends React.Component {
             閩南語「後」沒有ㄏ音
           </Header.Content>
         </Header>
-        <Segment id="閩南語的後" name='閩南語的後' basic>
+        <Segment id="閩南語的後" name='閩南語的後' basic size="large">
           <p>
             查考其他方言，只有閩南語的「後」沒有ㄏ音，大多數方言的「後」是有ㄏ的。</p>
           <p>以語音學的角度，ㄏ音不太可能無中生有。因此我們推測，閩語「後」的ㄏ是因為在講不清楚或聽不清楚的口耳相傳中漸漸遺落的，這成為閩語一個創新的特徵。</p>
           <p>閩籍祖先是由不同時期不同地點而來，又受到唐宋科舉讀書音的影響，造就了四個漢語語言層次，及文白兩異讀。</p>
         </Segment>
 
-        <Segment id="參考資料" basic>
+        <Segment id="參考資料" basic size="large">
         <Divider/>
           <p>參考資料：</p>
           <p><span className="pai5huainn5">[1]</span>&nbsp;董忠司。<cite>臺灣閩南語概論講授資料彙編，頁3-4。</cite>民國八十五年，董忠司主編。</p>
