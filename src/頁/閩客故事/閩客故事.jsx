@@ -1,8 +1,6 @@
 import React from 'react';
 import { Container, Divider, Segment, Header, Icon, Menu, Message, Rail, Table } from 'semantic-ui-react';
 
-// import './閩客故事.css';
-
 export default class 閩客故事 extends React.Component {
 
   render () {

@@ -4,12 +4,6 @@ import { Menu, Button, Container, Card, Segment, Header, Grid, Item, Step, Icon,
 import LogoItaigi from '../../圖/itaigi.svg';
 import LogoSu5lui7 from '../../圖/su5lui7_hun1kip4.png';
 
-// import './首頁.css';
-// import 標音 from './標音.png';
-// import 翻譯 from './翻譯.png';
-// import 發音 from './發音.png';
-// import 組字 from './組字.png';
-
 export default class 首頁 extends React.Component {
 
   render () {
