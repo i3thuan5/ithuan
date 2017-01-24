@@ -10,12 +10,17 @@
   background: rgba(0, 0, 0, 0.03);
 }
 
+h2.ui.header {
+    margin-bottom: 0.8em;
+}
+
 /* PC */
 @media only screen and (min-width: 768px)
 {
   .masthead.segment {
     min-height: 300px;
   }
+  
   .masthead h1.ui.header {
     margin-top: 2.2em;
   }
@@ -27,7 +32,12 @@
   .masthead.segment {
     min-height: 250px;
   }
+  
   .masthead h1.ui.header {
     margin-top: 1.7em;
+  }
+  
+  .ui.centered.card:first-child {
+    margin-bottom: 1em;
   }
 }

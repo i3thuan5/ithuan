@@ -17,56 +17,51 @@ export default class 首頁 extends React.Component {
         </Container>
       </Segment>
 
-    <Segment vertical className="stripe"> 
-    <Container>
-    <Header as='h2' textAlign='center'>我們的服務</Header>
+      <Segment vertical className="stripe"> 
+      <Container>
+      <Header as='h2' textAlign='center'>我們的服務</Header>
         <Grid stackable centered columns={2}>
-            <Grid.Column mobile={16} tablet={8} computer={6} textAlign="right">
+            <Grid.Column mobile={16} tablet={6} computer={4} textAlign="right">
               <Step.Group fluid>
                 <Step>
-                  <Icon name='truck' />
+                  <Icon name='trophy' />
                   <Step.Content>
                     <Step.Title>語音辨識</Step.Title>
-                    <Step.Description>Choose your shipping options</Step.Description>
                   </Step.Content>
                 </Step>
               </Step.Group>
               <Step.Group fluid>
                 <Step>
-                  <Icon name='truck' />
+                  <Icon name='trophy' />
                   <Step.Content>
                     <Step.Title>語音合成</Step.Title>
-                    <Step.Description>Choose your shipping options</Step.Description>
                   </Step.Content>
                 </Step>
               </Step.Group>
             </Grid.Column>
             
-            <Grid.Column mobile={16} tablet={8} computer={6}>
+            <Grid.Column mobile={16} tablet={6} computer={4}>
               <Step.Group fluid>
                 <Step>
-                  <Icon name='truck' />
+                  <Icon name='trophy' />
                   <Step.Content>
                     <Step.Title>整理語料</Step.Title>
-                    <Step.Description>Choose your shipping options</Step.Description>
                   </Step.Content>
                 </Step>
               </Step.Group>
               <Step.Group fluid>
                 <Step>
-                  <Icon name='truck' />
+                  <Icon name='trophy' />
                   <Step.Content>
-                    <Step.Title>對齊漢字音標</Step.Title>
-                    <Step.Description>Choose your shipping options</Step.Description>
+                    <Step.Title>斷詞標音</Step.Title>
                   </Step.Content>
                 </Step>
               </Step.Group>
             </Grid.Column>
         </Grid>
-    </Container>
-    </Segment>
+      </Container>
+      </Segment>
 
- 
       <Segment vertical className="stripe slogan">
         <Container text>
         <Header as='h2' textAlign='center'>用程式推廣母語！</Header>
