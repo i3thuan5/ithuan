@@ -2,6 +2,14 @@
     padding: 1em 0em;
 }
 
+.stripe.segment {
+  padding: 4em 0em;
+}
+
+.stripe.slogan.segment {
+  background: rgba(0, 0, 0, 0.03);
+}
+
 /* PC */
 @media only screen and (min-width: 768px)
 {

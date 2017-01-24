@@ -17,7 +17,7 @@ export default class 首頁 extends React.Component {
         </Container>
       </Segment>
 
-    <Segment basic> 
+    <Segment vertical className="stripe"> 
     <Container>
     <Header as='h2' textAlign='center'>我們的服務</Header>
         <Grid stackable centered columns={2}>
@@ -67,14 +67,14 @@ export default class 首頁 extends React.Component {
     </Segment>
 
  
-      <Segment vertical>
+      <Segment vertical className="stripe slogan">
         <Container text>
         <Header as='h2' textAlign='center'>用程式推廣母語！</Header>
         <p>市面上很多提供中文工具和客製化中文網站，但不一定適用全部的語言，我們希望為母語使用者和對母語有熱忱的人提供另一選擇</p>
         </Container>
       </Segment>
 
-      <Segment vertical>
+      <Segment basic className="stripe">
         <Header as='h2' textAlign='center'>參與的專案</Header>
         <Container text>
         <Grid columns={2}>
@@ -100,7 +100,7 @@ export default class 首頁 extends React.Component {
         </Container>
       </Segment>
 
-      <Segment vertical>
+      <Segment vertical className="stripe">
         <Container text>
         <Header as='h2' textAlign='center'>贊助我們</Header>
         <p>這些工具都是團隊們平日抽空，一點一滴累積的成果。不管金額多少，都能幫助加速開發這些工具。也非常歡迎任何建議或是給我們打氣。</p>
