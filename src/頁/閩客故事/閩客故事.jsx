@@ -15,7 +15,7 @@ export default class 閩客故事 extends React.Component {
         </Segment>
 
         <Header id="閩客語有文字" as='h3' attached='top' block>
-          <Icon name='truck' />
+          <Icon name='newspaper' />
           <Header.Content>
             閩客語有文字？
           </Header.Content>
@@ -68,7 +68,7 @@ export default class 閩客故事 extends React.Component {
 
         
         <Header id="廣韻" as='h3' attached='top' block>
-          <Icon name='truck' />
+          <Icon name='newspaper' />
           <Header.Content>
             廣韻：揭開漢語方言的演化史
           </Header.Content>
@@ -192,7 +192,7 @@ export default class 閩客故事 extends React.Component {
 
       
         <Header as='h3' attached='top' block>
-          <Icon name='truck' />
+          <Icon name='newspaper' />
           <Header.Content>
             閩南語「後」沒有ㄏ音
           </Header.Content>
