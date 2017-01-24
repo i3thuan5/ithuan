@@ -3,13 +3,14 @@ import { Link } from 'react-router';
 import { Menu, Button, Container, Card, Segment, Header, Grid, Item, Step, Icon, Divider } from 'semantic-ui-react';
 import LogoItaigi from '../../圖/itaigi.svg';
 import LogoSu5lui7 from '../../圖/su5lui7_hun1kip4.png';
+import './首頁.css';
 
 export default class 首頁 extends React.Component {
 
   render () {
     return (
       <div>
-      <Segment textAlign='center' inverted vertical>
+      <Segment textAlign='center' inverted vertical className="masthead">
         <Container text>
           <Header as='h1' inverted>意傳文化科技</Header>
           <Header as='h2' inverted>Do whatever you want when you want to.</Header>
