@@ -93,6 +93,13 @@ export default class 首頁 extends React.Component {
           </Grid.Row>
         </Grid>
         </Container>
+
+        <Segment basic textAlign="center">
+        <Link to="/%e5%85%a8%e9%83%a8%e5%b0%88%e6%a1%88"
+        className="ui massive primary button">
+          全部專案<Icon name="arrow right"/>
+        </Link>
+        </Segment>
       </Segment>
 
       <Segment vertical className="stripe">
