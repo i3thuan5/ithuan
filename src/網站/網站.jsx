@@ -60,13 +60,13 @@ export default class 網站 extends React.Component {
                 <Icon name='home'/>首頁
               </Link>
               <Link to={paths.tsuanan} className={this.getClasses(paths.tsuanan)} onClick={this.closeVisibility}>
-                <Icon name='camera'/>全部專案
+                <Icon name='rocket'/>全部專案
               </Link>
               <Link to={paths.kosu} className={this.getClasses(paths.kosu)} onClick={this.closeVisibility}>
-                <Icon name='camera'/>閩客故事
+                <Icon name='fire'/>閩客故事
               </Link>
               <Link to={paths.siongkuan} className={this.getClasses(paths.siongkuan)} onClick={this.closeVisibility}>
-                <Icon name='camera'/>相關連結
+                <Icon name='world'/>相關連結
               </Link>
           </Sidebar>
           
