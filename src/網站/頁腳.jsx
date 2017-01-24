@@ -19,8 +19,10 @@ class 頁腳 extends Component {
         <Grid columns={2} stackable>
           <Grid.Row>
             <Grid.Column>
-              <p>github</p>
-              <p>facebook</p>
+             <Menu vertical inverted compact>
+              <p><a className="item" href="https://github.com/i3thuan5/i3thuan5" target="_blank">github</a></p>
+              <p><a className="item" href="https://www.facebook.com/i3thuan5/" target="_blank">facebook</a></p>
+              </Menu>
             </Grid.Column>
             <Grid.Column>
             <Menu vertical inverted compact>
