@@ -13,7 +13,7 @@ export default class 首頁 extends React.Component {
       <Segment textAlign='center' inverted vertical className="masthead">
         <Container text>
           <Header as='h1' inverted>意傳文化科技</Header>
-          <Header as='h2' inverted>Do whatever you want when you want to.</Header>
+          <Header as='h2' inverted>i3-thuan5 bun5-hua3 kho1-ki1</Header>
         </Container>
       </Segment>
 
