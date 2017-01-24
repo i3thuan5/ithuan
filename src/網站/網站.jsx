@@ -41,6 +41,12 @@ export default class 網站 extends React.Component {
     return 'item';
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    debug('pigu papa');
+    let 內文老爸 = document.getElementById('i3pusher');
+    內文老爸.scrollTop = 0;
+  }
+
   render () {
     const { visible, paths } = this.state;
 
@@ -70,7 +76,7 @@ export default class 網站 extends React.Component {
               </Link>
           </Sidebar>
           
-          <Sidebar.Pusher>
+          <Sidebar.Pusher id="i3pusher">
             <Dimmer.Dimmable dimmed={visible}>
             <Dimmer active={visible} onClickOutside={this.closeVisibility.bind(this)} />
             <頁首 paths={this.state.paths} getClasses={this.getClasses.bind(this)}/>
