@@ -76,7 +76,9 @@ export default class 首頁 extends React.Component {
         <Grid.Row>
         <Grid.Column mobile={16} tablet={8} computer={8}>
           <Card
-          centered
+            href='https://itaigi.tw/'
+            target="_blank"
+            centered
             image={LogoItaigi}
             header='Itaigi'
             meta='臺語字典'
@@ -84,6 +86,8 @@ export default class 首頁 extends React.Component {
         </Grid.Column>
         <Grid.Column mobile={16} tablet={8} computer={8}>
             <Card
+            href='http://詞彙分級.意傳.台灣/'
+            target="_blank"
             centered
             image={LogoSu5lui7}
             header='詞彙分級'
