@@ -1,28 +1,43 @@
-/*---關於意傳---*/
-ul#意傳工具小簡歷{
-    list-style-type:none;
-    text-align:center;
-    margin:5em auto;
+.masthead.segment {
+    padding: 1em 0em;
+}
+
+.stripe.segment {
+  padding: 4em 0em;
+}
+
+.stripe.slogan.segment {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+h2.ui.header {
+    margin-bottom: 0.8em;
+}
+
+/* PC */
+@media only screen and (min-width: 768px)
+{
+  .masthead.segment {
+    min-height: 300px;
   }
-ul#意傳工具小簡歷 li{
-  display:inline-block;
-  vertical-align:top;
-  margin:0 25px auto;
+  
+  .masthead h1.ui.header {
+    margin-top: 2.2em;
+  }
 }
-ul#意傳工具小簡歷 li img{
-  width:4em;
-  height:4em;
-  margin:0 13px auto;
-}
-ul#意傳工具小簡歷 li h2 {
-  color:#FF0D00;/*#00BFFF;*/
-  font-weight:bold;
-  font-size:2em;/*30px*/
-}
-ul#意傳工具小簡歷 li p{
-  text-align:center;
-  font-size:1em;
-  display:block;    
-  margin:0 auto;
-  width:250px;
+
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .masthead.segment {
+    min-height: 250px;
+  }
+  
+  .masthead h1.ui.header {
+    margin-top: 1.7em;
+  }
+  
+  .ui.centered.card:first-child {
+    margin-bottom: 1em;
+  }
 }

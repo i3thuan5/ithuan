@@ -1,38 +1,57 @@
 import React from 'react';
+import { Container, Divider, Header, List, Segment } from 'semantic-ui-react';
+import Debug from 'debug';
+var debug = Debug('ithuan:相關連結');
 
 export default class 相關連結 extends React.Component {
 
   render () {
     return (
-      <article>
-         <section>
-            
-            <p>學習資源很多，在此附上適合閩南語和客語的初學者的部份資源。如果有任何好網站，歡迎聯絡我們。</p>
-            
-            <p>閩南語：<br/>
-            <a href="http://twblg.dict.edu.tw/holodict_new/">臺灣閩南語常用詞辭典</a><br/>
-            <a href="http://www.edu.tw/FileUpload/3677-15601/Documents/tshiutsheh.pdf">臺灣閩南語羅馬字拼音方案使用手冊</a><br/>
-            <a href="https://bitbucket.org/pcchen/nan">信望愛台語語料庫</a><br/>
-            </p>
-            
-            <p>客家話：<br/>
-            <a href="http://www.edu.tw/FileUpload/3653-15592/Documents/hakka_pinyin3.pdf">臺灣客家語羅馬字拼音方案使用手冊</a><br/>
-            <a href="http://elearning.hakka.gov.tw/">哈客網路學院</a><br/>
-            <a href="http://hakka.dict.edu.tw/hakkadict/">臺灣客家話常用辭典</a><br/>
-            </p>
-            
-            <p>漢語相關：<br/>
-            <a href="http://xiaoxue.iis.sinica.edu.tw/ccr/">漢字古今音資料庫</a><br/>
-            </p>
-            
-            <p>其他網站：<br/>
-            <a href="https://www.facebook.com/pages/%E6%88%91%E6%84%9B%E5%B7%A7%E5%AE%9B%E7%84%B6/400765906649247">我愛巧宛然</a><br/>
-            <a href="http://olddoc.tmu.edu.tw/chiaushin/">台語天地</a><br/>
-            <a href="http://210.240.194.97/taigu.asp">白話字台語文網站</a><br/>
-            <a href="http://hik-u-tw.blogspot.tw/">台語半桶師雜記</a><br/>
-            </p>
-        </section>
-      </article>
+      <Container text>
+        <Segment basic size="large">
+          <p>一直都有很多團隊努力提供閩南語、客語的學習資源，在此部份推薦</p>
+        </Segment>
+        <Divider/>
+        
+        <Segment basic size="large">
+        <List>
+          <List.Item>閩南語</List.Item>
+          <List.Item as='a' href="http://twblg.dict.edu.tw/holodict_new/" target="_blank">臺灣閩南語常用詞辭典</List.Item>
+          <List.Item as='a' href="http://www.edu.tw/FileUpload/3677-15601/Documents/tshiutsheh.pdf" target="_blank">臺灣閩南語羅馬字拼音方案使用手冊</List.Item>
+          <List.Item as='a' href="https://bitbucket.org/pcchen/nan" target="_blank">信望愛台語語料庫</List.Item>
+        </List>
+        </Segment>
+        
+        <Segment basic size="large">
+        <List>
+          <List.Item>客家話</List.Item>
+          <List.Item as='a' href="http://www.edu.tw/FileUpload/3653-15592/Documents/hakka_pinyin3.pdf" target="_blank">臺灣客家語羅馬字拼音方案使用手冊</List.Item>
+          <List.Item as='a' href="http://elearning.hakka.gov.tw/" target="_blank">哈客網路學院</List.Item>
+          <List.Item as='a' href="http://hakka.dict.edu.tw/hakkadict/" target="_blank">臺灣客家話常用辭典</List.Item>
+        </List>  
+        </Segment>
+        
+        <Segment basic size="large">
+        <List>
+          <List.Item>漢語相關</List.Item>
+          <List.Item as='a' href="http://xiaoxue.iis.sinica.edu.tw/ccr/" target="_blank">漢字古今音資料庫</List.Item>
+        </List>  
+        </Segment>
+
+        <Segment basic size="large">
+        <List>
+          <List.Item>其他網站</List.Item>
+          <List.Item as='a' href="https://www.facebook.com/pages/%E6%88%91%E6%84%9B%E5%B7%A7%E5%AE%9B%E7%84%B6/400765906649247" target="_blank">我愛巧宛然</List.Item>
+          <List.Item as='a' href="http:///olddoc.tmu.edu.tw/chiaushin/" target="_blank">台語天地</List.Item>
+          <List.Item as='a' href="http://210.240.194.97/taigu.asp" target="_blank">白話字台語文網站</List.Item>
+          <List.Item as='a' href="http://hik-u-tw.blogspot.tw/" target="_blank">台語半桶師雜記</List.Item>
+        </List>  
+        </Segment>
+
+        <Segment basic size="large">
+            <p>會持續更新網站清單，也歡迎來信和意傳分享！</p>
+        </Segment>
+      </Container>
     );
   }
 }
