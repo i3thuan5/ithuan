@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="45.155556mm"
+   height="45.155556mm"
+   viewBox="0 0 160 160"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="i3thuan5_favicon.svg"
+   inkscape:export-filename="/home/fafoy/i3thuan5_32x32_white.png"
+   inkscape:export-xdpi="18"
+   inkscape:export-ydpi="18">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="165.68112"
+     inkscape:cy="101.53856"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1029"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3338"
+       originx="18.511952"
+       originy="-857.55946" />
+    <sodipodi:guide
+       position="83.511951,57.440536"
+       orientation="0,1"
+       id="guide3340" />
+    <sodipodi:guide
+       position="83.511951,27.440537"
+       orientation="0,1"
+       id="guide3342" />
+    <sodipodi:guide
+       position="83.511951,57.440536"
+       orientation="1,0"
+       id="guide3344" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(18.511954,-34.802743)">
+    <path
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 23.494671,53.45856 c -6.295819,10.343405 -11.664756,23.626154 -5.733469,35.373637 2.864248,5.984165 3.934566,13.092723 0.393064,19.005613 -5.80566,13.07052 -17.80541029,25.17637 -15.6690254,40.54154 5.1413393,24.02346 28.1151254,41.11922 51.7073744,44.37157 21.317142,2.87466 44.649166,-3.00961 60.154625,-18.37748 7.648,-7.90186 10.66243,-19.83288 7.01771,-30.29427 -3.87246,-14.87343 -15.46824,-29.07569 -10.68097,-45.14137 2.01184,-6.793138 6.2916,-12.446444 10.02159,-18.327812 -10.76604,2.6548 -19.79211,10.202413 -24.793355,20.010172 -6.446968,8.15807 -8.017987,19.3148 -4.702353,29.09985 2.249257,6.9486 1.949245,15.60446 -4.45825,20.35159 -14.253396,12.88782 -40.615343,9.62777 -49.900075,-7.6267 -3.621599,-11.63528 5.262629,-21.98198 8.766408,-32.47775 3.793708,-9.7948 3.250165,-21.894752 -4.272517,-29.817644 C 36.70677,74.564383 34.335662,66.780724 34.51108,59.547519 34.711374,51.288587 39.999998,43.262433 43.445723,36.429932 36.333683,37.928584 27.100172,48.58416 23.494671,53.45856 Z"
+       id="path3336-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccccccacc" />
+    <circle
+       style="fill:#ff0000;stroke:#ff0000;fill-opacity:1"
+       id="path4168"
+       cx="69"
+       cy="57.362221"
+       r="19.999998" />
+  </g>
+</svg>
