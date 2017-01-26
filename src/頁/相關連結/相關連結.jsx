@@ -19,6 +19,7 @@ export default class 相關連結 extends React.Component {
           <List.Item as='a' href="http://twblg.dict.edu.tw/holodict_new/" target="_blank">臺灣閩南語常用詞辭典</List.Item>
           <List.Item as='a' href="http://www.edu.tw/FileUpload/3677-15601/Documents/tshiutsheh.pdf" target="_blank">臺灣閩南語羅馬字拼音方案使用手冊</List.Item>
           <List.Item as='a' href="https://bitbucket.org/pcchen/nan" target="_blank">信望愛台語語料庫</List.Item>
+          <List.Item as='a' href="http://prj.digimagic.com.tw/ntcmin700/index.htm" target="_blank">教育部閩南語推薦用字700字詞</List.Item>
         </List>
         </Segment>
         
@@ -33,8 +34,16 @@ export default class 相關連結 extends React.Component {
         
         <Segment basic size="large">
         <List>
+          <List.Item>族語</List.Item>
+          <List.Item as='a' href="http://tayal.pqwasan.org.tw/kmal/desktop/index.php" target="_blank">賽考利克泰雅語 - 線上辭典</List.Item>
+        </List>  
+        </Segment>
+
+        <Segment basic size="large">
+        <List>
           <List.Item>漢語相關</List.Item>
           <List.Item as='a' href="http://xiaoxue.iis.sinica.edu.tw/ccr/" target="_blank">漢字古今音資料庫</List.Item>
+          <List.Item as='a' href="http://wesingkasu.blogspot.tw/" target="_blank">烏衣行+</List.Item>
         </List>  
         </Segment>
 
