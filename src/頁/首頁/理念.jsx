@@ -8,7 +8,7 @@ class 理念 extends Component {
 
   render() {
     return (
-      <Segment basic className="stripe slogan">
+      <Segment basic className="submasthead stripe slogan">
         <Container text>
         <Header as='h2' textAlign='center'>用程式推廣母語！</Header>
         <p>市面上很多提供中文工具和客製化中文網站，但不一定適用全部的語言，我們希望為母語使用者和對母語有熱忱的人提供另一選擇</p>

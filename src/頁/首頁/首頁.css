@@ -2,6 +2,10 @@
     padding: 1em 0em;
 }
 
+.submasthead.segment {
+    margin-top: 0;
+}
+
 .stripe.segment {
   padding: 4em 0em;
 }
