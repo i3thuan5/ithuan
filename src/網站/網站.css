@@ -1,4 +1,9 @@
+/*global*/
+html {
+  font-size: 20px;
+}
 
+/*two column*/
 .pushable>.pusher {
   height: 100vh;
   overflow-y: scroll;
