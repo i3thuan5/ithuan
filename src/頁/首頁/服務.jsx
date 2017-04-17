@@ -17,7 +17,7 @@ class 服務 extends Component {
                 <Step>
                   <Icon name='trophy' />
                   <Step.Content>
-                    <Step.Title>語音辨識</Step.Title>
+                    <Step.Title>語音功能</Step.Title>
                   </Step.Content>
                 </Step>
               </Step.Group>
@@ -25,7 +25,7 @@ class 服務 extends Component {
                 <Step>
                   <Icon name='trophy' />
                   <Step.Content>
-                    <Step.Title>語音合成</Step.Title>
+                    <Step.Title>母語翻譯</Step.Title>
                   </Step.Content>
                 </Step>
               </Step.Group>
@@ -44,7 +44,7 @@ class 服務 extends Component {
                 <Step>
                   <Icon name='trophy' />
                   <Step.Content>
-                    <Step.Title>斷詞標音</Step.Title>
+                    <Step.Title>標注拼音</Step.Title>
                   </Step.Content>
                 </Step>
               </Step.Group>

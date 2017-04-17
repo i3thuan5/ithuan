@@ -42,7 +42,7 @@ export default class 全部專案 extends React.Component {
               <Item.Header as='a' href="http://詞彙分級.意傳.台灣/" target="_blank">詞彙分級</Item.Header>
               <Item.Meta>中教大臺語系的語料收集網站</Item.Meta>
               <Item.Description>
-                人工編輯音標和漢字後，就由程式自動斷詞對齊漢字和音標，快速找出錯誤，有效率校對
+                由程式自動斷詞對齊漢字和音標，快速找出錯誤，有效率校對
               </Item.Description>
             </Item.Content>
           </Item>

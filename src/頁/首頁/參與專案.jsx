@@ -34,7 +34,7 @@ class 參與專案 extends Component {
             image={LogoSu5lui7}
             header='詞彙分級'
             meta='中教大臺語系的語料收集網站'
-            description='人工編輯音標和漢字後，就由程式自動斷詞對齊漢字和音標，快速找出錯誤，有效率校對'/>
+            description='由程式自動斷詞對齊漢字和音標，快速找出錯誤，有效率校對'/>
             </Grid.Column>
           </Grid.Row>
         </Grid>
