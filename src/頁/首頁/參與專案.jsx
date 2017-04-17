@@ -22,7 +22,7 @@ class 參與專案 extends Component {
             target="_blank"
             centered
             image={LogoItaigi}
-            header='Itaigi'
+            header='iTaigi'
             meta='臺語字典'
             description='『這個字怎麼說？』除了查詢，每個人都能上傳新字，評分最棒的念法。'/>
         </Grid.Column>

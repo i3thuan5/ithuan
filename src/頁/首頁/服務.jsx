@@ -36,7 +36,7 @@ class 服務 extends Component {
                 <Step>
                   <Icon name='trophy' />
                   <Step.Content>
-                    <Step.Title>整理語料</Step.Title>
+                    <Step.Title>語料庫分析</Step.Title>
                   </Step.Content>
                 </Step>
               </Step.Group>
