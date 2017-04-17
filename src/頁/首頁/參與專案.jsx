@@ -23,7 +23,7 @@ class 參與專案 extends Component {
             centered
             image={LogoItaigi}
             header='iTaigi'
-            meta='臺語字典'
+            meta='臺語大眾字典'
             description='『這個字怎麼說？』除了查詢，每個人都能上傳新字，評分最棒的念法。'/>
         </Grid.Column>
         <Grid.Column mobile={16} tablet={8} computer={8}>
@@ -33,8 +33,8 @@ class 參與專案 extends Component {
             centered
             image={LogoSu5lui7}
             header='詞彙分級'
-            meta='中教大臺語文系的合作網站'
-            description='人工編輯音標和漢字後，就由程式自動斷詞對齊漢字和音標'/>
+            meta='中教大臺語系的語料收集網站'
+            description='人工編輯音標和漢字後，就由程式自動斷詞對齊漢字和音標，快速找出錯誤，有效率校對'/>
             </Grid.Column>
           </Grid.Row>
         </Grid>
