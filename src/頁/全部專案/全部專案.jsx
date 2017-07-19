@@ -71,6 +71,17 @@ export default class 全部專案 extends React.Component {
             </Item.Content>
           </Item>
 
+          <Item>
+            <Item.Image size='tiny' src={LogoI3Thuan5} />
+            <Item.Content>
+              <Item.Header as='a' href="https://鉸刀.意傳.台灣" target="_blank">鉸刀</Item.Header>
+              <Item.Meta>台語切音工具</Item.Meta>
+              <Item.Description>
+                輸入音檔佮聽拍的結果，由程式切做一段一段的音檔
+              </Item.Description>
+            </Item.Content>
+          </Item>
+
         </Item.Group>
         </Segment>
 
