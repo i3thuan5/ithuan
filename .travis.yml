@@ -1,12 +1,12 @@
 sudo: false
 language: node_js
 node_js:
-- '4'
-- '5'
+# - '4'
+# - '5'
 - '6'
 env:
 - TSI2_LING7='build'
-- TSI2_LING7='test'
+# - TSI2_LING7='test'
 branches:
   only:
   - master
@@ -14,8 +14,8 @@ branches:
 script:
 - echo npm run $TSI2_LING7
 - npm run $TSI2_LING7
-before_deploy:
-- npm run build
+# before_deploy:
+# - npm run build
 deploy:
   provider: pages
   skip_cleanup: true
