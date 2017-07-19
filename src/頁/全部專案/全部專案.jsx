@@ -13,25 +13,18 @@ var debug = Debug('ithuan:網站');
 export default class 全部專案 extends React.Component {
 
 componentDidMount() {
-    console.log('xx')
     this.jumpToHash();
   }
   componentDidUpdate() {
-    console.log('xx2')
     this.jumpToHash();
   }
   jumpToHash  ()  {
-    debug(window.location)
     const {hash} = window.location;
-    console.log('hash',hash)
     if (hash) {
       let element=  document.getElementById(hash.substr(1));
-      debug(element)
-
-    setTimeout(() => {
-      if (element) element.scrollIntoView();
-    })
-      // scrollToElement(hash, { offset: -120 });
+      setTimeout(() => {
+        if (element) element.scrollIntoView();
+      })
     }
   }
 
