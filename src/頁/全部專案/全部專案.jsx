@@ -16,6 +16,38 @@ export default class 全部專案 extends React.Component {
         <Item.Group relaxed>
 
           <Item>
+            <Item.Image size='tiny' src={LogoItaigi} />
+            <Item.Content>
+              <Item.Header as='a' href="https://itaigi.tw/" target="_blank">iTaigi</Item.Header>
+              <Item.Meta>台語大眾字典</Item.Meta>
+              <Item.Description>
+想知道一個詞的台語怎麼說，來這裡查就對了！也可以上傳自己發明台語的講法喲！
+<br/>
+網站特色：
+1. 語音合成功能，唸台語給你聽
+2. 單頁式設計，瀏覽更順暢
+              </Item.Description>
+            </Item.Content>
+          </Item>
+
+          <Item>
+            <Item.Image size='tiny' src={LogoSu5lui7} />
+            <Item.Content>
+              <Item.Header as='a' href="https://詞彙分級.意傳.台灣/" target="_blank">詞彙分級</Item.Header>
+              <Item.Meta>教育部委託中教大台語系的研究專案</Item.Meta>
+              <Item.Description>
+收集台語現有的文章，統計詞頻，決定台語詞彙的難易度，做後續認證考試、教材編輯的依據。
+<br/>
+網站提供：
+1. 自動偵測錯誤，大幅提升語料庫品質
+2. 即時計算詞頻、使用度等語言學數據
+3. 方言差管理
+4. 搜尋功能，以利語用學研究
+              </Item.Description>
+            </Item.Content>
+          </Item>
+
+          <Item>
             <Item.Image size='tiny' src={LogoTau3} />
             <Item.Content>
               <Item.Header as='a' href="https://鬥拍字.意傳.台灣/" target="_blank">鬥拍字</Item.Header>
@@ -39,34 +71,12 @@ export default class 全部專案 extends React.Component {
           </Item>
 
           <Item>
-            <Item.Image size='tiny' src={LogoItaigi} />
-            <Item.Content>
-              <Item.Header as='a' href="https://itaigi.tw/" target="_blank">iTaigi</Item.Header>
-              <Item.Meta>台語大眾字典</Item.Meta>
-              <Item.Description>
-                『這個字怎麼說？』除了查詢，每個人都能上傳新字，評分最棒的念法。
-              </Item.Description>
-            </Item.Content>
-          </Item>
-
-          <Item>
             <Item.Image size='tiny' src={LogoI3Thuan5} />
             <Item.Content>
               <Item.Header as='a' href="https://grants.g0v.tw/projects/5875bd8becdcf3001eb6bbb7" target="_blank">臺灣媠聲</Item.Header>
               <Item.Meta>台語語音合成研究專案</Item.Meta>
               <Item.Description>
                 讓語音合成的聲音，能更正確，更自然，幫助臺語學習的效果。
-              </Item.Description>
-            </Item.Content>
-          </Item>
-
-          <Item>
-            <Item.Image size='tiny' src={LogoSu5lui7} />
-            <Item.Content>
-              <Item.Header as='a' href="https://詞彙分級.意傳.台灣/" target="_blank">詞彙分級</Item.Header>
-              <Item.Meta>中教大台語系的語料收集網站</Item.Meta>
-              <Item.Description>
-                由程式自動斷詞對齊漢字和音標，快速找出錯誤，有效率校對
               </Item.Description>
             </Item.Content>
           </Item>
