@@ -12,7 +12,7 @@ class 參與專案 extends Component {
   render() {
     return (
         <Segment basic className="stripe">
-        <Header as='h2' textAlign='center'>參與的專案</Header>
+        <Header as='h2' textAlign='center'>參與專案</Header>
         <Container text>
         <Grid columns={2}>
         <Grid.Row>
@@ -43,7 +43,7 @@ class 參與專案 extends Component {
         <Segment basic textAlign="center">
         <Link to="/%e5%85%a8%e9%83%a8%e5%b0%88%e6%a1%88"
         className="ui massive primary button">
-          全部專案<Icon name="arrow right"/>
+          詳細內容<Icon name="arrow right"/>
         </Link>
         </Segment>
       </Segment>
