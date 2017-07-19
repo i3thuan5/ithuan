@@ -1,4 +1,5 @@
 import React from 'react';
+// import { browserHistory } from 'react-router';
 import { Container, Header, List, Icon, Item, Image, Segment } from 'semantic-ui-react';
 import LogoItaigi from '../../圖/itaigi.svg';
 import LogoSu5lui7 from '../../圖/su5lui7_hun1kip4.png';
@@ -6,7 +7,33 @@ import LogoSia2 from '../../圖/sia2.png';
 import LogoTsoo2 from '../../圖/tsoo2ji7.svg';
 import LogoTau3 from '../../圖/tau3.png';
 
+import Debug from 'debug';
+var debug = Debug('ithuan:網站');
+
 export default class 全部專案 extends React.Component {
+
+componentDidMount() {
+    console.log('xx')
+    this.jumpToHash();
+  }
+  componentDidUpdate() {
+    console.log('xx2')
+    this.jumpToHash();
+  }
+  jumpToHash  ()  {
+    debug(window.location)
+    const {hash} = window.location;
+    console.log('hash',hash)
+    if (hash) {
+      let element=  document.getElementById(hash.substr(1));
+      debug(element)
+
+    setTimeout(() => {
+      if (element) element.scrollIntoView();
+    })
+      // scrollToElement(hash, { offset: -120 });
+    }
+  }
 
   render () {
     let LogoI3Thuan5='https://grants.g0v.tw/uploads/5d147554034c77e3e66bc0706473714e.png';
@@ -15,7 +42,7 @@ export default class 全部專案 extends React.Component {
         <Segment basic size="large">
         <Item.Group relaxed>
 
-          <Item>
+          <Item id='iTaigi'>
             <Item.Image size='tiny' src={LogoItaigi} />
             <Item.Content>
               <Item.Header as='a' href="https://itaigi.tw/" target="_blank">iTaigi</Item.Header>
@@ -30,7 +57,7 @@ export default class 全部專案 extends React.Component {
             </Item.Content>
           </Item>
 
-          <Item>
+          <Item id='su'>
             <Item.Image size='tiny' src={LogoSu5lui7} />
             <Item.Content>
               <Item.Header as='a' href="https://詞彙分級.意傳.台灣/" target="_blank">詞彙分級</Item.Header>
@@ -47,7 +74,7 @@ export default class 全部專案 extends React.Component {
             </Item.Content>
           </Item>
 
-          <Item>
+          <Item id='tau'>
             <Item.Image size='tiny' src={LogoTau3} />
             <Item.Content>
               <Item.Header as='a' href="https://鬥拍字.意傳.台灣/" target="_blank">鬥拍字</Item.Header>
@@ -59,7 +86,7 @@ export default class 全部專案 extends React.Component {
             </Item.Content>
           </Item>
 
-          <Item>
+          <Item id='sia'>
             <Item.Image size='tiny' src={LogoSia2} />
             <Item.Content>
               <Item.Header as='a' href="https://寫啥物.意傳.台灣/" target="_blank">寫啥物</Item.Header>
@@ -98,7 +125,7 @@ export default class 全部專案 extends React.Component {
         <Segment basic size="large">
         <Header as='h3'>族語</Header>
         <Item.Group relaxed>
-          <Item>
+          <Item id='lamal'>
             <Item.Image size='tiny' src={LogoI3Thuan5} />
             <Item.Content>
               <Item.Header as='a' href="https://lamal.意傳.台灣/" target="_blank">Lamal - 族語之火</Item.Header>
@@ -114,7 +141,7 @@ export default class 全部專案 extends React.Component {
         <Segment basic size="large">
         <Header as='h3'>客語</Header>
         <Item.Group relaxed>
-          <Item>
+          <Item id='ten'>
             <Item.Image size='tiny' src={LogoI3Thuan5} />
             <Item.Content>
               <Item.Header as='a' href="https://𢯭手.意傳.台灣/" target="_blank">𢯭手</Item.Header>
