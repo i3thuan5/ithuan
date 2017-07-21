@@ -18,6 +18,7 @@ script:
 # - npm run build
 deploy:
   provider: pages
+  fqdn: xn--v0qr21b.xn--kpry57d
   skip_cleanup: true
   local_dir: build/
   github_token:
