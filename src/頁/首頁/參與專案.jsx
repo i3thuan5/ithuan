@@ -12,7 +12,7 @@ class 參與專案 extends Component {
   render() {
     return (
         <Segment basic className="stripe">
-        <Header as='h2' textAlign='center'>參與的專案</Header>
+        <Header as='h2' textAlign='center'>參與專案</Header>
         <Container text>
         <Grid columns={2}>
         <Grid.Row>
@@ -22,9 +22,9 @@ class 參與專案 extends Component {
             target="_blank"
             centered
             image={LogoItaigi}
-            header='Itaigi'
-            meta='臺語字典'
-            description='『這個字怎麼說？』除了查詢，每個人都能上傳新字，評分最棒的念法。'/>
+            header='iTaigi'
+            meta='臺語大眾字典'
+            description='想知道一個詞的台語怎麼說，來這裡查就對了！也可以上傳自己發明台語的講法喲！'/>
         </Grid.Column>
         <Grid.Column mobile={16} tablet={8} computer={8}>
             <Card
@@ -33,8 +33,8 @@ class 參與專案 extends Component {
             centered
             image={LogoSu5lui7}
             header='詞彙分級'
-            meta='中教大臺語文系的合作網站'
-            description='人工編輯音標和漢字後，就由程式自動斷詞對齊漢字和音標'/>
+            meta='教育部委託中教大台語系的研究專案'
+            description='收集台語現有的文章，統計詞頻，決定台語詞彙的難易度，做後續認證考試、教材編輯的依據。'/>
             </Grid.Column>
           </Grid.Row>
         </Grid>
@@ -43,7 +43,7 @@ class 參與專案 extends Component {
         <Segment basic textAlign="center">
         <Link to="/%e5%85%a8%e9%83%a8%e5%b0%88%e6%a1%88"
         className="ui massive primary button">
-          全部專案<Icon name="arrow right"/>
+          詳細內容<Icon name="arrow right"/>
         </Link>
         </Segment>
       </Segment>
