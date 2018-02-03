@@ -11,9 +11,9 @@ export default class 首頁 extends Component {
     return (
       <div>
         <大看板/>
+        <服務/>
         <理念/>
         <參與專案/>
-        <服務/>
         <贊助/>
       </div>
     );
