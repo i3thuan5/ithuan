@@ -41,7 +41,7 @@ componentDidMount() {
               <Item.Header as='a' href="https://itaigi.tw/" target="_blank">iTaigi</Item.Header>
               <Item.Meta>台語大眾字典</Item.Meta>
               <Item.Description>
-想知道一個詞的台語怎麼說，來這裡查就對了！也可以上傳自己發明台語的講法喲！
+想知道一個詞的台語怎麼說，來這裡查就對了！也可以上傳自己發明的台語講法喲！
 <br/>
 網站特色：
 1. 語音合成功能，唸台語給你聽
@@ -56,7 +56,7 @@ componentDidMount() {
               <Item.Header as='a' href="https://詞彙分級.意傳.台灣/" target="_blank">詞彙分級</Item.Header>
               <Item.Meta>教育部委託中教大台語系的研究專案</Item.Meta>
               <Item.Description>
-收集台語現有的文章，統計詞頻，決定台語詞彙的難易度，做後續認證考試、教材編輯的依據。
+建立語料庫，收集台語現有的文章，統計詞頻，決定台語詞彙的難易度，做後續認證考試、教材編輯的依據。
 <br/>
 網站提供：
 1. 自動偵測錯誤，大幅提升語料庫品質
