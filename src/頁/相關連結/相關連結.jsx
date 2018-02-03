@@ -9,13 +9,13 @@ export default class 相關連結 extends React.Component {
     return (
       <Container text>
         <Segment basic size="large">
-          <p>一直都有很多團隊努力提供閩南語、客語的學習資源，在此部份推薦</p>
+          <p>一直都有很多團隊努力提供台語/閩南語、客語的學習資源，在此部份推薦</p>
         </Segment>
         <Divider/>
         
         <Segment basic size="large">
         <List>
-          <List.Item>閩南語</List.Item>
+          <List.Item>台語/閩南語</List.Item>
           <List.Item as='a' href="http://tailo.moe.edu.tw/" target="_blank">臺灣閩南語羅馬字拼音教學網</List.Item>
           <List.Item as='a' href="http://twblg.dict.edu.tw/holodict_new/" target="_blank">臺灣閩南語常用詞辭典</List.Item>
           <List.Item as='a' href="http://www.edu.tw/FileUpload/3677-15601/Documents/tshiutsheh.pdf" target="_blank">臺灣閩南語羅馬字拼音方案使用手冊</List.Item>
