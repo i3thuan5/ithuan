@@ -1,6 +1,7 @@
 import React from 'react';
 // import { browserHistory } from 'react-router';
 import { Container, Header, List, Icon, Item, Image, Segment } from 'semantic-ui-react';
+import 族語合成 from './族語合成';
 import LogoItaigi from '../../圖/itaigi.svg';
 import LogoSu5lui7 from '../../圖/su5lui7_hun1kip4.png';
 import LogoSia2 from '../../圖/sia2.png';
@@ -118,16 +119,10 @@ componentDidMount() {
         <Segment basic size="large">
         <Header as='h3'>族語</Header>
         <Item.Group relaxed>
-          <Item id='lamal'>
-            <Item.Image size='tiny' src={LogoI3Thuan5} />
-            <Item.Content>
-              <Item.Header as='a' href="https://lamal.意傳.台灣/" target="_blank">Lamal - 族語之火</Item.Header>
-              <Item.Meta>Pangcah阿美語發音</Item.Meta>
-              <Item.Description>
-                輸入Pangcah，電腦會唸給你聽喲！
-              </Item.Description>
-            </Item.Content>
-          </Item>
+          <族語合成 名='Lamal' 族語='Pangcah' 漢字='阿美語' />
+          <族語合成 名='Hapoy' 族語='SaySiyat' 漢字='賽夏語' />
+          <族語合成 名='Sapuz' 族語='Bunun' 漢字='布農語' />
+          <族語合成 名='Puniq' 族語='Atayal' 漢字='泰雅語' />
         </Item.Group>
         </Segment>
 
