@@ -37,7 +37,7 @@ class 頁腳 extends Component {
           
           <Divider/>
           
-          <p>意傳文化科技</p>
+          <p>意傳科技</p>
 
         </Container>
       </Segment>
