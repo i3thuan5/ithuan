@@ -3,7 +3,6 @@ import 大看板 from './大看板';
 import 理念 from './理念';
 import 服務 from './服務';
 import 參與專案 from './參與專案';
-import 聯絡阮 from './聯絡阮';
 import './首頁.css';
 
 export default class 首頁 extends Component {
@@ -14,7 +13,6 @@ export default class 首頁 extends Component {
         <服務/>
         <理念/>
         <參與專案/>
-        <聯絡阮/>
       </div>
     );
   }

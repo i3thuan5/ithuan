@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import { Container, Divider, Grid, Menu, Segment } from 'semantic-ui-react';
+import { Container, Divider, Grid, Icon, Menu, Segment } from 'semantic-ui-react';
 import Debug from 'debug';
 var debug = Debug('ithuan:頁腳');
 
@@ -20,8 +20,8 @@ class 頁腳 extends Component {
           <Grid.Row>
             <Grid.Column>
              <Menu vertical inverted compact>
-              <p><a className="item" href="https://github.com/i3thuan5/i3thuan5" target="_blank">github</a></p>
-              <p><a className="item" href="https://www.facebook.com/i3thuan5/" target="_blank">facebook</a></p>
+              <p><a className="item" href="https://www.facebook.com/i3thuan5/" target="_blank"><Icon name='facebook' />facebook</a></p>
+              <p><a className="item" href="https://github.com/i3thuan5/i3thuan5" target="_blank"><Icon name='github' />github</a></p>
               </Menu>
             </Grid.Column>
             <Grid.Column>
