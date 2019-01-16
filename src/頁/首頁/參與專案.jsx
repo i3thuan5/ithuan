@@ -24,7 +24,7 @@ class 參與專案 extends Component {
             image={LogoItaigi}
             header='iTaigi'
             meta='臺語大眾字典'
-            description='想知道一個詞的台語怎麼說，來這裡查就對了！也可以上傳自己發明台語的講法喲！'/>
+            description='想知道一個詞的台語怎麼說，來這裡查就對了！也可以上傳自己發明的台語講法喲！'/>
         </Grid.Column>
         <Grid.Column mobile={16} tablet={8} computer={8}>
             <Card
@@ -34,7 +34,7 @@ class 參與專案 extends Component {
             image={LogoSu5lui7}
             header='詞彙分級'
             meta='教育部委託中教大台語系的研究專案'
-            description='收集台語現有的文章，統計詞頻，決定台語詞彙的難易度，做後續認證考試、教材編輯的依據。'/>
+            description='建立語料庫，收集台語現有的文章，統計詞頻，決定台語詞彙的難易度，做後續認證考試、教材編輯的依據。'/>
             </Grid.Column>
           </Grid.Row>
         </Grid>

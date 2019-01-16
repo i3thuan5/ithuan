@@ -1,6 +1,7 @@
 import React from 'react';
 // import { browserHistory } from 'react-router';
 import { Container, Header, List, Icon, Item, Image, Segment } from 'semantic-ui-react';
+import 族語合成 from './族語合成';
 import LogoItaigi from '../../圖/itaigi.svg';
 import LogoSu5lui7 from '../../圖/su5lui7_hun1kip4.png';
 import LogoSia2 from '../../圖/sia2.png';
@@ -41,7 +42,7 @@ componentDidMount() {
               <Item.Header as='a' href="https://itaigi.tw/" target="_blank">iTaigi</Item.Header>
               <Item.Meta>台語大眾字典</Item.Meta>
               <Item.Description>
-想知道一個詞的台語怎麼說，來這裡查就對了！也可以上傳自己發明台語的講法喲！
+想知道一個詞的台語怎麼說，來這裡查就對了！也可以上傳自己發明的台語講法喲！
 <br/>
 網站特色：
 1. 語音合成功能，唸台語給你聽
@@ -56,7 +57,7 @@ componentDidMount() {
               <Item.Header as='a' href="https://詞彙分級.意傳.台灣/" target="_blank">詞彙分級</Item.Header>
               <Item.Meta>教育部委託中教大台語系的研究專案</Item.Meta>
               <Item.Description>
-收集台語現有的文章，統計詞頻，決定台語詞彙的難易度，做後續認證考試、教材編輯的依據。
+建立語料庫，收集台語現有的文章，統計詞頻，決定台語詞彙的難易度，做後續認證考試、教材編輯的依據。
 <br/>
 網站提供：
 1. 自動偵測錯誤，大幅提升語料庫品質
@@ -118,16 +119,10 @@ componentDidMount() {
         <Segment basic size="large">
         <Header as='h3'>族語</Header>
         <Item.Group relaxed>
-          <Item id='lamal'>
-            <Item.Image size='tiny' src={LogoI3Thuan5} />
-            <Item.Content>
-              <Item.Header as='a' href="https://lamal.意傳.台灣/" target="_blank">Lamal - 族語之火</Item.Header>
-              <Item.Meta>Pangcah阿美語發音</Item.Meta>
-              <Item.Description>
-                輸入Pangcah，電腦會唸給你聽喲！
-              </Item.Description>
-            </Item.Content>
-          </Item>
+          <族語合成 名='Lamal' 族語='Pangcah' 漢字='阿美語' />
+          <族語合成 名='Hapoy' 族語='SaySiyat' 漢字='賽夏語' />
+          <族語合成 名='Sapuz' 族語='Bunun' 漢字='布農語' />
+          <族語合成 名='Puniq' 族語='Atayal' 漢字='泰雅語' />
         </Item.Group>
         </Segment>
 

@@ -10,8 +10,8 @@ export default class 大看板 extends Component {
     return (
       <Segment textAlign='center' inverted vertical className="masthead">
             <Container text>
-              <Header as='h1' inverted>意傳文化科技</Header>
-              <Header as='h2' inverted>Ì-thuân bûn-huà kho-ki</Header>
+              <Header as='h1' inverted>Ì-thuân kho-ki</Header>
+              <Header as='h2' inverted>用程式推廣台灣母語</Header>
             </Container>
           </Segment>
     );
