@@ -39,7 +39,10 @@ componentDidMount() {
         <Segment basic size="large">
         <Item.Group relaxed>
           <SingleItem title="rime-itaigi" url="https://github.com/i3thuan5/rime-taigi/"
-           meta="台語輸入法">sui2</SingleItem>
+           meta="台語輸入法">Rime是一个伐平臺ê輸入法框。阮是照這个框ê規範，共台語詞庫囥入去、寫台語拍字ê規則。目前支援linux。</SingleItem>
+
+          <SingleItem title="臺羅POJ轉換器" url="https://xn--m7rr8i4sil03a3tchtsc3hztv.xn--v0qr21b.xn--kpry57d/"
+          >臺羅轉POJ、POJ轉臺羅ê家私。無論是數字調抑是傳統調攏會用得。全羅文佮漢羅文ê羅馬字攏ē-sài。</SingleItem>
 
           <Item id='iTaigi'>
             <Item.Image size='tiny' src={LogoItaigi} />
