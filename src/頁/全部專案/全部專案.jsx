@@ -8,6 +8,9 @@ import LogoSia2 from '../../圖/sia2.png';
 import LogoTsoo2 from '../../圖/tsoo2ji7.svg';
 import LogoTau3 from '../../圖/tau3.png';
 
+import SingleItem from './SingleItem'
+
+
 import Debug from 'debug';
 var debug = Debug('ithuan:網站');
 
@@ -35,6 +38,8 @@ componentDidMount() {
       <Container text>
         <Segment basic size="large">
         <Item.Group relaxed>
+          <SingleItem title="rime-itaigi" url="https://github.com/i3thuan5/rime-taigi/"
+           meta="台語輸入法">sui2</SingleItem>
 
           <Item id='iTaigi'>
             <Item.Image size='tiny' src={LogoItaigi} />
@@ -157,7 +162,7 @@ componentDidMount() {
 
         <Segment basic size="large">
         <Header as='h3'>字體</Header>
-        <Item.Group relaxed>        
+        <Item.Group relaxed>
           <Item>
             <Item.Image size='tiny' src={LogoTsoo2} />
             <Item.Content>
