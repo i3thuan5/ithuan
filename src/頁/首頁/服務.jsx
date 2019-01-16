@@ -9,9 +9,9 @@ class 服務 extends Component {
 
   render() {
     return (
-    <Segment basic className="stripe"> 
+    <Segment basic className="stripe">
       <Container>
-      <Header as='h2' textAlign='center'>我們擅長於</Header>
+      <Header as='h2' textAlign='center'>阮的事工</Header>
         <Grid stackable centered columns={2}>
             <Grid.Column mobile={16} tablet={6} computer={4} textAlign="right">
               <Step.Group fluid>
@@ -36,7 +36,7 @@ class 服務 extends Component {
                 </Step>
               </Step.Group>
             </Grid.Column>
-            
+
             <Grid.Column mobile={16} tablet={6} computer={4}>
               <Step.Group fluid>
                 <Step>
