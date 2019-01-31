@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Header, List, Icon, Item, Image, Segment } from 'semantic-ui-react';
 import 族語合成 from './族語合成';
 import LogoItaigi from '../../圖/itaigi.svg';
+import LogoTL_POJ from '../../圖/TL_POJ_tsuan.png';
 import LogoSu5lui7 from '../../圖/su5lui7_hun1kip4.png';
 import LogoSia2 from '../../圖/sia2.png';
 import LogoTsoo2 from '../../圖/tsoo2ji7.svg';
@@ -40,6 +41,7 @@ componentDidMount() {
     },{
       title: "臺羅POJ轉換器",
       url: "https://xn--m7rr8i4sil03a3tchtsc3hztv.xn--v0qr21b.xn--kpry57d/",
+      logo: LogoTL_POJ,
       children: "臺羅轉POJ、POJ轉臺羅ê家私。無論是數字調抑是傳統調攏會用得。全羅文佮漢羅文ê羅馬字攏ē-sài。"
     },{
       title: "iTaigi愛台語",
@@ -103,35 +105,19 @@ componentDidMount() {
         </Segment>
 
         <Segment basic size="large">
-        <Header as='h3'>客語</Header>
-        <Item.Group relaxed>
-
-          <SingleItem title="𢯭手"
-            url="https://𢯭手.意傳.台灣/"
-            meta="客語學習工具"
-          >初學者看不懂客語，可以將客語輸入，可以唸給你聽喲！對老師而言，只需要打一次文案，就可以同時得到漢字和拼音喲！</SingleItem>
-
-          <SingleItem title="用.意傳"
-            url="https://用.意傳.台灣/講/"
-            meta="講客話"
-          >輸入華語，告訴你客語怎麼念！</SingleItem>
-
-        </Item.Group>
+          <Header as='h3'>客語</Header>
+          <Item.Group relaxed>
+          <SingleItem title="𢯭手" url="https://𢯭手.意傳.台灣/" meta="客語學習工具">
+            初學者看不懂客語，可以將客語輸入，可以唸給你聽喲！對老師而言，只需要打一次文案，就可以同時得到漢字和拼音喲！</SingleItem>
+          <SingleItem title="用.意傳" url="https://用.意傳.台灣/講/" meta="講客話">輸入華語，告訴你客語怎麼念！</SingleItem>
+          </Item.Group>
         </Segment>
 
         <Segment basic size="large">
         <Header as='h3'>字體</Header>
         <Item.Group relaxed>
-          <Item>
-            <Item.Image size='tiny' src={LogoTsoo2} />
-            <Item.Content>
-              <Item.Header as='a' href="https://組字.意傳.台灣/" target="_blank">組字</Item.Header>
-              <Item.Meta>自己的母語字自己組</Item.Meta>
-              <Item.Description>
-                自己的母語字自己組
-              </Item.Description>
-            </Item.Content>
-          </Item>
+          <SingleItem title="組字" logo={LogoTsoo2} url="https://組字.意傳.台灣/" meta="客語學習工具"
+          >自己的母語字自己組</SingleItem>
         </Item.Group>
         </Segment>
 
