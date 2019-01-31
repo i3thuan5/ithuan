@@ -1,5 +1,5 @@
-import React, { Component, PropTypes } from 'react';
-import { Menu, Container, Card, Segment, Header, Grid, Image, Item, Step, Icon, Divider } from 'semantic-ui-react';
+import React, { Component } from 'react';
+import { Segment, Header, Grid, Image, Icon } from 'semantic-ui-react';
 import LogoItaigi from '../../圖/itaigi.svg';
 import LogoSu5lui7 from '../../圖/su5lui7_hun1kip4.png';
 import { Link } from 'react-router';

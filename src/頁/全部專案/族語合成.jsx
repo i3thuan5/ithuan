@@ -1,10 +1,5 @@
 import React from 'react';
-// import { browserHistory } from 'react-router';
-import { Container, Header, List, Icon, Item, Image, Segment } from 'semantic-ui-react';
-import LogoItaigi from '../../圖/itaigi.svg';
-
-import Debug from 'debug';
-var debug = Debug('ithuan:族語合成');
+import { Item } from 'semantic-ui-react';
 
 export default class 族語合成 extends React.Component {
 
