@@ -10,58 +10,29 @@ class 服務 extends Component {
   render() {
     return (
     <Segment basic className="stripe">
-      <Container>
       <Header as='h2' textAlign='center'>阮的事工</Header>
-        <Grid stackable centered columns={2}>
-            <Grid.Column mobile={16} tablet={6} computer={4} textAlign="right">
-              <Step.Group fluid>
-                <Step>
-                  <Step.Content>
-                    <Step.Title><Link to='/%e5%85%a8%e9%83%a8%e5%b0%88%e6%a1%88#su'>客製化語料庫</Link></Step.Title>
-                  </Step.Content>
-                </Step>
-              </Step.Group>
-              <Step.Group fluid>
-                <Step>
-                  <Step.Content>
-                    <Step.Title><Link to='/%e5%85%a8%e9%83%a8%e5%b0%88%e6%a1%88#tau'>詞頻統計系統</Link></Step.Title>
-                  </Step.Content>
-                </Step>
-              </Step.Group>
-              <Step.Group fluid>
-                <Step>
-                  <Step.Content>
-                    <Step.Title><Link to='/%e5%85%a8%e9%83%a8%e5%b0%88%e6%a1%88#ten'>語料標注系統</Link></Step.Title>
-                  </Step.Content>
-                </Step>
-              </Step.Group>
-            </Grid.Column>
 
-            <Grid.Column mobile={16} tablet={6} computer={4}>
-              <Step.Group fluid>
-                <Step>
-                  <Step.Content>
-                    <Step.Title><Link to='/%e5%85%a8%e9%83%a8%e5%b0%88%e6%a1%88#tau'>語音合成</Link></Step.Title>
-                  </Step.Content>
-                </Step>
-              </Step.Group>
-              <Step.Group fluid>
-                <Step>
-                  <Step.Content>
-                    <Step.Title><Link to='/%e5%85%a8%e9%83%a8%e5%b0%88%e6%a1%88#tau'>語音辨識</Link></Step.Title>
-                  </Step.Content>
-                </Step>
-              </Step.Group>
-              <Step.Group fluid>
-                <Step>
-                  <Step.Content>
-                    <Step.Title><Link to='/%e5%85%a8%e9%83%a8%e5%b0%88%e6%a1%88#sia'>機器翻譯</Link></Step.Title>
-                  </Step.Content>
-                </Step>
-              </Step.Group>
-            </Grid.Column>
+        <Grid columns={2} centered stackable>
+          <Grid.Column width={5} textAlign="center">
+            <Segment>客製化語料庫</Segment>
+          </Grid.Column>
+          <Grid.Column width={5} textAlign="center">
+            <Segment>詞頻統計系統</Segment>
+          </Grid.Column>
+          <Grid.Column width={5} textAlign="center">
+            <Segment>語料標注系統</Segment>
+          </Grid.Column>
+          <Grid.Column width={5} textAlign="center">
+            <Segment>語音合成</Segment>
+          </Grid.Column>
+          <Grid.Column width={5} textAlign="center">
+            <Segment>語音辨識</Segment>
+          </Grid.Column>
+          <Grid.Column width={5} textAlign="center">
+            <Segment>華台翻譯</Segment>
+          </Grid.Column>
         </Grid>
-      </Container>
+
     </Segment>
     );
   }
