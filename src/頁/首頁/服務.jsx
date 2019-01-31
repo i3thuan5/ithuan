@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Grid, Header, Item, Segment, Step } from 'semantic-ui-react';
+import { Grid, Header, Segment } from 'semantic-ui-react';
 import { Link } from 'react-router';
 
 class 服務 extends Component {
