@@ -12,36 +12,36 @@ class 參與專案 extends Component {
   render() {
     return (
     <div>
-<Segment basic className="submasthead stripe slogan">
-        <Grid container verticalAlign='middle' centered stackable columns={2}>
+      <Segment basic className="submasthead stripe slogan">
 
-          <Grid.Row>
-            <Grid.Column width={6}>
+        <Grid container centered stackable verticalAlign='middle'>
+          <Grid.Column width={5} textAlign="center">
+            <Segment basic>
+              <Header>即時台語發音服務
+              </Header>
+            </Segment>
+          </Grid.Column>
+          <Grid.Column width={5} textAlign="center">
+            <Segment basic><Image src={LogoItaigi} size='medium'/></Segment>
+          </Grid.Column>
+        </Grid>
+
+      </Segment>
+
+      <Segment basic className="stripe">
+          <Grid container centered stackable verticalAlign='middle'>
+            <Grid.Column width={5} textAlign="center">
               <Segment basic>
-                <span>即時提供台語發音。</span>
+                <Header>客製化語料庫
+                <Header.Subheader>擁有豐富的協助校對工具，偵測文本錯誤、顯示字詞是否收錄，輸出詞頻報表。</Header.Subheader>
+                </Header>
               </Segment>
             </Grid.Column>
-            <Grid.Column width={6}>
-                <Image src={LogoItaigi} size='medium'/>
+            <Grid.Column width={5} textAlign="center">
+              <Segment basic><Image src={LogoSu5lui7} size='medium'/></Segment>
             </Grid.Column>
-          </Grid.Row>
-        </Grid>
-</Segment>
-
-<Segment basic className="stripe">
-          <Grid container verticalAlign='middle' centered stackable columns={2}>
-          <Grid.Row>
-            <Grid.Column width={6}>
-              <Segment basic>
-                <span>客製化語料庫。掛載提示校對功能，輸出詞頻報表。</span>
-              </Segment>
-            </Grid.Column>
-            <Grid.Column width={6}>
-                <Image src={LogoSu5lui7} size='medium'/>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-</Segment>
+          </Grid>
+      </Segment>
     </div>
     );
   }

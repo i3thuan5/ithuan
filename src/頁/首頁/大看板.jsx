@@ -9,11 +9,11 @@ export default class 大看板 extends Component {
   render() {
     return (
       <Segment textAlign='center' inverted vertical className="masthead">
-            <Container text>
-              <Header as='h1' inverted>Ì-thuân kho-ki</Header>
-              <Header as='h2' inverted>用程式 tshui-sak 台灣母語</Header>
-            </Container>
-          </Segment>
+        <Container text>
+        <Header as='h1' inverted>Ì-thuân kho-ki</Header>
+        <Header as='h2' inverted>用程式 tshui-sak 台灣母語</Header>
+        </Container>
+      </Segment>
     );
   }
 }
