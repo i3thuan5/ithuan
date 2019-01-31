@@ -2,7 +2,10 @@
 html {
   font-size: 20px;
 }
-
+.favicon {
+  padding-top: 0.7rem;
+  padding-right: 2rem;
+}
 /*two column*/
 .pushable>.pusher {
   height: 100vh;
