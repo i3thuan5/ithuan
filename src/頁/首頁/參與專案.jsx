@@ -22,32 +22,26 @@ class 參與專案 extends Component {
               </Segment>
             </Grid.Column>
             <Grid.Column width={6}>
-                <Image src={LogoItaigi} size='medium' />
+                <Image src={LogoItaigi} size='medium'/>
             </Grid.Column>
           </Grid.Row>
         </Grid>
 </Segment>
+
 <Segment basic className="stripe">
           <Grid container verticalAlign='middle' centered stackable columns={2}>
           <Grid.Row>
             <Grid.Column width={6}>
-                <Image src={LogoSu5lui7} size='medium'/>
+              <Segment basic>
+                <span>客製化語料庫。掛載提示校對功能，輸出詞頻報表。</span>
+              </Segment>
             </Grid.Column>
             <Grid.Column width={6}>
-              <Segment basic>
-                <span>客製化語料庫，掛載提示校對功能，輸出詞頻報表。</span>
-              </Segment>
+                <Image src={LogoSu5lui7} size='medium'/>
             </Grid.Column>
           </Grid.Row>
         </Grid>
 </Segment>
-        <Segment basic textAlign="center">
-        <Link to="/%e5%85%a8%e9%83%a8%e5%b0%88%e6%a1%88"
-        className="ui massive primary button">
-          詳細內容<Icon name="arrow right"/>
-        </Link>
-        </Segment>
-
     </div>
     );
   }
