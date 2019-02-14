@@ -1,9 +1,5 @@
-.masthead.segment {
-    padding: 1em 0em;
-}
-
-.stripe.segment {
-  padding: 4em 0em;
+.submasthead.segment {
+    margin-top: 0;
 }
 
 .stripe.slogan.segment {
@@ -20,7 +16,7 @@ h2.ui.header {
   .masthead.segment {
     min-height: 300px;
   }
-  
+
   .masthead h1.ui.header {
     margin-top: 2.2em;
   }
@@ -32,11 +28,11 @@ h2.ui.header {
   .masthead.segment {
     min-height: 250px;
   }
-  
+
   .masthead h1.ui.header {
     margin-top: 1.7em;
   }
-  
+
   .ui.centered.card:first-child {
     margin-bottom: 1em;
   }
