@@ -11,7 +11,7 @@ class 頁腳 extends Component {
 
   render() {
     const { paths } = this.props;
-    const { home, tsuanan, kosu, siongkuan } = paths;
+    const { home, tsuanan, kosu, siongkuan, lianlok } = paths;
 
     return (
       <Segment inverted vertical>
@@ -29,7 +29,7 @@ class 頁腳 extends Component {
               <p><Link to={home} className="item fitted">首頁</Link></p>
               <p><Link to={tsuanan} className="item fitted">專案開發</Link></p>
               <p><Link to={siongkuan} className="item fitted">資源連結</Link></p>
-              <p>連絡交流</p>
+              <p><Link to={lianlok} className="item fitted">連絡交流</Link></p>
               </Menu>
             </Grid.Column>
           </Grid.Row>
