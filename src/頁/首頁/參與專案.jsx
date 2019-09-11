@@ -17,7 +17,8 @@ class 參與專案 extends Component {
         <Grid container centered stackable verticalAlign='middle'>
           <Grid.Column width={5}>
             <Segment basic>
-              <Header>即時台語發音服務</Header>
+              <Header>台語TTS發音服務</Header>
+              <p>隨時唸予你聽</p>
             </Segment>
           </Grid.Column>
           <Grid.Column width={5}>
@@ -32,7 +33,7 @@ class 參與專案 extends Component {
             <Grid.Column width={5}>
               <Segment basic>
                 <Header>客製化語料庫</Header>
-                <p>擁有豐富的協助校對工具，例如偵測文本錯誤、顯示字詞是否收錄、輸出詞頻報表。</p>
+                <p>阮有濟款協助校對的工具，比如掠文本錯誤所在、顯示字詞收錄狀況、輸出詞頻統計報表。</p>
               </Segment>
             </Grid.Column>
             <Grid.Column width={5}>
