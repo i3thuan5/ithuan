@@ -72,6 +72,9 @@ export default class 網站 extends React.Component {
               <Link to={paths.siongkuan} className={this.getClasses(paths.siongkuan)} onClick={this.closeVisibility}>
                 <Icon name='world'/>資源連結
               </Link>
+              <Link to={paths.lianlok} className={this.getClasses(paths.lianlok)} onClick={this.closeVisibility}>
+                <Icon name='envelope'/>連絡交流
+              </Link>
           </Sidebar>
           
           <Sidebar.Pusher id="i3pusher">
