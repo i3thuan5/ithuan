@@ -3,8 +3,8 @@ import { render } from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import 網站 from './網站/網站';
 import 首頁 from './頁/首頁/首頁';
-import 專案開發 from './頁/全部專案/全部專案';
-import 資源連結 from './頁/相關連結/相關連結';
+import 全部專案 from './頁/全部專案/全部專案';
+import 相關連結 from './頁/相關連結/相關連結';
 import 連絡交流 from './頁/連絡/連絡';
 
 import Debug from 'debug';
