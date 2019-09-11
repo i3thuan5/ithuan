@@ -1,7 +1,6 @@
 sudo: false
+dist: bionic
 language: node_js
-node_js:
-- 'node'
 env:
 - TSI2_LING7='build'
 branches:
