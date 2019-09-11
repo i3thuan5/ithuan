@@ -8,7 +8,7 @@ export default class 大看板 extends Component {
 
   render() {
     return (
-      <Segment textAlign='center' inverted vertical className="masthead">
+      <Segment textAlign='center' inverted vertical>
         <Container text>
         <Header as='h1' inverted>意傳科技</Header>
         <Header as='h2' inverted>Ì-thuân kho-ki</Header>
