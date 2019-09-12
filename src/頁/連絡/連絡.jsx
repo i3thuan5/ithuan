@@ -8,10 +8,12 @@ class 理念 extends Component {
     return (
       <Segment basic className="submasthead stripe slogan" padded='very'>
         <Container text>
+          <br></br><br></br>
           <p><i className="large envelope icon"></i>歡迎來批：ithuan@意傳.台灣</p>
+          <br></br>
           <p><a href="https://www.facebook.com/i3thuan5/" target="_blank"><Icon name='large facebook' />面冊交流：@i3thuan5</a></p>
+          <br></br><br></br>
 
-          
         </Container>
         
       </Segment>

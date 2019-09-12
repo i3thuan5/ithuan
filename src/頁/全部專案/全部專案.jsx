@@ -39,14 +39,16 @@ componentDidMount() {
       meta: "台語輸入法",
       children: "Rime是一个伐平台的輸入法框。阮是照這个框的規範，共台語詞庫囥入去、寫台語拍字規則。目前只支援linux。"
     },{
-      title: "臺羅POJ轉換器",
+      title: "台羅POJ轉換器",
       url: "https://xn--m7rr8i4sil03a3tchtsc3hztv.xn--v0qr21b.xn--kpry57d/",
       logo: LogoTL_POJ,
+     
       meta: "台文羅馬字系統轉換",
-      children: "臺羅轉POJ、POJ轉臺羅的家私。接受原件數字調抑是傳統調號，全羅抑漢羅攏通處理。"
+      children: "台羅轉POJ、POJ轉台羅的家私。接受原件數字調抑是傳統調號，全羅抑漢羅攏通處理。"
     },{
       title: "鬥拍字",
       logo: LogoTau3,
+      
       url: "https://鬥拍字.意傳.台灣/",
       meta: "拍字電腦唸予你聽",
       children: "輸入台文，電腦同齊產生漢字佮台羅的對照，而且閣會唸予你聽。"
@@ -77,17 +79,17 @@ componentDidMount() {
       logo: LogoSu5lui7,
       url: "https://詞彙分級.意傳.台灣/",
       meta: "台文語料庫詞頻統計",
-      children: "網站提供自動偵查錯誤、即時計算詞頻、方言差管理、搜尋等功能，支援輸入全羅、漢羅。(對2017年開始佮中教大合作案，目前無對外開放。)"
+      children: "網站提供自動偵查錯誤、即時計算詞頻、方言差管理、搜尋等功能，支援輸入全羅、漢羅。(對2017年開始佮中教大委託案，目前無對外開放。)"
     },{
-      title: "臺灣媠聲2.0",
+      title: "台灣媠聲2.0",
       url: "",
       meta: "台語語音合成研究專案",
-      children: "2017年文化部推行語言多樣性友善環境補助案。來改良阮的語音合成系統，予音質閣較清楚、自然。"
+      children: "2017年文化部推行語言多樣性友善環境補助案。來改良阮的語音合成系統，予音質閣較清楚、自然。(已結案)"
     },{
       title: "加速開發台文字幕流程計畫",
       url: "",
       meta: "台語語音辨識研究專案",
-      children: "2019年文化部加速文化內容開發與科技創新應用補助案。加強語音辨識轉寫做台文技術，未來會提供這項服務。"
+      children: "2019年文化部加速文化內容開發與科技創新應用補助案。加強語音辨識轉寫做台文技術，未來會提供這項服務。(進行中)"
     }];
 
     return list.map((item, k) => {
@@ -101,32 +103,31 @@ componentDidMount() {
     return (
       <Container text>
         <Segment basic size="large">
+        <Header as='h2'>台語</Header>
         <Item.Group relaxed>
           {this.Taigi()}
         </Item.Group>
         </Segment>
 
           <Segment basic size="large">
-          <Header as='h3'>客語</Header>
+          <Header as='h2'>客家話</Header>
           <Item.Group relaxed>
           <SingleItem title="𢯭手" url="https://𢯭手.意傳.台灣/" meta="客語學習工具">
-            初學者看不懂客語，可以將客語輸入，可以唸給你聽喲！對老師而言，只需要打一次文案，就可以同時得到漢字和拼音喲！</SingleItem>
-          <SingleItem title="用.意傳" url="https://用.意傳.台灣/講/" meta="講客話">輸入華語，告訴你客語怎麼念！</SingleItem>
+            初學者看不懂客語，可以將客語輸入，唸給你聽喲！對教學者而言，只需打一次文案，就可同時得到漢字和拼音。</SingleItem>
+          <SingleItem title="用意傳" url="https://用.意傳.台灣/講/" meta="講客話">輸入華語，告訴你客語怎麼念。</SingleItem>
           </Item.Group>
         </Segment>
         
         <Segment basic size="large">
-        <Header as='h3'>原住民族語</Header>
+        <Header as='h2'>原住民族語</Header>
         <Item.Group relaxed>
           <族語合成 名='Lamal' 族語='Pangcah' 漢字='阿美語' />
-          <族語合成 名='Hapoy' 族語='SaySiyat' 漢字='賽夏語' />
-          <族語合成 名='Sapuz' 族語='Bunun' 漢字='布農語' />
-          <族語合成 名='Puniq' 族語='Atayal' 漢字='泰雅語' />
+
         </Item.Group>
         </Segment>
 
         <Segment basic size="large">
-        <Header as='h3'>字體</Header>
+        <Header as='h2'>字體</Header>
         <Item.Group relaxed>
           <SingleItem title="組字" logo={LogoTsoo2} url="https://組字.意傳.台灣/" meta="漢字字體工具"
           >自己的母語字自己組</SingleItem>
