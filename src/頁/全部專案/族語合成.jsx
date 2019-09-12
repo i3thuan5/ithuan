@@ -8,7 +8,7 @@ export default class 族語合成 extends React.Component {
     let {名, 族語, 漢字} = this.props;
     return (
         <Item id='lamal'>
-          <Item.Image size='tiny' src={LogoI3Thuan5} />
+          <Item.Image size='small' src={LogoI3Thuan5} />
           <Item.Content>
             <Item.Header as='a' href={ `https://${名.toLowerCase()}.意傳.台灣/` } target="_blank">{名} - 族語之火</Item.Header>
             <Item.Meta>{族語}{漢字}發音</Item.Meta>
