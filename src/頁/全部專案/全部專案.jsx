@@ -52,12 +52,6 @@ componentDidMount() {
       url: "https://鬥拍字.意傳.台灣/",
       meta: "拍字電腦唸予你聽",
       children: "輸入台文，電腦同齊產生漢字佮台羅的對照，而且閣會唸予你聽。"
-    },{
-      title: "寫啥物",
-      logo: LogoSia2,
-      url: "https://寫啥物.意傳.台灣/",
-      meta: "華台翻譯機器",
-      children: "輸入華語了後翻譯做台語。"
      },{
       title: "鉸刀",
       url: "https://鉸刀.意傳.台灣",
@@ -114,7 +108,6 @@ componentDidMount() {
           <Item.Group relaxed>
           <SingleItem title="𢯭手" url="https://𢯭手.意傳.台灣/" meta="客語學習工具">
             初學者看不懂客語，可以將客語輸入，唸給你聽喲！對教學者而言，只需打一次文案，就可同時得到漢字和拼音。</SingleItem>
-          <SingleItem title="用意傳" url="https://用.意傳.台灣/講/" meta="講客話">輸入華語，告訴你客語怎麼念。</SingleItem>
           </Item.Group>
         </Segment>
         
