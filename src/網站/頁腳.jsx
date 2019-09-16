@@ -11,7 +11,7 @@ class 頁腳 extends Component {
 
   render() {
     const { paths } = this.props;
-    const { home, tsuanan, kosu, siongkuan } = paths;
+    const { home, tsuanan, kosu, siongkuan, lianlok } = paths;
 
     return (
       <Segment inverted vertical>
@@ -27,9 +27,9 @@ class 頁腳 extends Component {
             <Grid.Column>
             <Menu vertical inverted compact>
               <p><Link to={home} className="item fitted">首頁</Link></p>
-              <p><Link to={tsuanan} className="item fitted">全部專案</Link></p>
-              <p><Link to={kosu} className="item fitted">閩客故事</Link></p>
-              <p><Link to={siongkuan} className="item fitted">相關連結</Link></p>
+              <p><Link to={tsuanan} className="item fitted">專案開發</Link></p>
+              <p><Link to={siongkuan} className="item fitted">資源連結</Link></p>
+              <p><Link to={lianlok} className="item fitted">連絡交流</Link></p>
               </Menu>
             </Grid.Column>
           </Grid.Row>
@@ -37,7 +37,7 @@ class 頁腳 extends Component {
           
           <Divider/>
           
-          <p>意傳科技</p>
+          <p>意傳科技 © 2019</p>
 
         </Container>
       </Segment>

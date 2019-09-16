@@ -10,33 +10,33 @@ class 服務 extends Component {
   render() {
     return (
     <Segment basic className="stripe">
-      <Header as='h2' textAlign='center'>阮的事工</Header>
+      <Header as='h2' textAlign='center'>阮的服務</Header>
 
         <Grid container centered stackable>
 
           <Grid.Column width={5} textAlign="center">
-            <Segment>自動產生台語字幕</Segment>
+            <Segment>影音字幕自動化</Segment>
           </Grid.Column>
           <Grid.Column width={5} textAlign="center">
-            <Segment>劇本台語發音參考</Segment>
+            <Segment>文本發音參考</Segment>
           </Grid.Column>
           <Grid.Column width={5} textAlign="center">
             <Segment>語料標注系統</Segment>
           </Grid.Column>
           <Grid.Column width={5} textAlign="center">
-            <Segment>客製化語料庫</Segment>
-          </Grid.Column>
-          <Grid.Column width={5} textAlign="center">
             <Segment>詞頻統計系統</Segment>
           </Grid.Column>
           <Grid.Column width={5} textAlign="center">
-            <Segment>華台翻譯</Segment>
+            <Segment>客製化語料庫</Segment>
           </Grid.Column>
           <Grid.Column width={5} textAlign="center">
-            <Segment>語音合成</Segment>
+            <Segment>台華雙語對譯</Segment>
           </Grid.Column>
           <Grid.Column width={5} textAlign="center">
-            <Segment>語音辨識</Segment>
+            <Segment>AI語音合成</Segment>
+          </Grid.Column>
+          <Grid.Column width={5} textAlign="center">
+            <Segment>AI語音辨識</Segment>
           </Grid.Column>
         </Grid>
 

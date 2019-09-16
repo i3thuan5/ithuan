@@ -20,6 +20,7 @@ export default class 網站 extends React.Component {
         tsuanan: '/%e5%85%a8%e9%83%a8%e5%b0%88%e6%a1%88',
         kosu: '/%E9%96%A9%E5%AE%A2%E6%95%85%E4%BA%8B',
         siongkuan: '/%E7%9B%B8%E9%97%9C%E9%80%A3%E7%B5%90',
+        lianlok: '/%E9%80%A3%E7%B5%A1%E4%BA%A4%E6%B5%81'
       },
     };
     this.closeVisibility = this.closeVisibility.bind(this);
@@ -66,13 +67,13 @@ export default class 網站 extends React.Component {
                 <Icon name='home'/>首頁
               </Link>
               <Link to={paths.tsuanan} className={this.getClasses(paths.tsuanan)} onClick={this.closeVisibility}>
-                <Icon name='rocket'/>全部專案
-              </Link>
-              <Link to={paths.kosu} className={this.getClasses(paths.kosu)} onClick={this.closeVisibility}>
-                <Icon name='fire'/>閩客故事
+                <Icon name='rocket'/>專案開發
               </Link>
               <Link to={paths.siongkuan} className={this.getClasses(paths.siongkuan)} onClick={this.closeVisibility}>
-                <Icon name='world'/>相關連結
+                <Icon name='world'/>資源連結
+              </Link>
+              <Link to={paths.lianlok} className={this.getClasses(paths.lianlok)} onClick={this.closeVisibility}>
+                <Icon name='envelope'/>連絡交流
               </Link>
           </Sidebar>
           

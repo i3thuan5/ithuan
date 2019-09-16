@@ -18,16 +18,16 @@ class 頁首 extends Component {
 
   render() {
     const { paths } = this.props;
-    const { home, tsuanan, kosu, siongkuan } = paths;
+    const { home, tsuanan, kosu, siongkuan, lianlok } = paths;
     return (
       <Segment id="appNav" textAlign='center' inverted vertical>
         <Container>
           <Menu secondary inverted size="large" pointing>
             <Link className='favicon'><Image src={favicon} size="mini"/></Link>
             <Link to={home} className={this.getItemClass(home)}>首頁</Link>
-            <Link to={tsuanan} className={this.getItemClass(tsuanan)}>全部專案</Link>
-            <Link to={kosu} className={this.getItemClass(kosu)}>閩客故事</Link>
-            <Link to={siongkuan} className={this.getItemClass(siongkuan)}>相關連結</Link>
+            <Link to={tsuanan} className={this.getItemClass(tsuanan)}>專案開發</Link>
+            <Link to={siongkuan} className={this.getItemClass(siongkuan)}>資源連結</Link>
+            <Link to={lianlok} className={this.getItemClass(lianlok)}>連絡交流</Link>
           </Menu>
         </Container>
       </Segment>

@@ -22,7 +22,9 @@
     "url": "https://github.com/sih4sing5hong5/i3_thuan5/issues"
   },
   "homepage": "https://github.com/sih4sing5hong5/i3_thuan5",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1"
+  },
   "devDependencies": {
     "babel-core": "^6.4.0",
     "babel-jscs": "^2.0.5",
