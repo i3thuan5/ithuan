@@ -13,7 +13,7 @@ script:
 - npm run $TSI2_LING7
 deploy:
   provider: pages
-  fqdn: xn--v0qr21b.xn--kpry57d
+  fqdn: ithuan.tw
   skip_cleanup: true
   local_dir: build/
   github_token:
