@@ -11,7 +11,7 @@ class 服務 extends Component {
     return (
     <Segment basic className="stripe">
       <Header as='h2' textAlign='center'>阮的服務</Header>
-          <Grid container centered stackable>
+        <Grid container centered stackable>
 
           <Grid.Column width={5} textAlign="center">
             <Segment>影音字幕自動化</Segment>
