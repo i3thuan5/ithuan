@@ -20,7 +20,7 @@ class 頁腳 extends Component {
           <Grid.Row>
             <Grid.Column>
              <Menu vertical inverted compact>
-              <p><a className="item" href="https://www.facebook.com/i3thuan5/" target="_blank"><Icon name='facebook' />facebook</a></p>
+              <p><a className="item" href="https://www.facebook.com/ithuan.tw/" target="_blank"><Icon name='facebook' />facebook</a></p>
               <p><a className="item" href="https://github.com/i3thuan5/i3thuan5" target="_blank"><Icon name='github' />github</a></p>
               </Menu>
             </Grid.Column>

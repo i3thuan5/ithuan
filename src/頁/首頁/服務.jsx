@@ -11,7 +11,6 @@ class 服務 extends Component {
     return (
     <Segment basic className="stripe">
       <Header as='h2' textAlign='center'>阮的服務</Header>
-
         <Grid container centered stackable>
 
           <Grid.Column width={5} textAlign="center">
@@ -39,7 +38,6 @@ class 服務 extends Component {
             <Segment>AI語音辨識</Segment>
           </Grid.Column>
         </Grid>
-
     </Segment>
     );
   }
