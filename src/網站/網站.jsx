@@ -71,7 +71,7 @@ export default class 網站 extends React.Component {
                 <Icon name='rocket'/>專案開發
               </Link>
               <Link to={paths.suisiann} className={this.getClasses(paths.suisiann)} onClick={this.closeVisibility}>
-                <Icon name='rocket'/>SuíSiann
+                <Icon name='volume up'/>SuíSiann
               </Link>
               <Link to={paths.siongkuan} className={this.getClasses(paths.siongkuan)} onClick={this.closeVisibility}>
                 <Icon name='world'/>資源連結
