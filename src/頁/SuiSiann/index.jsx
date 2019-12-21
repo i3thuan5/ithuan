@@ -6,6 +6,7 @@ import LogoSu5lui7 from '../../圖/su5lui7_hun1kip4.png';
 import LogoSia2 from '../../圖/sia2.png';
 import LogoTsoo2 from '../../圖/tsoo2ji7.svg';
 import LogoTau3 from '../../圖/tau3.png';
+import LineQR from './L.png';
 import SingleItem from '../全部專案/SingleItem'
 
 
@@ -18,16 +19,18 @@ export default class 全部專案 extends React.Component {
   Taigi() {
     let tsuliau=[
       {
-        title: "意傳台語AI",
-        url: "https://suisiann-dataset.ithuan.tw/",
-        meta: "Linebot",
-        children: "語音合成demo"
-      },
-      {
         title: "SuíSiann",
         url: "https://suisiann.ithuan.tw/",
         meta: "舊名鬥拍字",
-        children: "線頂輸入法kah語音合成Demo"
+        children: "線頂輸入法kah語音合成Demo",
+        logo: LogoTau3,
+      },
+      {
+        title: "意傳台語AI",
+        url: "https://line.me/R/ti/p/%40241byfcj",
+        meta: "Linebot",
+        children: "語音合成demo",
+        logo: LineQR,
       },
       {
         title: "SuíSiann-Dataset",
