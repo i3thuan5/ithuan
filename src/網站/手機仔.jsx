@@ -7,11 +7,6 @@ var debug = Debug('ithuan:手機仔');
 
 
 class 手機仔 extends Component {
-  constructor(props) {
-    super(props);
-    this.getItemClass = this.getItemClass.bind(this);
-  }
-
   getClasses(value) {
     return this.props.getClasses(value);
   }
