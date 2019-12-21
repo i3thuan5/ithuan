@@ -22,14 +22,14 @@ export default class 全部專案 extends React.Component {
         title: "SuíSiann",
         url: "https://suisiann.ithuan.tw/",
         meta: "舊名鬥拍字",
-        children: "線頂輸入法kah語音合成Demo",
+        children: "線頂輸入法kah語音合成Demo。",
         logo: LogoTau3,
       },
       {
         title: "意傳台語AI",
         url: "https://line.me/R/ti/p/%40241byfcj",
         meta: "Linebot",
-        children: "語音合成demo",
+        children: "語音合成 kah 語音辨識 demo。",
         logo: LineQR,
       },
       {
@@ -39,16 +39,28 @@ export default class 全部專案 extends React.Component {
         children: "台灣話語音合成語料庫，發音人是王秀容老師。"
       },
       {
-        title: "語音合成錄音演講",
-        url: "https://www.youtube.com/watch?v=wIrj7LU6JOo&list=PLGsG7mG2A9eup2E_Mx0yIjk4RgHUMeQ7n",
-        meta: "語料庫",
-        children: "台灣話語音合成語料庫，發音人是王秀容老師。"
-      },
-      {
         title: "錄音方法",
         url: "https://www.youtube.com/watch?v=GJvtWyuizyA&list=PLGsG7mG2A9eup2E_Mx0yIjk4RgHUMeQ7n&index=1",
         meta: "錄音室實際錄音方法",
-        children: "錄音室實際錄音方法"
+        children: "錄音室實際錄音方法，有錄音ê流程，閣有對比句校正錄音風格。"
+      },
+      {
+        title: "語音合成錄音演講",
+        url: "https://www.youtube.com/watch?v=wIrj7LU6JOo&list=PLGsG7mG2A9eup2E_Mx0yIjk4RgHUMeQ7n",
+        meta: "錄音 mê-kak kah 產業情形。",
+        children: "Hiā-khì 錄音室解說語音合成 ê 錄音 mê-kak。"
+      },
+      {
+        title: "媠聲標記規則",
+        url: "https://hackmd.io/363JOxAFQQexdUm7LOCaDg#",
+        meta: "台語文字語料標記方法",
+        children: "Hiā-khì 錄音室解說語音合成 ê 錄音 mê-kak。"
+      },
+      {
+        title: "語料庫校對網站",
+        url: "https://github.com/SuiSiann/SuiSiann-Dataset",
+        meta: "",
+        children: "校對語料庫 ê Django 網站。"
       },
       {
         title: "WaveRNN Hùn-liān",
