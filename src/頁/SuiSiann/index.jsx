@@ -66,25 +66,25 @@ export default class 全部專案 extends React.Component {
         title: "WaveRNN Hùn-liān",
         url: "https://github.com/SuiSiann/HunLian/tree/master/fatchord-WaveRNN",
         meta: "訓練 scripts",
-        children: "用 dobi 規劃 ê Tacotron kah WaveRNN 訓練 scripts"
+        children: "用 dobi 規劃 ê Tacotron kah WaveRNN 訓練 scripts。"
       },
       {
         title: "WaveRNN Bôo-hîng",
-        url: "https://github.com/SuiSiann/HunLian/tree/master/fatchord-WaveRNN",
-        meta: "語音合成模型",
-        children: "WaveRNN ê 訓練 scripts"
+        url: "https://hub.docker.com/repository/docker/i3thuan5/suisiann-wavernn",
+        meta: "合成模型",
+        children: "WaveRNN ê 訓練模型 kah Web-based 服務 Docker。"
       },
       {
         title: "HTS Hùn-liān",
         url: "https://github.com/SuiSiann/HunLian/tree/master/HTS",
         meta: "訓練 scripts",
-        children: "用 docker ê HTS 訓練 scripts"
+        children: "用 docker ê HTS 訓練 scripts。"
       },
       {
         title: "HTS Bôo-hîng",
         url: "https://github.com/i3thuan5/tai5-uan5_gian5-gi2_hok8-bu7/wiki/快速說明#直接用訓練好的語音合成",
         meta: "語音合成模型",
-        children: "WaveRNN ê 訓練 scripts"
+        children: "HTS ê 訓練模型 kah Web-based 服務 Docker。"
       },
     ]
 
