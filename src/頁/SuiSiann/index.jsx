@@ -7,7 +7,8 @@ import LogoSia2 from '../../圖/sia2.png';
 import LogoTsoo2 from '../../圖/tsoo2ji7.svg';
 import LogoTau3 from '../../圖/tau3.png';
 import LineQR from './L.png';
-import SingleItem from '../全部專案/SingleItem'
+import SingleItem from '../全部專案/SingleItem';
+import TauIannPhinn from './投影片.png';
 
 
 import Debug from 'debug';
@@ -31,6 +32,13 @@ export default class 全部專案 extends React.Component {
         meta: "Linebot",
         children: "語音合成 kah 語音辨識 demo。",
         logo: LineQR,
+      },
+      {
+        title: "媠聲成果發表",
+        url: "https://www.slideshare.net/IthuanKhoki/susianncoscup-2019",
+        meta: "投影片",
+        children: "「全全開源ê語音合成──媠聲SuíSiann」@ Coscup 2019 來台講",
+        logo: TauIannPhinn,
       },
       {
         title: "SuíSiann-Dataset",
