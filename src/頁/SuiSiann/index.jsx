@@ -106,6 +106,7 @@ export default class 全部專案 extends React.Component {
     return (
       <Container text>
         <Segment basic size="large">
+        <iframe src="//www.slideshare.net/slideshow/embed_code/key/ElynnvC7cy9GdC" width="595" height="485" frameBorder="0" marginWidth="0" marginHeight="0" scrolling="no" style={{border:"1px solid #CCC", borderWidth:"1px", marginBottom:"5px", maxWidth: "100%",}} allowFullScreen> </iframe> 
         <Item.Group relaxed>
             {this.Taigi()}
         </Item.Group>
@@ -116,3 +117,12 @@ export default class 全部專案 extends React.Component {
   }
 }
 
+// <div style="margin-bottom:5px"> 
+//           <strong> 
+//             <a href="//www.slideshare.net/IthuanKhoki/susianncoscup-2019" title="「全全開源ê語音合成──媠聲SuíSiann」@Coscup 2019 來台講" target="_blank">「全全開源ê語音合成──媠聲SuíSiann」@Coscup 2019 來台講</a>
+//           </strong>
+//           from 
+//           <strong>
+//             <a href="//www.slideshare.net/IthuanKhoki" target="_blank">IthuanKhoki</a>
+//           </strong> 
+//         </div>
