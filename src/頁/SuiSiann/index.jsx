@@ -65,10 +65,10 @@ export default class 全部專案 extends React.Component {
         children: "Hiā-khì 錄音室解說語音合成 ê 錄音 mê-kak。"
       },
       {
-        title: "語料庫校對網站",
+        title: "語料庫網站",
         url: "https://github.com/SuiSiann/SuiSiann-Dataset",
-        meta: "",
-        children: "校對語料庫 ê Django 網站。"
+        meta: "錄音檔校對網站",
+        children: "校對語料庫 ê docker-compose，主要是 Django 介面。"
       },
       {
         title: "WaveRNN Hùn-liān",
