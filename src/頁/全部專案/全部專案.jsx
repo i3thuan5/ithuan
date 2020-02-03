@@ -112,9 +112,10 @@ componentDidMount() {
         </Segment>
         
         <Segment basic size="large">
-        <Header as='h2'>原住民族語</Header>
+        <Header as='h2'>族語</Header>
         <Item.Group relaxed>
-          <族語合成 名='Lamal' 族語='Pangcah' 漢字='阿美語' />
+          <SingleItem title="阿美語萌典" logo={LogoTsoo2} url="https://amis.moedict.tw/#:co'ong" meta="阿美語萌典辭典"
+          >阿美語辭典(意傳語音技術支援)</SingleItem>
 
         </Item.Group>
         </Segment>
