@@ -119,15 +119,6 @@ componentDidMount() {
 
         </Item.Group>
         </Segment>
-
-        <Segment basic size="large">
-        <Header as='h2'>字體</Header>
-        <Item.Group relaxed>
-          <SingleItem title="組字" logo={LogoTsoo2} url="https://組字.意傳.台灣/" meta="漢字字體工具"
-          >自己的母語字自己組</SingleItem>
-        </Item.Group>
-        </Segment>
-
       </Container>
      );
   }
