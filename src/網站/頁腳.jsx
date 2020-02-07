@@ -37,7 +37,7 @@ class 頁腳 extends Component {
           
           <Divider/>
           
-          <p>意傳科技 © 2019</p>
+          <p>意傳科技 © 2020</p>
 
         </Container>
       </Segment>
