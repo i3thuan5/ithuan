@@ -7,6 +7,8 @@ import LogoSu5lui7 from '../../圖/su5lui7_hun1kip4.png';
 import LogoSia2 from '../../圖/sia2.png';
 import LogoTsoo2 from '../../圖/tsoo2ji7.svg';
 import LogoTau3 from '../../圖/tau3.png';
+import LogoPangcah from '../../圖/pangcah.png';
+
 
 import SingleItem from './SingleItem'
 
@@ -114,8 +116,8 @@ componentDidMount() {
         <Segment basic size="large">
         <Header as='h2'>族語</Header>
         <Item.Group relaxed>
-          <SingleItem title="阿美語萌典" logo={LogoTsoo2} url="https://amis.moedict.tw/#:co'ong" meta="阿美語萌典辭典"
-          >阿美語辭典(意傳語音技術支援)</SingleItem>
+          <SingleItem title="阿美語萌典" logo={LogoPangcah} url="https://amis.moedict.tw/#:co'ong" meta="阿美語線上辭典"
+          >阿美語萌典是群眾協作掃描校對的數位化辭典專案，目前可以查到三部阿美語字典，發音功能由意傳語音技術支援。</SingleItem>
 
         </Item.Group>
         </Segment>
