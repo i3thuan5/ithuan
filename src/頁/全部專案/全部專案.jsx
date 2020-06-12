@@ -118,7 +118,7 @@ componentDidMount() {
         <Item.Group relaxed>
           <SingleItem title="阿美語萌典" logo={LogoPangcah} url="https://amis.moedict.tw/#:co'ong" meta="阿美語線上辭典"
           >阿美語萌典是群眾協作掃描校對的數位化辭典專案，目前可以查到三部阿美語字典，發音功能由意傳語音技術支援。</SingleItem>
-
+          <族語合成 名='Lamal' 族語='Pangcah' 漢字='阿美語' />
         </Item.Group>
         </Segment>
       </Container>
