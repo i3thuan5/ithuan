@@ -10,7 +10,7 @@ export default class 族語合成 extends React.Component {
         <Item id='lamal'>
           <Item.Image size='small' src={LogoI3Thuan5} />
           <Item.Content>
-            <Item.Header as='a' href={ `https://${名.toLowerCase()}.意傳.台灣/` } target="_blank">{名} - 族語之火</Item.Header>
+            <Item.Header as='a' href={ `https://${名.toLowerCase()}.ithuan.tw/` } target="_blank">{名} - 族語之火</Item.Header>
             <Item.Meta>{族語}{漢字}發音</Item.Meta>
             <Item.Description>
               輸入{族語}，電腦會唸給你聽。

@@ -7,6 +7,8 @@ import LogoSu5lui7 from '../../圖/su5lui7_hun1kip4.png';
 import LogoSia2 from '../../圖/sia2.png';
 import LogoTsoo2 from '../../圖/tsoo2ji7.svg';
 import LogoTau3 from '../../圖/tau3.png';
+import LogoPangcah from '../../圖/pangcah.png';
+
 
 import SingleItem from './SingleItem'
 
@@ -112,10 +114,14 @@ componentDidMount() {
         </Segment>
         
         <Segment basic size="large">
-        <Header as='h2'>原住民族語</Header>
+        <Header as='h2'>族語</Header>
         <Item.Group relaxed>
+          <SingleItem title="阿美語萌典" logo={LogoPangcah} url="https://amis.moedict.tw/#:co'ong" meta="阿美語線上辭典"
+          >阿美語萌典是群眾協作掃描校對的數位化辭典專案，目前可以查到三部阿美語字典，發音功能由意傳語音技術支援。</SingleItem>
           <族語合成 名='Lamal' 族語='Pangcah' 漢字='阿美語' />
-
+          <族語合成 名='Hapoy' 族語='SaySiyat' 漢字='賽夏語' />
+          <族語合成 名='Sapuz' 族語='Bunun' 漢字='布農語' />
+          <族語合成 名='Puniq' 族語='Atayal' 漢字='泰雅語' />
         </Item.Group>
         </Segment>
       </Container>
