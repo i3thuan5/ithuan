@@ -54,11 +54,6 @@ componentDidMount() {
       url: "https://鬥拍字.意傳.台灣/",
       meta: "拍字電腦唸予你聽",
       children: "輸入台文，電腦同齊產生漢字佮台羅的對照，而且閣會唸予你聽。"
-     },{
-      title: "鉸刀",
-      url: "https://鉸刀.意傳.台灣",
-      meta:"台語切音工具",
-      children: "同齊囥入音檔佮聽拍文字，予程式切做一段一段的音檔。"
     },{
       title: "iTaigi愛台語",
       logo: LogoItaigi,
