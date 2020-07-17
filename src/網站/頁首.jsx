@@ -25,7 +25,8 @@ class 頁首 extends Component {
           <Menu secondary inverted size="large" pointing>
             <Link className='favicon'><Image src={favicon} size="mini"/></Link>
             <Link to={home} className={this.getItemClass(home)}>首頁</Link>
-            <a href="https://sujiphuat.ithuan.tw" className={this.getItemClass('/台文/輸入法/')}>台文輸入法</a>
+            <a href="https://sujiphuat.ithuan.tw" rel="noopener noreferrer"
+              className={this.getItemClass('/台文/輸入法/')}>台文輸入法</a>
             <Link to={suisiann} className={this.getItemClass(suisiann)}>SuíSiann</Link>
             <Link to={tsuanan} className={this.getItemClass(tsuanan)}>專案開發</Link>
             <Link to={siongkuan} className={this.getItemClass(siongkuan)}>資源連結</Link>
