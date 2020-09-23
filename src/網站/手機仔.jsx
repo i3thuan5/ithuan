@@ -22,7 +22,7 @@ class 手機仔 extends Component {
             <Icon name='rocket'/>產品
           </Link>
           <Link to={paths.tsuanan} className={this.getClasses(paths.tsuanan)} onClick={this.closeVisibility}>
-            <Icon name='rocket'/>專案
+            <Icon name='briefcase'/>合作專案
           </Link>
           <Link to={paths.suisiann} className={this.getClasses(paths.suisiann)} onClick={this.closeVisibility}>
             <Icon name='volume up'/>SuíSiann

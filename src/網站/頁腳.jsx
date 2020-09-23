@@ -47,7 +47,7 @@ class 頁腳 extends Component {
                   <List inverted>
                     <List.Item><Link to={home} className="item fitted">首頁</Link></List.Item>
                     <List.Item><Link to={sanphin} className="item fitted">產品</Link></List.Item>
-                    <List.Item><Link to={tsuanan} className="item fitted">專案</Link></List.Item>
+                    <List.Item><Link to={tsuanan} className="item fitted">合作專案</Link></List.Item>
                     <List.Item><Link to={suisiann} className="item fitted">SuíSiann</Link></List.Item>
                   </List>
                 </Grid.Column>
