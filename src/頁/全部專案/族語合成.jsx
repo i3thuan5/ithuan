@@ -4,11 +4,9 @@ import { Item } from 'semantic-ui-react';
 export default class 族語合成 extends React.Component {
 
   render () {
-    let LogoI3Thuan5='https://grants.g0v.tw/uploads/5d147554034c77e3e66bc0706473714e.png';
     let {名, 族語, 漢字} = this.props;
     return (
         <Item id='lamal'>
-          <Item.Image size='small' src={LogoI3Thuan5} />
           <Item.Content>
             <Item.Header as='a' href={ `https://${名.toLowerCase()}.ithuan.tw/` } target="_blank">{名} - 族語之火</Item.Header>
             <Item.Meta>{族語}{漢字}發音</Item.Meta>
