@@ -22,7 +22,7 @@ class 參與專案 extends Component {
           <Grid.Column width={6}>
             <Segment basic>
               <Header>意傳台文輸入法</Header>
-              <p>Rime開源伐平台輸入法ia̋n-tsín，起造全新 ê 台文書寫手感。</p>
+              <p>Rime開源輸入法ia̋n-jín，起造全新台文書寫手感。</p>
               <List>
                 <List.Item>免輸入聲調</List.Item>
                 <List.Item>拍過就會記得</List.Item>

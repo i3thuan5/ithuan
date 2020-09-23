@@ -22,8 +22,6 @@ render(
               <Route path='tsuanan' component={TsuanAn}/>
               <Route path='sanphin' component={SanPhin}/>
               <Route path='suisiann' component={SuiSiann}/>
-              <Route path='%E7%9B%B8%E9%97%9C%E9%80%A3%E7%B5%90' component={相關連結}/>
-              <Route path='%E9%80%A3%E7%B5%A1%E4%BA%A4%E6%B5%81' component={連絡交流}/>
               <Route path='*' component={首頁}/>
           </Route>
   </Router>,

@@ -16,7 +16,7 @@ class 頁首 extends React.Component {
 
   render() {
     const { paths } = this.props;
-    const { home, sanphin, tsuanan, suisiann, kosu, siongkuan, lianlok } = paths;
+    const { home, sanphin, tsuanan, suisiann } = paths;
     return (
       <Segment id="appNav" textAlign='center' inverted vertical>
         <Container>
@@ -26,8 +26,6 @@ class 頁首 extends React.Component {
             <Link to={sanphin} className={this.getItemClass(sanphin)}>產品</Link>
             <Link to={tsuanan} className={this.getItemClass(tsuanan)}>合作專案</Link>
             <Link to={suisiann} className={this.getItemClass(suisiann)}>SuíSiann</Link>
-            <Link to={siongkuan} className={this.getItemClass(siongkuan)}>資源連結</Link>
-            <Link to={lianlok} className={this.getItemClass(lianlok)}>連絡交流</Link>
           </Menu>
         </Container>
       </Segment>

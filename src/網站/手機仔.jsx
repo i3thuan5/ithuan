@@ -11,7 +11,7 @@ class 手機仔 extends Component {
 
   render() {
     const { paths, visible } = this.props;
-    const { home, tsuanan, sanphin, suisiann, kosu, siongkuan, lianlok } = paths;
+    const { home, tsuanan, sanphin, suisiann } = paths;
     return (
       <Sidebar as={Menu} fixed="left" animation='push' width='thin' visible={visible} icon='labeled' vertical inverted>
           <Link to={paths.home} className={this.getClasses(paths.home)} onClick={this.closeVisibility}>
@@ -26,12 +26,6 @@ class 手機仔 extends Component {
           </Link>
           <Link to={paths.suisiann} className={this.getClasses(paths.suisiann)} onClick={this.closeVisibility}>
             <Icon name='volume up'/>SuíSiann
-          </Link>
-          <Link to={paths.siongkuan} className={this.getClasses(paths.siongkuan)} onClick={this.closeVisibility}>
-            <Icon name='world'/>資源
-          </Link>
-          <Link to={paths.lianlok} className={this.getClasses(paths.lianlok)} onClick={this.closeVisibility}>
-            <Icon name='envelope'/>連絡
           </Link>
       </Sidebar>
     );

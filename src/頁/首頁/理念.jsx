@@ -8,9 +8,7 @@ class 理念 extends Component {
     return (
       <Segment basic className="submasthead stripe slogan" padded='very'>
         <Container text>
-          <p>雖罔市面上有濟濟華語工具，不一定合咱的語言；就親像豬舌搭馬鼻，按怎攏袂合。自按呢阮來開發各種台語、客語佮族語工具，予台灣的母語資源閣較phong-phài有發展。</p>
-          <p>研究母語會事半功倍，學習母語嘛通足「時行」！<i className="large child icon"></i></p>
-          
+          <p>雖罔市面上有濟濟華語工具，kah咱家己的語言，就親像豬舌搭馬鼻，按怎攏bē合。自按呢阮開發各種台語、客語kah族語工具，予咱台灣ê母語資源閣較phong-phài。</p>
         </Container>
         <Segment basic textAlign='center'>
           <Link to="/sanphin" className="ui medium primary button">

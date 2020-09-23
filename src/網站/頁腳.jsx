@@ -23,7 +23,7 @@ class 頁腳 extends Component {
                   <List link inverted>
                     <List.Item as='a'>ithuan@ithuan.tw</List.Item>
                     <List.Item as='a'>04-8358062</List.Item>
-                    <List.Item as='a'>員林市，中正路543巷3號</List.Item>
+                    <List.Item as='a'>510001 員林市，中正路543巷3號</List.Item>
                     <List.Item as='a' 
                         href="https://www.facebook.com/ithuan.tw/"
                         target="_blank" 
@@ -49,13 +49,12 @@ class 頁腳 extends Component {
                     <List.Item><Link to={sanphin} className="item fitted">產品</Link></List.Item>
                     <List.Item><Link to={tsuanan} className="item fitted">專案</Link></List.Item>
                     <List.Item><Link to={suisiann} className="item fitted">SuíSiann</Link></List.Item>
-                    <List.Item><Link to={siongkuan} className="item fitted">資源</Link></List.Item>
                   </List>
                 </Grid.Column>
                 <Grid.Column width={8}>
                   <Header inverted as='h4' content='ÌTHUÂN KHOKI' />
                   <p>
-                    台語文專業 ê 資訊公司，專門開發台語 AI 產品 kah 資訊服務。Ǹg-bāng 透過台語科技產品，hām 逐家做陣，tàm 數位時代起造多元語言 ê 科技環境。
+                    台語文專業ê資訊公司，專門開發台語AI產品kah資訊服務。Ǹg-bāng透過台語科技產品，hām逐家做陣，tàm數位時代起造多元語言ê科技環境。
                   </p>
                 </Grid.Column>
               </Grid.Row>
