@@ -19,15 +19,15 @@ class 頁首 extends React.Component {
     const { home, sanphin, tsuanan, suisiann } = paths;
     return (
       <Segment id="appNav" textAlign='center' inverted vertical>
-        <Container>
           <Menu secondary inverted size="large" pointing>
-            <Link className='favicon'><Image src={favicon} size="mini"/></Link>
-            <Link to={home} className={this.getItemClass(home)}>首頁</Link>
-            <Link to={sanphin} className={this.getItemClass(sanphin)}>產品</Link>
-            <Link to={tsuanan} className={this.getItemClass(tsuanan)}>合作專案</Link>
-            <Link to={suisiann} className={this.getItemClass(suisiann)}>SuíSiann</Link>
+            <Container text>
+              <Link className='favicon'><Image src={favicon} size="mini"/></Link>
+              <Link to={home} className={this.getItemClass(home)}>首頁</Link>
+              <Link to={sanphin} className={this.getItemClass(sanphin)}>產品</Link>
+              <Link to={tsuanan} className={this.getItemClass(tsuanan)}>合作專案</Link>
+              <Link to={suisiann} className={this.getItemClass(suisiann)}>SuíSiann</Link>
+            </Container>
           </Menu>
-        </Container>
       </Segment>
     );
   }
