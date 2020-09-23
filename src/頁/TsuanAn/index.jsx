@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Item, Header, Segment } from 'semantic-ui-react';
 import SingleItem from '../SingleItem'
+import LogoItaigi from '../../圖/itaigi.svg';
 
 export default class 全部專案 extends React.Component {
 
@@ -22,6 +23,12 @@ componentDidMount() {
   
   Taigi() {
     let list = [{
+      title: "iTaigi愛台語",
+      logo: LogoItaigi,
+      url: "https://itaigi.tw/",
+      meta: "台語的大眾詞典",
+      children: "欲知影這个詞的台語按怎講，來遮查就著矣！逐个詞攏有語音合成，隨唸予你聽。嘛ē-sái提供家己的講法喔！(意傳語音技術支援)"
+    },{
       title: "詞彙分級工作計畫",
       meta: "台文語料庫詞頻統計",
       children: "網站提供自動偵查錯誤、即時計算詞頻、方言差管理、搜尋等功能，支援輸入全羅、漢羅。(對2017年開始佮中教大委託案，目前無對外開放。)"
@@ -34,7 +41,12 @@ componentDidMount() {
       title: "加速開發台文字幕流程計畫",
       meta: "台語語音辨識研究專案",
       children: "2019年文化部加速文化內容開發與科技創新應用補助案。加強語音辨識轉寫做台文技術，未來會提供這項服務。(進行中)"
-    }];
+    },{
+      title: "台語兒",
+      url: "https://baconbao.github.io/TaiwaneseWizard/",
+      meta: "文字轉做台語語音",
+      children: "台語兒是一隻會曉朗讀台語的語音精靈，有Chrome、Firefox、Messenger、Andriod版本通裝。(意傳語音技術支援)"
+    },];
 
     return list.map((item, k) => {
       let {children, ...rest} = item
