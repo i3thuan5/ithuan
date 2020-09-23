@@ -9,16 +9,14 @@
 h2.ui.header {
     margin-bottom: 0.8em;
 }
-
+   
 /* PC */
 @media only screen and (min-width: 768px)
 {
   .masthead.segment {
-    min-height: 300px;
-  }
-
-  .masthead h1.ui.header {
-    margin-top: 2.2em;
+    min-height: 0;
+    padding-top: 1px;
+    padding-bottom: 50px;
   }
 }
 
@@ -26,11 +24,16 @@ h2.ui.header {
 /* Mobile */
 @media only screen and (max-width: 767px) {
   .masthead.segment {
-    min-height: 250px;
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 
-  .masthead h1.ui.header {
-    margin-top: 1.7em;
+  .ui.hidden.image {
+    display: block;
+  }
+
+  .masthead.segment {
+    min-height: 250px;
   }
 
   .ui.centered.card:first-child {
