@@ -1,44 +1,12 @@
 import React from 'react';
 import { Container, Header, List, Icon, Item, Image, Segment } from 'semantic-ui-react';
-// import LogoItaigi from '../../圖/itaigi.svg';
-// import LogoTL_POJ from '../../圖/TL_POJ_tsuan.png';
-// import LogoSu5lui7 from '../../圖/su5lui7_hun1kip4.png';
-// import LogoSia2 from '../../圖/sia2.png';
-// import LogoTsoo2 from '../../圖/tsoo2ji7.svg';
-// import LogoTau3 from '../../圖/tau3.png';
-import LineQR from './L.png';
 import SingleItem from '../SingleItem';
-import TauIannPhinn from './投影片.png';
-
-
-import Debug from 'debug';
-var debug = Debug('ithuan:網站');
 
 export default class 全部專案 extends React.Component {
 
   
   Taigi() {
     let tsuliau=[
-      {
-        title: "SuíSiann",
-        url: "https://suisiann.ithuan.tw/",
-        meta: "舊名鬥拍字",
-        children: "線頂輸入法kah語音合成Demo。"
-      },
-      {
-        title: "意傳台語AI",
-        url: "https://line.me/R/ti/p/%40241byfcj",
-        meta: "Linebot",
-        children: "語音合成 kah 語音辨識 demo。",
-        logo: LineQR,
-      },
-      {
-        title: "媠聲成果發表",
-        url: "https://www.slideshare.net/IthuanKhoki/susianncoscup-2019",
-        meta: "投影片",
-        children: "「全全開源ê語音合成──媠聲SuíSiann」@ Coscup 2019 來台講",
-        logo: TauIannPhinn,
-      },
       {
         title: "SuíSiann-Dataset",
         url: "https://suisiann-dataset.ithuan.tw/",
@@ -48,25 +16,25 @@ export default class 全部專案 extends React.Component {
       {
         title: "錄音方法",
         url: "https://www.youtube.com/watch?v=GJvtWyuizyA&list=PLGsG7mG2A9eup2E_Mx0yIjk4RgHUMeQ7n&index=1",
-        meta: "錄音室實際錄音方法",
+        meta: "Youtube",
         children: "錄音室實際錄音方法，有錄音ê流程，閣有對比句校正錄音風格。"
       },
       {
         title: "語音合成錄音演講",
         url: "https://www.youtube.com/watch?v=wIrj7LU6JOo&list=PLGsG7mG2A9eup2E_Mx0yIjk4RgHUMeQ7n",
-        meta: "錄音 mê-kak kah 產業情形。",
+        meta: "Youtube",
         children: "Hiā-khì 錄音室解說語音合成 ê 錄音 mê-kak。"
       },
       {
         title: "媠聲標記規則",
         url: "https://hackmd.io/363JOxAFQQexdUm7LOCaDg#",
-        meta: "台語文字語料標記方法",
+        meta: "Hackmd",
         children: "Hiā-khì 錄音室解說語音合成 ê 錄音 mê-kak。"
       },
       {
         title: "語料庫網站",
         url: "https://github.com/SuiSiann/SuiSiann-Dataset",
-        meta: "錄音檔校對網站",
+        meta: "Github",
         children: "校對語料庫 ê docker-compose，主要是 Django 介面。"
       },
       {
@@ -105,23 +73,15 @@ export default class 全部專案 extends React.Component {
     return (
       <Container text>
         <Segment basic size="large">
-        <iframe src="//www.slideshare.net/slideshow/embed_code/key/ElynnvC7cy9GdC" width="595" height="485" frameBorder="0" marginWidth="0" marginHeight="0" scrolling="no" style={{border:"1px solid #CCC", borderWidth:"1px", marginBottom:"5px", maxWidth: "100%",}} allowFullScreen> </iframe> 
-        <Item.Group relaxed>
-            {this.Taigi()}
-        </Item.Group>
+          <Header as='h1'>台灣媠聲2.0</Header>
+          <Header as='h6'>2017台語語音合成研究專案</Header>
+          <p>阮改良台語語音合成系統，予音質閣較清楚、自然，相關成果攏公開佇tsia。</p>
+          <iframe src="//www.slideshare.net/slideshow/embed_code/key/ElynnvC7cy9GdC" width="595" height="485" frameBorder="0" marginWidth="0" marginHeight="0" scrolling="no" style={{border:"1px solid #CCC", borderWidth:"1px", marginBottom:"5px", maxWidth: "100%",}} allowFullScreen> </iframe> 
+          <Item.Group relaxed>
+              {this.Taigi()}
+          </Item.Group>
         </Segment>
-
       </Container>
      );
   }
 }
-
-// <div style="margin-bottom:5px"> 
-//           <strong> 
-//             <a href="//www.slideshare.net/IthuanKhoki/susianncoscup-2019" title="「全全開源ê語音合成──媠聲SuíSiann」@Coscup 2019 來台講" target="_blank">「全全開源ê語音合成──媠聲SuíSiann」@Coscup 2019 來台講</a>
-//           </strong>
-//           from 
-//           <strong>
-//             <a href="//www.slideshare.net/IthuanKhoki" target="_blank">IthuanKhoki</a>
-//           </strong> 
-//         </div>
