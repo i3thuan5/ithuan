@@ -18,7 +18,8 @@ export default class 網站 extends React.Component {
       activeItem: this.props.location.pathname || '/',
       paths: {
         home: '/',
-        tsuanan: '/%e5%85%a8%e9%83%a8%e5%b0%88%e6%a1%88',
+        tsuanan: '/tsuanan',
+        sanphin: '/sanphin',
         suisiann: '/suisiann',
         kosu: '/%E9%96%A9%E5%AE%A2%E6%95%85%E4%BA%8B',
         siongkuan: '/%E7%9B%B8%E9%97%9C%E9%80%A3%E7%B5%90',

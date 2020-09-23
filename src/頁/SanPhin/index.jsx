@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Header, List, Icon, Item, Image, Segment } from 'semantic-ui-react';
 import 族語合成 from './族語合成';
+import SingleItem from '../SingleItem'
 import LogoItaigi from '../../圖/itaigi.svg';
 import LogoTL_POJ from '../../圖/TL_POJ_tsuan.png';
 import LogoSu5lui7 from '../../圖/su5lui7_hun1kip4.png';
@@ -8,9 +9,6 @@ import LogoSia2 from '../../圖/sia2.png';
 import LogoTsoo2 from '../../圖/tsoo2ji7.svg';
 import LogoTau3 from '../../圖/tau3.png';
 import LogoPangcah from '../../圖/pangcah.png';
-
-
-import SingleItem from './SingleItem'
 
 
 import Debug from 'debug';
