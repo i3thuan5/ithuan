@@ -13,8 +13,8 @@ class 理念 extends Component {
           
         </Container>
         <Segment basic textAlign='center'>
-          <Link to="/%e5%85%a8%e9%83%a8%e5%b0%88%e6%a1%88" className="ui medium primary button">
-          看全部專案<Icon name="arrow right"/></Link>
+          <Link to="/sanphin" className="ui medium primary button">
+          看全部產品<Icon name="arrow right"/></Link>
         </Segment>
       </Segment>
     );
