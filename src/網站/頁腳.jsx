@@ -11,33 +11,38 @@ class 頁腳 extends Component {
 
   render() {
     const { paths } = this.props;
-    const { home, tsuanan, kosu, siongkuan, lianlok } = paths;
+    const { home, sanphin, tsuanan, suisiann, siongkuan, lianlok } = paths;
 
     return (
       <Segment inverted vertical>
-        <Container textAlign="center">
-        <Grid columns={2} stackable>
+        <Container>
+        <Grid columns={4} stackable>
           <Grid.Row>
+            <Grid.Column></Grid.Column>
             <Grid.Column>
              <Menu vertical inverted compact>
-              <p><a className="item" href="https://www.facebook.com/ithuan.tw/" target="_blank" rel="noopener noreferrer"><Icon name='facebook' />facebook</a></p>
-              <p><a className="item" href="https://github.com/i3thuan5/i3thuan5" target="_blank" rel="noopener noreferrer"><Icon name='github' />github</a></p>
+              <p><Icon name='mail'/>ithuan@ithuan.tw</p>
+              <p><Icon name='phone'/>04-8358062</p>
+              <p><a className="item" href="https://www.facebook.com/ithuan.tw/" target="_blank" rel="noopener noreferrer"><Icon name='facebook' />Facebook</a></p>
+              <p><a className="item" href="https://github.com/i3thuan5/i3thuan5" target="_blank" rel="noopener noreferrer"><Icon name='github' />Github</a></p>
               </Menu>
             </Grid.Column>
             <Grid.Column>
             <Menu vertical inverted compact>
               <p><Link to={home} className="item fitted">首頁</Link></p>
-              <p><Link to={tsuanan} className="item fitted">專案開發</Link></p>
-              <p><Link to={siongkuan} className="item fitted">資源連結</Link></p>
-              <p><Link to={lianlok} className="item fitted">連絡交流</Link></p>
+              <p><Link to={sanphin} className="item fitted">產品</Link></p>
+              <p><Link to={tsuanan} className="item fitted">專案</Link></p>
+              <p><Link to={suisiann} className="item fitted">SuíSiann</Link></p>
+              <p><Link to={siongkuan} className="item fitted">資源</Link></p>
               </Menu>
             </Grid.Column>
+            <Grid.Column></Grid.Column>
           </Grid.Row>
           </Grid>
           
           <Divider/>
           
-          <p>意傳科技 © 2020</p>
+          <p>ÌTHUÂN KHOKI 意傳科技 © 2020</p>
 
         </Container>
       </Segment>
