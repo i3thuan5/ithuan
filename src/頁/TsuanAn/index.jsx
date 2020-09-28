@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, Item, Header, Segment } from 'semantic-ui-react';
 import SingleItem from '../SingleItem'
-import LogoItaigi from '../../圖/itaigi.svg';
+import LogoItaigi from '../../圖/itaigi.svg'
+import LogoPangcah from '../../圖/pangcah.png'
 
 export default class 全部專案 extends React.Component {
 
@@ -53,6 +54,25 @@ componentDidMount() {
       return (<SingleItem key={k} {...rest}>{children}</SingleItem>)
     })
   }
+ 
+  tsokgi() {
+    let list = [{
+      title: "iTaigi愛台語",
+      logo: LogoItaigi,
+      url: "https://itaigi.tw/",
+      meta: "台語的大眾詞典",
+      children: "欲知影這个詞的台語按怎講，來遮查就著矣！逐个詞攏有語音合成，隨唸予你聽。嘛ē-sái提供家己的講法喔！(意傳語音技術支援)"
+    },{
+      title: "詞彙分級工作計畫",
+      meta: "台文語料庫詞頻統計",
+      children: "網站提供自動偵查錯誤、即時計算詞頻、方言差管理、搜尋等功能，支援輸入全羅、漢羅。(對2017年開始佮中教大委託案，目前無對外開放。)"
+    },];
+
+    return list.map((item, k) => {
+      let {children, ...rest} = item
+      return (<SingleItem key={k} {...rest}>{children}</SingleItem>)
+    })
+  }
 
   render () {
     let LogoI3Thuan5='https://grants.g0v.tw/uploads/5d147554034c77e3e66bc0706473714e.png';
@@ -62,6 +82,14 @@ componentDidMount() {
         <Header as='h2'>台語</Header>
         <Item.Group relaxed>
           {this.Taigi()}
+        </Item.Group>
+
+        <Header as='h2'>族語</Header>
+        <Item.Group relaxed>
+        <SingleItem title="阿美語萌典" logo={LogoPangcah} url="https://amis.moedict.tw/#:co'ong" meta="阿美語線上辭典"
+          >阿美語萌典是群眾協作掃描校對的數位化辭典專案，目前可以查到三部阿美語字典，發音功能由意傳語音技術支援。</SingleItem>
+        <SingleItem title="噶哈巫語分類辭典" url="https://kaxabu.xn--v0qr21b.xn--kpry57d/" meta="噶哈巫語分類辭典kaxabubizu"
+          >這个網站是電子版ê噶哈巫語分類辭典，網站是MIT開源授權。多謝潘永歷baba同意，規本辭典電子資料用CC BY-NC-SA公開出來。網站頂有完整辭典資料kah程式連結。</SingleItem>
         </Item.Group>
         </Segment>
       </Container>
