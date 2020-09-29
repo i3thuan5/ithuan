@@ -63,8 +63,8 @@ componentDidMount() {
           <Segment basic size="large">
           <Header as='h2'>客家話</Header>
           <Item.Group relaxed>
-          <SingleItem title="𢯭手" url="https://𢯭手.意傳.台灣/" meta="客語學習工具">
-            初學者看不懂客語，可以將客語輸入，唸給你聽喲！對教學者而言，只需打一次文案，就可同時得到漢字和拼音。</SingleItem>
+          <SingleItem title="TenSu 𢯭手" url="https://tensu.ithuan.tw/" meta="客語語音學習工具">
+            利用客話TTS語音合成AI，電腦讀客話分你聽，學客話。初學者看不懂客語，可以將客語輸入，唸給你聽喲！對教學者而言，只需打一次文案，就可同時得到漢字和拼音。</SingleItem>
           </Item.Group>
         </Segment>
         
