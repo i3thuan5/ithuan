@@ -33,7 +33,7 @@ componentDidMount() {
       children: "Rime是一个伐平台的輸入法框。阮是照這个框的規範，共台語詞庫囥入去、寫台語拍字規則。目前支援Win7、Win10、Mac、linux。"
     },{
       title: "台羅POJ轉換器",
-      url: "https://xn--m7rr8i4sil03a3tchtsc3hztv.xn--v0qr21b.xn--kpry57d/",
+      url: "https://lomaji.ithuan.tw/",
       meta: "台文羅馬字系統轉換",
       children: "台羅轉POJ、POJ轉台羅的家私。接受原件數字調抑是傳統調號，全羅抑漢羅攏通處理。"
     },{
