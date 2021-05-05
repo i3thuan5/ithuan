@@ -88,7 +88,7 @@ componentDidMount() {
         <Item.Group relaxed>
         <SingleItem title="阿美語萌典" logo={LogoPangcah} url="https://amis.moedict.tw/#:co'ong" meta="阿美語線上辭典"
           >阿美語萌典是群眾協作掃描校對的數位化辭典專案，目前可以查到三部阿美語字典，發音功能由意傳語音技術支援。</SingleItem>
-        <SingleItem title="噶哈巫語分類辭典" url="https://kaxabu.xn--v0qr21b.xn--kpry57d/" meta="噶哈巫語分類辭典kaxabubizu"
+        <SingleItem title="噶哈巫語分類辭典" url="https://kaxabu.ithuan.tw/" meta="噶哈巫語分類辭典kaxabubizu"
           >這个網站是電子版ê噶哈巫語分類辭典，網站是MIT開源授權。多謝潘永歷baba同意，規本辭典電子資料用CC BY-NC-SA公開出來。網站頂有完整辭典資料kah程式連結。</SingleItem>
         </Item.Group>
         </Segment>
