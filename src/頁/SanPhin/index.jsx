@@ -38,7 +38,7 @@ componentDidMount() {
       children: "台羅轉POJ、POJ轉台羅的家私。接受原件數字調抑是傳統調號，全羅抑漢羅攏通處理。"
     },{
       title: "鬥拍字",
-      url: "https://鬥拍字.意傳.台灣/",
+      url: "https://suisiann.ithuan.tw/",
       meta: "拍字電腦唸予你聽",
       children: "輸入台文，電腦同齊產生漢字佮台羅的對照，而且閣會唸予你聽。"
     }];
