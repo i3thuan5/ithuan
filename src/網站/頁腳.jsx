@@ -33,7 +33,7 @@ class 頁腳 extends Component {
                       Bīn-tsheh
                     </List.Item>
                     <List.Item as='a' 
-                        href="https://github.com/i3thuan5/i3thuan5/"
+                        href="https://github.com/i3thuan5/ithuan/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -63,7 +63,7 @@ class 頁腳 extends Component {
          
           <Divider/>
           
-          <p style={{"textAlign":"center"}}>ÌTHUÂN KHOKI 意傳科技 © 2020</p>
+          <p style={{"textAlign":"center"}}>ÌTHUÂN KHOKI 意傳科技 © 2021</p>
 
         </Container>
       </Segment>
