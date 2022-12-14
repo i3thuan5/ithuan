@@ -21,7 +21,7 @@ class 頁首 extends React.Component {
       <Segment id="appNav" textAlign='center' inverted vertical>
           <Menu secondary inverted size="large" pointing>
             <Container text>
-              <Link className='favicon'><Image src={favicon} size="mini"/></Link>
+              <Link className='favicon'><Image src={favicon} size="mini" alt="意傳Logo"/></Link>
               <Link to={home} className={this.getItemClass(home)}>首頁</Link>
               <Link to={sanphin} className={this.getItemClass(sanphin)}>產品</Link>
               <Link to={tsuanan} className={this.getItemClass(tsuanan)}>合作專案</Link>
