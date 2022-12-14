@@ -13,8 +13,8 @@ export default class 資訊安全政策 extends React.Component {
           <Item.Group relaxed>
 
           </Item.Group>
-<nav aria-labellbedby="iahsikin">
-  <span id="iahsikin">頁面索引</span>
+<nav aria-labellbedby="iahsikin" className="ui message">
+  <h2 id="iahsikin" className="header">頁面索引</h2>
   <ul>
     <li><a href="#">一、本公司政策</a></li>
     <li><a href="#">二、範圍</a></li>
