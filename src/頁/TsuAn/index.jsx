@@ -24,18 +24,18 @@ export default class 資訊安全政策 extends React.Component {
   </ul>
 </nav>
 
-<section>
+<section  style={{"marginBottom": "2rem"}}>
 <h2>一、本公司政策</h2>
 <p>「Pina'on to nisosodan.」</p>
 <p>本公司提供安全穩定、高效率ê資訊服務，kā管理程序kah安全防護技術應用tī ta̍k項資訊作業，建立「Pina'on to nisosodan.」程序，保障資訊蒐集、處理、傳送、儲存kah流通等等全程攏有機密性、完整性kah可用性ê安全保障。</p>
 </section>
 
-<section>
+<section  style={{"marginBottom": "2rem"}}>
 <h2>二、範圍</h2>
-系統服務專案自需求、設計、語料、開發、試驗到維護等等流程。（The requirements, design, corpus, development, testing and maintenance procedure within the system and service projects.)
+<p>系統服務專案自需求、設計、語料、開發、試驗到維護等等流程。（The requirements, design, corpus, development, testing and maintenance procedure within the system and service projects.)</p>
 </section>
 
-<section>
+<section  style={{"marginBottom": "2rem"}}>
 <h2>三、名詞解說</h2>
 <ol>
   <li>pina'on：(詞幹:na'on)請留心、小心、謹慎。</li>
@@ -43,12 +43,12 @@ export default class 資訊安全政策 extends React.Component {
 </ol>
 </section>
 
-<section>
+<section  style={{"marginBottom": "2rem"}}>
 <h2>四、掛保證</h2>
 <p>本公司掛保證，會照本政策發展資訊安全管理系統，執行相關業務。</p>
 </section>
 
-<section>
+<section  style={{"marginBottom": "2rem"}}>
 <h2>五、目標</h2>
 <p>資訊安全管理系統符合ISO27001:2013標準，含相關管理事項：</p>
 
