@@ -1,16 +1,22 @@
 # 意傳官網
 [![Build Status](https://travis-ci.org/i3thuan5/ithuan.svg?branch=master)](https://travis-ci.org/i3thuan5/ithuan)
 
-歡迎直接到阮的[網站](https://ithuan.tw)！！
+ÌTHUÂN KHOKI CO., LTD.
+意傳科技有限公司官方網站[ithuan.tw](https://ithuan.tw)程式。
 
 ## 安裝
 
-        $ npm i
+```bash
+$ npm i
+```
 
 ## 開發
 
-        $ npm start
-        # open http://localhost:3000/
+```bash
+$ npm start
+```
+
+開網址`http://localhost:3000/`
 
 
 ## License授權
