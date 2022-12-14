@@ -29,7 +29,7 @@ componentDidMount() {
           <Item.Group relaxed>
 
           </Item.Group>
-<nav aria-labellbedby="iahsikin" className="ui message">
+<nav aria-labelledby="iahsikin" className="ui message">
   <h2 id="iahsikin" className="header">頁面索引</h2>
   <ul>
     <li><a href="#tsingtshik">一、本公司政策</a></li>
