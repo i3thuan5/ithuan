@@ -3,6 +3,22 @@ import { Container, Item, Header, Segment } from 'semantic-ui-react';
 
 export default class 資訊安全政策 extends React.Component {
 
+componentDidMount() {
+    this.jumpToHash();
+  }
+  componentDidUpdate() {
+    this.jumpToHash();
+  }
+  jumpToHash  ()  {
+    const {hash} = window.location;
+    if (hash) {
+      let element=  document.getElementById(hash.substr(1));
+      setTimeout(() => {
+        if (element) element.scrollIntoView();
+      })
+    }
+  }
+
   render () {
     
     return (
@@ -16,40 +32,40 @@ export default class 資訊安全政策 extends React.Component {
 <nav aria-labellbedby="iahsikin" className="ui message">
   <h2 id="iahsikin" className="header">頁面索引</h2>
   <ul>
-    <li><a href="#">一、本公司政策</a></li>
-    <li><a href="#">二、範圍</a></li>
-    <li><a href="#">三、名詞解說</a></li>
-    <li><a href="#">四、掛保證</a></li>
-    <li><a href="#">五、目標</a></li>
+    <li><a href="#tsingtshik">一、本公司政策</a></li>
+    <li><a href="#huanui">二、範圍</a></li>
+    <li><a href="#miasu">三、名詞解說</a></li>
+    <li><a href="#kuapotsing">四、掛保證</a></li>
+    <li><a href="#bokphiau">五、目標</a></li>
   </ul>
 </nav>
 
-<section  style={{"marginBottom": "2rem"}}>
-<h2>一、本公司政策</h2>
+<section style={{"marginBottom": "2rem"}}>
+<h2 id="tsingtshik">一、本公司政策</h2>
 <p>「Pina'on to nisosodan.」</p>
 <p>本公司提供安全穩定、高效率ê資訊服務，kā管理程序kah安全防護技術應用tī ta̍k項資訊作業，建立「Pina'on to nisosodan.」程序，保障資訊蒐集、處理、傳送、儲存kah流通等等全程攏有機密性、完整性kah可用性ê安全保障。</p>
 </section>
 
-<section  style={{"marginBottom": "2rem"}}>
-<h2>二、範圍</h2>
+<section style={{"marginBottom": "2rem"}}>
+<h2 id="huanui">二、範圍</h2>
 <p>系統服務專案自需求、設計、語料、開發、試驗到維護等等流程。（The requirements, design, corpus, development, testing and maintenance procedure within the system and service projects.)</p>
 </section>
 
-<section  style={{"marginBottom": "2rem"}}>
-<h2>三、名詞解說</h2>
+<section style={{"marginBottom": "2rem"}}>
+<h2 id="miasu">三、名詞解說</h2>
 <ol>
   <li>pina'on：(詞幹:na'on)請留心、小心、謹慎。</li>
   <li>nisosodan：傳輸的資料。</li>
 </ol>
 </section>
 
-<section  style={{"marginBottom": "2rem"}}>
-<h2>四、掛保證</h2>
+<section style={{"marginBottom": "2rem"}}>
+<h2 id="kuapotsing">四、掛保證</h2>
 <p>本公司掛保證，會照本政策發展資訊安全管理系統，執行相關業務。</p>
 </section>
 
-<section  style={{"marginBottom": "2rem"}}>
-<h2>五、目標</h2>
+<section style={{"marginBottom": "2rem"}}>
+<h2 id="bokphiau">五、目標</h2>
 <p>資訊安全管理系統符合ISO27001:2013標準，含相關管理事項：</p>
 
 <h3>5.1. 資訊安全政策：</h3>
