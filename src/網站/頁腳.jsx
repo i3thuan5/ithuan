@@ -16,7 +16,7 @@ class 頁腳 extends Component {
     return (
       <Segment inverted vertical>
         <Container>
-         <Grid columns={3} divided stackable inverted>
+         <Grid columns={3} divided stackable>
               <Grid.Row>
                 <Grid.Column width={4}>
                   <Header inverted as='h4' content='Tsih-tsiap' />
