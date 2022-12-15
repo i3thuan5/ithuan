@@ -5,9 +5,6 @@ node_js:
 - 6
 env:
 - TSI2_LING7='build'
-branches:
-  only:
-  - master
 script:
 - echo npm run $TSI2_LING7
 - npm run $TSI2_LING7
@@ -16,8 +13,4 @@ deploy:
   fqdn: ithuan.tw
   skip_cleanup: true
   local_dir: build/
-  github_token:
-    secure: HqQSwDEQ9DkIG3HtCW4lcq3PrU5yfmYN18lx+77KWpya1MdDUe89ygn6Sl5us6k9yzOI+4Rhnh86FhG7/R/z4y6rULQjtBdE9Dgn9sW6MGWEEfmxrjXOzceMHk5hhSGde/oDQQ9qNPZRMCPyawbrVh6cmedJO8q1CLF0PWe03zjAEbrDf0BRBGfD5NMeUPgWQBrzVPOLQotdE+m+1KgfXxkrnpXEXVj5gef7F/IJ5Bmg7vV1aEfjn0Mnbrgk6vtcHTnax1GnZtUsOuw7dhrowVIsIEaxDxZZTpFZ8bPVeSA6/tufw3NuK2YqsFdTA7Db/JfoOjKFw1c2yF3oxe3dGmKCS2O6Usw2kvjJxiN8Q1+59qqwLdEkzjUCPwicilad09pRyZNVCE/OffEsXLDqpzFhNaLTtXXIRbS8pq/nYQgNr3rP1dgiSvToJF1SqJ5leYJXWMhncmXqmRiPJtiMartCcUzJwjHhdJEPfBIJmHeMZEQ8hMvp82yafU9DK87k84cyqDGG748tgrZIXMjAT1pYOJgcPtTwthcNx9gnNd/fr+iByzkWYPu4YMg91w4gTgjmVwwRjtZnpYYXgE6Wz2MK3iMgqdLukq+0BErzV1ljMODpMWQimv4+PaMPM/FIjOUAeQTXV8lj9AY1nkxGgtGMxPKCJeDF+F2QFJSzv9I=
-  on:
-    branch: master
-    condition: $TSI2_LING7 = 'build'
+  github_token: $GITHUB_TOKEN_FOR_TRAVIS
