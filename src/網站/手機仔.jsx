@@ -27,6 +27,9 @@ class 手機仔 extends Component {
           <Link to={paths.suisiann} className={this.getClasses(paths.suisiann)} onClick={this.closeVisibility}>
             <Icon name='volume up'/>SuíSiann
           </Link>
+          <Link to={paths.tsuan} className={this.getClasses(paths.tsuan)} onClick={this.closeVisibility}>
+            資訊安全政策
+          </Link>
       </Sidebar>
     );
   }
