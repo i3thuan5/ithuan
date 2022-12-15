@@ -5,8 +5,11 @@ node_js:
 - 6
 env:
 - TSI2_LING7='build'
+branches:
+  only:
+  - master
 script:
-- echo npm run $TSI2_LING7
+- echo $GITHUB_TOKEN_FOR_TRAVIS
 - npm run $TSI2_LING7
 deploy:
   provider: pages
@@ -15,4 +18,4 @@ deploy:
   local_dir: build/
   github_token: $GITHUB_TOKEN_FOR_TRAVIS
   on:
-    branch: kingsin-gh-token-for-travis-gh-page-deploy
+    branch: master
