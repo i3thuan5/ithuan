@@ -9,7 +9,6 @@ branches:
   only:
   - master
 script:
-- echo $GITHUB_TOKEN_FOR_TRAVIS
 - npm run $TSI2_LING7
 deploy:
   provider: pages
