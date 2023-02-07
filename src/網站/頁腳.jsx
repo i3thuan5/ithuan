@@ -12,6 +12,7 @@ class 頁腳 extends Component {
   render() {
     const { paths } = this.props;
     const { home, sanphin, tsuanan, suisiann, siongkuan, lianlok } = paths;
+    const ni = new Date().getFullYear();
 
     return (
       <Segment inverted vertical>
@@ -21,9 +22,14 @@ class 頁腳 extends Component {
                 <Grid.Column width={4}>
                   <Header inverted as='h4' content='Tsih-tsiap' />
                   <List link inverted>
-                    <List.Item as='a'>ithuan@ithuan.tw</List.Item>
-                    <List.Item as='a'>04-8358062</List.Item>
-                    <List.Item as='a'>510001 員林市，中正路543巷3號</List.Item>
+                    <List.Item as='a'>
+                      <Icon name='envelope'/>ithuan@ithuan.tw</List.Item>
+                    <List.Item as='a'>
+                      <Icon name='phone'/>04-8358062
+                    </List.Item>
+                    <List.Item as='a'>
+                      <Icon name='map'/>510001 員林市，中正路543巷3號
+                    </List.Item>
                     <List.Item as='a' 
                         href="https://www.facebook.com/ithuan.tw/"
                         target="_blank" 
@@ -63,7 +69,10 @@ class 頁腳 extends Component {
          
           <Divider/>
           
-          <p style={{"textAlign":"center"}}>ÌTHUÂN KHOKI 意傳科技 © 2021</p>
+          <p style={{"textAlign":"center"}}>
+            版權所有 &copy; {ni} ÌTHUÂN KHOKI CO., LTD. 意傳科技有限公司 <br/>
+            統一編號 58020378
+          </p>
 
         </Container>
       </Segment>
