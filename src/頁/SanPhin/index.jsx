@@ -60,7 +60,12 @@ componentDidMount() {
       url: "https://sungibfab.ithuan.tw/",
       meta: "意傳客文輸入法",
       children: "用Rime這個跨平台个輸入法框改个，放客話詞庫、客文打字規則。目前支援Windows7-10、Mac、Linux Ubuntu。"
-    },];
+    },{
+      title: "TenSu 𢯭手",
+      url: "https://tensu.ithuan.tw/",
+      meta: "客語語音學習工具",
+      children: "利用客話TTS語音合成AI，電腦讀客話分你聽，學客話。初學者看不懂客語，可以將客語輸入，唸給你聽喲！對教學者而言，只需打一次文案，就可同時得到漢字和拼音。"
+    }];
     return list_to_singleitem(list)
   }
 
@@ -79,9 +84,6 @@ componentDidMount() {
           <Header as='h2'>客家話</Header>
           <Item.Group relaxed>
           {this.Hak()}
-          <SingleItem title="TenSu 𢯭手" url="https://tensu.ithuan.tw/" meta="客語語音學習工具">
-            利用客話TTS語音合成AI，電腦讀客話分你聽，學客話。初學者看不懂客語，可以將客語輸入，唸給你聽喲！對教學者而言，只需打一次文案，就可同時得到漢字和拼音。
-            </SingleItem>
           </Item.Group>
         </Segment>
         
