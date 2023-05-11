@@ -20,7 +20,7 @@ class 頁首 extends React.Component {
     return (
       <Segment id="appNav" textAlign='center' inverted vertical style={{paddingLeft: "3rem"}}>
           <Menu secondary inverted pointing>
-              <Image src={favicon} size="mini" alt="意傳Logo" style={{marginRight: "1rem"}}/>
+              <Image src={favicon} size="mini" alt="意傳Logo" style={{marginRight: "1rem", marginTop: ".85714286em", "height": "35px"}}/>
               <Link to={home} className={this.getItemClass(home)}>首頁</Link>
               <Link to={sanphin} className={this.getItemClass(sanphin)}>產品</Link>
               <Link to={tsuanan} className={this.getItemClass(tsuanan)}>合作專案</Link>
