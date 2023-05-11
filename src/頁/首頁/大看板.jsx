@@ -12,7 +12,7 @@ export default class 大看板 extends Component {
       <Segment textAlign='' inverted vertical className='masthead'>
         <Container text>
         <Image centered src={favicon} size="mini" hidden/>
-        <Header as='h1' inverted>意傳願景</Header>
+        <Header as='h1' inverted>公司願景</Header>
         <p>Kā語言學習者kah語言工作者tàu-sann-kāng，hōo咱有法度kah厝內、社會bô-kâng族群交流。</p>
         </Container>
       </Segment>
