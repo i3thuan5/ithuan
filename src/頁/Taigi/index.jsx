@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Header, List, Icon, Item, Image, Segment } from 'semantic-ui-react';
 import SingleItem from '../SingleItem'
+import LogoItaigi from '../../圖/itaigi.svg'
 
 
 import Debug from 'debug';
@@ -49,7 +50,27 @@ componentDidMount() {
       url: "https://suisiann.ithuan.tw/",
       meta: "拍字電腦唸予你聽",
       children: "輸入台文，電腦同齊產生漢字佮台羅的對照，而且閣會唸予你聽。"
-    }];
+    },{
+      title: "iTaigi愛台語",
+      logo: LogoItaigi,
+      url: "https://itaigi.tw/",
+      meta: "台語的大眾詞典",
+      children: "欲知影這个詞的台語按怎講，來遮查就著矣！逐个詞攏有語音合成，隨唸予你聽。嘛ē-sái提供家己的講法喔！（意傳負責huānn網站）"
+    },{
+      title: "詞彙分級工作計畫",
+      meta: "台文語料庫詞頻統計",
+      children: "網站提供自動偵查錯誤、即時計算詞頻、方言差管理、搜尋等功能，支援輸入全羅、漢羅。Tsit-má無對外開放。（意傳huānn語料庫系統）"
+    },{
+      title: "加速開發台文字幕流程計畫",
+      meta: "台語語音辨識研究專案",
+      children: "2019年文化部加速文化內容開發與科技創新應用補助案。加強語音辨識轉寫做台文技術，未來會提供這項服務。(結案--ah)"
+    },{
+      title: "台語兒",
+      url: "https://baconbao.github.io/TaiwaneseWizard/",
+      meta: "文字轉做台語語音",
+      children: "台語兒是一隻會曉朗讀台語的語音精靈，有Chrome、Firefox、Messenger、Andriod版本通裝。(意傳語音技術支援)"
+    },
+    ];
     return list_to_singleitem(list)
   }
 
@@ -127,8 +148,11 @@ componentDidMount() {
         </Item.Group>
         </Segment>
         <Segment basic size="large">
-          <Header as='h1'>台灣媠聲2.0</Header>
-          <Header as='h6'>2017台語語音合成研究專案</Header>
+          <Header as='h2'>台灣媠聲2.0</Header>
+            <p>
+              2017年文化部推行語言多樣性友善環境補助案。來改良阮的語音合成系統，予音質閣較清楚、自然。(已結案)"
+            </p>
+          <Header as='h3'>台語語音合成研究專案</Header>
           <p>阮改良台語語音合成系統，予音質閣較清楚、自然，相關成果攏公開佇tsia。</p>
           <iframe src="//www.slideshare.net/slideshow/embed_code/key/ElynnvC7cy9GdC" width="595" height="485" frameBorder="0" marginWidth="0" marginHeight="0" scrolling="no" style={{border:"1px solid #CCC", borderWidth:"1px", marginBottom:"5px", maxWidth: "100%",}} allowFullScreen> </iframe> 
           <Item.Group relaxed>
