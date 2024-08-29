@@ -18,10 +18,14 @@ export default class 網站 extends React.Component {
       activeItem: this.props.location.pathname || '/',
       paths: {
         home: '/',
+        taigi: '/taigi',
+        pangcah: '/pangcah',
+        kaxabu: '/kaxabu',
+        hakka: '/hakka',
+        tsuan: '/tsuan',
         tsuanan: '/tsuanan',
         sanphin: '/sanphin',
         suisiann: '/suisiann',
-        tsuan: '/tsuan'
       },
     };
     this.closeVisibility = this.closeVisibility.bind(this);
