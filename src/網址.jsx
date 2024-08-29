@@ -4,8 +4,6 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import BangTsam from './網站/網站';
 import Tshu from './頁/首頁/首頁';
 import MisanoPangcah from './頁/MisanoPangcah';
-import TsuanAn from './頁/TsuanAn';
-import SuiSiann from './頁/SuiSiann';
 import TsuAn from './頁/TsuAn';
 import Taigi from './頁/Taigi';
 import Pangcah from './頁/Pangcah';
