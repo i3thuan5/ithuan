@@ -21,16 +21,16 @@ class 手機仔 extends Component {
             <Icon name='rocket'/>台語專案
           </Link>
           <Link to={paths.pangcah} className={this.getClasses(paths.pangcah)} onClick={this.closeVisibility}>
-            <Icon name='briefcase'/>Pangcah專案
+            <Icon name='bullhorn'/>Pangcah專案
           </Link>
           <Link to={paths.kaxabu} className={this.getClasses(paths.kaxabu)} onClick={this.closeVisibility}>
-            <Icon name='volume up'/>Kaxabu專案
+            <Icon name='book'/>Kaxabu專案
           </Link>
           <Link to={paths.hakka} className={this.getClasses(paths.hakka)} onClick={this.closeVisibility}>
-            <Icon name='volume up'/>客話專案
+            <Icon name='briefcase'/>客話專案
           </Link>
           <Link to={paths.tsuan} className={this.getClasses(paths.tsuan)} onClick={this.closeVisibility}>
-            資訊安全政策
+            <Icon name='cloud'/>資訊安全政策
           </Link>
       </Sidebar>
     );
