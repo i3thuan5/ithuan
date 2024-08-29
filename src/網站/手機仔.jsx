@@ -32,16 +32,6 @@ class 手機仔 extends Component {
           <Link to={paths.tsuan} className={this.getClasses(paths.tsuan)} onClick={this.closeVisibility}>
             資訊安全政策
           </Link>
-          <Link to={paths.sanphin} 
-            className={this.getClasses(paths.sanphin)} onClick={this.closeVisibility}>
-            <Icon name='rocket'/>產品
-          </Link>
-          <Link to={paths.tsuanan} className={this.getClasses(paths.tsuanan)} onClick={this.closeVisibility}>
-            <Icon name='briefcase'/>合作專案
-          </Link>
-          <Link to={paths.suisiann} className={this.getClasses(paths.suisiann)} onClick={this.closeVisibility}>
-            <Icon name='volume up'/>SuíSiann
-          </Link>
       </Sidebar>
     );
   }

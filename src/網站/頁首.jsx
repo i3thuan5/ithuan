@@ -26,9 +26,6 @@ class 頁首 extends React.Component {
               <Link to={paths.kaxabu} className={this.getItemClass(paths.kaxabu)}>Kaxabu專案</Link>
               <Link to={paths.hakka} className={this.getItemClass(paths.hakka)}>客話專案</Link>
               <Link to={paths.tsuan} className={this.getItemClass(paths.tsuan)}>資訊安全政策</Link>
-              <Link to={paths.sanphin} className={this.getItemClass(paths.sanphin)}>產品</Link>
-              <Link to={paths.tsuanan} className={this.getItemClass(paths.tsuanan)}>合作專案</Link>
-              <Link to={paths.suisiann} className={this.getItemClass(paths.suisiann)}>SuíSiann</Link>
           </Menu>
       </Segment>
     );

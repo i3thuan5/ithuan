@@ -24,7 +24,6 @@ export default class 網站 extends React.Component {
         hakka: '/hakka',
         tsuan: '/tsuan',
         tsuanan: '/tsuanan',
-        sanphin: '/sanphin',
         suisiann: '/suisiann',
       },
     };
