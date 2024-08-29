@@ -1,15 +1,12 @@
-sudo: false
-dist: bionic
+dist: jammy
 language: node_js
 node_js:
-- 6
-env:
-- TSI2_LING7='build'
+- 20
 branches:
   only:
   - master
 script:
-- npm run $TSI2_LING7
+- npm run build
 deploy:
   provider: pages
   fqdn: ithuan.tw
