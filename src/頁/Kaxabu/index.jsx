@@ -74,26 +74,9 @@ componentDidMount() {
     return (
       <Container text>
         <Segment basic size="large">
-        <Header as='h2'>台語</Header>
         <Item.Group relaxed>
-          {this.Taigi()}
-        </Item.Group>
-        </Segment>
-
-          <Segment basic size="large">
-          <Header as='h2'>客家話</Header>
-          <Item.Group relaxed>
-          {this.Hak()}
-          </Item.Group>
-        </Segment>
-        
-        <Segment basic size="large">
-        <Header as='h2'>族語</Header>
-        <Item.Group relaxed>
-          <族語合成 名='Lamal' 族語='Pangcah' 漢字='阿美語' />
-          <族語合成 名='Hapoy' 族語='SaySiyat' 漢字='賽夏語' />
-          <族語合成 名='Sapuz' 族語='Bunun' 漢字='布農語' />
-          <族語合成 名='Puniq' 族語='Atayal' 漢字='泰雅語' />
+        <SingleItem title="噶哈巫語分類辭典（合作專案）" url="https://kaxabu.ithuan.tw/" meta="噶哈巫語分類辭典kaxabubizu"
+          >這个網站是電子版ê噶哈巫語分類辭典，網站是MIT開源授權。多謝潘永歷baba同意，規本辭典電子資料用CC BY-NC-SA公開出來。網站頂有完整辭典資料kah程式連結。</SingleItem>
         </Item.Group>
         </Segment>
       </Container>
