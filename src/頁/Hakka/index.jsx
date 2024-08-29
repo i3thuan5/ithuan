@@ -48,7 +48,6 @@ componentDidMount() {
   }
 
   render () {
-    let LogoI3Thuan5='https://grants.g0v.tw/uploads/5d147554034c77e3e66bc0706473714e.png';
     return (
       <Container text>
         <Segment basic size="large">

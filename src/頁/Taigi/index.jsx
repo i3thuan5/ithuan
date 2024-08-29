@@ -51,10 +51,16 @@ componentDidMount() {
       meta: "拍字電腦唸予你聽",
       children: "輸入台文，電腦同齊產生漢字佮台羅的對照，而且閣會唸予你聽。"
     },{
+      title: "臺灣台語常用詞辭典",
+      logo: "https://sutian.moe.edu.tw/static/image/logo/logo.png",
+      url: "https://sutian.moe.edu.tw/",
+      meta: "教育部ê辭典",
+      children: "提供臺灣台語搜揣佮華語搜揣，會用得聽詞目佮例句發音，予逐家方便學。閣有分類索引、部首筆劃索引佮附錄。（意傳負責huānn網站）"
+    },{
       title: "iTaigi愛台語",
       logo: LogoItaigi,
       url: "https://itaigi.tw/",
-      meta: "台語的大眾詞典",
+      meta: "台語的大眾辭典",
       children: "欲知影這个詞的台語按怎講，來遮查就著矣！逐个詞攏有語音合成，隨唸予你聽。嘛ē-sái提供家己的講法喔！（意傳負責huānn網站）"
     },{
       title: "詞彙分級工作計畫",
@@ -66,6 +72,7 @@ componentDidMount() {
       children: "2019年文化部加速文化內容開發與科技創新應用補助案。加強語音辨識轉寫做台文技術，未來會提供這項服務。(結案--ah)"
     },{
       title: "台語兒",
+      logo: "https://baconbao.github.io/TaiwaneseWizard/img/faceBackground.png",
       url: "https://baconbao.github.io/TaiwaneseWizard/",
       meta: "文字轉做台語語音",
       children: "台語兒是一隻會曉朗讀台語的語音精靈，有Chrome、Firefox、Messenger、Andriod版本通裝。(意傳語音技術支援)"
@@ -139,7 +146,6 @@ componentDidMount() {
   }
 
   render () {
-    let LogoI3Thuan5='https://grants.g0v.tw/uploads/5d147554034c77e3e66bc0706473714e.png';
     return (
       <Container text>
         <Segment basic size="large">
