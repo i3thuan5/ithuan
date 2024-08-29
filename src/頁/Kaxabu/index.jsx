@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Header, List, Icon, Item, Image, Segment } from 'semantic-ui-react';
-import 族語合成 from './族語合成';
 import SingleItem from '../SingleItem'
 
 
