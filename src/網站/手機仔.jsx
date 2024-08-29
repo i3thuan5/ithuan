@@ -14,7 +14,7 @@ class 手機仔 extends Component {
     return (
       <Sidebar as={Menu} fixed="left" animation='push' width='thin' visible={visible} icon='labeled' vertical inverted>
           <Link to={paths.home} className={this.getClasses(paths.home)} onClick={this.closeVisibility}>
-            <Icon name='home'/>首頁
+            <Icon name='home'/>頭頁
           </Link>
           <Link to={paths.taigi}
             className={this.getClasses(paths.taigi)} onClick={this.closeVisibility}>
