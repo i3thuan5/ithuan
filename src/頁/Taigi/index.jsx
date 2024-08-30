@@ -48,7 +48,7 @@ componentDidMount() {
     },{
       title: "鬥拍字",
       url: "https://suisiann.ithuan.tw/",
-      meta: "拍字電腦唸予你聽",
+      meta: "台文漢羅轉換kah自動發音",
       children: "輸入台文，電腦同齊產生漢字佮台羅的對照，而且閣會唸予你聽。"
     },{
       title: "臺灣台語常用詞辭典",
