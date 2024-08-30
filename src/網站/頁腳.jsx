@@ -19,7 +19,7 @@ class 頁腳 extends Component {
         <Container>
          <Grid columns={3} divided stackable>
               <Grid.Row>
-                <Grid.Column width={4}>
+                <Grid.Column width={6}>
                   <Header inverted as='h4' content='Tsih-tsiap' />
                   <List link inverted>
                     <List.Item as='a'>
@@ -48,16 +48,7 @@ class 頁腳 extends Component {
                     </List.Item>
                   </List>
                 </Grid.Column>
-                <Grid.Column width={4}>
-                  <Header inverted as='h4' content='Ia̍h-bīn' />
-                  <List inverted>
-                    <List.Item><Link to={home} className="item fitted">首頁</Link></List.Item>
-                    <List.Item><Link to={sanphin} className="item fitted">產品</Link></List.Item>
-                    <List.Item><Link to={tsuanan} className="item fitted">合作專案</Link></List.Item>
-                    <List.Item><Link to={suisiann} className="item fitted">SuíSiann</Link></List.Item>
-                  </List>
-                </Grid.Column>
-                <Grid.Column width={8}>
+                <Grid.Column width={10}>
                   <Header inverted as='h4' content='意傳科技有限公司' />
                   <p>
                     台語文專業ê資訊公司，專門開發台語AI產品kah資訊服務。Ǹg-bāng透過台語科技產品，hām逐家做陣，tàm數位時代起造多元語言ê科技環境。

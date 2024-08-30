@@ -11,24 +11,26 @@ class 手機仔 extends Component {
 
   render() {
     const { paths, visible } = this.props;
-    const { home, tsuanan, sanphin, suisiann } = paths;
     return (
       <Sidebar as={Menu} fixed="left" animation='push' width='thin' visible={visible} icon='labeled' vertical inverted>
           <Link to={paths.home} className={this.getClasses(paths.home)} onClick={this.closeVisibility}>
-            <Icon name='home'/>首頁
+            <Icon name='home'/>頭頁
           </Link>
-          <Link to={paths.sanphin} 
-            className={this.getClasses(paths.sanphin)} onClick={this.closeVisibility}>
-            <Icon name='rocket'/>產品
+          <Link to={paths.taigi}
+            className={this.getClasses(paths.taigi)} onClick={this.closeVisibility}>
+            <Icon name='rocket'/>台語專案
           </Link>
-          <Link to={paths.tsuanan} className={this.getClasses(paths.tsuanan)} onClick={this.closeVisibility}>
-            <Icon name='briefcase'/>合作專案
+          <Link to={paths.pangcah} className={this.getClasses(paths.pangcah)} onClick={this.closeVisibility}>
+            <Icon name='bullhorn'/>Pangcah專案
           </Link>
-          <Link to={paths.suisiann} className={this.getClasses(paths.suisiann)} onClick={this.closeVisibility}>
-            <Icon name='volume up'/>SuíSiann
+          <Link to={paths.kaxabu} className={this.getClasses(paths.kaxabu)} onClick={this.closeVisibility}>
+            <Icon name='book'/>Kaxabu專案
+          </Link>
+          <Link to={paths.hakka} className={this.getClasses(paths.hakka)} onClick={this.closeVisibility}>
+            <Icon name='briefcase'/>客話專案
           </Link>
           <Link to={paths.tsuan} className={this.getClasses(paths.tsuan)} onClick={this.closeVisibility}>
-            資訊安全政策
+            <Icon name='cloud'/>資訊安全政策
           </Link>
       </Sidebar>
     );
