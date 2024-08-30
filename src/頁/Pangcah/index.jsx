@@ -46,9 +46,9 @@ componentDidMount() {
           <Item id='lamal'>
             <Item.Content>
               <Item.Header >Lamal - 族語之火</Item.Header>
-              <Item.Meta>Pangcah阿美語發音</Item.Meta>
+              <Item.Meta>Pangcah阿美語發音（已退場，2017-2024）</Item.Meta>
               <Item.Description>
-                輸入阿美語，電腦會唸給你聽。（已退場，2017-2024）
+                輸入阿美語，電腦會唸給你聽。
               </Item.Description>
             </Item.Content>
           </Item>
