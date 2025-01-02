@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Segment, Header, Grid, Image, Icon, List } from 'semantic-ui-react';
 import LogoTiA from '../../圖/line.png';
 import LogoSu5lui7 from '../../圖/su5lui7_hun1kip4.png';
-import LogoSuJipHuat from '../../圖/sin-su.png';
 import { Link } from 'react-router';
 
 class 參與專案 extends Component {
