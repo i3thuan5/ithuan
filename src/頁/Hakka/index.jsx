@@ -35,8 +35,8 @@ componentDidMount() {
   Hak() {
     let list = [{
       title: "意傳客文輸入法",
-      url: "https://sungibfab.ithuan.tw/",
-      meta: "意傳客文輸入法",
+      url: "",
+      meta: "（已退場，2019-2024）",
       children: "用Rime這個跨平台个輸入法框改个，放客話詞庫、客文打字規則。目前支援Windows7-10、Mac、Linux Ubuntu。"
     },{
       title: "TenSu 𢯭手",

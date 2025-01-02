@@ -37,8 +37,8 @@ componentDidMount() {
   Taigi() {
     let list = [{
       title: "意傳台文輸入法",
-      url: "https://sujiphuat.ithuan.tw/",
-      meta: "台語文輸入法",
+      url: "",
+      meta: "（已退場，2019-2024）",
       children: "Rime是一个伐平台的輸入法框。阮是照這个框的規範，共台語詞庫囥入去、寫台語拍字規則。目前支援Win7、Win10、Mac、linux。"
     },{
       title: "台羅POJ轉換器",
