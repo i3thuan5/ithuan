@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Segment, Header, Grid, Image, Icon, List } from 'semantic-ui-react';
 import LogoTiA from '../../圖/line.png';
 import LogoSu5lui7 from '../../圖/su5lui7_hun1kip4.png';
-import LogoSuJipHuat from '../../圖/sin-su.png';
 import { Link } from 'react-router';
 
 class 參與專案 extends Component {
@@ -13,28 +12,6 @@ class 參與專案 extends Component {
   render() {
     return (
     <div>
-      <Segment basic className="submasthead slogan">
-
-        <Grid container centered stackable verticalAlign='middle'>
-          <Grid.Column width={6}>
-            <Segment basic><Image src={LogoSuJipHuat} size='small'/></Segment>
-          </Grid.Column>
-          <Grid.Column width={6}>
-            <Segment basic>
-              <Header>意傳台文輸入法</Header>
-              <p>Rime開源輸入法ia̋n-jín，起造全新台文書寫手感。</p>
-              <List>
-                <List.Item>免輸入聲調</List.Item>
-                <List.Item>拍過就會記得</List.Item>
-                <List.Item>支援規句輸入</List.Item>
-                <List.Item>超過 74,000 筆詞條</List.Item>
-              </List>
-            </Segment>
-          </Grid.Column>
-        </Grid>
-      </Segment>
-
-
       <Segment basic className="submasthead stripe slogan">
 
         <Grid container centered stackable verticalAlign='middle'>
