@@ -8,9 +8,10 @@ branches:
 script:
 - npm run build
 deploy:
-  provider: pages
+  provider: pages:git
   fqdn: ithuan.tw
-  skip_cleanup: true
+  edge: true
+  cleanup: false
   local_dir: build/
   github_token: $GITHUB_TOKEN_FOR_TRAVIS
   on:
