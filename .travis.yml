@@ -4,7 +4,7 @@ node_js:
 - 20
 branches:
   only:
-  - master
+  - main
 script:
 - npm run build
 deploy:
@@ -15,4 +15,4 @@ deploy:
   local_dir: build/
   github_token: $GITHUB_TOKEN_FOR_TRAVIS
   on:
-    branch: master
+    branch: main
