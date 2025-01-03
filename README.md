@@ -1,5 +1,5 @@
 # 意傳官網
-[![Build Status](https://travis-ci.org/i3thuan5/ithuan.svg?branch=master)](https://travis-ci.org/i3thuan5/ithuan)
+[![Build Status](https://travis-ci.org/i3thuan5/ithuan.svg?branch=main)](https://travis-ci.org/i3thuan5/ithuan)
 
 ÌTHUÂN KHOKI CO., LTD.
 意傳科技有限公司官方網站[ithuan.tw](https://ithuan.tw)程式。
