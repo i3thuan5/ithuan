@@ -23,7 +23,7 @@ class 頁腳 extends Component {
                   <Header inverted as='h4' content='Tsih-tsiap' />
                   <List link inverted>
                     <List.Item as='a'>
-                      <Icon name='envelope'/>ithuan@ithuan.tw</List.Item>
+                      <Icon name='envelope'/>mng@ithuan.tw</List.Item>
                     <List.Item as='a'>
                       <Icon name='phone'/>04-8358062
                     </List.Item>
