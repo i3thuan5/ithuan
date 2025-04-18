@@ -4,6 +4,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import BangTsam from './網站/網站';
 import Tshu from './頁/首頁/首頁';
 import MisanoPangcah from './頁/MisanoPangcah';
+import TshuTsiauA from './頁/TshuTsiauA';
 import TsuAn from './頁/TsuAn';
 import Taigi from './頁/Taigi';
 import Pangcah from './頁/Pangcah';
@@ -21,6 +22,7 @@ render(
           <Route path='/' component={BangTsam}>
               <IndexRoute component={Tshu}/>
               <Route path='misanopangcah' component={MisanoPangcah}/>
+              <Route path='tshutsiaua' component={TshuTsiauA}/>
               <Route path='taigi' component={Taigi}/>
               <Route path='pangcah' component={Pangcah}/>
               <Route path='kaxabu' component={Kaxabu}/>
