@@ -24,12 +24,12 @@ componentDidMount() {
     return (
       <Container text>
         <Segment basic size="large">
-          <Header as='h1'>隱私權保護政策</Header>
-          <p>更新日期：2024.6.19</p>
+          <Header as='h1'>MisanoPangcah/’Amis隱私權保護政策</Header>
+          <p>更新日期：2025.4.18</p>
           <Item.Group relaxed>
 
 <section style={{"marginBottom": "2rem"}}>
-<p>意傳（下稱本公司）非常重視您的隱私權，為了協助您清楚MisanoPangcah/’Amis（下稱本app）如何蒐集、應用及保護您所提供的個人資料，請您詳細閱讀本app隱私權保護政策。
+<p>意傳科技有限公司（下稱本公司）非常重視您的隱私權，為了協助您清楚MisanoPangcah/’Amis（下稱本app）如何蒐集、應用及保護您所提供的個人資料，請您詳細閱讀本app隱私權保護政策。
 </p>
 </section>
 
