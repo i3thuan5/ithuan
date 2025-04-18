@@ -8,7 +8,7 @@ class 理念 extends Component {
     return (
       <Segment basic className="submasthead stripe slogan" padded='very'>
         <Container text>
-          <p>阮開發各種台語、客語kah族語工具，予咱台灣ê母語資源閣較phong-phài。</p>
+          <p>開發各種台灣母語ê資訊專案，予咱台灣ê母語資源閣較phong-phài。</p>
         </Container>
         <Segment basic textAlign='center'>
           <Link to="/sanphin" className="ui medium primary button">
