@@ -23,7 +23,7 @@ class 參與專案 extends Component {
               <p>想講一口流利又親切的台語嗎？「厝鳥仔講台語」App 為你量身打造！這是一款專為台語學習者設計的口說練習應用程式，透過道地真人發音跟讀和即時語音回饋，幫助你掌握正確的台語發音，講出自然的語調，不再害怕開口說台語！</p>
               <a href="https://apps.apple.com/tw/app/id6743581200">
                 <img src={LogoStore}
-                  alt="加入好友" height="36" border="0"/>
+                  alt="下載厝鳥仔講台語" height="36" border="0"/>
               </a>
             </Segment>
           </Grid.Column>
