@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Header, List, Icon, Item, Image, Segment } from 'semantic-ui-react';
 import SingleItem from '../SingleItem'
+import LogoTshuTsiauA from '../../圖/tshutsiaua.png'
 import LogoItaigi from '../../圖/itaigi.svg'
 
 
@@ -36,6 +37,12 @@ componentDidMount() {
 
   Taigi() {
     let list = [{
+      logo: LogoTshuTsiauA,
+      title: "厝鳥仔講台語",
+      url: "https://apps.apple.com/tw/app/id6743581200",
+      meta: "真人發音互動學習，開喙講台語無問題！",
+      children: "想講一口流利又親切的台語嗎？「厝鳥仔講台語」App 為你量身打造！這是一款專為台語學習者設計的口說練習應用程式，透過道地真人發音跟讀和即時語音回饋，幫助你掌握正確的台語發音，講出自然的語調，不再害怕開口說台語！"
+    },{
       title: "意傳台文輸入法",
       url: "",
       meta: "（已退場，2019-2024）",
