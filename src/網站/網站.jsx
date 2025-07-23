@@ -62,6 +62,7 @@ export default class 網站 extends React.Component {
               <Button inverted icon
               onClick={this.openVisibility.bind(this)}>
                 <Icon name='sidebar' />
+                選單
               </Button>
             </Menu.Item>
             </Menu>
