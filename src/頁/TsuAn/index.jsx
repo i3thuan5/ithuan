@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Item, Header, Segment } from 'semantic-ui-react';
+import { hupio } from  './hupio';
 import './tsuan.css';
 
 export default class 資訊安全政策 extends React.Component {
@@ -19,6 +20,21 @@ componentDidMount() {
       })
     }
   }
+
+  render_hupio() {
+    console.log(hupio)
+    return hupio.map((tsua) =>(
+      <tr>
+        <td>{tsua[0]}</td>
+        <td>{tsua[1]}</td>
+        <td>{tsua[2]}</td>
+        <td>{tsua[3]}</td>
+        <td>{tsua[4]}</td>
+        <td>{tsua[5]}</td>
+      </tr>
+      ))
+  }
+
 
   render () {
     
@@ -111,8 +127,20 @@ componentDidMount() {
 
 <section>
 <h2 id="">附表 ISMS流程與組織對應表</h2>
-<table>
-  <tbody></tbody>
+<table className="ui celled table">
+  <thead>
+    <tr>
+      <th>條文</th>
+      <th>程序</th>
+      <th>管理文件</th>
+      <th>資訊安全委員會</th>
+      <th>文管人員</th>
+      <th>資訊安全稽核小組</th>
+    </tr>
+  </thead>
+  <tbody>
+    {this.render_hupio()}
+  </tbody>
 </table>
 </section>
           </Segment>
