@@ -48,18 +48,19 @@ componentDidMount() {
 <nav aria-labelledby="iahsikin" className="ui message">
   <h2 id="iahsikin" className="header">頁面索引</h2>
   <ol>
-    <li><a href="#tsingtshik">目的</a></li>
+    <li><a href="#boktik">目的</a></li>
     <li><a href="#huanui">適用範圍</a></li>
-    <li><a href="#miasu">定義</a></li>
-    <li><a href="#kuapotsing">目標</a></li>
-    <li><a href="#bokphiau">責任</a></li>
-    <li><a href="#">審查</a></li>
-    <li><a href="#">實施</a></li>
+    <li><a href="#tinggi">定義</a></li>
+    <li><a href="#tshikliok">目標</a></li>
+    <li><a href="#tsikjim">責任</a></li>
+    <li><a href="#simtsa">審查</a></li>
+    <li><a href="#sitsi">實施</a></li>
+    <li><a href="#hupio">附表 ISMS流程與組織對應表</a></li>
   </ol>
 </nav>
 
 <section style={{"marginBottom": "2rem"}}>
-<h2 id="tsingtshik">1. 目的</h2>
+<h2 id="boktik">1. 目的</h2>
 <p>1.1 為支持意傳科技有限公司(以下簡稱本公司)業務永續運作，提升營運效率，滿足資訊資產的機密性、完整性及可用性需求，
 並掌握資訊安全現況，提早面對機會與風險，特定此政策規範。</p>
 </section>
@@ -70,12 +71,12 @@ componentDidMount() {
 </section>
 
 <section style={{"marginBottom": "2rem"}}>
-<h2 id="miasu">3. 定義</h2>
+<h2 id="tinggi">3. 定義</h2>
 <p>3.1 所有人員：本公司人員與委外廠商。</p>
 </section>
 
 <section style={{"marginBottom": "2rem"}}>
-<h2 id="kuapotsing">4. 策略與目標</h2>
+<h2 id="tshikliok">4. 策略與目標</h2>
 <p>4.1 資訊安全策略：</p>
 <p className="lv3">4.1.1 提升公司營業效率。</p>
 <p className="lv3">4.1.2 同仁了解資安目的並能掌握管理系統。</p>
@@ -91,7 +92,7 @@ componentDidMount() {
 </section>
 
 <section style={{"marginBottom": "2rem"}}>
-<h2 id="bokphiau">5. 責任</h2>
+<h2 id="tsikjim">5. 責任</h2>
 <p>5.1 本公司的管理階層建立及審查此政策。</p>
 <p>5.2 資訊安全執行小組透過標準和程序以實施此政策。</p>
 <p>5.3 所有人員須依照相關安全管理程序以維護資訊安全政策。</p>
@@ -102,14 +103,14 @@ componentDidMount() {
 
 
 <section style={{"marginBottom": "2rem"}}>
-<h2 id="">6. 審查</h2>
+<h2 id="simtsa">6. 審查</h2>
 <p>6.1 本政策應至少每年審查乙次，以反映政府法令、技術及業務等最新發展現況，以確保本公司永續運作及資訊安全實務作業能力。</p>
 <p>6.2 本公司如發生重大變化時，應審查資訊安全政策。</p>
 </section>
 
 
 <section style={{"marginBottom": "2rem"}}>
-<h2 id="">7. 實施</h2>
+<h2 id="sitsi">7. 實施</h2>
 <p>7.1 下年度資訊安全政策配合當年度管理審查會議進行審核。</p>
 <p>7.2 本公司各單位基於業務屬性差異，執行資訊安全管理作業並互相支援。各單位負責項目請參考附表「ISMS流程與組織對應表」。</p>
 <p>7.3 各單位執行資訊安全管理作業，如下列項目需進行變更，應依規劃之方式執行變更：</p>
@@ -126,7 +127,7 @@ componentDidMount() {
 </section>
 
 <section>
-<h2 id="">附表 ISMS流程與組織對應表</h2>
+<h2 id="hupio">附表 ISMS流程與組織對應表</h2>
 <table className="ui celled table">
   <thead>
     <tr>
