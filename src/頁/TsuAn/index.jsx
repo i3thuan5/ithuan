@@ -42,8 +42,8 @@ componentDidMount() {
 <Container text>
   <Segment basic size="large">
     <Header as='h1'>資訊安全政策</Header>
-    <p>更新日期：2025.06.04</p>
-    <p>版本編號：1.0</p>
+    <p>更新日期：2025.08.25</p>
+    <p>版本編號：1.1</p>
 
 <nav aria-labelledby="iahsikin" className="ui message">
   <h2 id="iahsikin" className="header">頁面索引</h2>
@@ -134,8 +134,8 @@ componentDidMount() {
       <th>條文</th>
       <th>程序</th>
       <th>管理文件</th>
-      <th>資訊安全委員會</th>
-      <th>文管人員</th>
+      <th>專案開發部</th>
+      <th>執行小組（文管人員）</th>
       <th>資訊安全稽核小組</th>
     </tr>
   </thead>
