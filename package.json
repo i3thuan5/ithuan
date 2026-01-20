@@ -1,6 +1,6 @@
 {
-  "name": "i3-thuan5",
-  "version": "0.0.1",
+  "name": "ithuan",
+  "version": "0.1.0",
   "description": "意傳網站",
   "scripts": {
     "start": "node devServer.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sih4sing5hong5/i3_thuan5.git"
+    "url": "https://github.com/i3thuan5/ithuan"
   },
   "keywords": [
     "臺語"
@@ -19,9 +19,9 @@
   "author": "薛丞宏",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sih4sing5hong5/i3_thuan5/issues"
+    "url": "https://github.com/i3thuan5/ithuan/issues"
   },
-  "homepage": "https://github.com/sih4sing5hong5/i3_thuan5",
+  "homepage": "https://ithuan.tw",
   "dependencies": {
     "express": "^4.17.1"
   },
@@ -54,8 +54,5 @@
     "webpack": "^1.13.1",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.12.0"
-  },
-  "engines": {
-    "node": "^6.2.2"
   }
 }
